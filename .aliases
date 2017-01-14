@@ -1,0 +1,86 @@
+# Git Aliases
+alias gs="git status"
+alias ga="git add --all"
+alias gc="git commit -s"
+alias gp="git pull"
+alias gpp="git pull; git push;git push --tags"
+alias gl="git log --pretty=full --graph --decorate=full"
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+# I know I am bad
+alias get='git'
+
+alias dds='dd status=progress'
+
+alias df='df -H'
+alias du='du -ch'
+alias du1='du -ch -d 1'
+
+alias s="sudo"
+alias sudo='sudo -H'
+alias fontfix="fc-cache -f -v"
+alias dirs='dirs -v'
+alias ls='ls -la'
+
+# Vagrant configuration.
+# export VAGRANT_DEFAULT_PROVIDER='virtualbox'
+
+# Disable cowsay in Ansible.
+export ANSIBLE_NOCOWS=1
+
+# Ansible aliases.
+alias an='ansible'
+alias ap='ansible-playbook'
+
+# Network
+alias ping='ping -c 5'
+alias fastping='ping -c 100 -s.2'
+alias ports='netstat -tulanp'
+
+
+#Safty Nets
+
+
+# do not delete / or prompt if deleting more than 3 files at a time #
+alias rm='rm -I --preserve-root'
+
+# confirmation #
+alias mv='mv -i'
+alias cp='cp -i'
+alias ln='ln -i'
+
+# Parenting changing perms on / #
+alias chown='chown --preserve-root'
+alias chmod='chmod --preserve-root'
+alias chgrp='chgrp --preserve-root'
+
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
+# if user is not root, pass all commands via sudo #
+if [ $UID -ne 0 ]; then
+    alias reboot='sudo reboot'
+    alias update='sudo dnf update -y'
+    alias distro-sync='sudo dnf clean all && sudo dnf update -y'
+fi
+
+# New commands
+
+alias path='echo -e ${PATH//:/\\n}'
+alias now='date +"%T"'
+alias nowtime=now
+alias nowdate='date +"%Y-%m-%d"'
+alias nocomment='grep -Ev '\''^(#|$)'\'''
+# progress bar on file copy. Useful evenlocal.
+alias cpProgress="rsync --progress -ravz"
+# I find it useful when emailing blurbs to people and want to illustrate long timeout in one pass.
+alias ping="time ping"

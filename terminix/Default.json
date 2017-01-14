@@ -1,0 +1,38 @@
+{
+    "child": {
+        "child1": {
+            "child1": {
+                "directory": "\/www\/stats",
+                "height": 516,
+                "profile": "2b7c4080-0ddd-46c5-8f23-563fd3ba789d",
+                "type": "Terminal",
+                "width": 960
+            },
+            "child2": {
+                "directory": "\/www\/stats",
+                "height": 516,
+                "profile": "2b7c4080-0ddd-46c5-8f23-563fd3ba789d",
+                "type": "Terminal",
+                "width": 960
+            },
+            "orientation": 1,
+            "position": 49,
+            "type": "Paned"
+        },
+        "child2": {
+            "directory": "\/www\/stats",
+            "height": 1033,
+            "profile": "2b7c4080-0ddd-46c5-8f23-563fd3ba789d",
+            "type": "Terminal",
+            "width": 959
+        },
+        "orientation": 0,
+        "position": 50,
+        "type": "Paned"
+    },
+    "height": 1033,
+    "name": "Default",
+    "type": "Session",
+    "version": "1.0",
+    "width": 1920
+}

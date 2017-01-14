@@ -1,0 +1,7 @@
+*.7z
+application_state
+ignored_events
+notifications
+login.json
+chrome-*
+.Trash-*
