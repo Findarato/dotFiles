@@ -1,20 +1,20 @@
 [user]
-name = Joseph Harry
-email = findarato@gmail.com
-excludesFile = ~/.gitignore
-editor = nano
+    name = Joseph Harry
+    email = findarato@gmail.com
+    excludesFile = ~/.gitignore
+    editor = nano
 [fetch]
-prune = true
+    prune = true
 [status]
-submoduleSummary = true
+    submoduleSummary = true
 [core]
-editor = gedit
+    editor = atom
 [diff]
-external = git-meld
+    
 [color]
-branch = auto
-diff = auto
-interactive = auto
-status = auto
+    branch = auto
+    diff = auto
+    interactive = auto
+    status = auto
 [web]
-browser = google-chrome
+    browser = google-chrome
