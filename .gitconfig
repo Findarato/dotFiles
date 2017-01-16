@@ -8,7 +8,7 @@
 [status]
     submoduleSummary = true
 [core]
-    editor = atom
+    editor = gedit
 [diff]
 
 [color]
