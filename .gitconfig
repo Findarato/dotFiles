@@ -10,7 +10,7 @@
 [core]
     editor = atom
 [diff]
-    
+
 [color]
     branch = auto
     diff = auto
@@ -18,3 +18,5 @@
     status = auto
 [web]
     browser = google-chrome
+[commit]
+    template = ~/.gitmessage
