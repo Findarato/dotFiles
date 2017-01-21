@@ -11,9 +11,7 @@
 [status]
 	submoduleSummary = true
 [core]
-	editor = gedit
-[diff]
-	external = git-meld
+	editor = nano
 [web]
 	browser = google-chrome
 [gitflow "prefix"]
@@ -22,10 +20,11 @@
 	hotfix = hotfix-
 	support = support-
 	versiontag = v
-
 [color]
 	status = auto
 	diff = auto
 	branch = auto
 	interactive = auto
 	ui = true
+[commit]
+    template = ~/.gitmessage
