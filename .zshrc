@@ -92,4 +92,14 @@ export PATH=~/.npm-global/bin:$PATH
 
 
 source $HOME/.aliases
+DIRECTORY="/mnt/cache/apps"
 
+if [ ! -d $DIRECTORY ]; then
+
+    rm -rf $HOME/.cache/{google-chrome,libgweather,mozilla,shotwell,thumbnails,vivaldi}
+    mkdir -p /mnt/cache/browsers/{google-chrome,mozilla,vivaldi}
+    mkdir -p /mnt/cache/apps/{shotwell,thumbnails,libgweather}
+
+    ln -s /mnt/cache/browsers/{google-chrome,mozilla,vivaldi} $HOME/.cache/
+    ln -s /mnt/cache/apps/{shotwell,thumbnails,libgweather} $HOME/.cache/
+fi
