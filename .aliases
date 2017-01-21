@@ -11,6 +11,11 @@ alias l='ls -CF'
 # I know I am bad
 alias get='git'
 
+
+
+
+
+
 alias dds='dd status=progress'
 
 alias df='df -H'
