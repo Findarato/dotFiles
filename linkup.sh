@@ -10,7 +10,7 @@
 for FILE in .*; do
     if [ $FILE != .git ] && [ $FILE != . ] && [ $FILE != .. ]; then
         # echo "$FILE"
-        echo "Linking Files"
+        echo "Linking Files: $PWD/$FILE ==> $HOME/$FILE"
         rm -f $HOME/$FILE
         ln -s $PWD/$FILE $HOME/$FILE
     fi
