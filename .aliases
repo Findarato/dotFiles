@@ -11,6 +11,7 @@ alias l='ls -CF'
 # I know I am bad
 alias get='git'
 
+alias a='atom .'
 
 
 
