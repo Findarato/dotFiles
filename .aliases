@@ -10,6 +10,8 @@ alias la='ls -A'
 alias l='ls -CF'
 # I know I am bad
 alias get='git'
+alias pa="php artisan"
+
 
 alias dds='dd status=progress'
 
@@ -40,7 +42,6 @@ alias ports='netstat -tulanp'
 
 
 #Safty Nets
-
 
 # do not delete / or prompt if deleting more than 3 files at a time #
 alias rm='rm -I --preserve-root'

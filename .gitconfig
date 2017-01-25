@@ -8,7 +8,7 @@
 [status]
     submoduleSummary = true
 [core]
-    editor = gedit
+    editor = nano
 [diff]
 
 [color]

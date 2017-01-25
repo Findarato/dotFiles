@@ -53,7 +53,6 @@ plugins=(git battery colorize dnf git-prompt emoji)
 
 # User configuration
 
-export PATH="/home/joe/.local/bin:/home/joe/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -71,8 +70,6 @@ fi
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# ssh
-export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -83,13 +80,23 @@ export SSH_KEY_PATH="~/.ssh/dsa_id"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export ANSIBLE_VAULT_PASSWORD_FILE=~/.vault_pass.txt
 
 
 mkdir -p ~/.npm-global
 npm config set prefix '~/.npm-global'
+
+# ssh
+export PATH="/home/joe/.local/bin:/home/joe/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin"
+export SSH_KEY_PATH="~/.ssh/dsa_id"
+export ANSIBLE_VAULT_PASSWORD_FILE=~/.vault_pass.txt
 export PATH=~/.npm-global/bin:$PATH
+export VAGRANT_DEFAULT_PROVIDER=virtualbox
 
 
 source $HOME/.aliases
+
+# Add composer vendor path to the path
+if [ -d "$HOME/.config/composer/vendor/bin" ] ; then
+    PATH="$HOME/.config/composer/vendor/bin:$PATH"
+fi
 
