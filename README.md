@@ -2,6 +2,8 @@
 
 This repository currently contains the following dotFiles
 
+Items Included
+
 - .aliases
 - .bashrc
 - .dircolors
@@ -9,6 +11,7 @@ This repository currently contains the following dotFiles
 - .gitignore
 - .gitmessage
 - .gitmodules
+- .powerlevel9k
 - .zprofile
 - .zshrc
 - .ansible.cfg
@@ -25,3 +28,14 @@ for FILE in .*; do
     fi
 done
 ```
+
+## External References and projects being used.
+
+These are projects that are being used that you need to self pull. I am not currently adding them as submodules because lets face it submodules are hard.
+
+:octocat: [gabrielelana/awesome-terminal-fonts][e5317611]
+
+:octocat: [bhilburn/powerlevel9k][9a267dc7]
+
+[9a267dc7]: https://github.com/bhilburn/powerlevel9k "Github"
+[e5317611]: https://github.com/gabrielelana/awesome-terminal-fonts "Github"
