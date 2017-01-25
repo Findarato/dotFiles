@@ -2,7 +2,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
+# Look in $HOME/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 
@@ -17,8 +17,13 @@ if [ $DOWNLOADFROMGIT ]; then
         # Only download / clone the repo if the folder does not exsist
         /usr/bin/git clone --depth 1 https://github.com/bhilburn/powerlevel9k.git $GITDOWNLOADLOACTION
     fi
+
     ZSH_THEME="powerlevel9k/powerlevel9k"
-    source .powerlevel9k
+
+    if [ ! -f $HOME/.powerlevel9k ]; then
+        echo '#DISABLE_AUTO_TITLE="true"' > $HOME/.powerlevel9k
+    fi
+    source $HOME/.powerlevel9k
 else
     # Setting the default theme
     ZSH_THEME="agnoster"
@@ -64,11 +69,11 @@ COMPLETION_WAITING_DOTS="true"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Which plugins would you like to load? (plugins can be found in $HOME/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to $HOME/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git battery colorize dnf git-prompt emoji)
+plugins=(git battery colorize dnf git-prompt)
 
 # User configuration
 
@@ -96,20 +101,20 @@ fi
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# alias zshconfig="mate $HOME/.zshrc"
+# alias ohmyzsh="mate $HOME/.oh-my-zsh"
 
 
 
 
-mkdir -p ~/.npm-global
-npm config set prefix '~/.npm-global'
+mkdir -p $HOME/.npm-global
+npm config set prefix "$HOME/.npm-global"
 
 # ssh
-export PATH="/home/joe/.local/bin:/home/joe/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin"
-export SSH_KEY_PATH="~/.ssh/dsa_id"
-export ANSIBLE_VAULT_PASSWORD_FILE=~/.vault_pass.txt
-export PATH=~/.npm-global/bin:$PATH
+export PATH="$HOME/.local/bin:$HOME/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin"
+export SSH_KEY_PATH="$HOME/.ssh/dsa_id"
+export ANSIBLE_VAULT_PASSWORD_FILE=$HOME/.vault_pass.txt
+export PATH=$HOME/.npm-global/bin:$PATH
 export VAGRANT_DEFAULT_PROVIDER=virtualbox
 
 source $HOME/.aliases
