@@ -12,6 +12,7 @@ alias l='ls -CF'
 alias get='git'
 alias pa="php artisan"
 
+alias a='atom .'
 
 alias dds='dd status=progress'
 

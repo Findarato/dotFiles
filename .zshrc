@@ -1,11 +1,30 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/joe/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
+
+
+
+#.oh-my-zsh/custom/themes/powerlevel9k
+
+DOWNLOADFROMGIT=true
+GITDOWNLOADLOACTION="$HOME/.oh-my-zsh/custom/themes/powerlevel9k"
+if [ $DOWNLOADFROMGIT ]; then
+    if [ ! -d $GITDOWNLOADLOACTION ]; then
+        # Only download / clone the repo if the folder does not exsist
+        /usr/bin/git clone --depth 1 https://github.com/bhilburn/powerlevel9k.git $GITDOWNLOADLOACTION
+    fi
+    ZSH_THEME="powerlevel9k/powerlevel9k"
+    source .powerlevel9k
+else
+    # Setting the default theme
+    ZSH_THEME="agnoster"
+fi
+
+
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -82,6 +101,7 @@ fi
 
 
 
+
 mkdir -p ~/.npm-global
 npm config set prefix '~/.npm-global'
 
@@ -92,11 +112,22 @@ export ANSIBLE_VAULT_PASSWORD_FILE=~/.vault_pass.txt
 export PATH=~/.npm-global/bin:$PATH
 export VAGRANT_DEFAULT_PROVIDER=virtualbox
 
-
 source $HOME/.aliases
+DIRECTORY="/mnt/cache/apps"
+
+if [ ! -d $DIRECTORY ]; then
+
+    rm -rf $HOME/.cache/{google-chrome,libgweather,mozilla,shotwell,thumbnails,vivaldi}
+    mkdir -p /mnt/cache/browsers/{google-chrome,mozilla,vivaldi}
+    mkdir -p /mnt/cache/apps/{shotwell,thumbnails,libgweather}
+
+    ln -s /mnt/cache/browsers/{google-chrome,mozilla,vivaldi} $HOME/.cache/
+    ln -s /mnt/cache/apps/{shotwell,thumbnails,libgweather} $HOME/.cache/
+fi
 
 # Add composer vendor path to the path
 if [ -d "$HOME/.config/composer/vendor/bin" ] ; then
     PATH="$HOME/.config/composer/vendor/bin:$PATH"
 fi
 
+DEFAULT_USER=joe

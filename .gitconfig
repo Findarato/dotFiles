@@ -1,12 +1,15 @@
 [user]
-    name = Joseph Harry
-    email = findarato@gmail.com
-    excludesFile = ~/.gitignore
-    editor = nano
+	name = Joseph Harry
+	email = findarato@gmail.com
+	excludesFile = ~/.gitignore
+	editor = nano
+[github]
+    user = Findarato /* GitHub User Name */
+    token = /* GitHub Token https://github.com/account#admin_bucket */
 [fetch]
-    prune = true
+	prune = true
 [status]
-    submoduleSummary = true
+	submoduleSummary = true
 [core]
     editor = nano
 [diff]
@@ -16,7 +19,20 @@
     diff = auto
     interactive = auto
     status = auto
+	editor = nano
 [web]
-    browser = google-chrome
+	browser = google-chrome
+[gitflow "prefix"]
+	feature = feature-
+	release = release-
+	hotfix = hotfix-
+	support = support-
+	versiontag = v
+[color]
+	status = auto
+	diff = auto
+	branch = auto
+	interactive = auto
+	ui = true
 [commit]
     template = ~/.gitmessage
