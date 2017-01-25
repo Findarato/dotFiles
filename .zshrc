@@ -29,6 +29,8 @@ else
     ZSH_THEME="agnoster"
 fi
 
+    source $HOME/.functions
+
 
 
 # Uncomment the following line to use case-sensitive completion.
