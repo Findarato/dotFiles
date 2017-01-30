@@ -87,7 +87,7 @@ source "$ZSH/oh-my-zsh.sh"
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
+if [[ -n "$SSH_CONNECTION" ]]; then
     export EDITOR='nano'
 else
     export EDITOR='nano'
@@ -113,8 +113,8 @@ npm config set prefix "$HOME/.npm-global"
 # ssh
 export PATH="$HOME/.local/bin:$HOME/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin"
 export SSH_KEY_PATH="$HOME/.ssh/dsa_id"
-export ANSIBLE_VAULT_PASSWORD_FILE=$HOME/.vault_pass.txt
-export PATH=$HOME/.npm-global/bin:$PATH
+export ANSIBLE_VAULT_PASSWORD_FILE="$HOME/.vault_pass.txt"
+export PATH="$HOME/.npm-global/bin:$PATH"
 export VAGRANT_DEFAULT_PROVIDER=virtualbox
 # Add composer vendor path to the path
 if [ -d "$HOME/.config/composer/vendor/bin" ] ; then
@@ -134,3 +134,4 @@ if [ ! -d $DIRECTORY ]; then
 fi
 # shellcheck disable=SC2034
 DEFAULT_USER=joe
+export PATH=$PATH:/opt/GitKraken

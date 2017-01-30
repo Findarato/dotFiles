@@ -1,4 +1,5 @@
 # dotFiles
+[![Build Status](https://travis-ci.org/Findarato/dotFiles.svg?branch=master)](https://travis-ci.org/Findarato/dotFiles)
 
 This repository currently contains the following dotFiles
 
