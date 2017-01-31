@@ -18,7 +18,7 @@ if [ $DOWNLOADFROMGIT ]; then
         /usr/bin/git clone --depth 1 https://github.com/bhilburn/powerlevel9k.git $GITDOWNLOADLOACTION
     fi
     ZSH_THEME="powerlevel9k/powerlevel9k"
-    source .powerlevel9k
+    source $HOME/.powerlevel9k
 else
     # Setting the default theme
     ZSH_THEME="agnoster"
