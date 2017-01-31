@@ -3,28 +3,39 @@
 	email = findarato@gmail.com
 	excludesFile = ~/.gitignore
 	editor = nano
+	signingkey = 87CBAA79D6C5CB1E
 [github]
     user = Findarato /* GitHub User Name */
-    token = /* GitHub Token https://github.com/account#admin_bucket */
 [fetch]
 	prune = true
 [status]
 	submoduleSummary = true
 [core]
-	editor = nano
-[web]
-	browser = google-chrome
-[gitflow "prefix"]
-	feature = feature-
-	release = release-
-	hotfix = hotfix-
-	support = support-
-	versiontag = v
+    editor = nano
+[diff]
+
 [color]
-	status = auto
-	diff = auto
-	branch = auto
-	interactive = auto
-	ui = true
+    branch = auto
+    diff = auto
+    interactive = auto
+    status = auto
+    editor = nano
+[web]
+    browser = google-chrome
+[gitflow "prefix"]
+    feature = feature-
+    release = release-
+    hotfix = hotfix-
+    support = support-
+    versiontag = v
+[color]
+    status = auto
+    diff = auto
+    branch = auto
+    interactive = auto
+    ui = true
 [commit]
     template = ~/.gitmessage
+	gpgsign = true
+[gpg]
+    program = gpg2

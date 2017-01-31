@@ -1,6 +1,9 @@
 # dotFiles
+[![Build Status](https://travis-ci.org/Findarato/dotFiles.svg?branch=master)](https://travis-ci.org/Findarato/dotFiles)
 
 This repository currently contains the following dotFiles
+
+Items Included
 
 - .aliases
 - .bashrc
@@ -9,6 +12,7 @@ This repository currently contains the following dotFiles
 - .gitignore
 - .gitmessage
 - .gitmodules
+- .powerlevel9k
 - .zprofile
 - .zshrc
 - .ansible.cfg
@@ -25,3 +29,21 @@ for FILE in .*; do
     fi
 done
 ```
+
+Current Screenshot of what the terminal will look like
+
+![Screen Shot in terminix](screenshot.png)
+
+## External References and projects being used.
+
+These are projects that are being used that you need to self pull. I am not currently adding them as submodules because lets face it submodules are hard.
+
+:octocat: [robbyrussell/oh-my-zsh][ad5c686c]
+
+:octocat: [gabrielelana/awesome-terminal-fonts][e5317611]
+
+:octocat: [bhilburn/powerlevel9k][9a267dc7]
+
+[9a267dc7]: https://github.com/bhilburn/powerlevel9k "Github"
+[ad5c686c]: https://github.com/robbyrussell/oh-my-zsh "Github"
+[e5317611]: https://github.com/gabrielelana/awesome-terminal-fonts "Github"
