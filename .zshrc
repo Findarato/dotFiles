@@ -115,6 +115,7 @@ export PATH="$HOME/.local/bin:$HOME/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/us
 export SSH_KEY_PATH="$HOME/.ssh/dsa_id"
 export ANSIBLE_VAULT_PASSWORD_FILE="$HOME/.vault_pass.txt"
 export PATH="$HOME/.npm-global/bin:$PATH"
+export PATH="/sbin/:$PATH"
 export VAGRANT_DEFAULT_PROVIDER=virtualbox
 # Add composer vendor path to the path
 if [ -d "$HOME/.config/composer/vendor/bin" ] ; then
