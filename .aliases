@@ -29,9 +29,12 @@ alias l='ls -CF'
 # I know I am bad
 alias pa="php artisan"
 
-alias a='atom .'
 
-alias dds='dd status=progress'
+#Web stuff
+alias a='atom .'
+alias npmWatch='npm run watch'
+
+#alias dds='dd status=progress'
 
 alias df='df -H'
 alias du='du -ch'
@@ -113,3 +116,4 @@ alias pubkey="more ~/.ssh/remote.pub | xclip -selection clipboard | echo '=> Pub
 
 # Pipe my private key to my clipboard.
 alias prikey="more ~/.ssh/remote | xclip -selection clipboard | echo '=> Private key copied to pasteboard.'"
+

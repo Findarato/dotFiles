@@ -135,3 +135,5 @@ fi
 # shellcheck disable=SC2034
 DEFAULT_USER=joe
 export PATH=$PATH:/opt/GitKraken
+export PATH=$PATH:/opt/GitKraken
+export PATH=$PATH:/opt/GitKraken
