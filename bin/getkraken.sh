@@ -3,7 +3,6 @@
 # https://gist.github.com/pythoninthegrass/8adf67329922bbfca606523eb807c6bb
 
 
-
 #Clean up
 rm -f gitkraken-amd64.tar.gz
 rm -rf ./gitkraken/
@@ -15,15 +14,16 @@ wget https://release.gitkraken.com/linux/gitkraken-amd64.tar.gz
 tar -xvzf gitkraken-amd64.tar.gz
 
 # Move the Kraken
-sudo rsync -va --delete-after $PWD/gitkraken/ /opt/GitKraken/
+sudo rsync -va --delete-after ./gitkraken/ /opt/GitKraken/
+
 
 #Clean up
 rm -f gitkraken-amd64.tar.gz
 rm -rf ./gitkraken/
 
 # Add the Kraken to PATH
-echo "export PATH=\$PATH:/opt/GitKraken" >> ~/.zshrc
-source ~/.zshrc
+echo "export PATH=\$PATH:/opt/GitKraken" >> ~/.bashrc
+source ~/.bashrc
 
 ## Cinnamon Menu
 # Right click Menu > Configure... > Open the menu editor > Applications

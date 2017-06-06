@@ -1,41 +1,20 @@
 [user]
-	name = Joseph Harry
-	email = findarato@gmail.com
-	excludesFile = ~/.gitignore
-	editor = nano
-	signingkey = 87CBAA79D6C5CB1E
-[github]
-    user = Findarato /* GitHub User Name */
+name = Joseph Harry
+email = findarato@gmail.com
+excludesFile = ~/.gitignore
+editor = nano
 [fetch]
-	prune = true
+prune = true
 [status]
-	submoduleSummary = true
+submoduleSummary = true
 [core]
-    editor = nano
+editor = gedit
 [diff]
-
+external = git-meld
 [color]
-    branch = auto
-    diff = auto
-    interactive = auto
-    status = auto
-    editor = nano
+branch = auto
+diff = auto
+interactive = auto
+status = auto
 [web]
-    browser = google-chrome
-[gitflow "prefix"]
-    feature = feature-
-    release = release-
-    hotfix = hotfix-
-    support = support-
-    versiontag = v
-[color]
-    status = auto
-    diff = auto
-    branch = auto
-    interactive = auto
-    ui = true
-[commit]
-    template = ~/.gitmessage
-	gpgsign = true
-[gpg]
-    program = gpg2
+browser = google-chrome
