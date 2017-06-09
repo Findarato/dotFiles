@@ -1,28 +1,10 @@
 # Git Aliases
-alias get='git'
 alias gs="git status"
 alias ga="git add --all"
 alias gc="git commit -s"
 alias gp="git pull"
 alias gpp="git pull; git push;git push --tags"
 alias gl="git log --pretty=full --graph --decorate=full"
-
-alias webapps="cd $HOME/Documents/src/webapps"
-
-
-# Detect which `ls` flavor is in use
-if ls --color > /dev/null 2>&1; then # GNU `ls`
-	colorflag="--color"
-else # OS X `ls`
-	colorflag="-G"
-fi
-
-# List all files colorized in long format
-# shellcheck disable=SC2139
-alias l="ls -lF ${colorflag}"
-
-alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
-
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
@@ -33,7 +15,6 @@ alias pa="php artisan"
 #Web stuff
 alias a='atom .'
 alias npmWatch='npm run watch'
-
 #alias dds='dd status=progress'
 
 alias df='df -H'
@@ -63,6 +44,7 @@ alias ports='netstat -tulanp'
 
 
 #Safty Nets
+
 
 # do not delete / or prompt if deleting more than 3 files at a time #
 alias rm='rm -I --preserve-root'
