@@ -9,7 +9,7 @@ prune = true
 [status]
 submoduleSummary = true
 [core]
-editor = gedit
+editor = nano
 [diff]
 external = git-meld
 [color]
