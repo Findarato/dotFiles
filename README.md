@@ -1,5 +1,4 @@
 # dotFiles
-
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/84d747ca9d8e4421afe9bef2055c40f2)](https://www.codacy.com/app/Findarato/dotFiles?utm_source=github.com&utm_medium=referral&utm_content=Findarato/dotFiles&utm_campaign=badger)
 [![Build Status](https://travis-ci.org/Findarato/dotFiles.svg?branch=master)](https://travis-ci.org/Findarato/dotFiles)
 
