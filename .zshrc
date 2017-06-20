@@ -1,11 +1,29 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/joe/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
+
+
+
+#.oh-my-zsh/custom/themes/powerlevel9k
+
+DOWNLOADFROMGIT=true
+GITDOWNLOADLOACTION="$HOME/.oh-my-zsh/custom/themes/powerlevel9k"
+if [ $DOWNLOADFROMGIT ]; then
+    if [ ! -d $GITDOWNLOADLOACTION ]; then
+        # Only download / clone the repo if the folder does not exsist
+        /usr/bin/git clone --depth 1 https://github.com/bhilburn/powerlevel9k.git $GITDOWNLOADLOACTION
+    fi
+    ZSH_THEME="powerlevel9k/powerlevel9k"
+else
+    # Setting the default theme
+    ZSH_THEME="agnoster"
+fi
+
+
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -15,7 +33,7 @@ ZSH_THEME="agnoster"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-DISABLE_AUTO_UPDATE="true"
+# DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 export UPDATE_ZSH_DAYS=13
@@ -27,7 +45,7 @@ export UPDATE_ZSH_DAYS=13
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
@@ -86,21 +104,24 @@ export SSH_KEY_PATH="~/.ssh/dsa_id"
 export ANSIBLE_VAULT_PASSWORD_FILE=~/.vault_pass.txt
 
 
+
 mkdir -p ~/.npm-global
 npm config set prefix '~/.npm-global'
 export PATH=~/.npm-global/bin:$PATH
 
-
 source $HOME/.aliases
+APPS="/mnt/ramdisk/apps"
+BROWSERS="/mnt/ramdisk/browsers"
 
-<<<<<<< HEAD
-    ln -s /mnt/cache/browsers/{google-chrome,mozilla,vivaldi} "$HOME/.cache/"
-    ln -s /mnt/cache/apps/{shotwell,thumbnails,libgweather} "$HOME/.cache/"
+if [ ! -d $APPS ]; then
+
+    rm -rf $HOME/.cache/{google-chrome,libgweather,mozilla,shotwell,thumbnails,vivaldi}
+    mkdir -p $BROWSERS/{google-chrome,mozilla,vivaldi}
+    mkdir -p $APPS/{shotwell,thumbnails,libgweather}
+
+    ln -s $APPS/{google-chrome,mozilla,vivaldi} $HOME/.cache/
+    ln -s $BROWSERS/{shotwell,thumbnails,libgweather} $HOME/.cache/
 fi
-# shellcheck disable=SC2034
+
 DEFAULT_USER=joe
-export PATH=$PATH:/opt/GitKraken
-export PATH=$PATH:/opt/GitKraken
-export PATH=$PATH:/opt/GitKraken
-=======
->>>>>>> 7f25d129095cf334f1d624ffb16531b43ff126ac
+
