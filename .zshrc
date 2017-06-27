@@ -104,23 +104,26 @@ export SSH_KEY_PATH="~/.ssh/dsa_id"
 export ANSIBLE_VAULT_PASSWORD_FILE=~/.vault_pass.txt
 
 
+if [ hash npm 2>/dev/null  ]; then
+    mkdir -p ~/.npm-global
+    npm config set prefix '~/.npm-global'
+    export PATH=~/.npm-global/bin:$PATH
+fi
 
-mkdir -p ~/.npm-global
-npm config set prefix '~/.npm-global'
-export PATH=~/.npm-global/bin:$PATH
+source "$HOME/.aliases"
+DIRPATH="/mnt/ramdisk"
+APPS="$DIRPATH/apps"
+BROWSERS="$DIRPATH/browsers"
 
-source $HOME/.aliases
-APPS="/mnt/ramdisk/apps"
-BROWSERS="/mnt/ramdisk/browsers"
 
-if [ ! -d $APPS ]; then
-
-    rm -rf $HOME/.cache/{google-chrome,libgweather,mozilla,shotwell,thumbnails,vivaldi}
-    mkdir -p $BROWSERS/{google-chrome,mozilla,vivaldi}
-    mkdir -p $APPS/{shotwell,thumbnails,libgweather}
-
-    ln -s $APPS/{google-chrome,mozilla,vivaldi} $HOME/.cache/
-    ln -s $BROWSERS/{shotwell,thumbnails,libgweather} $HOME/.cache/
+if [ -d "$DIRPATH" ]; then
+    if [ ! -d "$APPS" ]; then
+        rm -rf $HOME/.cache/{google-chrome,libgweather,mozilla,shotwell,thumbnails,vivaldi}
+        mkdir -p $BROWSERS/{google-chrome,mozilla,vivaldi}
+        mkdir -p $APPS/{shotwell,thumbnails,libgweather}
+        ln -s $APPS/{google-chrome,mozilla,vivaldi} $HOME/.cache/
+        ln -s $BROWSERS/{shotwell,thumbnails,libgweather} $HOME/.cache/
+   fi
 fi
 
 DEFAULT_USER=joe
