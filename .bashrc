@@ -76,3 +76,4 @@ export VAGRANT_DEFAULT_PROVIDER=virtualbox
 #        source /etc/profile.d/vte.sh
 #fi
 export PATH=$PATH:/opt/GitKraken
+export PATH=$PATH:/opt/GitKraken
