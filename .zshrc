@@ -67,7 +67,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git battery colorize dnf git-prompt emoji)
+plugins=(git colorize dnf git-prompt)
 
 # User configuration
 
@@ -90,7 +90,7 @@ fi
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-export SSH_KEY_PATH="~/.ssh/dsa_id"
+export SSH_KEY_PATH="~/.ssh/id_rsa"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -113,15 +113,16 @@ source $HOME/.aliases
 APPS="/mnt/ramdisk/apps"
 BROWSERS="/mnt/ramdisk/browsers"
 
-if [ ! -d $APPS ]; then
+#if [ ! -d $APPS ]; then
+#
+#    rm -rf $HOME/.cache/{google-chrome,libgweather,mozilla,shotwell,thumbnails,vivaldi}
+#    mkdir -p $BROWSERS/{google-chrome,mozilla,vivaldi}
+#    mkdir -p $APPS/{shotwell,thumbnails,libgweather}
+#
+#    ln -s $APPS/{google-chrome,mozilla,vivaldi} $HOME/.cache/
+#    ln -s $BROWSERS/{shotwell,thumbnails,libgweather} $HOME/.cache/
+#fi
 
-    rm -rf $HOME/.cache/{google-chrome,libgweather,mozilla,shotwell,thumbnails,vivaldi}
-    mkdir -p $BROWSERS/{google-chrome,mozilla,vivaldi}
-    mkdir -p $APPS/{shotwell,thumbnails,libgweather}
 
-    ln -s $APPS/{google-chrome,mozilla,vivaldi} $HOME/.cache/
-    ln -s $BROWSERS/{shotwell,thumbnails,libgweather} $HOME/.cache/
-fi
-
-DEFAULT_USER=joe
+source $HOME/.powerlevel9k
 

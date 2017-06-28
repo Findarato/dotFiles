@@ -3,7 +3,7 @@ name = Joseph Harry
 email = findarato@gmail.com
 excludesFile = ~/.gitignore
 editor = nano
-	signingkey = 87CBAA79D6C5CB1E
+signingkey = 87CBAA79D6C5CB1E
 [fetch]
 prune = true
 [status]
@@ -19,3 +19,5 @@ interactive = auto
 status = auto
 [web]
 browser = google-chrome
+[commit]
+template = ~/.gitmessage
