@@ -21,14 +21,6 @@ function run() {
     done
 }
 
-
-
-
-if [ -f ~/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh ]; then
-    source ~/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
-fi
-
-
 #if [[ -n "$STY" ]] && [[ -n "$TMUX" ]]; #we are in a screen or tmux session
 #then
 
@@ -54,14 +46,10 @@ fi
 
 GDK_CORE_DEVICE_EVENTS=1
 
-
-source /etc/bash_powerline.sh
-
 #######Exports######
 
 # Current running kernel on Fedora, CentOS 7/6 and Red Hat (RHEL) 7/6 ##
 KERN_DIR=/usr/src/kernels/`uname -r`
-
 
 ## Export KERN_DIR ##
 export KERN_DIR
@@ -75,5 +63,4 @@ export VAGRANT_DEFAULT_PROVIDER=virtualbox
 #if [[ $TERMINIX_ID ]]; then
 #        source /etc/profile.d/vte.sh
 #fi
-export PATH=$PATH:/opt/GitKraken
 export PATH=$PATH:/opt/GitKraken
