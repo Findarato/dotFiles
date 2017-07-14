@@ -1,0 +1,3 @@
+[submodule "Tilix-Themes"]
+	path = Tilix-Themes
+	url = git@github.com:storm119/Tilix-Themes.git
