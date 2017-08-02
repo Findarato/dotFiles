@@ -94,11 +94,11 @@ BROWSERS="$DIRPATH/browsers"
 
 if [ -d "$DIRPATH" ]; then
     if [ ! -d "$APPS" ]; then
-        rm -rf $HOME/.cache/{google-chrome,libgweather,mozilla,shotwell,thumbnails,vivaldi}
-        mkdir -p $BROWSERS/{google-chrome,mozilla,vivaldi}
+        rm -rf $HOME/.cache/{google-chrome,libgweather,mozilla,shotwell,thumbnails,vivaldi,google-chrome-beta}
+        mkdir -p $BROWSERS/{google-chrome,mozilla,vivaldi,google-chrome-beta}
         mkdir -p $APPS/{shotwell,thumbnails,libgweather}
-        ln -s $APPS/{google-chrome,mozilla,vivaldi} $HOME/.cache/
-        ln -s $BROWSERS/{shotwell,thumbnails,libgweather} $HOME/.cache/
+        ln -s $BROWSERS/{google-chrome,mozilla,vivaldi,google-chrome-beta} $HOME/.cache/
+        ln -s $APPS/{shotwell,thumbnails,libgweather} $HOME/.cache/
    fi
 fi
 
