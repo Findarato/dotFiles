@@ -1,6 +1,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+mkdir -p "$HOME/.oh-my-zsh/custom/themes/"
 DOWNLOADFROMGIT=true
 GITDOWNLOADLOACTION="$HOME/.oh-my-zsh/custom/themes/powerlevel9k"
 if [ $DOWNLOADFROMGIT ]; then
