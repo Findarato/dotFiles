@@ -1,23 +1,25 @@
 [user]
-name = Joseph Harry
-email = findarato@gmail.com
-excludesFile = ~/.gitignore
-editor = nano
-signingkey = 87CBAA79D6C5CB1E
+    name = Joseph Harry
+    email = findarato@gmail.com
+    excludesFile = ~/.gitignore
+    editor = nano
+    signingkey = 87CBAA79D6C5CB1E
 [fetch]
-prune = true
+    prune = true
 [status]
-submoduleSummary = true
+    submoduleSummary = true
 [core]
-editor = nano
+    editor = nano
 [diff]
-external = git-meld
+
 [color]
-branch = auto
-diff = auto
-interactive = auto
-status = auto
+    branch = auto
+    diff = auto
+    interactive = auto
+    status = auto
 [web]
-browser = google-chrome
+    browser = google-chrome
 [commit]
-template = ~/.gitmessage
+    template = ~/.gitmessage
+[gpg]
+    program = gpg2
