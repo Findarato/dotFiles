@@ -3,7 +3,7 @@
     email = findarato@gmail.com
     excludesFile = ~/.gitignore
     editor = nano
-    signingkey = 3AA5C34371567BD2
+    signingkey = 87CBAA79D6C5CB1E
 [fetch]
     prune = true
 [status]
@@ -21,4 +21,4 @@
     template = ~/.gitmessage
     gpgsign = true
 [gpg]
-	program = /usr/bin/gpg2
+    program = /usr/bin/gpg
