@@ -2,6 +2,9 @@ language: haskell
 
 sudo: required
 
+git:
+  submodules: false
+
 addons:
   apt:
     packages:
@@ -15,10 +18,8 @@ ghc:
 
 install:
   - cabal install shellcheck
-  
 script:
   - ./test.sh
-
 
 notifications:
     email: true

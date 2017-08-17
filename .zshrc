@@ -105,3 +105,4 @@ fi
 
 DEFAULT_USER=$USER
 
+export GPG_TTY=$(tty)
