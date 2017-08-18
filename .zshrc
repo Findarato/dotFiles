@@ -92,6 +92,9 @@ DIRPATH="/mnt/ramdisk"
 APPS="$DIRPATH/apps"
 BROWSERS="$DIRPATH/browsers"
 
+#if [ -d "$HOME/.wallpapers/" ]; then
+#     . "$HOME/.wallpapers/wp_init.sh" >/dev/null 2>&1
+#fi
 
 if [ -d "$DIRPATH" ]; then
     if [ ! -d "$APPS" ]; then
