@@ -89,7 +89,7 @@ alias nowtime=now
 alias nowdate='date +"%Y-%m-%d"'
 alias nocomment='grep -Ev '\''^(#|$)'\'''
 # progress bar on file copy. Useful evenlocal.
-alias cpProgress="rsync --progress -ravz"
+alias cpProgress="rsync -aHAXxv --numeric-ids --progress"
 
 # I find it useful when emailing blurbs to people and want to illustrate long timeout in one pass.
 alias ping="time ping"
