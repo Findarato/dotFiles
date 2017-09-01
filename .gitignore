@@ -6,3 +6,4 @@ login.json
 chrome-*
 .Trash-*
 chromedriver
+.sync*

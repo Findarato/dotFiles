@@ -35,7 +35,7 @@ export UPDATE_ZSH_DAYS=13
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
@@ -88,7 +88,7 @@ if [ hash npm 2>/dev/null  ]; then
 fi
 
 source "$HOME/.aliases"
-DIRPATH="/mnt/ramdisk"
+DIRPATH="/mnt/cache"
 APPS="$DIRPATH/apps"
 BROWSERS="$DIRPATH/browsers"
 
@@ -98,10 +98,10 @@ BROWSERS="$DIRPATH/browsers"
 
 if [ -d "$DIRPATH" ]; then
     if [ ! -d "$APPS" ]; then
-        rm -rf $HOME/.cache/{google-chrome,libgweather,mozilla,shotwell,thumbnails,vivaldi,google-chrome-beta}
-        mkdir -p $BROWSERS/{google-chrome,mozilla,vivaldi,google-chrome-beta}
+        rm -rf $HOME/.cache/{google-chrome,libgweather,mozilla,shotwell,thumbnails,vivaldi,google-chrome-beta,chromium}
+        mkdir -p $BROWSERS/{google-chrome,mozilla,vivaldi,google-chrome-beta,chromium}
         mkdir -p $APPS/{shotwell,thumbnails,libgweather}
-        ln -s $BROWSERS/{google-chrome,mozilla,vivaldi,google-chrome-beta} $HOME/.cache/
+        ln -s $BROWSERS/{google-chrome,mozilla,vivaldi,google-chrome-beta,chromium} $HOME/.cache/
         ln -s $APPS/{shotwell,thumbnails,libgweather} $HOME/.cache/
    fi
 fi
@@ -111,5 +111,5 @@ if [ -d "${HOME}/.local/bin/" ]; then
 fi
 
 DEFAULT_USER=$USER
-
+source "$HOME/.powerlevel9k"
 export GPG_TTY=$(tty)
