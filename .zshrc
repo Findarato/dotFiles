@@ -62,6 +62,13 @@ export PATH="/home/joe/.local/bin:/home/joe/bin:/usr/lib64/qt-3.3/bin:/usr/local
 
 source $ZSH/oh-my-zsh.sh
 
+
+source "$HOME/.local/share/fonts/devicons-regular.sh"
+source "$HOME/.local/share/fonts/fontawesome-regular.sh"
+source "$HOME/.local/share/fonts/octicons-regular.sh"
+source "$HOME/.local/share/fonts/pomicons-regular.sh"
+
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
