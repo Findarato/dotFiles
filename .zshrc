@@ -10,6 +10,7 @@ if [ $DOWNLOADFROMGIT ]; then
         /usr/bin/git clone --depth 1 https://github.com/bhilburn/powerlevel9k.git $GITDOWNLOADLOACTION
     fi
     ZSH_THEME="powerlevel9k/powerlevel9k"
+    source "$HOME/.powerlevel9k"
 else
     # Setting the default theme
     ZSH_THEME="agnoster"
@@ -63,10 +64,10 @@ export PATH="/home/joe/.local/bin:/home/joe/bin:/usr/lib64/qt-3.3/bin:/usr/local
 source $ZSH/oh-my-zsh.sh
 
 
-#source "$HOME/.local/share/fonts/devicons-regular.sh"
-#source "$HOME/.local/share/fonts/fontawesome-regular.sh"
-#source "$HOME/.local/share/fonts/octicons-regular.sh"
-#source "$HOME/.local/share/fonts/pomicons-regular.sh"
+source "$HOME/.local/share/fonts/devicons-regular.sh"
+source "$HOME/.local/share/fonts/fontawesome-regular.sh"
+source "$HOME/.local/share/fonts/octicons-regular.sh"
+source "$HOME/.local/share/fonts/pomicons-regular.sh"
 
 
 # You may need to manually set your language environment
@@ -118,5 +119,4 @@ if [ -d "${HOME}/.local/bin/" ]; then
 fi
 
 DEFAULT_USER=$USER
-source "$HOME/.powerlevel9k"
 export GPG_TTY=$(tty)
