@@ -95,7 +95,7 @@ alias cpProgress="rsync -aHAXxvu --numeric-ids --progress"
 alias ping="time ping"
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
-
+alias strongPass='head -c $(shuf -i 32-40 -n 1) /dev/urandom | base64 | xclip -selection clipboard'
 
 
 # Pipe my public key to my clipboard.
