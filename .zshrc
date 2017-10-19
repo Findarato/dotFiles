@@ -117,5 +117,5 @@ if [ -d "${HOME}/.local/bin/" ]; then
     PATH="${PATH}:${HOME}/.local/bin/"
 fi
 
-DEFAULT_USER=$USER
+DEFAULT_USER=joe
 export GPG_TTY=$(tty)
