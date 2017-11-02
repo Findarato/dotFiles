@@ -97,6 +97,8 @@ alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 alias strongPass='head -c $(shuf -i 32-40 -n 1) /dev/urandom | base64 | xclip -selection clipboard'
 
+# Lets make sure we are building fast
+alias make="make -j8"
 
 # Pipe my public key to my clipboard.
 alias pubkey="more ~/.ssh/remote.pub | xclip -selection clipboard | echo '=> Public key copied to pasteboard.'"
