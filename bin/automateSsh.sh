@@ -26,12 +26,12 @@ else
  REMOTEUSER="$1"
 fi
 
-if [ -f /home/$LOGNAME/.ssh/remote.pub ];
+if [ -f /home/$LOGNAME/.ssh/ansible.pub ];
 then
   echo "Key exsists lets push it to $REMOTEUSER@$REMOTEHOST"
-  ssh-copy-id -i /home/$LOGNAME/.ssh/remote.pub "$REMOTEUSER@$REMOTEHOST"
+  ssh-copy-id -i /home/$LOGNAME/.ssh/ansible.pub "$REMOTEUSER@$REMOTEHOST"
 else
   echo "need to make remote key for $REMOTEUSER@$REMOTEHOST"
-  ssh-keygen -t rsa -b 4096 -f /home/$LOGNAME/.ssh/remote
-  ssh-copy-id -i /home/$LOGNAME/.ssh/remote.pub "$REMOTEUSER@$REMOTEHOST"
+  ssh-keygen -t rsa -b 4096 -f /home/$LOGNAME/.ssh/ansible
+  ssh-copy-id -i /home/$LOGNAME/.ssh/ansible.pub "$REMOTEUSER@$REMOTEHOST"
 fi

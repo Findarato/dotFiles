@@ -39,7 +39,7 @@ export ANSIBLE_NOCOWS=1
 # Ansible aliases.
 alias an='ansible'
 alias ap='ansible-playbook'
-alias agi='ansible-galaxy install -r requirements.yml'
+alias agi='ansible-galaxy install -r'
 
 # Network
 alias ping='ping -c 5'
@@ -100,6 +100,8 @@ alias strongPass='head -c $(shuf -i 32-40 -n 1) /dev/urandom | base64 | xclip -s
 
 # Pipe my public key to my clipboard.
 alias pubkey="more ~/.ssh/remote.pub | xclip -selection clipboard | echo '=> Public key copied to pasteboard.'"
+
+alias ansiblepubkey="more ~/.ssh/ansible.pub | xclip -selection clipboard | echo '=> Ansible Public key copied to pasteboard.'"
 
 # Pipe my private key to my clipboard.
 alias prikey="more ~/.ssh/remote | xclip -selection clipboard | echo '=> Private key copied to pasteboard.'"
