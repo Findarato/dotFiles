@@ -113,8 +113,15 @@ if [ -d "$DIRPATH" ]; then
    fi
 fi
 
+
+
 if [ -d "${HOME}/.local/bin/" ]; then
     PATH="${PATH}:${HOME}/.local/bin/"
+fi
+
+# Add support for etcher
+if [ -d "/opt/etcher-cli" ]; then
+    PATH="${PATH}:/opt/etcher-cli/"
 fi
 
 DEFAULT_USER=joe
