@@ -1,5 +1,8 @@
 # Path to your oh-my-zsh installation.
+
+#set -g default-terminal "screen-256color"
 export TERM="xterm-256color"
+#export TERM="screen-256color"
 export ZSH=$HOME/.oh-my-zsh
 
 mkdir -p "$HOME/.oh-my-zsh/custom/themes/"

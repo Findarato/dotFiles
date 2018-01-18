@@ -33,3 +33,9 @@ fi
 if [ -d "$HOME/.config/composer/vendor/bin" ] ; then
     PATH="$HOME/.config/composer/vendor/bin:$PATH"
 fi
+
+# Clean out old cache
+if [ -f "$HOME/bin/cleanCache.sh" ] ; then
+    . "$HOME/bin/cleanCache.sh"
+fi
+

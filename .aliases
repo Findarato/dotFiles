@@ -23,7 +23,6 @@ alias du1='du -ch -d 1'
 
 alias s="sudo"
 alias sudo='sudo -H'
-alias fontfix="fc-cache -f -v"
 alias dirs='dirs -v'
 alias ls='ls -la'
 alias ll='ls -alF'
@@ -88,6 +87,11 @@ alias now='date +"%T"'
 alias nowtime=now
 alias nowdate='date +"%Y-%m-%d"'
 alias nocomment='grep -Ev '\''^(#|$)'\'''
+alias fixFonts="fc-cache -f -v"
+alias fixSSHkey="ssh-copy-id -i ~/.ssh/ansible.pub"
+
+
+
 # progress bar on file copy. Useful evenlocal.
 alias cpProgress="rsync -aHAXxvu --numeric-ids --progress"
 
