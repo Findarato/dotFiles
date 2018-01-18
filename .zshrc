@@ -59,7 +59,7 @@ plugins=(git battery colorize dnf git-prompt)
 
 # User configuration
 
-export PATH="/home/joe/.local/bin:/home/joe/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin"
+export PATH="/home/joe/.local/bin:/home/joe/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin:/sbin/"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -106,6 +106,7 @@ BROWSERS="$DIRPATH/browsers"
 if [ -d "$DIRPATH" ]; then
     if [ ! -d "$APPS" ]; then
         rm -rf $HOME/.cache/{google-chrome,libgweather,mozilla,shotwell,thumbnails,vivaldi,google-chrome-beta,chromium}
+        rm -rf $HOME/.cache/{shotwell,thumbnails,libgweather} $HOME/.cache/
         mkdir -p $BROWSERS/{google-chrome,mozilla,vivaldi,google-chrome-beta,chromium}
         mkdir -p $APPS/{shotwell,thumbnails,libgweather}
         ln -s $BROWSERS/{google-chrome,mozilla,vivaldi,google-chrome-beta,chromium} $HOME/.cache/

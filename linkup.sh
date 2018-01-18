@@ -10,7 +10,10 @@
 
 
 for FILE in .*; do
-    if [ "$FILE" != .travis.yml ] && [ "$FILE" != .git ] && [ "$FILE" != . ] && [ "$FILE" != .. ]; then
+    if [ "$FILE" != .travis.yml ] && \
+       [ "$FILE" != .git ] && \
+       [ "$FILE" != . ] && \
+       [ "$FILE" != .. ]; then
         # echo "$FILE"
         echo "Linking Files: $PWD/$FILE ==> $HOME/$FILE"
         rm -f "$HOME/$FILE"
