@@ -7,4 +7,4 @@ chrome-*
 .Trash-*
 chromedriver
 .sync*
-.vscode/
+.vscode
