@@ -16,7 +16,6 @@ docker rm cuda_miner
 #it01/\
 #Findarato@gmail.com
 
-#docker logs cuda_miner -f
 
 nvidia-docker run \
 --name cuda_miner \
@@ -27,4 +26,7 @@ nvidia-docker run \
 #-S eth-us-east1.nanopool.org:9999 \
 #-FS eth-us-west1.nanopool.org:9999 \
 #Findarato@gmail.com
+
+
+docker logs cuda_miner -f --tail=20
 
