@@ -8,3 +8,4 @@ chrome-*
 chromedriver
 .sync*
 .vscode
+.syncthing
