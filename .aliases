@@ -28,6 +28,7 @@ alias ls='ls -la'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias watch='watch --color'
 
 # Vagrant configuration.
 # export VAGRANT_DEFAULT_PROVIDER='virtualbox'
