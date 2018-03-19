@@ -9,3 +9,5 @@ chromedriver
 .sync*
 .vscode
 .syncthing
+.vagrant/
+.vagrant/*
