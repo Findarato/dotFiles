@@ -12,7 +12,7 @@
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
     if [ -f "$HOME/.bashrc" ]; then
-	. "$HOME/.bashrc"
+    . "$HOME/.bashrc"
     fi
 fi
 
@@ -20,7 +20,7 @@ fi
 if [ -n "$ZSH_VERSION" ]; then
     # include .bashrc if it exists
     if [ -f "$HOME/.zshrc" ]; then
-	. "$HOME/.zshrc"
+    . "$HOME/.zshrc"
     fi
 fi
 
@@ -40,6 +40,6 @@ if [ -f "$HOME/bin/cleanCache.sh" ] ; then
 fi
 
 
-#touch /dev/shm/looking-glass
-#chown $USER:kvm /dev/shm/looking-glass
-#chmod 660 /dev/shm/looking-glass
+touch /dev/shm/looking-glass
+chown $USER:kvm /dev/shm/looking-glass
+chmod 660 /dev/shm/looking-glass
