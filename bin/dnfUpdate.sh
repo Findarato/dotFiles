@@ -1,12 +1,13 @@
 #!/bin/bash
 
 
-if [ "$EUID" -ne 0 ]
-  then echo "Please run as root"
+if [ "$EUID" -ne 0 ]; then 
+  echo "Please run as root"
   exit
 fi
 
-dnf update -y;
-dnf upgrade --refresh;
-dnf distro-sync -y;
+dnf clean all
+dnf upgrade --refresh -y;
+dnf distro-sync --best --allowerasing -y;
+dnf clean all;
 flatpak update -y;
