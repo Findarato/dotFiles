@@ -15,7 +15,7 @@ alias pa="php artisan"
 #Web stuff
 alias a='atom .'
 alias npmWatch='npm run watch'
-#alias dds='dd status=progress'
+alias mkImage="sudo dd status=progress bs=8M oflag=direct"
 
 alias df='df -H'
 alias du='du -ch'

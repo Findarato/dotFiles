@@ -12,7 +12,7 @@ else
 	docker rm cuda_miner
 	echo "Restarting Gnome-shell"
 	echo "Starting Container"
-	nvidia-docker run \
+	docker run --runtime=nvidia \
 	--name cuda_miner \
 	-d \
 	-it findarato/docker-ethminer \
