@@ -123,6 +123,10 @@ if [ -d "${HOME}/.local/bin/" ]; then
     PATH="${PATH}:${HOME}/.local/bin/"
 fi
 
+if [ -d "/opt/gitkraken" ]; then
+    PATH="${PATH}:/opt/gitkraken"
+fi
+
 # Add support for etcher
 if [ -d "/opt/etcher-cli" ]; then
     PATH="${PATH}:/opt/etcher-cli/"
