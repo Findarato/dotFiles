@@ -3,7 +3,7 @@
     email = findarato@gmail.com
     excludesFile = ~/.gitignore
     editor = nano
-    signingkey = 87CBAA79D6C5CB1E
+    signingkey = 672E70D2EB06270B
 [fetch]
     prune = true
 [status]
