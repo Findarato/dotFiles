@@ -17,7 +17,7 @@ if [ $DOWNLOADFROMGIT ]; then
     source "$HOME/.powerlevel9k"
 else
     # Setting the default theme
-    ZSH_THEME="agnoster"
+    ZSH_THEME="pygmalion"
 fi
 
 # Uncomment the following line to use case-sensitive completion.
