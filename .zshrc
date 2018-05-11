@@ -58,7 +58,7 @@ COMPLETION_WAITING_DOTS="true"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-plugins=(git battery colorize dnf git-prompt)
+plugins=(git colorize dnf git-prompt git-flow zsh-syntax-highligting zsh-autosuggestions)
 
 # User configuration
 
