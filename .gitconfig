@@ -21,4 +21,4 @@
     template = ~/.gitmessage
     gpgsign = true
 [gpg]
-    program = /usr/bin/gpg
+    program = /usr/bin/gpg2
