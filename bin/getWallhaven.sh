@@ -1,3 +1,5 @@
+#!/bin/bash
+
 /home/joe/Documents/src/Wallhaven-Downloader/wallhaven.sh \
 -l ~/Pictures/ \
 -n 288 \

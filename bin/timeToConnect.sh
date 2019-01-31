@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #
 # Taken from https://coderwall.com/p/i2hqda/investigate-http-response-times
 # Credit goes to: adamstrawson

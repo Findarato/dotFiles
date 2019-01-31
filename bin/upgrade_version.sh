@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sudo dnf upgrade -y --refresh
 
 sudo dnf install -y dnf-plugin-system-upgrade
