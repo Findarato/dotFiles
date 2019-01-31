@@ -15,6 +15,7 @@ else
     # Setting the default theme
     ZSH_THEME="pygmalion"
 fi
+
 export UPDATE_ZSH_DAYS=13
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
@@ -87,3 +88,4 @@ fi
 
 DEFAULT_USER=joe
 export GPG_TTY=$(tty)
+ANSIBLE_VAULT_PASSWORD_FILE=~/.vault_pass.txt
