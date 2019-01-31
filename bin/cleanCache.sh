@@ -1,3 +1,4 @@
+#!/bin/bash
 
 CACHE_PATH="$HOME/.cache"
 #rm -rf "$CACHE_PATH/.thumbs/*"

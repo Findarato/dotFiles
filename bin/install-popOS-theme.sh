@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo ""
 echo "This will install Pop OS Theme on your Fedora"
 echo "This will take some times to install"
