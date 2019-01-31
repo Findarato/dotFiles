@@ -35,8 +35,13 @@ plugins=(
 
 # User configuration
 
-export PATH="/home/joe/.local/bin:/home/joe/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin:/sbin/"
+export PATH="/home/$USER/.local/bin:/home/$USER/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin:/sbin/"
+
 source $ZSH/oh-my-zsh.sh
+# Map out Aliases
+source "${HOME}/.aliases"
+
+
 if [[ -n $SSH_CONNECTION ]]; then
     export EDITOR='nano'
 else
@@ -53,23 +58,22 @@ if [ hash npm 2>/dev/null  ]; then
     export PATH=~/.npm-global/bin:$PATH
 fi
 
-source "$HOME/.aliases"
 DIRPATH="/mnt/cache"
-APPS="$DIRPATH/apps"
-BROWSERS="$DIRPATH/browsers"
+APPS="${DIRPATH}/apps"
+BROWSERS="${DIRPATH}/browsers"
 
 #if [ -d "$HOME/.wallpapers/" ]; then
 #     . "$HOME/.wallpapers/wp_init.sh" >/dev/null 2>&1
 #fi
 
-if [ -d "$DIRPATH" ]; then
-    if [ ! -d "$APPS" ]; then
-        rm -rf $HOME/.cache/{google-chrome,libgweather,mozilla,shotwell,thumbnails,vivaldi,google-chrome-beta,google-chrome-unstable,chromium}
-        rm -rf $HOME/.cache/{shotwell,thumbnails,libgweather} $HOME/.cache/
+if [ -d "${DIRPATH}" ]; then
+    if [ ! -d "${APPS}" ]; then
+        rm -rf ${HOME}/.cache/{google-chrome,libgweather,mozilla,shotwell,thumbnails,vivaldi,google-chrome-beta,google-chrome-unstable,chromium}
+        rm -rf ${HOME}/.cache/{shotwell,thumbnails,libgweather} ${HOME}/.cache/
         mkdir -p $BROWSERS/{google-chrome,mozilla,vivaldi,google-chrome-beta,google-chrome-unstable,chromium}
         mkdir -p $APPS/{shotwell,thumbnails,libgweather}
-        ln -s $BROWSERS/{google-chrome,mozilla,vivaldi,google-chrome-beta,google-chrome-unstable,chromium} $HOME/.cache/
-        ln -s $APPS/{shotwell,thumbnails,libgweather} $HOME/.cache/
+        ln -s $BROWSERS/{google-chrome,mozilla,vivaldi,google-chrome-beta,google-chrome-unstable,chromium} ${HOME}/.cache/
+        ln -s $APPS/{shotwell,thumbnails,libgweather} ${HOME}/.cache/
    fi
 fi
 
@@ -86,6 +90,11 @@ if [ -d "/opt/etcher-cli" ]; then
     PATH="${PATH}:/opt/etcher-cli/"
 fi
 
-DEFAULT_USER=joe
+if [ ]; then
+
+fi
+
+DEFAULT_USER=$USER
+
 export GPG_TTY=$(tty)
 ANSIBLE_VAULT_PASSWORD_FILE=~/.vault_pass.txt
