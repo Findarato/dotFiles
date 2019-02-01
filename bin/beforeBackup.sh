@@ -1,15 +1,22 @@
 #!/bin/bash
+
+# Kill all of the running files that need to be backed up
 pkill --signal 9 firefox
 pkill --signal 9 chrome
 pkill --signal 9 chromium
 pkill --signal 9 vivaldi
+pkill --signal 9 evolution
 #NOW=$(date +%A.%H)
 #updateRepos.sh
 
-/usr/local/bin/restic --password-file ~/.backup_file -r /mnt/nas-tStorage/home/$HOSTNAME unlock
-#/usr/local/bin/restic --password-file ~/.backup_file -r /mnt/nas-tStorage/home/$HOSTNAME forget --keep-last 14 --dry-run
-/usr/local/bin/restic --password-file ~/.backup_file -r /mnt/nas-tStorage/home/$HOSTNAME forget --keep-last 14
+${HOME}/bin/cleanCache.sh
 
-/usr/local/bin/restic --password-file ~/.backup_file -r /run/media/joe/1A52AAB552AA94D3/$HOSTNAME unlock
-#/usr/local/bin/restic --password-file ~/.backup_file -r /run/media/joe/1A52AAB552AA94D3/$HOSTNAME forget --keep-last 30 --dry-run
-/usr/local/bin/restic --password-file ~/.backup_file -r /run/media/joe/1A52AAB552AA94D3/$HOSTNAME forget --keep-last 30
+BACKUP_LOCATION=/mnt/home/backup/${HOSTNAME}
+
+/usr/bin/restic --password-file ${HOME}/.backup_file -r ${BACKUP_LOCATION} unlock
+#/usr/bin/restic --password-file ${HOME}/.backup_file -r ${BACKUP_LOCATION} forget --keep-last 14 --dry-run
+/usr/bin/restic --password-file ${HOME}/.backup_file -r ${BACKUP_LOCATION} forget --keep-last 14
+
+/usr/bin/restic --verbose --password-file ${HOME}/.backup_file -r ${BACKUP_LOCATION} backup ${HOME} --exclude="${HOME}/.cache"
+
+
