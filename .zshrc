@@ -1,7 +1,7 @@
 export TERM="xterm-256color"
-export ZSH=$HOME/.oh-my-zsh
+export ZSH=${HOME}/.oh-my-zsh
 
-mkdir -p "$HOME/.oh-my-zsh/custom/themes/"
+mkdir -p "${HOME}/.oh-my-zsh/custom/themes/"
 DOWNLOADFROMGIT=false
 GITDOWNLOADLOACTION="$HOME/.oh-my-zsh/custom/themes/powerlevel9k"
 if [ $DOWNLOADFROMGIT ]; then
@@ -10,7 +10,7 @@ if [ $DOWNLOADFROMGIT ]; then
         /usr/bin/git clone --depth 1 https://github.com/bhilburn/powerlevel9k.git $GITDOWNLOADLOACTION
     fi
     ZSH_THEME="powerlevel9k/powerlevel9k"
-    source "$HOME/.powerlevel9k"
+    source "${HOME}/.powerlevel9k"
 else
     # Setting the default theme
     ZSH_THEME="pygmalion"
@@ -23,21 +23,21 @@ HIST_STAMPS="yyyy-mm-dd"
 ZSH_THEME="pygmalion"
 
 plugins=(
-    git
     colorize
     dnf
-    git-prompt
-    git-flow
     docker
-    zsh-syntax-highligting
+    git
+    git-flow
+    git-prompt
     zsh-autosuggestions
+    zsh-syntax-highligting
 )
 
 # User configuration
 
 export PATH="/home/$USER/.local/bin:/home/$USER/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin:/sbin/"
 
-source $ZSH/oh-my-zsh.sh
+source ${ZSH}/oh-my-zsh.sh
 # Map out Aliases
 source "${HOME}/.aliases"
 
@@ -62,8 +62,8 @@ DIRPATH="/mnt/cache"
 APPS="${DIRPATH}/apps"
 BROWSERS="${DIRPATH}/browsers"
 
-#if [ -d "$HOME/.wallpapers/" ]; then
-#     . "$HOME/.wallpapers/wp_init.sh" >/dev/null 2>&1
+#if [ -d "${HOME}/.wallpapers/" ]; then
+#     . "${HOME}/.wallpapers/wp_init.sh" >/dev/null 2>&1
 #fi
 
 if [ -d "${DIRPATH}" ]; then
@@ -74,7 +74,7 @@ if [ -d "${DIRPATH}" ]; then
         mkdir -p $APPS/{shotwell,thumbnails,libgweather}
         ln -s $BROWSERS/{google-chrome,mozilla,vivaldi,google-chrome-beta,google-chrome-unstable,chromium} ${HOME}/.cache/
         ln -s $APPS/{shotwell,thumbnails,libgweather} ${HOME}/.cache/
-   fi
+    fi
 fi
 
 if [ -d "${HOME}/.local/bin/" ]; then
@@ -91,10 +91,11 @@ if [ -d "/opt/etcher-cli" ]; then
 fi
 
 if [ ]; then
-
+    
 fi
 
 DEFAULT_USER=$USER
+ANSIBLE_VAULT_PASSWORD_FILE=~/.vault_pass.txt
 
 export GPG_TTY=$(tty)
-ANSIBLE_VAULT_PASSWORD_FILE=~/.vault_pass.txt
+
