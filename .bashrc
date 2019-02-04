@@ -2,7 +2,7 @@
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
+    . /etc/bashrc
 fi
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
@@ -16,29 +16,19 @@ function run() {
     number=$1
     shift
     for n in $(seq $number); do
-      $@
-      printf "\n"
+        $@
+        printf "\n"
     done
 }
 
 #if [[ -n "$STY" ]] && [[ -n "$TMUX" ]]; #we are in a screen or tmux session
 #then
 
-  export TERM=screen-256color; 
-  #eval `dircolors ~/Documents/src/dircolors-solarized/dircolors.256dark`;
+export TERM='xterm-256color'
+#eval `dircolors ~/Documents/src/dircolors-solarized/dircolors.256dark`;
 #else
-  #eval `dircolors ~/Documents/src/dircolors-solarized/dircolors.256dark`;
+#eval `dircolors ~/Documents/src/dircolors-solarized/dircolors.256dark`;
 #fi
-
-
-# Add an "alert" alias for long running commands.  Use like so:
-#   sleep 10; alert
-#alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*al$
-
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
 if [ -f ~/.aliases ]; then
     . ~/.aliases
@@ -54,7 +44,6 @@ KERN_DIR=/usr/src/kernels/`uname -r`
 ## Export KERN_DIR ##
 export KERN_DIR
 
-export TERM=xterm-256color        # for common 256 color terminals (e.g. gnome-terminal)
 export EDITOR=/usr/bin/nano
 export ANSIBLE_VAULT_PASSWORD_FILE=~/.vault_pass.txt
 #export DISPLAY=:0.0
@@ -65,3 +54,8 @@ export VAGRANT_DEFAULT_PROVIDER=virtualbox
 #fi
 export PATH=$PATH:/opt/GitKraken
 export GPG_TTY=$(tty)
+
+# Setting up PS1 for GBT
+PS1='$(gbt $?)'
+
+source
