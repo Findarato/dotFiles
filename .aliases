@@ -30,6 +30,11 @@ alias la='ls -A'
 alias l='ls -CF'
 alias watch='watch --color'
 
+
+#Tilix Commands
+alias tilixRight='tilix -a session-add-right -x'
+alias tilixDown='tilix -a session-add-down -x'
+
 # Vagrant configuration.
 # export VAGRANT_DEFAULT_PROVIDER='virtualbox'
 
