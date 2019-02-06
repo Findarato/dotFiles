@@ -11,3 +11,4 @@ chromedriver
 .syncthing
 .vagrant/
 .vagrant/*
+*.key

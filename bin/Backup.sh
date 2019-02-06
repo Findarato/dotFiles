@@ -4,7 +4,7 @@ ${HOME}/bin/cleanCache.sh
 
 BACKUP_LOCATION=/mnt/home/backup/${HOSTNAME}
 
-rm -rf "${HOME}/.cache"
+# rm -rf "${HOME}/.cache"
 
 #Check Backup
 /usr/bin/restic --password-file ${HOME}/.backup_file -r ${BACKUP_LOCATION} check

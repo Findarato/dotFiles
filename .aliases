@@ -30,6 +30,7 @@ alias la='ls -A'
 alias l='ls -CF'
 alias watch='watch --color'
 
+alias wttr='curl http://wttr.in/'
 
 #Tilix Commands
 alias tilixRight='tilix -a session-add-right -x'
