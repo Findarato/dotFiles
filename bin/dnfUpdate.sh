@@ -7,6 +7,7 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 dnf clean all
+dnf upgrade --best --allowerasing -y;
 dnf upgrade --refresh -y;
 dnf distro-sync --best --allowerasing -y;
 dnf clean all;

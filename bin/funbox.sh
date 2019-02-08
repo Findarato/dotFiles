@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker run --rm -it wernight/funbox 
+docker run --name funbox --rm -it wernight/funbox 
