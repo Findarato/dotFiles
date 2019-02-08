@@ -5,17 +5,14 @@ ${HOME}/bin/cleanCache.sh
 BACKUP_LOCATION=/mnt/home/backup/desktop
 
 
-export RESTIC_PASSWORD=$(pass computer/ansible)
+export RESTIC_PASSWORD=$(pass computer/restic)
 
+echo $RESTIC_PASSWORD
 
 #Check Backup
 /usr/bin/restic -r ${BACKUP_LOCATION} check
 
-
-EXPORT
 # rm -rf "${HOME}/.cache"
-
-
 
 #Check Backup
 #/usr/bin/restic --password-file ${HOME}/.backup_file -r ${BACKUP_LOCATION} check
