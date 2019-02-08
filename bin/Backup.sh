@@ -2,18 +2,30 @@
 
 ${HOME}/bin/cleanCache.sh
 
-BACKUP_LOCATION=/mnt/home/backup/${HOSTNAME}
+BACKUP_LOCATION=/mnt/home/backup/desktop
 
-# rm -rf "${HOME}/.cache"
+
+export RESTIC_PASSWORD=$(pass computer/ansible)
+
 
 #Check Backup
-/usr/bin/restic --password-file ${HOME}/.backup_file -r ${BACKUP_LOCATION} check
+/usr/bin/restic -r ${BACKUP_LOCATION} check
 
-/usr/bin/restic --password-file ${HOME}/.backup_file -r ${BACKUP_LOCATION} unlock
+
+EXPORT
+# rm -rf "${HOME}/.cache"
+
+
+
+#Check Backup
+#/usr/bin/restic --password-file ${HOME}/.backup_file -r ${BACKUP_LOCATION} check
+/usr/bin/restic -r ${BACKUP_LOCATION} check
+
+/usr/bin/restic -r ${BACKUP_LOCATION} unlock
 #/usr/bin/restic --password-file ${HOME}/.backup_file -r ${BACKUP_LOCATION} forget --keep-last 14 --dry-run
-/usr/bin/restic --password-file ${HOME}/.backup_file -r ${BACKUP_LOCATION} forget --keep-last 14
+/usr/bin/restic -r ${BACKUP_LOCATION} forget --keep-last 14
 
-/usr/bin/restic --verbose --password-file ${HOME}/.backup_file -r ${BACKUP_LOCATION} backup ${HOME} --exclude="${HOME}/.cache"
+/usr/bin/restic -r ${BACKUP_LOCATION} backup ${HOME} --exclude="${HOME}/.cache" --cleanup-cache=true --no-cache=true
 
 #Prune Backups
-/usr/bin/restic --password-file ${HOME}/.backup_file -r ${BACKUP_LOCATION} prune
+/usr/bin/restic -r ${BACKUP_LOCATION} prune
