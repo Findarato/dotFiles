@@ -12,3 +12,4 @@ dnf upgrade --refresh -y;
 dnf distro-sync --best --allowerasing -y;
 dnf clean all;
 flatpak update -y;
+flatpak uninstall --unused -y
