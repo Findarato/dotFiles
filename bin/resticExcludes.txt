@@ -1,0 +1,11 @@
+# Exclude images
+*.png
+*.jpg
+
+#Directories to skip
+org.signal.Signal/*
+.config/variety/*
+
+# Skip containers
+
+containers/storage/*
