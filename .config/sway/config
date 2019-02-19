@@ -31,12 +31,12 @@ output * bg /usr/share/backgrounds/f29/default/normalish/f29.png fill
 output eDP-1 pos 0 0 res 1920x1080
 output DP-1 pos 1920 0 res 1920x1080
 
-workspace 1       output eDP-1
-workspace 2:Email output eDP-1
-workspace 3       output eDP-1
-workspace 4:Web   output DP-1
-workspace 5       output DP-1
-workspace 6       output DP-1
+workspace 1               output eDP-1
+workspace 2:Email         output eDP-1
+workspace 3:Servers       output eDP-1
+workspace 4:Web           output DP-1
+workspace 5               output DP-1
+workspace 6               output DP-1
 
 #
 # Example configuration:
@@ -114,7 +114,7 @@ workspace 6       output DP-1
     # switch to workspace
     bindsym $mod+1 workspace 1
     bindsym $mod+2 workspace 2:Email
-    bindsym $mod+3 workspace 3
+    bindsym $mod+3 workspace 3:Servers
     bindsym $mod+4 workspace 4:Web
     bindsym $mod+5 workspace 5
     bindsym $mod+6 workspace 6
@@ -125,7 +125,7 @@ workspace 6       output DP-1
     # move focused container to workspace
     bindsym $mod+Shift+1 move container to workspace 1
     bindsym $mod+Shift+2 move container to workspace 2:Email
-    bindsym $mod+Shift+3 move container to workspace 3
+    bindsym $mod+Shift+3 move container to workspace 3:Servers
     bindsym $mod+Shift+4 move container to workspace 4:Web
     bindsym $mod+Shift+5 move container to workspace 5
     bindsym $mod+Shift+6 move container to workspace 6

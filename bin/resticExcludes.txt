@@ -9,3 +9,8 @@ org.signal.Signal/*
 # Skip containers
 
 containers/storage/*
+${HOME}/Downloads/
+
+# Browser specific skips
+/home/jharry/.config/google-chrome/Default/GPUCache/*
+
