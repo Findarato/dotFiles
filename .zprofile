@@ -44,3 +44,5 @@ fi
 #touch /dev/shm/looking-glass
 #chown $USER:kvm /dev/shm/looking-glass
 #chmod 660 /dev/shm/looking-glass
+
+export PATH="$HOME/.cargo/bin:$PATH"
