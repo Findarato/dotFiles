@@ -30,6 +30,12 @@ alias la='ls -A'
 alias l='ls -CF'
 alias watch='watch --color'
 
+alias wttr='curl http://wttr.in/'
+
+#Tilix Commands
+alias tilixRight='tilix -a session-add-right -x'
+alias tilixDown='tilix -a session-add-down -x'
+
 # Vagrant configuration.
 # export VAGRANT_DEFAULT_PROVIDER='virtualbox'
 
@@ -42,13 +48,13 @@ alias ap='ansible-playbook'
 alias agi='ansible-galaxy install -r'
 
 # Network
-alias ping='ping -c 5'
-alias fastping='ping -c 100 -s.2'
+# alias ping='ping -c 5'
+alias pp='prettyping --nolegend'
+# alias fastping='ping -c 100 -s.2'
 alias ports='netstat -tulanp'
 
 
 #Safty Nets
-
 
 # do not delete / or prompt if deleting more than 3 files at a time #
 alias rm='rm -I --preserve-root'
