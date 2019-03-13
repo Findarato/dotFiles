@@ -4,8 +4,16 @@ ${HOME}/bin/cleanCache.sh
 
 BACKUP_LOCATION=/mnt/home/backup/desktop
 
+BACKUP_LOCATION=/run/media/joe/Backup/restic/
+
 
 export RESTIC_PASSWORD=$(pass computer/restic)
+
+
+
+restic init --repo ${BACKUP_LOCATION}
+
+
 
 #Check Backup
 /usr/bin/restic -r ${BACKUP_LOCATION} check
