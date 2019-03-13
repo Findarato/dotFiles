@@ -2,7 +2,7 @@
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
+    . /etc/bashrc
 fi
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
@@ -16,29 +16,15 @@ function run() {
     number=$1
     shift
     for n in $(seq $number); do
-      $@
-      printf "\n"
+        $@
+        printf "\n"
     done
 }
 
 #if [[ -n "$STY" ]] && [[ -n "$TMUX" ]]; #we are in a screen or tmux session
 #then
 
-  export TERM=screen-256color; 
-  #eval `dircolors ~/Documents/src/dircolors-solarized/dircolors.256dark`;
-#else
-  #eval `dircolors ~/Documents/src/dircolors-solarized/dircolors.256dark`;
-#fi
-
-
-# Add an "alert" alias for long running commands.  Use like so:
-#   sleep 10; alert
-#alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*al$
-
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+export TERM='xterm-256color'
 
 if [ -f ~/.aliases ]; then
     . ~/.aliases
@@ -54,7 +40,6 @@ KERN_DIR=/usr/src/kernels/`uname -r`
 ## Export KERN_DIR ##
 export KERN_DIR
 
-export TERM=xterm-256color        # for common 256 color terminals (e.g. gnome-terminal)
 export EDITOR=/usr/bin/nano
 export ANSIBLE_VAULT_PASSWORD_FILE=~/.vault_pass.txt
 #export DISPLAY=:0.0
@@ -63,5 +48,21 @@ export VAGRANT_DEFAULT_PROVIDER=virtualbox
 #if [[ $TERMINIX_ID ]]; then
 #        source /etc/profile.d/vte.sh
 #fi
-export PATH=$PATH:/opt/GitKraken
+export PATH=${PATH}:/opt/GitKraken
 export GPG_TTY=$(tty)
+
+# Setting up PS1 for GBT
+
+if [ "$(gbt $?)" ]; then
+    PS1='$(gbt $?)'
+
+    #export GBT__HOME="$HOME/go/src/github.com/jtyr/gbt"
+    #source "$GBT__HOME/sources/gbts/cmd/local.sh"
+    #alias docker='gbt_docker'
+    #alias mysql='gbt_mysql'
+    #alias screen='gbt_screen'
+    #alias ssh='gbt_ssh'
+    #alias su='gbt_su'
+    #alias sudo='gbt_sudo'
+    #alias vagrant='gbt_vagrant'
+fi

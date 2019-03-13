@@ -1,0 +1,19 @@
+{
+    "child": {
+        "directory": "\/home\/jharry",
+        "height": 754,
+        "profile": "2b7c4080-0ddd-46c5-8f23-563fd3ba789d",
+        "readOnly": false,
+        "synchronizedInput": true,
+        "type": "Terminal",
+        "uuid": "d3b49314-68ed-4751-822a-08b1be73dc4f",
+        "width": 1504
+    },
+    "height": 754,
+    "name": "EPIC",
+    "synchronizedInput": false,
+    "type": "Session",
+    "uuid": "2365c254-d516-4824-b3f8-10dcac6eddd1",
+    "version": "1.0",
+    "width": 1504
+}
