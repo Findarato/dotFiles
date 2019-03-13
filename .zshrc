@@ -21,7 +21,7 @@ ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="yyyy-mm-dd"
 
-ZSH_THEME="pygmalion"
+#ZSH_THEME="pygmalion"
 
 plugins=(
     colorize

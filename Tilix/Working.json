@@ -3,48 +3,65 @@
         "child1": {
             "child1": {
                 "child1": {
-                    "directory": "\/www\/stats",
-                    "height": 412,
+                    "directory": "\/home\/jharry",
+                    "height": 322,
                     "profile": "2b7c4080-0ddd-46c5-8f23-563fd3ba789d",
+                    "readOnly": false,
+                    "synchronizedInput": true,
                     "type": "Terminal",
-                    "width": 480
+                    "uuid": "44770736-20ba-4876-9032-b068ff70ae03",
+                    "width": 299
                 },
                 "child2": {
-                    "directory": "\/www\/stats",
-                    "height": 412,
+                    "directory": "\/home\/jharry",
+                    "height": 322,
                     "profile": "2b7c4080-0ddd-46c5-8f23-563fd3ba789d",
+                    "readOnly": false,
+                    "synchronizedInput": true,
                     "type": "Terminal",
-                    "width": 479
+                    "uuid": "dfb6cce4-bff7-4a4f-9129-149b237e7c52",
+                    "width": 298
                 },
                 "orientation": 0,
-                "position": 25,
+                "position": 24,
+                "ratio": 0.5,
                 "type": "Paned"
             },
             "child2": {
-                "directory": "\/www\/stats",
-                "height": 620,
+                "directory": "\/home\/jharry",
+                "height": 505,
                 "profile": "2b7c4080-0ddd-46c5-8f23-563fd3ba789d",
+                "readOnly": false,
+                "synchronizedInput": true,
                 "type": "Terminal",
-                "width": 960
+                "uuid": "48e25b10-1f04-4541-97ff-ec3ac25167f8",
+                "width": 598
             },
             "orientation": 1,
-            "position": 39,
+            "position": 38,
+            "ratio": 0.388888888888888895,
             "type": "Paned"
         },
         "child2": {
-            "directory": "\/www\/stats",
-            "height": 1033,
+            "directory": "\/home\/jharry",
+            "height": 828,
             "profile": "2b7c4080-0ddd-46c5-8f23-563fd3ba789d",
+            "readOnly": false,
+            "synchronizedInput": true,
             "type": "Terminal",
-            "width": 959
+            "uuid": "7768ee9a-5fbc-40d4-9101-5dd6ae466797",
+            "width": 598
         },
         "orientation": 0,
-        "position": 50,
+        "position": 49,
+        "ratio": 0.499582289055973239,
         "type": "Paned"
     },
-    "height": 1033,
+    "height": 828,
     "name": "Default",
+    "synchronizedInput": false,
     "type": "Session",
+    "uuid": "5eb33f4c-9503-4ab1-addb-232399dc76d9",
     "version": "1.0",
-    "width": 1920
+    "width": 1197
 }
