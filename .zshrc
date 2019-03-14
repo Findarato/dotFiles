@@ -96,7 +96,8 @@ fi
 if [ -d "/opt/etcher-cli" ]; then
     PATH="${PATH}:/opt/etcher-cli/"
 fi
-DEFAULT_USER=$USER
+
+DEFAULT_USER=${USER}
 
 export GPG_TTY=$(tty)
 
