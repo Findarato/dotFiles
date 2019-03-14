@@ -3,7 +3,14 @@ POWERLEVEL9K_MODE='awesome-fontconfig'
 #POWERLEVEL9K_MODE='nerdfont-complete'
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
 #POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(root_indicator os_icon dir vcs)
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(root_indicator dir vcs)
+
+# Prompts
+if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
+  POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon ssh context dir virtualenv vcs)
+else
+  POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon user dir virtualenv vcs)
+fi
+
 POWERLEVEL9K_TIME_FORMAT="%D{%H:%M}"
 #POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(icons_test)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
