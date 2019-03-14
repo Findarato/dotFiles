@@ -6,9 +6,9 @@ POWERLEVEL9K_COLOR_SCHEME='dark'
 
 # Prompts
 if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
-  POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh context dir virtualenv vcs)
+  POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh dir vcs)
 else
-  POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(user dir virtualenv vcs)
+  POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(user dir vcs)
 fi
 
 POWERLEVEL9K_TIME_FORMAT="%D{%H:%M}"
