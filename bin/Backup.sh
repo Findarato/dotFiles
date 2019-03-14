@@ -4,10 +4,11 @@ ${HOME}/bin/cleanCache.sh
 
 BACKUP_LOCATION=/mnt/home/backup/desktop
 
+BACKUP_LOCATION=/run/media/joe/Backup/restic/
 
-export RESTIC_PASSWORD=$(/usr/bin/pass computer/restic)
+export RESTIC_PASSWORD=$(pass computer/restic)
 
-# rm -rf "${HOME}/.cache"
+restic init --repo ${BACKUP_LOCATION}
 
 echo "$(tput sgr0)"
 /usr/bin/restic -r ${BACKUP_LOCATION} unlock  # Unlock repo
