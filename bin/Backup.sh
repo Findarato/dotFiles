@@ -21,7 +21,7 @@ echo "██████╔╝██║  ██║╚██████╗██
 echo "╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝  ╚═════╝ ╚═╝     ";
 
 echo "$(tput sgr0)"
-/usr/bin/restic -r ${BACKUP_LOCATION} backup ${HOME} --exclude="${HOME}/.cache" --cleanup-cache=true --exclude-file=${HOME}/bin/resticExcludes.txt 
+/usr/bin/restic -r ${BACKUP_LOCATION} backup ${HOME} --tag CronBackup --exclude-file=${HOME}/bin/resticExcludes.txt 
 
 
 echo "$(tput setaf 2)"
