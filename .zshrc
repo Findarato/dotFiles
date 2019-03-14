@@ -1,27 +1,27 @@
 export TERM='xterm-256color'
 export ZSH=${HOME}/.oh-my-zsh
 
-mkdir -p "${HOME}/.oh-my-zsh/custom/themes/"
-DOWNLOADFROMGIT=false
-GITDOWNLOADLOACTION="$HOME/.oh-my-zsh/custom/themes/powerlevel9k"
-if [ $DOWNLOADFROMGIT ]; then
-    if [ ! -d $GITDOWNLOADLOACTION ]; then
-        # Only download / clone the repo if the folder does not exsist
-        /usr/bin/git clone --depth 1 https://github.com/bhilburn/powerlevel9k.git $GITDOWNLOADLOACTION
-    fi
-    ZSH_THEME="powerlevel9k/powerlevel9k"
-    source "${HOME}/.powerlevel9k"
-else
-    # Setting the default theme
-    ZSH_THEME="pygmalion"
-fi
+# mkdir -p "${HOME}/.oh-my-zsh/custom/themes/"
+# DOWNLOADFROMGIT=false
+# GITDOWNLOADLOACTION="${HOME}/.oh-my-zsh/custom/themes/powerlevel9k"
+# if [ $DOWNLOADFROMGIT ]; then
+#     if [ ! -d $GITDOWNLOADLOACTION ]; then
+#         # Only download / clone the repo if the folder does not exsist
+#         /usr/bin/git clone --depth 1 https://github.com/bhilburn/powerlevel9k.git $GITDOWNLOADLOACTION
+#     fi
+#     ZSH_THEME="powerlevel9k/powerlevel9k"
+#     source "${HOME}/.powerlevel9k"
+# else
+#     # Setting the default theme
+#     ZSH_THEME="pygmalion"
+# fi
 
 export UPDATE_ZSH_DAYS=13
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="yyyy-mm-dd"
 
-#ZSH_THEME="pygmalion"
+ZSH_THEME="pygmalion"
 
 plugins=(
     colorize
@@ -97,7 +97,6 @@ if [ -d "/opt/etcher-cli" ]; then
     PATH="${PATH}:/opt/etcher-cli/"
 fi
 DEFAULT_USER=$USER
-ANSIBLE_VAULT_PASSWORD_FILE=~/.vault_pass.txt
 
 export GPG_TTY=$(tty)
 
