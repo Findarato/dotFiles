@@ -36,7 +36,7 @@ plugins=(
 
 # User configuration
 
-export PATH="/home/$USER/.local/bin:/home/$USER/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin:/sbin/"
+export PATH="${HOME}/.local/bin:${HOME}/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin:/sbin/"
 
 source ${ZSH}/oh-my-zsh.sh
 # Map out Aliases
@@ -82,6 +82,12 @@ if [ -d "${HOME}/.local/bin/" ]; then
     PATH="${HOME}/.local/bin/:${PATH}"
 fi
 
+
+if [ -d "${HOME}/.cargo/bin" ]; then
+    PATH="${PATH}:${HOME}/.cargo/bin"
+fi
+
+
 if [ -d "/opt/gitkraken" ]; then
     PATH="${PATH}:/opt/gitkraken"
 fi
@@ -90,11 +96,6 @@ fi
 if [ -d "/opt/etcher-cli" ]; then
     PATH="${PATH}:/opt/etcher-cli/"
 fi
-
-if [ ]; then
-    
-fi
-
 DEFAULT_USER=$USER
 ANSIBLE_VAULT_PASSWORD_FILE=~/.vault_pass.txt
 
