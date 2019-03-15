@@ -97,6 +97,11 @@ alias nocomment='grep -Ev '\''^(#|$)'\'''
 alias fixFonts="fc-cache -f -v"
 alias fixSSHkey="ssh-copy-id -i ~/.ssh/ansible.pub"
 
+alias ccat="pygmentize -O style=monokai -f 256 -g"
+alias dig="dig +nocmd any +multiline +noall +answer"
+
+disable -r time       # disable shell reserved word
+alias time='time -p ' # -p for POSIX output
 
 
 # progress bar on file copy. Useful evenlocal.
@@ -118,4 +123,5 @@ alias ansiblepubkey="more ~/.ssh/ansible.pub | xclip -selection clipboard | echo
 
 # Pipe my private key to my clipboard.
 alias prikey="more ~/.ssh/remote | xclip -selection clipboard | echo '=> Private key copied to pasteboard.'"
+
 

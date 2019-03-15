@@ -1,27 +1,46 @@
+
+# Fix Locale
+export LANG="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
+export SHELL="/bin/zsh"
 export TERM='xterm-256color'
 export ZSH=${HOME}/.oh-my-zsh
 
-# mkdir -p "${HOME}/.oh-my-zsh/custom/themes/"
-# DOWNLOADFROMGIT=false
-# GITDOWNLOADLOACTION="${HOME}/.oh-my-zsh/custom/themes/powerlevel9k"
-# if [ $DOWNLOADFROMGIT ]; then
-#     if [ ! -d $GITDOWNLOADLOACTION ]; then
-#         # Only download / clone the repo if the folder does not exsist
-#         /usr/bin/git clone --depth 1 https://github.com/bhilburn/powerlevel9k.git $GITDOWNLOADLOACTION
-#     fi
-#     ZSH_THEME="powerlevel9k/powerlevel9k"
-#     source "${HOME}/.powerlevel9k"
-# else
-#     # Setting the default theme
-#     ZSH_THEME="pygmalion"
-# fi
+# History
+export HISTFILE="$HOME/.zsh_history"
+export HISTSIZE=10000
+export SAVEHIST=$HISTSIZE
+
+if [[ $OSTYPE = (linux)* ]]; then
+    export LS_OPTIONS='--color=auto'
+fi
+
+DOWNLOADFROMGIT=false
+GITDOWNLOADLOACTION="${HOME}/.oh-my-zsh/custom/themes/powerlevel9k"
+if [ $DOWNLOADFROMGIT ]; then
+    if [ -d "${HOME}/.oh-my-zsh/" ]; then
+        mkdir -p "${HOME}/.oh-my-zsh/custom/themes/"
+        if [ ! -d "${GITDOWNLOADLOACTION}" ]; then
+            # Only download / clone the repo if the folder does not exsist
+            /usr/bin/git clone --depth 1 https://github.com/bhilburn/powerlevel9k.git $GITDOWNLOADLOACTION
+        fi
+    fi
+    ZSH_THEME="powerlevel9k/powerlevel9k"
+    source "${HOME}/.powerlevel9k"
+else
+    # Setting the default theme
+    ZSH_THEME="pygmalion"
+fi
 
 export UPDATE_ZSH_DAYS=13
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="yyyy-mm-dd"
 
-ZSH_THEME="pygmalion"
+#ZSH_THEME="pygmalion"
+#ZSH_THEME="agnoster"
+ZSH_THEME="powerlevel9k/powerlevel9k"
+
 
 plugins=(
     colorize
@@ -42,16 +61,9 @@ source ${ZSH}/oh-my-zsh.sh
 # Map out Aliases
 source "${HOME}/.aliases"
 
-
-if [[ -n $SSH_CONNECTION ]]; then
-    export EDITOR='nano'
-else
-    export EDITOR='nano'
-fi
-
 # ssh
 export SSH_KEY_PATH="~/.ssh/id_rsa"
-export ANSIBLE_VAULT_PASSWORD_FILE=~/.vault_pass.txt
+export EDITOR='nano'
 
 if [ hash npm 2>/dev/null  ]; then
     mkdir -p ~/.npm-global
@@ -62,10 +74,6 @@ fi
 DIRPATH="/mnt/cache"
 APPS="${DIRPATH}/apps"
 BROWSERS="${DIRPATH}/browsers"
-
-#if [ -d "${HOME}/.wallpapers/" ]; then
-#     . "${HOME}/.wallpapers/wp_init.sh" >/dev/null 2>&1
-#fi
 
 if [ -d "${DIRPATH}" ]; then
     if [ ! -d "${APPS}" ]; then
@@ -78,10 +86,11 @@ if [ -d "${DIRPATH}" ]; then
     fi
 fi
 
+
+# Adjust paths if specific programs are installed
 if [ -d "${HOME}/.local/bin/" ]; then
     PATH="${HOME}/.local/bin/:${PATH}"
 fi
-
 
 if [ -d "${HOME}/.cargo/bin" ]; then
     PATH="${PATH}:${HOME}/.cargo/bin"
@@ -101,3 +110,105 @@ DEFAULT_USER=${USER}
 
 export GPG_TTY=$(tty)
 
+# =============================================================================
+#                                   Plugins
+# =============================================================================
+# Check if zplug is installed
+
+[ ! -d ~/.zplug ] && git clone https://github.com/zplug/zplug ~/.zplug
+source ~/.zplug/init.zsh
+
+# Supports oh-my-zsh plugins and the like
+if [[ $OSTYPE = (linux)* ]]; then
+    zplug "plugins/archlinux",      from:oh-my-zsh, if:"(( $+commands[pacman] ))"
+    zplug "plugins/dnf",            from:oh-my-zsh, if:"(( $+commands[dnf] ))"
+    zplug "plugins/mock",           from:oh-my-zsh, if:"(( $+commands[mock] ))"
+fi
+
+# =============================================================================
+#                                   Options
+# =============================================================================
+#autoload -Uz add-zsh-hook
+#autoload -Uz compinit && compinit -u
+#autoload -Uz url-quote-magic
+#autoload -Uz vcs_info
+
+#zle -N self-insert url-quote-magic
+
+setopt autocd                   # Allow changing directories without `cd`
+setopt append_history           # Dont overwrite history
+setopt auto_list
+setopt auto_menu
+setopt auto_pushd
+setopt extended_history         # Also record time and duration of commands.
+setopt hist_expire_dups_first   # Clear duplicates when trimming internal hist.
+setopt hist_find_no_dups        # Dont display duplicates during searches.
+setopt hist_ignore_dups         # Ignore consecutive duplicates.
+setopt hist_ignore_all_dups     # Remember only one unique copy of the command.
+setopt hist_reduce_blanks       # Remove superfluous blanks.
+setopt hist_save_no_dups        # Omit older commands in favor of newer ones.
+setopt hist_ignore_space        # Ignore commands that start with space.
+#setopt hist_ignore_all_dups
+#setopt hist_ignore_dups
+#setopt hist_reduce_blanks
+#setopt hist_save_no_dups
+#setopt ignore_eof
+setopt inc_append_history
+setopt interactive_comments
+setopt no_beep
+setopt no_hist_beep
+setopt no_list_beep
+setopt magic_equal_subst
+setopt notify
+setopt print_eight_bit
+setopt print_exit_value
+setopt prompt_subst
+setopt pushd_ignore_dups
+#setopt rm_star_wait
+setopt share_history            # Share history between multiple shells
+setopt transient_rprompt
+
+if zplug check "zsh-users/zsh-syntax-highlighting"; then
+    typeset -gA ZSH_HIGHLIGHT_STYLES ZSH_HIGHLIGHT_PATTERNS
+
+    ZSH_HIGHLIGHT_STYLES[default]='none'
+    ZSH_HIGHLIGHT_STYLES[cursor]='fg=yellow'
+    ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=red'
+    ZSH_HIGHLIGHT_STYLES[reserved-word]='fg=yellow'
+    ZSH_HIGHLIGHT_STYLES[alias]='fg=cyan'
+    ZSH_HIGHLIGHT_STYLES[builtin]='fg=cyan'
+    ZSH_HIGHLIGHT_STYLES[function]='fg=cyan'
+    ZSH_HIGHLIGHT_STYLES[command]='fg=cyan'
+    ZSH_HIGHLIGHT_STYLES[precommand]='fg=green'
+    ZSH_HIGHLIGHT_STYLES[commandseparator]='fg=yellow'
+    ZSH_HIGHLIGHT_STYLES[hashed-command]='fg=green'
+    ZSH_HIGHLIGHT_STYLES[path]='fg=white,underline'
+    ZSH_HIGHLIGHT_STYLES[path_pathseparator]='fg=grey,underline'
+    ZSH_HIGHLIGHT_STYLES[path_prefix]='fg=white'
+    ZSH_HIGHLIGHT_STYLES[path_approx]='fg=white'
+    ZSH_HIGHLIGHT_STYLES[globbing]='none'
+    ZSH_HIGHLIGHT_STYLES[history-expansion]='fg=green'
+    ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='fg=blue'
+    ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=blue'
+    ZSH_HIGHLIGHT_STYLES[back-quoted-argument]='none'
+    ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=magenta'
+    ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=magenta'
+    ZSH_HIGHLIGHT_STYLES[dollar-double-quoted-argument]='fg=cyan'
+    ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]='fg=cyan'
+    ZSH_HIGHLIGHT_STYLES[redirection]='fg=magenta'
+    ZSH_HIGHLIGHT_STYLES[bracket-level-1]='fg=cyan,bold'
+    ZSH_HIGHLIGHT_STYLES[bracket-level-2]='fg=green,bold'
+    ZSH_HIGHLIGHT_STYLES[bracket-level-3]='fg=magenta,bold'
+    ZSH_HIGHLIGHT_STYLES[bracket-level-4]='fg=yellow,bold'
+    ZSH_HIGHLIGHT_STYLES[assign]='none'
+
+    ZSH_HIGHLIGHT_PATTERNS=('rm -rf *' 'fg=white,bold,bg=red')
+
+    ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor line)
+fi
+
+if zplug check "zsh-users/zsh-autosuggestions"; then
+    #ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'
+    ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=075'
+    #ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=162'
+fi
