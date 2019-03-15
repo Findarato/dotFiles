@@ -2,6 +2,8 @@
 
 ${HOME}/bin/cleanCache.sh
 
+EXCLUDE_FILE="config/resticExcludes.txt"
+
 BACKUP_LOCATION=/mnt/home/backup/desktop
 
 BACKUP_LOCATION=/run/media/joe/Backup/restic/
@@ -22,7 +24,7 @@ echo "██████╔╝██║  ██║╚██████╗██
 echo "╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝  ╚═════╝ ╚═╝     ";
 
 echo "$(tput sgr0)"
-/usr/bin/restic -r ${BACKUP_LOCATION} backup ${HOME} --tag CronBackup --exclude-file=${HOME}/bin/resticExcludes.txt 
+/usr/bin/restic -r ${BACKUP_LOCATION} backup ${HOME} --tag CronBackup --exclude-file=${EXCLUDE_FILE}
 
 
 echo "$(tput setaf 2)"
