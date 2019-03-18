@@ -3,6 +3,11 @@
     "explorer.confirmDelete": false,
     "editor.fontFamily": "'Fira Code','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.fontLigatures": true,
-    "editor.formatOnSave": true,
-    "telemetry.enableTelemetry": false
+    "telemetry.enableTelemetry": false,
+    "php.validate.run": "onType",
+    "git.enableSmartCommit": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "[plaintext]": {
+        
+    }
 }
