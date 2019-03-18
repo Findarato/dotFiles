@@ -6,5 +6,8 @@
     "telemetry.enableTelemetry": false,
     "php.validate.run": "onType",
     "git.enableSmartCommit": true,
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "[plaintext]": {
+        
+    }
 }
