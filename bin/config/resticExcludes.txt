@@ -17,3 +17,10 @@ ${HOME}/.cache/*
 
 # No need to back up flatpaks
 ${HOME}/.local/share/flatpak
+
+cache*/*
+Cache*/*
+.zplug/*
+
+.local/share/Trash
+.cache
