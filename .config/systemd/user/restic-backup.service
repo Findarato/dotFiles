@@ -1,0 +1,8 @@
+[Unit]
+Description=Restic backup service for Joe
+
+[Service]
+ExecStart=/home/jharry/bin/Backup.sh
+
+[Install]
+WantedBy=default.target
