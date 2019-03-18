@@ -29,7 +29,7 @@ echo "██╔══██╗██╔══██║██║     ██╔═
 echo "██████╔╝██║  ██║╚██████╗██║  ██╗██║██║ ╚████║╚██████╔╝╚██████╔╝██║     ";
 echo "╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝  ╚═════╝ ╚═╝     ";
 echo "$(tput sgr0)"
-/usr/bin/restic -r ${BACKUP_LOCATION} backup ${HOME} --tag CronBackup --exclude-file=${EXCLUDE_FILE}
+/usr/bin/restic -r ${BACKUP_LOCATION} backup ${HOME} --tag nightly_backup --tag cron --exclude-file=${EXCLUDE_FILE}
 
 
 echo "$(tput setaf 2)"
