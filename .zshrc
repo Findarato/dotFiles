@@ -96,7 +96,6 @@ if [ -d "${HOME}/.cargo/bin" ]; then
     PATH="${PATH}:${HOME}/.cargo/bin"
 fi
 
-
 if [ -d "/opt/gitkraken" ]; then
     PATH="${PATH}:/opt/gitkraken"
 fi
