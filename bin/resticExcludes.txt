@@ -17,3 +17,6 @@ ${HOME}/.cache/*
 
 # No need to back up flatpaks
 ${HOME}/.local/share/flatpak
+
+# GVFS can not be backed up
+${HOME}/.local/share/gvfs-metadata
