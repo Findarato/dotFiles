@@ -22,7 +22,7 @@ alias du='du -ch'
 alias du1='du -ch -d 1'
 
 alias s="sudo"
-alias sudo='sudo -H'
+#alias sudo='sudo -H'
 alias dirs='dirs -v'
 alias ls='ls -la'
 alias ll='ls -alF'
@@ -100,7 +100,7 @@ alias fixSSHkey="ssh-copy-id -i ~/.ssh/ansible.pub"
 alias ccat="pygmentize -O style=monokai -f 256 -g"
 alias dig="dig +nocmd any +multiline +noall +answer"
 
-disable -r time       # disable shell reserved word
+#disable -r time       # disable shell reserved word
 alias time='time -p ' # -p for POSIX output
 
 

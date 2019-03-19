@@ -53,8 +53,8 @@ export GPG_TTY=$(tty)
 
 # Setting up PS1 for GBT
 
-if [ "$(gbt $?)" ]; then
-    PS1='$(gbt $?)'
+#if [ "$(gbt $?)" ]; then
+#    PS1='$(gbt $?)'
 
     #export GBT__HOME="$HOME/go/src/github.com/jtyr/gbt"
     #source "$GBT__HOME/sources/gbts/cmd/local.sh"
@@ -65,4 +65,4 @@ if [ "$(gbt $?)" ]; then
     #alias su='gbt_su'
     #alias sudo='gbt_sudo'
     #alias vagrant='gbt_vagrant'
-fi
+#fi

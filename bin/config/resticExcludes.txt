@@ -5,9 +5,9 @@
 #Directories to skip
 org.signal.Signal/*
 .config/variety/*
+.dbus
 
 # Skip containers
-
 containers/storage/*
 ${HOME}/Downloads/
 
