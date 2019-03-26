@@ -1,6 +1,6 @@
 #!/bin/bash
 
-notify-send "Restic backup started."
+# notify-send "Restic backup started."
 
 ${HOME}/bin/cleanCache.sh
 
@@ -29,6 +29,7 @@ echo "██╔══██╗██╔══██║██║     ██╔═
 echo "██████╔╝██║  ██║╚██████╗██║  ██╗██║██║ ╚████║╚██████╔╝╚██████╔╝██║     ";
 echo "╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝  ╚═════╝ ╚═╝     ";
 echo "$(tput sgr0)"
-/usr/bin/restic -r ${BACKUP_LOCATION} backup ${HOME} --tag 15_minute_backup --tag cron --exclude-file=${EXCLUDE_FILE}
+#/usr/bin/restic -r ${BACKUP_LOCATION} backup ${HOME} --tag 🕐 --tag hourly_backup --tag cron --exclude-file=${EXCLUDE_FILE}
+/usr/bin/restic -r ${BACKUP_LOCATION} backup ${HOME} --tag 🕐 --tag hourly --exclude-file=${EXCLUDE_FILE}
 
-notify-send "Restic backup ended."
+#notify-send "Restic backup ended."
