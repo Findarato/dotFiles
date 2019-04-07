@@ -18,7 +18,7 @@
 [web]
     browser = google-chrome
 [commit]
-	template = /home/jharry/.gitmessage
+	template = ~/.gitmessage
     gpgsign = true
 [gpg]
 	program = /usr/bin/gpg
