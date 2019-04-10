@@ -46,6 +46,8 @@ export ANSIBLE_NOCOWS=1
 alias an='ansible'
 alias ap='ansible-playbook'
 alias agi='ansible-galaxy install -r'
+alias vault='ansible-vault'
+
 
 # Network
 # alias ping='ping -c 5'
@@ -108,7 +110,6 @@ alias time='time -p ' # -p for POSIX output
 alias cpProgress="rsync -aHAXxvu --numeric-ids --progress"
 
 # I find it useful when emailing blurbs to people and want to illustrate long timeout in one pass.
-alias ping="time ping"
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 alias strongPass='head -c $(shuf -i 32-40 -n 1) /dev/urandom | base64 | xclip -selection clipboard'
