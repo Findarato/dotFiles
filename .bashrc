@@ -51,18 +51,3 @@ export VAGRANT_DEFAULT_PROVIDER=virtualbox
 export PATH=${PATH}:/opt/GitKraken
 export GPG_TTY=$(tty)
 
-# Setting up PS1 for GBT
-
-#if [ "$(gbt $?)" ]; then
-#    PS1='$(gbt $?)'
-
-    #export GBT__HOME="$HOME/go/src/github.com/jtyr/gbt"
-    #source "$GBT__HOME/sources/gbts/cmd/local.sh"
-    #alias docker='gbt_docker'
-    #alias mysql='gbt_mysql'
-    #alias screen='gbt_screen'
-    #alias ssh='gbt_ssh'
-    #alias su='gbt_su'
-    #alias sudo='gbt_sudo'
-    #alias vagrant='gbt_vagrant'
-#fi
