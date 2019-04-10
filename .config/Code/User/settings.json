@@ -9,6 +9,5 @@
     "workbench.startupEditor": "newUntitledFile",
     "[plaintext]": {
     },
-    "terminal.integrated.fontFamily": "'Hack Nerd Font Mono'",
-    "workbench.iconTheme": "vscode-icons"
+    "terminal.integrated.fontFamily": "'Hack Nerd Font Mono'"
 }
