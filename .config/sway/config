@@ -9,7 +9,7 @@
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
 # Home row direction keys, like vim
-Vset $left h
+set $left h
 set $down j
 set $up k
 set $right l
@@ -28,8 +28,8 @@ set $mod+l swaylock -c 2B164BF0
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 output * bg /usr/share/backgrounds/f29/default/normalish/f29.png fill
 
-output eDP-1 pos 0 0 res 1920x1080
-output DP-1 pos 1920 0 res 1920x1080
+#output eDP-1 pos 0 0 res 1920x1080
+#output DP-1 pos 1920 0 res 1920x1080
 
 workspace 1               output eDP-1
 workspace 2:Email         output eDP-1
@@ -209,7 +209,6 @@ bar {
         inactive_workspace #32323200 #32323200 #5c5c5c
     }
 }
-sws
 include /etc/sway/config.d/*
 
 # autostart applications

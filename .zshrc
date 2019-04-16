@@ -1,4 +1,3 @@
-
 # Fix Locale
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
@@ -48,12 +47,14 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 
 
 plugins=(
+    zsh_reload
     colorize
     dnf
     docker
     git
     git-flow
     git-prompt
+    gpg-agent
     zsh-autosuggestions
     zsh-syntax-highligting
 )
@@ -80,7 +81,7 @@ BROWSERS="${DIRPATH}/browsers"
 if [ -d "${DIRPATH}" ]; then
     if [ ! -d "${APPS}" ]; then
         rm -rf ${HOME}/.cache/{google-chrome,libgweather,mozilla,shotwell,thumbnails,vivaldi,google-chrome-beta,google-chrome-unstable,chromium}
-        rm -rf ${HOME}/.cache/{shotwell,thumbnails,libgweather} ${HOME}/.cache/
+        rm -rf ${HOME}/.cache/{shotwell,thumbnails,libgweather}
         mkdir -p $BROWSERS/{google-chrome,mozilla,vivaldi,google-chrome-beta,google-chrome-unstable,chromium}
         mkdir -p $APPS/{shotwell,thumbnails,libgweather}
         ln -s $BROWSERS/{google-chrome,mozilla,vivaldi,google-chrome-beta,google-chrome-unstable,chromium} ${HOME}/.cache/
@@ -149,24 +150,22 @@ setopt hist_ignore_all_dups     # Remember only one unique copy of the command.
 setopt hist_reduce_blanks       # Remove superfluous blanks.
 setopt hist_save_no_dups        # Omit older commands in favor of newer ones.
 setopt hist_ignore_space        # Ignore commands that start with space.
-#setopt hist_ignore_all_dups
-#setopt hist_ignore_dups
-#setopt hist_reduce_blanks
-#setopt hist_save_no_dups
-#setopt ignore_eof
+setopt hist_ignore_all_dups
+setopt hist_ignore_dups
+setopt hist_reduce_blanks
+setopt hist_save_no_dups
+setopt ignore_eof
 setopt inc_append_history
 setopt interactive_comments
 setopt no_beep
 setopt no_hist_beep
 setopt no_list_beep
 setopt magic_equal_subst
-# #setopt notify
 setopt print_eight_bit
 setopt prompt_subst
 setopt pushd_ignore_dups
 setopt rm_star_wait
 setopt share_history            # Share history between multiple shells
-# setopt transient_rprompt
 
 # if zplug check "zsh-users/zsh-syntax-highlighting"; then
 #     typeset -gA ZSH_HIGHLIGHT_STYLES ZSH_HIGHLIGHT_PATTERNS
