@@ -9,5 +9,11 @@
     "workbench.startupEditor": "newUntitledFile",
     "[plaintext]": {
     },
-    "terminal.integrated.fontFamily": "'Hack Nerd Font Mono'"
+    "terminal.integrated.fontFamily": "'Hack Nerd Font Mono'",
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+    "editor.renderWhitespace": "boundary",
+    "editor.tabCompletion": "on",
+    "html.format.indentHandlebars": true
 }
