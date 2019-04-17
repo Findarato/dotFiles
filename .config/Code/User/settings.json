@@ -1,19 +1,26 @@
 {
-    "workbench.colorTheme": "Monokai",
-    "explorer.confirmDelete": false,
-    "editor.fontFamily": "'Fira Code','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "editor.fontLigatures": true,
-    "telemetry.enableTelemetry": false,
-    "php.validate.run": "onType",
-    "git.enableSmartCommit": true,
-    "workbench.startupEditor": "newUntitledFile",
-    "[plaintext]": {
-    },
-    "terminal.integrated.fontFamily": "'Hack Nerd Font Mono'",
-    "[php]": {
-        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
-    },
-    "editor.renderWhitespace": "boundary",
-    "editor.tabCompletion": "on",
-    "html.format.indentHandlebars": true
+  "workbench.colorTheme": "Monokai",
+  "explorer.confirmDelete": false,
+  "editor.fontFamily": "'Fira Code','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.fontLigatures": true,
+  "telemetry.enableTelemetry": false,
+  "php.validate.run": "onType",
+  "git.enableSmartCommit": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "[plaintext]": {},
+  "terminal.integrated.fontFamily": "'Hack Nerd Font Mono'",
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+  },
+  "editor.renderWhitespace": "boundary",
+  "editor.tabCompletion": "on",
+  "html.format.indentHandlebars": true,
+  "[javascript]": {
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+  }
 }
