@@ -46,18 +46,16 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 #ZSH_THEME="pygmalion"
 
 
-plugins=(
-    zsh_reload
-    colorize
-    dnf
-    docker
-    git
-    git-flow
-    git-prompt
-    gpg-agent
-    zsh-autosuggestions
-    zsh-syntax-highligting
-)
+#plugins=(
+#    zsh_reload
+#    colorize
+#    docker
+#    git
+#    git-flow
+#    git-prompt
+#    gpg-agent
+#    zsh-autosuggestions
+#)
 
 # User configuration
 
@@ -122,9 +120,9 @@ source ~/.zplug/init.zsh
 
 # Supports oh-my-zsh plugins and the like
 if [[ $OSTYPE = (linux)* ]]; then
-    zplug "plugins/archlinux",      from:oh-my-zsh, if:"(( $+commands[pacman] ))"
+#    zplug "plugins/archlinux",      from:oh-my-zsh, if:"(( $+commands[pacman] ))"
     zplug "plugins/dnf",            from:oh-my-zsh, if:"(( $+commands[dnf] ))"
-    zplug "plugins/mock",           from:oh-my-zsh, if:"(( $+commands[mock] ))"
+#    zplug "plugins/mock",           from:oh-my-zsh, if:"(( $+commands[mock] ))"
 fi
 
 # =============================================================================
@@ -167,6 +165,24 @@ setopt pushd_ignore_dups
 setopt rm_star_wait
 setopt share_history            # Share history between multiple shells
 
+
+# Zplugins
+
+zplug "zsh-users/zsh-syntax-highlighting", from:github, defer:3
+zplug "chrissicool/zsh-256color", from:github
+zplug "TamCore/autoupdate-oh-my-zsh-plugins", from:github
+zplug "lib/completion", from:oh-my-zsh
+zplug "plugins/docker", from:oh-my-zsh
+zplug "plugins/zsh_reload", from:oh-my-zsh
+zplug "plugins/git", from:oh-my-zsh
+zplug "plugins/git-flow", from:oh-my-zsh
+zplug "plugins/git-prompt", from:oh-my-zsh
+zplug "plugins/gpg-agent", from:oh-my-zsh
+zplug "plugins/zsh-autosuggestions", from:oh-my-zsh
+zplug "plugins/colorize", from:oh-my-zsh
+
+zplug "zsh-users/zsh-history-substring-search"
+
 if zplug check "zsh-users/zsh-syntax-highlighting"; then
     typeset -gA ZSH_HIGHLIGHT_STYLES ZSH_HIGHLIGHT_PATTERNS
 
@@ -206,10 +222,22 @@ if zplug check "zsh-users/zsh-syntax-highlighting"; then
     ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor line)
 fi
 
+
 if zplug check "zsh-users/zsh-autosuggestions"; then
     ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'
     ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=075'
     ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=162'
 fi
+
+if ! zplug check --verbose; then
+  printf "Install? [y/N]: "
+  if read -q; then
+    echo; zplug install
+  fi
+fi
+
+zplug load
+
+export ZSH_PLUGINS_ALIAS_TIPS_TEXT='💡 '
 
 source ${ZSH}/oh-my-zsh.sh
