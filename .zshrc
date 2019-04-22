@@ -180,7 +180,7 @@ zplug "plugins/git-prompt", from:oh-my-zsh
 zplug "plugins/gpg-agent", from:oh-my-zsh
 zplug "plugins/zsh-autosuggestions", from:oh-my-zsh
 zplug "plugins/colorize", from:oh-my-zsh
-
+zplug "rummik/zsh-tailf"
 zplug "zsh-users/zsh-history-substring-search"
 
 if zplug check "zsh-users/zsh-syntax-highlighting"; then
