@@ -1,3 +1,5 @@
+#!/bin/bash
+
 gnome-schema org.gnome.desktop.interface
 
 exec_always {

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 docker run \
   --detach \
   --env DOWNLOADER="Findarato" -e \
