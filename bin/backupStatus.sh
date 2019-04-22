@@ -16,3 +16,5 @@ echo "$(tput sgr0)"
 
 /usr/bin/restic -q -r ${BACKUP_LOCATION} snapshots
 
+/usr/bin/restic -q -r ${BACKUP_LOCATION} stats
+
