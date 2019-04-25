@@ -24,7 +24,10 @@ alias du1='du -ch -d 1'
 alias s="sudo"
 #alias sudo='sudo -H'
 alias dirs='dirs -v'
-alias ls='ls -la'
+#alias ls='ls -la'
+alias ls='ls --classify --tabsize=0 --group-directories-first --literal --color=auto --show-control-chars --human-readable'
+alias la='ls -la'
+alias lsdf='ls -a .*(.)'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
@@ -98,6 +101,8 @@ alias nowdate='date +"%Y-%m-%d"'
 alias nocomment='grep -Ev '\''^(#|$)'\'''
 alias fixFonts="fc-cache -f -v"
 alias fixSSHkey="ssh-copy-id -i ~/.ssh/ansible.pub"
+
+
 
 alias ccat="pygmentize -O style=monokai -f 256 -g"
 alias dig="dig +nocmd any +multiline +noall +answer"
