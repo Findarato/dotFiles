@@ -7,12 +7,11 @@ ${HOME}/bin/cleanCache.sh
 if [ -f "${1}" ];then
     source "${1}"
 else
-    if [ "${1}" == "work" ];then
-        source "${HOME}/bin/config/work.sh"
-    fi
-
-    if [ "${1}" == "home" ];then
-        source "${HOME}/bin/config/home.sh"
+    if [ -f "${HOME}/bin/config/${1}.sh" ];then
+        source "${HOME}/bin/config/${1}.sh"
+    else
+        echo "Unable to load config file"
+        exit;
     fi
 fi
 
