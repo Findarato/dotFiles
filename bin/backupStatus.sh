@@ -1,8 +1,18 @@
 #!/bin/bash
 
-BACKUP_LOCATION=/mnt/home/backup/desktop
+if [ -f "${1}" ];then
+    source "${1}"
+else
+    if [ "${1}" == "work" ];then
+        source "${HOME}/bin/config/work.sh"
+    fi
 
-export RESTIC_PASSWORD=$(pass computer/restic)
+    if [ "${1}" == "home" ];then
+        source "${HOME}/bin/config/home.sh"
+    fi
+fi
+
+# source "/home/jharry/bin/config/work.sh"
 
 #Check Backup
 echo "$(tput setaf 2)"
@@ -14,7 +24,6 @@ echo "╚██████╗██║  ██║███████╗╚█
 echo " ╚═════╝╚═╝  ╚═╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ";
 echo "$(tput sgr0)"
 
-/usr/bin/restic -q -r ${BACKUP_LOCATION} snapshots
+${RESTIC} -q -r ${BACKUP_LOCATION} snapshots
 
-#/usr/bin/restic -q -r ${BACKUP_LOCATION} stats
-
+#${RESTIC} -q -r ${BACKUP_LOCATION} stats

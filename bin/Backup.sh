@@ -4,22 +4,31 @@
 
 ${HOME}/bin/cleanCache.sh
 
-EXCLUDE_FILE="${HOME}/bin/config/resticExcludes.txt"
+if [ -f "${1}" ];then
+    source "${1}"
+else
+    if [ "${1}" == "work" ];then
+        source "${HOME}/bin/config/work.sh"
+    fi
 
-BACKUP_LOCATION=/run/media/joe/Backup/restic/
+    if [ "${1}" == "home" ];then
+        source "${HOME}/bin/config/home.sh"
+    fi
+fi
 
-BACKUP_LOCATION=/mnt/home/backup/desktop
+# if [ ${1} == "work"];then
+# source
+
+# fi
 
 echo "$(tput sgr0)"
 
-export RESTIC_PASSWORD=$(pass computer/restic)
 
 if [ ! -d ${BACKUP_LOCATION} ];then
-
-    restic init --repo ${BACKUP_LOCATION}
+    ${RESTIC} init --repo ${BACKUP_LOCATION}
 fi
 
-/usr/bin/restic -r ${BACKUP_LOCATION} unlock  # Unlock repo
+${RESTIC} -r ${BACKUP_LOCATION} unlock  # Unlock repo
 
 echo "$(tput setaf 2)"
 echo "██████╗  █████╗  ██████╗██╗  ██╗██╗███╗   ██╗ ██████╗ ██╗   ██╗██████╗ ";
@@ -29,8 +38,8 @@ echo "██╔══██╗██╔══██║██║     ██╔═
 echo "██████╔╝██║  ██║╚██████╗██║  ██╗██║██║ ╚████║╚██████╔╝╚██████╔╝██║     ";
 echo "╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝  ╚═════╝ ╚═╝     ";
 echo "$(tput sgr0)"
-#/usr/bin/restic -r ${BACKUP_LOCATION} backup ${HOME} --tag 🌃 --tag nightly_backup --tag cron --exclude-file=${EXCLUDE_FILE}
-/usr/bin/restic -r ${BACKUP_LOCATION} backup ${HOME} --tag 🌜 --tag nightly --exclude-file=${EXCLUDE_FILE}
+#${RESTIC} -r ${BACKUP_LOCATION} backup ${HOME} --tag 🌃 --tag nightly_backup --tag cron --exclude-file=${EXCLUDE_FILE}
+${RESTIC} -r ${BACKUP_LOCATION} backup ${HOME}  --tag 🌜 --tag nightly --exclude-file=${EXCLUDE_FILE}
 
 echo "$(tput setaf 2)"
 echo "██████╗ ██████╗ ██╗   ██╗███╗   ██╗███████╗";
@@ -41,15 +50,10 @@ echo "██║     ██║  ██║╚██████╔╝██║ ╚
 echo "╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝";
 echo "$(tput sgr0)"
 
-# Documents
-/usr/bin/restic -r ${BACKUP_LOCATION} forget --tag 15 --keep-last 0
-
 # Whole Home folder
-/usr/bin/restic -r ${BACKUP_LOCATION} forget --keep-daily 14 --keep-weekly 4 --keep-monthly 6
+${RESTIC} -r ${BACKUP_LOCATION} forget --keep-daily ${DAYS} --keep-weekly ${WEEKS} --keep-monthly ${MONTHS}
 
-
-
-/usr/bin/restic -r ${BACKUP_LOCATION} prune # Cleanup
+${RESTIC} -r ${BACKUP_LOCATION} prune # Cleanup
 
 echo "$(tput setaf 2)"
 echo " ██████╗██╗  ██╗███████╗ ██████╗██╗  ██╗██╗███╗   ██╗ ██████╗ ";
@@ -59,4 +63,5 @@ echo "██║     ██╔══██║██╔══╝  ██║     �
 echo "╚██████╗██║  ██║███████╗╚██████╗██║  ██╗██║██║ ╚████║╚██████╔╝";
 echo " ╚═════╝╚═╝  ╚═╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ";
 echo "$(tput sgr0)"
-/usr/bin/restic -r ${BACKUP_LOCATION} check
+
+${RESTIC} -r ${BACKUP_LOCATION} check
