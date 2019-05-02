@@ -241,3 +241,9 @@ zplug load
 export ZSH_PLUGINS_ALIAS_TIPS_TEXT='💡 '
 
 source ${ZSH}/oh-my-zsh.sh
+
+
+autoload -Uz compinit
+compinit
+# Completion for kitty
+kitty + complete setup zsh | source /dev/stdin
