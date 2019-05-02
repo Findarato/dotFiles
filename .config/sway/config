@@ -14,10 +14,20 @@ set $mod Mod4
 #set $up Up
 #set $right Right
 # Your preferred terminal emulator
-set $term tilix --window-style=disable-csd
+#set $term tilix --window-style=disable-csd
+set $term kitty
 # Your preferred application launcher
 # set $menu dmenu_run
 set $menu rofi -show drun
+
+font pango:Hack 10
+
+#Set Gaps
+
+#gaps
+
+# Window borders 
+default_border pixel 1 
 
 
 ### Output configuration
@@ -36,10 +46,13 @@ workspace 5               output DP-1
 workspace 6               output DP-1
 
 
+
 # autostart applications
 # exec --no-startup-id swaymsg workspace 1
 exec tilix --window-style=disable-csd
 exec swaymsg workspace 2:Email thunderbird
+exec swaymsg gaps inner all set 10
+exec swaymsg smart_gaps 0
 
 #
 # Example configuration:
@@ -218,10 +231,12 @@ bindsym $mod+r mode "resize"
 # Read `man 5 sway-bar` for more information about this section.
 bar {
     position top
+    font pango:'Font Awesome 5 Brands-Regular-400' 9
     colors {
+        background #222222
         statusline #ffffff
-        background #000000
-        inactive_workspace #32323200 #32323200 #5c5c5c
+        focused_workspace  #222222 #7E25DD #000000
+        inactive_workspace #222222 #000000 #5c5c5c
     }
     #status_command /opt/bumblebee-status/bumblebee-status -m cpu memory battery date time pasink pasource dnf -p time.format="%H:%M CW %V" date.format="%a, %b %d %Y" -t solarized
     status_command /opt/bumblebee-status/bumblebee-status -m sensors2 cpu memory dnf pasink pasource date time -p time.format="%H:%M"  date.format="%a, %b %d %Y" -t solarized
@@ -236,3 +251,5 @@ include /etc/sway/config.d/*
 
 for_window [class="^Pidgin$" window_role="^conversation$"] resize grow width 0 px or 30 ppt
 # for_window [class="kitty" workspace="1"] fullscreen enable
+
+
