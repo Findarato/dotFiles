@@ -13,4 +13,4 @@ pkill --signal 9 Enpass
 ${HOME}/bin/cleanCache.sh
 
 #Call Backup script
-${HOME}/bin/Backup.sh
+${HOME}/bin/Backup.sh work

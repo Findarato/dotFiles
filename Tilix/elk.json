@@ -4,7 +4,7 @@
             "child1": {
                 "directory": "\/home\/jharry",
                 "height": 377,
-                "overrideCommand": "ssh esMaster01",
+                "overrideCommand": "ssh esMaster01.methnet.org",
                 "profile": "2b7c4080-0ddd-46c5-8f23-563fd3ba789d",
                 "readOnly": false,
                 "synchronizedInput": true,
@@ -15,7 +15,7 @@
             "child2": {
                 "directory": "\/home\/jharry",
                 "height": 376,
-                "overrideCommand": "ssh esData01",
+                "overrideCommand": "ssh esData01.methnet.org",
                 "profile": "2b7c4080-0ddd-46c5-8f23-563fd3ba789d",
                 "readOnly": false,
                 "synchronizedInput": true,
@@ -32,7 +32,7 @@
             "child1": {
                 "directory": "\/home\/jharry",
                 "height": 377,
-                "overrideCommand": "ssh kibana01",
+                "overrideCommand": "ssh kibana01.methnet.org",
                 "profile": "2b7c4080-0ddd-46c5-8f23-563fd3ba789d",
                 "readOnly": false,
                 "synchronizedInput": true,
@@ -45,7 +45,7 @@
                 "directory": "\/home\/jharry",
                 "height": 376,
                 "profile": "2b7c4080-0ddd-46c5-8f23-563fd3ba789d",
-                "overrideCommand": "ssh esData02",
+                "overrideCommand": "ssh esData02.methnet.org",
                 "readOnly": false,
                 "synchronizedInput": true,
                 "type": "Terminal",
