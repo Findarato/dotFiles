@@ -1,0 +1,40 @@
+# Exclude images
+*.png
+*.jpg
+
+#Directories to skip
+org.signal.Signal/*
+.config/variety/*
+.dbus
+
+# Skip containers
+containers/storage/*
+${HOME}/Downloads/*
+
+# Browser specific skips
+${HOME}/.config/google-chrome/Default/GPUCache/
+${HOME}/.config/google-chrome-unstable/Default/GPUCache/
+
+${HOME}/.config/google-chrome/Default/Local Storage/
+${HOME}/.config/google-chrome-unstable/Default/Local Storage/
+${HOME}/.cache/
+${HOME}/.cache/
+
+# No need to back up flatpaks
+${HOME}/.local/share/flatpak
+
+# GVFS can not be backed up
+${HOME}/.local/share/gvfs-metadata
+
+cache*/*
+Cache*/*
+.zplug/*
+
+.local/share/Trash
+.cache
+
+Steam/*
+.local/share/Steam
+*.vdi
+
+${HOME}/.config/Code/logs/*
