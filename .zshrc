@@ -3,6 +3,7 @@ export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 export SHELL="/bin/zsh"
 export TERM='xterm-256color'
+#export TERM='tmux-256color'
 export ZSH=${HOME}/.oh-my-zsh
 
 # History
@@ -120,9 +121,9 @@ source ~/.zplug/init.zsh
 
 # Supports oh-my-zsh plugins and the like
 if [[ $OSTYPE = (linux)* ]]; then
-#    zplug "plugins/archlinux",      from:oh-my-zsh, if:"(( $+commands[pacman] ))"
+    #    zplug "plugins/archlinux",      from:oh-my-zsh, if:"(( $+commands[pacman] ))"
     zplug "plugins/dnf",            from:oh-my-zsh, if:"(( $+commands[dnf] ))"
-#    zplug "plugins/mock",           from:oh-my-zsh, if:"(( $+commands[mock] ))"
+    #    zplug "plugins/mock",           from:oh-my-zsh, if:"(( $+commands[mock] ))"
 fi
 
 # =============================================================================
@@ -230,10 +231,10 @@ if zplug check "zsh-users/zsh-autosuggestions"; then
 fi
 
 if ! zplug check --verbose; then
-  printf "Install? [y/N]: "
-  if read -q; then
-    echo; zplug install
-  fi
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
 fi
 
 zplug load

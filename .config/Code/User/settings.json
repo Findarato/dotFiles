@@ -27,5 +27,6 @@
   "phpfmt.detect_indent": true,
   "phpfmt.psr1_naming": true,
   "telemetry.enableCrashReporter": false,
-  "files.trimTrailingWhitespace": true
+  "files.trimTrailingWhitespace": true,
+  "breadcrumbs.enabled": true
 }
