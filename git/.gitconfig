@@ -1,0 +1,24 @@
+[user]
+    name = Joseph Harry
+    email = findarato@gmail.com
+    excludesFile = ~/.gitignore
+    editor = nano
+	signingKey = C663DAFF140BE59FCBC3B1BF672E70D2EB06270B
+[fetch]
+    prune = true
+[status]
+    submoduleSummary = true
+[core]
+    editor = nano
+[color]
+    branch = auto
+    diff = auto
+    interactive = auto
+    status = auto
+[web]
+    browser = google-chrome
+[commit]
+	template = ~/.gitmessage
+    gpgsign = true
+[gpg]
+	program = /usr/bin/gpg
