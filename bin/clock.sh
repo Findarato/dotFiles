@@ -17,4 +17,4 @@ function rainbowTime (){
 #rainbowTime;
 
 
-watch -c -t -n1 "date +%T | figlet"
+watch -c -t -n1 "date +%T | figlet -f future"
