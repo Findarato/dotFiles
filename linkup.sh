@@ -14,3 +14,4 @@ stow tilix
 stow tmux
 stow zsh
 
+stow irssi
