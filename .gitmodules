@@ -1,3 +1,6 @@
 [submodule "Tilix-Themes"]
 	path = Tilix-Themes
 	url = https://github.com/storm119/Tilix-Themes.git
+[submodule "pass/.password-store"]
+	path = pass/.password-store
+	url = git@github.com:Findarato/pass.git
