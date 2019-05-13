@@ -3,7 +3,9 @@
 # This is the restore script for stow. It must be ran from the directory it is located
 
 stow bash
+stow git
 stow kitty
+stow misc
 stow pass
 stow rtv
 stow scripts
@@ -11,5 +13,4 @@ stow sway
 stow tilix
 stow tmux
 stow zsh
-
 
