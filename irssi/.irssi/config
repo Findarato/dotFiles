@@ -86,6 +86,7 @@ chatnets = {
   };
   Freenode = {
     type = "IRC";
+    autosendcmd = "/msg NickServ identify `$(pass networkFreenode)`; wait 2000";
     max_kicks = "1";
     max_msgs = "4";
     max_whois = "1";
@@ -114,13 +115,7 @@ chatnets = {
     max_msgs = "1";
     max_whois = "1";
   };
-  OFTC = {
-    type = "IRC";
-    autosendcmd = "/msg NickServ identify g2j0&^EtuqH#HiL=K8e:8BV-;wait 2000";
-    max_kicks = "1";
-    max_msgs = "1";
-    max_whois = "1";
-  };
+  OFTC = { type = "IRC"; max_kicks = "1"; max_msgs = "1"; max_whois = "1"; };
   QuakeNet = {
     type = "IRC";
     max_kicks = "1";
@@ -420,7 +415,7 @@ settings = {
   core = {
     real_name = "Findarato";
     user_name = "Findarato";
-    nick = "findarato";
+    nick = "Findarato";
   };
   "fe-text" = { actlist_sort = "refnum"; };
   "perl/core/scripts" = { awl_shared_sbar = "OFF"; awl_viewer = "no"; };
@@ -474,5 +469,5 @@ windows = {
 mainwindows = { 2 = { first_line = "1"; lines = "49"; }; };
 hilights = (
   { text = "nick"; nick = "yes"; word = "yes"; },
-  { text = "findarato"; nick = "yes"; word = "yes"; }
+  { text = "Findarato"; nick = "yes"; word = "yes"; }
 );
