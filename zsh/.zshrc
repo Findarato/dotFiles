@@ -128,7 +128,7 @@ source ~/.zplug/init.zsh
 # Supports oh-my-zsh plugins and the like
 if [[ $OSTYPE = (linux)* ]]; then
     #    zplug "plugins/archlinux",      from:oh-my-zsh, if:"(( $+commands[pacman] ))"
-    zplug "plugins/dnf",            from:oh-my-zsh, if:"(( $+commands[dnf] ))"
+    # zplug "plugins/dnf",            from:oh-my-zsh, if:"(( $+commands[dnf] ))"
     #    zplug "plugins/mock",           from:oh-my-zsh, if:"(( $+commands[mock] ))"
 fi
 
@@ -257,3 +257,10 @@ source ${ZSH}/oh-my-zsh.sh
 # Completion for kitty
 #kitty + complete setup zsh | source /dev/stdin
 #fi
+
+
+# Base16 Shell
+BASE16_SHELL="$HOME/.config/base16-shell/"
+[ -n "$PS1" ] && \
+    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+        eval "$("$BASE16_SHELL/profile_helper.sh")"
