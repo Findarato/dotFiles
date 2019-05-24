@@ -3,7 +3,7 @@ alias gs="git status"
 alias ga="git add --all"
 alias gc="git commit -sS"
 alias gp="git pull"
-alias gpp="git pull; git push;git push --tags"
+alias gpp="git pull --recurse-submodules; git push; git push --tags"
 alias gl="git log --pretty=full --graph --decorate=full"
 alias ssh-copy-id="ssh-copy-id -o PreferredAuthentications=password -o PubkeyAuthentication=no"
 
