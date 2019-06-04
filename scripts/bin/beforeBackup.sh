@@ -10,7 +10,9 @@ pkill --signal 9 Enpass
 #NOW=$(date +%A.%H)
 #updateRepos.sh
 
+
 ${HOME}/bin/cleanCache.sh
+${HOME}/bin/docker_clean.sh
 
 #Call Backup script
 ${HOME}/bin/Backup.sh work
