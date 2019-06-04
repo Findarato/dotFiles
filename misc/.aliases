@@ -1,7 +1,7 @@
 # Git Aliases
 alias gs="git status"
 alias ga="git add --all"
-alias gc="git commit -sS"
+alias gc="git commit -s -S"
 alias gp="git pull"
 alias gpp="git pull --recurse-submodules; git push; git push --tags"
 alias gl="git log --pretty=full --graph --decorate=full"
