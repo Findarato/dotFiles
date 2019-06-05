@@ -39,20 +39,20 @@ output eDP-1 pos 0 0 res 1920x1080
 output DP-1 pos 1920 0 res 1920x1080
 
 workspace 1               output eDP-1
-workspace 2:Email         output eDP-1
-workspace 3:Servers       output eDP-1
-workspace 4:Web           output DP-1
-workspace 5               output DP-1
-workspace 6               output DP-1
+workspace 2: Email        output eDP-1
+workspace 3: Servers      output eDP-1
+workspace 4               output eDP-1
+workspace 5               output eDP-1
+workspace 6: Web          output DP-1
+workspace 7: Social       output DP-1
+workspace 8               output DP-1
+workspace 9: 💩           output DP-1
+workspace 10              output DP-1
 
 
 
 # autostart applications
 # exec --no-startup-id swaymsg workspace 1
-exec tilix --window-style=disable-csd
-exec swaymsg workspace 2:Email thunderbird
-exec swaymsg gaps inner all set 10
-exec swaymsg smart_gaps 0
 
 #
 # Example configuration:
@@ -141,25 +141,25 @@ exec swaymsg smart_gaps 0
 #
     # switch to workspace
     bindsym $mod+1 workspace 1
-    bindsym $mod+2 workspace 2:Email
-    bindsym $mod+3 workspace 3:Servers
-    bindsym $mod+4 workspace 4:Web
-    bindsym $mod+5 workspace 5:Social
-    bindsym $mod+6 workspace 6
-    bindsym $mod+7 workspace 7
+    bindsym $mod+2 workspace 2: Email
+    bindsym $mod+3 workspace 3: Servers
+    bindsym $mod+4 workspace 4
+    bindsym $mod+5 workspace 5
+    bindsym $mod+6 workspace 6: Web
+    bindsym $mod+7 workspace 7: Social
     bindsym $mod+8 workspace 8
-    bindsym $mod+9 workspace 9
+    bindsym $mod+9 workspace 9: 💩
     bindsym $mod+0 workspace 10
     # move focused container to workspace
     bindsym $mod+Shift+1 move container to workspace 1
-    bindsym $mod+Shift+2 move container to workspace 2:Email
-    bindsym $mod+Shift+3 move container to workspace 3:Servers
-    bindsym $mod+Shift+4 move container to workspace 4:Web
-    bindsym $mod+Shift+5 move container to workspace 5:Social
-    bindsym $mod+Shift+6 move container to workspace 6
-    bindsym $mod+Shift+7 move container to workspace 7
+    bindsym $mod+Shift+2 move container to workspace 2: Email
+    bindsym $mod+Shift+3 move container to workspace 3: Servers
+    bindsym $mod+Shift+4 move container to workspace 4
+    bindsym $mod+Shift+5 move container to workspace 5
+    bindsym $mod+Shift+6 move container to workspace 6: Web
+    bindsym $mod+Shift+7 move container to workspace 7: Social
     bindsym $mod+Shift+8 move container to workspace 8
-    bindsym $mod+Shift+9 move container to workspace 9
+    bindsym $mod+Shift+9 move container to workspace 9: 💩
     bindsym $mod+Shift+0 move container to workspace 10
     # Note: workspaces can have any name you want, not just numbers.
     # We just use 1-10 as the default.
@@ -176,7 +176,6 @@ exec swaymsg smart_gaps 0
     bindsym $mod+s layout stacking
     bindsym $mod+w layout tabbed
     bindsym $mod+e layout toggle split
-
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen
 
@@ -233,23 +232,27 @@ bar {
     position top
     font pango:'Font Awesome 5 Brands-Regular-400' 9
     colors {
-        background #222222
-        statusline #ffffff
+        background #120f17
+        statusline #7E25DD
         focused_workspace  #222222 #7E25DD #000000
         inactive_workspace #222222 #000000 #5c5c5c
     }
     #status_command /opt/bumblebee-status/bumblebee-status -m cpu memory battery date time pasink pasource dnf -p time.format="%H:%M CW %V" date.format="%a, %b %d %Y" -t solarized
-    status_command /opt/bumblebee-status/bumblebee-status -m sensors2 cpu memory dnf pasink pasource date time -p time.format="%H:%M"  date.format="%a, %b %d %Y" -t solarized
+    status_command /opt/bumblebee-status/bumblebee-status -m cpu memory weather sensors pasink pasource date time -p time.format="%H:%M"  date.format="%a, %b %d %Y" -t purpleberg
 }
 
 exec mako --anchor bottom-right
 exec variety
 
 include /etc/sway/config.d/*
-
-
+include ${HOME}/.config/sway/config.d/*
 
 for_window [class="^Pidgin$" window_role="^conversation$"] resize grow width 0 px or 30 ppt
 # for_window [class="kitty" workspace="1"] fullscreen enable
 
+exec kitty
+#exec tilix --window-style=disable-csd
+exec swaymsg gaps inner all set 10
+exec swaymsg gaps couter all set 10
+exec swaymsg smart_gaps 0
 
