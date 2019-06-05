@@ -11,8 +11,6 @@ else
     fi
 fi
 
-# source "/home/jharry/bin/config/work.sh"
-
 #Check Backup
 echo "$(tput setaf 2)"
 echo " ██████╗██╗  ██╗███████╗ ██████╗██╗  ██╗██╗███╗   ██╗ ██████╗ ";
@@ -23,6 +21,6 @@ echo "╚██████╗██║  ██║███████╗╚█
 echo " ╚═════╝╚═╝  ╚═╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ";
 echo "$(tput sgr0)"
 
-${RESTIC} -q -r ${BACKUP_LOCATION} snapshots
+${RESTIC} -q -r ${BACKUP_LOCATION} snapshots --no-lock
 
 #${RESTIC} -q -r ${BACKUP_LOCATION} stats
