@@ -8,6 +8,9 @@
 #
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
+set $lock ~/.config/sway/scripts/lock
+set $grim ~/.config/sway/scripts/grim
+
 # Home row direction keys, like vim
 #set $left Left
 #set $down Down
@@ -23,6 +26,8 @@ set $menu rofi -show drun
 font pango:Hack 10
 
 #Set Gaps
+gaps inner 10
+gaps outer 5
 
 #gaps
 
@@ -48,6 +53,8 @@ workspace 7: Social       output DP-1
 workspace 8               output DP-1
 workspace 9: 💩           output DP-1
 workspace 10              output DP-1
+
+exec --no-startup-id swaymsg 'workspace 2: Email; exec evolution;'
 
 
 
@@ -88,11 +95,6 @@ workspace 10              output DP-1
     # start your launcher
     bindsym $mod+d exec $menu
 
-    # Drag floating windows by holding down $mod and left mouse button.
-    # Resize them with right mouse button + $mod.
-    # Despite the name, also works for non-floating windows.
-    # Change normal to inverse to use left mouse button for resizing and right
-    # mouse button for dragging.
     floating_modifier $mod normal
 
     # reload the configuration file
@@ -109,8 +111,19 @@ workspace 10              output DP-1
 
     #set $mod+l swaylock -c 2B164BF0
     bindsym $mod+Shift+l exec /home/jharry/bin/lock
+
     bindsym $mod+l exec /home/jharry/bin/lock
 
+    # capture all screens to clipboard    
+    bindsym Shift+Print exec grim - | wl-copy    
+    
+    # capture the specified screen area to clipboard    
+    bindsym Shift+Alt+Print exec grim -g "$(slurp)" 
+    
+    # capture the focused monitor to clipboard    
+    bindsym Shift+Control+Print exec grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name') - | wl-copy
+
+    bindsym Print exec $grim
 
 #
 # Moving around:
@@ -174,7 +187,7 @@ workspace 10              output DP-1
 
     # Switch the current container between different layout styles
     bindsym $mod+s layout stacking
-    bindsym $mod+w layout tabbed
+    bindsym $mod+t layout tabbed
     bindsym $mod+e layout toggle split
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen
@@ -241,7 +254,8 @@ bar {
     status_command /opt/bumblebee-status/bumblebee-status -m cpu memory weather sensors pasink pasource date time -p time.format="%H:%M"  date.format="%a, %b %d %Y" -t purpleberg
 }
 
-exec mako --anchor bottom-right
+#exec mako --anchor bottom-right
+exec mako --progress-color=#FF00FF50 --markup 1 --actions 1 --icons 1 --border-radius 3 --background-color=#FF00FF50 --font=Hack
 exec variety
 
 include /etc/sway/config.d/*
@@ -252,7 +266,7 @@ for_window [class="^Pidgin$" window_role="^conversation$"] resize grow width 0 p
 
 exec kitty
 #exec tilix --window-style=disable-csd
-exec swaymsg gaps inner all set 10
-exec swaymsg gaps couter all set 10
-exec swaymsg smart_gaps 0
+#exec swaymsg gaps inner all set 10
+#exec swaymsg gaps couter all set 10
+#exec swaymsg smart_gaps 0
 
