@@ -2,11 +2,11 @@
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 export SHELL="/bin/zsh"
-export TERM='tmux-256color'
+#export TERM='tmux-256color'
 export ZSH=${HOME}/.oh-my-zsh
 
 if ! { [ "$TERM" = "screen" ] && [ -n "$TMUX" ]; } then
-  #export TERM='xterm-256color'
+  export TERM='xterm-256color'
   #echo "no tmux"
   #  PS1="@$HOSTNAME $PS1"
 fi

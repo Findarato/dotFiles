@@ -7,6 +7,8 @@ else
         source "${HOME}/bin/config/${1}.sh"
     else
         echo "Unable to load config file"
+	notify-send "Error" "Unable to load config file"
+
         exit;
     fi
 fi
@@ -20,6 +22,8 @@ echo "██║     ██╔══██║██╔══╝  ██║     �
 echo "╚██████╗██║  ██║███████╗╚██████╗██║  ██╗██║██║ ╚████║╚██████╔╝";
 echo " ╚═════╝╚═╝  ╚═╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ";
 echo "$(tput sgr0)"
+
+notify-send "Checking Backup" "Using Configuration ${1}"
 
 ${RESTIC} -q -r ${BACKUP_LOCATION} snapshots --no-lock
 

@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# notify-send "Restic backup started."
-
 ${HOME}/bin/cleanCache.sh
 
 if [ -f "${1}" ];then
@@ -11,6 +9,7 @@ else
         source "${HOME}/bin/config/${1}.sh"
     else
         echo "Unable to load config file"
+	notify-send "Error" "Unable to load config file"
         exit;
     fi
 fi
@@ -31,7 +30,7 @@ echo "██╔══██╗██╔══██║██║     ██╔═
 echo "██████╔╝██║  ██║╚██████╗██║  ██╗██║██║ ╚████║╚██████╔╝╚██████╔╝██║     ";
 echo "╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝  ╚═════╝ ╚═╝     ";
 echo "$(tput sgr0)"
+notify-send "Backing Up" "Restic backup running"
 #${RESTIC} -r ${BACKUP_LOCATION} backup ${HOME} --tag 🕐 --tag hourly_backup --tag cron --exclude-file=${EXCLUDE_FILE}
 ${RESTIC} -r ${BACKUP_LOCATION} backup ${HOME} --tag 🕐 --tag hourly --exclude-file=${EXCLUDE_FILE}
-
-#notify-send "Restic backup ended."
+notify-send "Backing Up" "Restic backup ended"
