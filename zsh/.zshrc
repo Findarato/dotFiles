@@ -6,9 +6,9 @@ export TERM='tmux-256color'
 export ZSH=${HOME}/.oh-my-zsh
 
 if ! { [ "$TERM" = "screen" ] && [ -n "$TMUX" ]; } then
-export TERM='xterm-256color'
-#echo "no tmux"
-#  PS1="@$HOSTNAME $PS1"
+  #export TERM='xterm-256color'
+  #echo "no tmux"
+  #  PS1="@$HOSTNAME $PS1"
 fi
 
 
