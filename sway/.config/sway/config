@@ -110,9 +110,9 @@ exec --no-startup-id swaymsg 'workspace 2: Email; exec evolution;'
     #set $mod+Ctrl+l exec ${HOME}/bin/lock
 
     #set $mod+l swaylock -c 2B164BF0
-    bindsym $mod+Shift+l exec /home/jharry/bin/lock
+    bindsym $mod+Shift+l exec $lock
 
-    bindsym $mod+l exec /home/jharry/bin/lock
+    bindsym $mod+l exec $lock
 
     # capture all screens to clipboard    
     bindsym Shift+Print exec grim - | wl-copy    
