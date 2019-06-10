@@ -2,11 +2,7 @@
 clear
 
 function rainbowTime (){
-
   date +%T | figlet 
-#  date +%T | figlet | lolcat -t -f
-#  date +%T | figlet | lolcat -t -S $(date +%U);
-
 }
 
 #while true;
