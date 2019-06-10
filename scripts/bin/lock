@@ -5,7 +5,7 @@ TEXT=/tmp/locktext.png
 #rm ${IMAGE}
 #rm ${TEXT}
 
-/home/jharry/.local/bin/grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name') /tmp/screen.png
+${HOME}/.local/bin/grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name') /tmp/screen.png
 
 convert /tmp/screen.png -scale 25% -blur 0x2 -scale 400%  /tmp/screen.png
 #convert /tmp/screen.png -scale 25% -blur 0x2 -scale 400% -fill black -colorize 50% /tmp/screen.png

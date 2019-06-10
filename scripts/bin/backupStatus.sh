@@ -23,7 +23,7 @@ echo "╚██████╗██║  ██║███████╗╚█
 echo " ╚═════╝╚═╝  ╚═╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ";
 echo "$(tput sgr0)"
 
-notify-send "Checking Backup" "Using Configuration ${1}"
+#notify-send "Checking Backup" "Using Configuration ${1}"
 
 ${RESTIC} -q -r ${BACKUP_LOCATION} snapshots --no-lock
 
