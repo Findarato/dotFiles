@@ -1,0 +1,18 @@
+#
+# Status Bar:
+#
+# Read `man 5 sway-bar` for more information about this section.
+bar {
+    position top
+    font pango:'Font Awesome 5 Brands-Regular-400' 9
+    colors {
+        background #120F17
+        statusline #E2a478
+        focused_workspace  #120F17 #7E25DD #c6c8d1
+        inactive_workspace #120F17 #000000 #c6c8d1
+    }
+    status_command /opt/bumblebee-status/bumblebee-status -m cpu memory weather sensors pasink pasource date time -p time.format="%H:%M"  date.format="%a, %b %d %Y" -t purpleberg
+}
+
+#exec mako --anchor bottom-right
+exec mako --progress-color=#7E25DD50 --markup 1 --actions 1 --icons 1 --border-radius 3 --background-color=#7E25DD50 --font=Hack
