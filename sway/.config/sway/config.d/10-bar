@@ -15,4 +15,6 @@ bar {
 }
 
 #exec mako --anchor bottom-right
-exec mako --progress-color=#7E25DD50 --markup 1 --actions 1 --icons 1 --border-radius 3 --background-color=#7E25DD50 --font=Hack
+exec_always "killall -9 mako"
+exec_always mako --progress-color=#7E25DD50 --markup 1 --actions 1 --icons 1 --border-radius 3 --background-color=#7E25DD50 --font=Hack
+
