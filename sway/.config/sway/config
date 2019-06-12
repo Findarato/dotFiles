@@ -224,13 +224,19 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-exec variety
+exec_always killall swaybg 
+
+exec --no-startup-id variety -q
+exec --no-startup-id variety
 
 include /etc/sway/config.d/*
+
 include ${HOME}/.config/sway/config.d/*
 
 exec --no-startup-id swaymsg 'workspace 2: Email; exec evolution;workspace 1'
 exec --no-startup-id swaymsg 'workspace 7: Social; exec pidgin; workspace 1;'
+
+
 
 # window colors
 #  class                 border   backgr.  text  indicator  child_border
@@ -240,3 +246,8 @@ client.unfocused        #c9cabb  #222222  #888888  #292d2e   #222222
 client.urgent           #2f343a  #900000  #ffffff  #199475   #900000
 client.placeholder      #a2b4ba  #0c0c0c  #ffffff  #1793d0   #0c0c0c
 client.background 	    #82abba
+
+
+#exec mako --anchor bottom-right
+#exec_always "killall -9 mako"
+exec_always --no-startup-id  mako --progress-color=#7E25DD50 --markup 1 --actions 1 --icons 1 --border-radius 3 --background-color=#7E25DD50 --font=Hack
