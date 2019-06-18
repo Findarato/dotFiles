@@ -1,11 +1,15 @@
 #!/bin/bash
 
-GRIM=$(which grim)
-FILENAME=$(date +'%Y-%m-%d-%H%M%S_grim.png')
-FILEPATH=$(xdg-user-dir PICTURES)/screenshots
+GRIM=${HOME}/.local/bin/grim
+SLURP=${HOME}/.local/bin/slurp
+
+FILENAME=$(date +'%Y-%m-%d-%H%M%S_slurp.png')
+FILEPATH=${HOME}/Pictures/screenshots
 
 mkdir -p ${FILEPATH}
 
-${GRIM} $(xdg-user-dir PICTURES)/screenshots/$FILENAME
+${GRIM} -g "$(${SLURP})" ${FILEPATH}/${FILENAME}
 
-notify-send "Created Screenshot" ${FILENAME} -t 50000
+notify-send "Created Screenshot" ${FILENAME} -t 50000 -i ${FILEPATH}/${FILENAME}
+
+
