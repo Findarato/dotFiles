@@ -13,5 +13,6 @@ stow sway
 stow tilix
 stow tmux
 stow zsh
+stow rofi
 
 stow irssi
