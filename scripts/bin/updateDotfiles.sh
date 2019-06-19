@@ -1,4 +1,4 @@
 
-cd ${HOME}/Documents/src/dotFiles
+cd ${HOME}/dotfiles/
 
 git pull -ff -q
