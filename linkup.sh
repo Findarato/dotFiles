@@ -16,3 +16,4 @@ stow zsh
 stow rofi
 
 stow irssi
+stow nano
