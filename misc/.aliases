@@ -101,6 +101,7 @@ alias nowdate='date +"%Y-%m-%d"'
 alias nocomment='grep -Ev '\''^(#|$)'\'''
 alias fixFonts="fc-cache -f -v"
 alias fixSSHkey="ssh-copy-id -i ~/.ssh/ansible.pub"
+alias listenTo='mpv --no-video'
 
 
 
@@ -131,3 +132,6 @@ alias ansiblepubkey="more ~/.ssh/ansible.pub | xclip -selection clipboard | echo
 alias prikey="more ~/.ssh/remote | xclip -selection clipboard | echo '=> Private key copied to pasteboard.'"
 
 
+# Kittens
+
+alias icat="kitty +kitten icat"
