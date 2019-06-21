@@ -161,16 +161,16 @@ set linenumbers
 # set suspend
 
 ## Use this tab size instead of the default; it must be greater than 0.
-# set tabsize 8
+set tabsize 2
 
 ## Convert typed tabs to spaces.
-# set tabstospaces
+set tabstospaces
 
 ## Save automatically on exit; don't prompt.
 # set tempfile
 
 ## Snip whitespace at the end of lines when justifying or hard-wrapping.
-# set trimblanks
+set trimblanks
 
 ## Disallow file modification.  Why would you want this in an rcfile? ;)
 # set view
@@ -198,12 +198,12 @@ set linenumbers
 
 ## Paint the interface elements of nano.  These are examples;
 ## by default there are no colors, except for errorcolor.
-# set titlecolor brightwhite,blue
+set titlecolor brightwhite,blue
 # set statuscolor brightwhite,green
 # set errorcolor brightwhite,red
 # set selectedcolor brightwhite,magenta
 # set stripecolor ,yellow
-# set numbercolor cyan
+set numbercolor cyan
 # set keycolor cyan
 # set functioncolor green
 ## In root's .nanorc you might want to use:
@@ -260,6 +260,7 @@ set linenumbers
 
 ## To include all existing syntax definitions, you can do:
 include "/usr/share/nano/*.nanorc"
+include "~/.config/nano/nanorc/*.nanorc"
 
 
 ## Key bindings.

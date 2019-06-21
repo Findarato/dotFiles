@@ -7,3 +7,6 @@
 [submodule "kitty/.config/kitty/base16-kitty"]
 	path = kitty/.config/kitty/base16-kitty
 	url = https://github.com/kdrag0n/base16-kitty.git
+[submodule "nano/.config/nano/nanorc"]
+	path = nano/.config/nano/nanorc
+	url = https://github.com/scopatz/nanorc.git
