@@ -9,8 +9,12 @@
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
+
+for_window [class="^.*"] border pixel 4
+
+
 set $mod Mod4
-set $lock ~/.config/i3/scripts/lock
+set $lock "~/.config/i3/scripts/lock -l"
 set $grim ~/.config/i3/scripts/grim
 set $slurp ~/.config/i3/scripts/slurp
 
@@ -27,7 +31,7 @@ set $term kitty
 set $menu rofi -show drun
 set $ws1 "1"
 set $ws2 "2 Email"
-set $ws3 "3"
+set $ws3 "3 Servers"
 set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6 Web"
@@ -258,3 +262,8 @@ exec $ni dunst
 exec_always "notify-send 'i3' 'Loaded config'"
 
 
+# set desktop background with custom effect
+exec --no-startup-id betterlockscreen -w dim
+
+# Alternative (set last used background)
+exec --no-startup-id source ~/.fehbg
