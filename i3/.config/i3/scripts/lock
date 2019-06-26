@@ -1,0 +1,27 @@
+#!/bin/bash
+IMAGE=/tmp/screen.png
+TEXT=/tmp/locktext.png
+GRIM=${HOME}/.local/bin/grim
+
+rm -f ${TEXT} ${IMAGE}
+
+${GRIM} /tmp/screen.png
+
+convert /tmp/screen.png -scale 25% -blur 0x2 -scale 400% -fill gradient:black -colorize 50% /tmp/screen.png
+[[ -f $1 ]] && convert /tmp/screen.png $1 -gravity center -composite -matte /tmp/screen.png
+
+[ -f $TEXT ] || {
+    convert -size 1920x100 xc:#671EB4 -font Fira-Code-Bold -pointsize 26 -fill white -gravity center   \
+    -annotate +0+0 'Type password to unlock' $TEXT;
+}
+
+#convert $IMAGE -gravity center -geometry +0+200 -composite $IMAGE
+convert -crop 2X1@ +repage ${IMAGE} /tmp/screen.png
+convert /tmp/screen-0.png $TEXT -gravity center -geometry +0+200 -composite /tmp/screen-0.png
+convert /tmp/screen-1.png $TEXT -gravity center -geometry +0+200 -composite /tmp/screen-1.png
+
+swaylock -s fit -i eDP-1:/tmp/screen-0.png -i DP-1:/tmp/screen-1.png --font Fira-Code-Bold \
+--indicator-radius 100 \
+--inside-color 00000000 \
+--ring-color 671EB4CC \
+--key-hl-color FFCCFFCC

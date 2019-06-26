@@ -1,0 +1,15 @@
+#!/bin/bash
+
+GRIM=${HOME}/.local/bin/grim
+SLURP=${HOME}/.local/bin/slurp
+
+FILENAME=$(date +'%Y-%m-%d-%H%M%S_slurp.png')
+FILEPATH=${HOME}/Pictures/screenshots
+
+mkdir -p ${FILEPATH}
+
+${GRIM} -g "$(${SLURP})" ${FILEPATH}/${FILENAME}
+
+notify-send "Created Screenshot" ${FILENAME} -t 50000 -i ${FILEPATH}/${FILENAME}
+
+
