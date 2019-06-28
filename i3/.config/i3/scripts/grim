@@ -1,15 +1,16 @@
 #!/bin/bash
 
-GRIM=${HOME}/.local/bin/grim
-FILENAME=$(date +'%Y-%m-%d-%H%M%S_grim.png')
+SCROT=/usr/bin/scrot
+FILENAME=${HOSTNAME}_$(date +'%Y-%m-%d-%H%M%S.png')
+THUMBNAME=${HOSTNAME}_$(date +'%Y-%m-%d-%H%M%S-thumb.png')
 FILEPATH=${HOME}/Pictures/screenshots
 
 mkdir -p ${FILEPATH}
 
-${GRIM} ${FILEPATH}/${FILENAME}
+${SCROT} --thumb ${FILEPATH}/${FILENAME}
 
-notify-send "Created Screenshot" ${FILENAME} -t 50000 -i ${FILEPATH}/${FILENAME}
+notify-send "Created Screenshot" ${FILENAME} -t 50000 -i ${FILEPATH}/${THUMBNAME}
 #notify-send "Created Screenshot" "${FILEPATH}/${FILENAME}" -t 50000 
-#notify-send "Debug" "${GRIM}" -t 50000 
+#notify-send "Debug" "${scrot}" -t 50000 
 
 

@@ -6,12 +6,44 @@
 
 # i3 config file (v4)
 
+for_window [class="^.*"] border pixel 1
+# #---Application WS assignment---# #
+assign [class="Steam"] $ws10
+assign [class="obs"] $ws3
+assign [class="chatty-Chatty"] $ws7
+assign [class="(?i)Spotify"] $ws2
+assign [class="(?i)mpv"] $ws4
+assign [class="(?i)discord"] $ws7
+assign [class="(?i)Default - Wine desktop"] $ws10
+
+### Workplace 2
+
+### Workplace 6
+for_window [class="^Firefox$"] move to workspace $ws6
+
+### Workplace 7 Social
+for_window [class="^Signal$"] move to workspace $ws7
+for_window [class="^Pidgin$"] move to workspace $ws7
+for_window [class="^Hexchat$"] move to workspace $ws7
+
+for_window [class="Peek"] floating enable
+
+for_window [class="ProjectM-pulseaudio"] floating enable
+for_window [title="(?i)GIMP Startup"] move workspace $ws5
+for_window [class="(?i)Gimp"] move workspace $ws5
+
+for_window [title="(?i)explorer.exe"] floating enable
+for_window [class="(?i)streamlink-twitch-gui"] floating enable
+for_window [title="(?i)Bluetooth"] floating enable
+
+#for_window [title="mutty"] floating enable
+
+for_window [title="pulsemixer"] floating enable
+
+
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
-
-for_window [class="^.*"] border pixel 4
-
 
 set $mod Mod4
 set $lock "~/.config/i3/scripts/lock -l"
@@ -24,15 +56,15 @@ set $slurp ~/.config/i3/scripts/slurp
 # set $up Up
 # set $right Right
 # Your preferred terminal emulator
-#set $term tilix --window-style=disable-csd
-set $term kitty
+set $term tilix --window-style=borderless
+#set $term kitty
 # Your preferred application launcher
 # set $menu dmenu_run
 set $menu rofi -show drun
 set $ws1 "1"
 set $ws2 "2 Email"
 set $ws3 "3 Servers"
-set $ws4 "4"
+set $ws4 "4 Personal"
 set $ws5 "5"
 set $ws6 "6 Web"
 set $ws7 "7 Social"
@@ -61,18 +93,11 @@ workspace $ws8      output DP-1
 workspace $ws9      output DP-1
 workspace $ws10     output DP-1
 
-
-
-
 # autostart applications
 # exec --no-startup-id i3msg workspace 1
 
 # Start up Email
 exec $ni evolution;workspace $ws2;focus
-
-
-
-
 
 ### Key bindings
 #
@@ -93,13 +118,12 @@ floating_modifier $mod
 # reload the configuration file
 bindsym $mod+Shift+c reload
 
-# exit i3 (logs you out of your wayland session)
+# exit i3 (logs you out of your session)
 bindsym $mod+Shift+e exit
 
+bindsym $mod+Shift+r 			restart
 
 # Set lock command
-bindsym $mod+Shift+l exec $lock
-
 bindsym $mod+l exec $lock
 
 # capture all screens to clipboard
@@ -164,39 +188,36 @@ bindsym Shift+Control+Print exec grim -o $(i3msg -t get_outputs | jq -r '.[] | s
 #
 # Layout stuff:
 #
-    # You can "split" the current object of your focus with
-    # $mod+b or $mod+v, for horizontal and vertical splits
-    # respectively.
-    bindsym $mod+h splith
-    bindsym $mod+v splitv
 
-    # Switch the current container between different layout styles
-    bindsym $mod+s layout stacking
-    bindsym $mod+t layout tabbed
-    bindsym $mod+e layout toggle split
-    # Make the current focus fullscreen
-    bindsym $mod+f fullscreen
+bindsym $mod+h splith
+bindsym $mod+v splitv
 
-    # Toggle the current focus between tiling and floating mode
-    bindsym $mod+Shift+space floating toggle
+# Switch the current container between different layout styles
+bindsym $mod+s layout stacking
+bindsym $mod+t layout tabbed
+bindsym $mod+e layout toggle split
+# Make the current focus fullscreen
+bindsym $mod+f fullscreen
 
-    # Swap focus between the tiling area and the floating area
-    bindsym $mod+space focus mode_toggle
+# Toggle the current focus between tiling and floating mode
+bindsym $mod+Shift+space floating toggle
 
-    # move focus to the parent container
-    bindsym $mod+a focus parent
+# Swap focus between the tiling area and the floating area
+bindsym $mod+space focus mode_toggle
+
+# move focus to the parent container
+bindsym $mod+a focus parent
+
+
 #
 # Scratchpad:
 #
-    # i3 has a "scratchpad", which is a bag of holding for windows.
-    # You can send windows there and get them back later.
+# Make the currently focused window a scratchpad
+bindsym $mod+Shift+minus move scratchpad
 
-    # Move the currently focused window to the scratchpad
-    bindsym $mod+Shift+minus move scratchpad
+# Show the first scratchpad window
+bindsym $mod+minus scratchpad show
 
-    # Show the next scratchpad window or hide the focused scratchpad window.
-    # If there are multiple scratchpad windows, this command cycles through them.
-    bindsym $mod+minus scratchpad show
 #
 # Resizing containers:
 #
@@ -211,10 +232,10 @@ mode "resize" {
 #    bindsym $right resize grow width 10 px or 10 ppt
 
     # ditto, with arrow keys
-    bindsym Left resize shrink width 10 px or 10 ppt
-    bindsym Down resize grow height 10 px or 10 ppt
-    bindsym Up resize shrink height 10 px or 10 ppt
-    bindsym Right resize grow width 10 px or 10 ppt
+    bindsym Left resize shrink width 5 px or 5 ppt
+    bindsym Down resize grow height 5 px or 5 ppt
+    bindsym Up resize shrink height 5 px or 5 ppt
+    bindsym Right resize grow width 5 px or 5 ppt
 
     # return to default mode
     bindsym Return mode "default"
@@ -226,6 +247,11 @@ bindsym $mod+r mode "resize"
 
 # exec --no-startup-id i3msg 'workspace 2: Email; exec evolution;workspace 1'
 # exec --no-startup-id i3msg 'workspace 7: Social; exec pidgin; workspace 1;'
+
+#smart_gaps on
+#smart_borders on
+gaps inner 15
+gaps outer 0
 
 
 bar {
@@ -241,7 +267,6 @@ bar {
 }
 
 
-
 # window colors
 #  class                 border   backgr.  text  indicator  child_border
 client.focused          #7E25DD  #285577  #ffffff  #2e9ef4   #285577
@@ -251,19 +276,16 @@ client.urgent           #2f343a  #900000  #ffffff  #199475   #900000
 client.placeholder      #a2b4ba  #0c0c0c  #ffffff  #1793d0   #0c0c0c
 client.background 	    #82abba
 
-
-# # exec mako --anchor bottom-right
-# # exec_always "killall -9 mako"
 # # exec_always --no-startup-id  mako --progress-color=#7E25DD50 --markup 1 --actions 1 --icons 1 --border-radius 3 --background-color=#7E25DD50 --font=Hack
 
-exec $ni dunst 
-
-
-exec_always "notify-send 'i3' 'Loaded config'"
-
+exec $ni dunst &
 
 # set desktop background with custom effect
-exec --no-startup-id betterlockscreen -w dim
+exec $ni betterlockscreen -w dim
 
 # Alternative (set last used background)
-exec --no-startup-id source ~/.fehbg
+exec $ni source ~/.fehbg
+
+exec --no-startup-id compton -b
+
+exec_always "notify-send 'i3' 'Loaded config'"
