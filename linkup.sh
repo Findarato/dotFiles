@@ -5,7 +5,7 @@
 stow bash
 stow git
 stow kitty
-stow misc
+stow misc --ignore=readme.md
 stow pass
 stow rtv
 stow scripts
