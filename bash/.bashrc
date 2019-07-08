@@ -24,7 +24,7 @@ function run() {
 #if [[ -n "$STY" ]] && [[ -n "$TMUX" ]]; #we are in a screen or tmux session
 #then
 
-export TERM='xterm-256color'
+#export TERM='xterm-256color'
 
 if [ -f ~/.aliases ]; then
     . ~/.aliases
