@@ -9,6 +9,7 @@
 for_window [class="^.*"] border pixel 1
 # #---Application WS assignment---# #
 assign [class="Steam"] $ws10
+assign [class="Remmina"] $ws9
 assign [class="obs"] $ws3
 assign [class="chatty-Chatty"] $ws7
 assign [class="(?i)Spotify"] $ws2
@@ -35,6 +36,10 @@ for_window [class="(?i)Gimp"] move workspace $ws5
 for_window [title="(?i)explorer.exe"] floating enable
 for_window [class="(?i)streamlink-twitch-gui"] floating enable
 for_window [title="(?i)Bluetooth"] floating enable
+
+# Evolution
+for_window [class="Evolution" title="Compose Message"] floating enable
+for_window [class="Evolution" title="Reply Message"] floating enable
 
 #for_window [title="mutty"] floating enable
 
@@ -278,6 +283,8 @@ client.background 	    #82abba
 
 # # exec_always --no-startup-id  mako --progress-color=#7E25DD50 --markup 1 --actions 1 --icons 1 --border-radius 3 --background-color=#7E25DD50 --font=Hack
 
+# Startup Programs
+
 exec $ni dunst &
 
 # set desktop background with custom effect
@@ -286,6 +293,9 @@ exec $ni betterlockscreen -w dim
 # Alternative (set last used background)
 exec $ni source ~/.fehbg
 
-exec --no-startup-id compton -b
+exec $ni compton -b
+
+exec $ni remmina
+exec $ni pidgin
 
 exec_always "notify-send 'i3' 'Loaded config'"
