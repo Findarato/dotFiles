@@ -113,6 +113,13 @@ if [ -d "/opt/etcher-cli" ]; then
     PATH="${PATH}:/opt/etcher-cli/"
 fi
 
+# Add support for etcher
+if [ -d "/usr/lib64/qt4/bin" ]; then
+    PATH="${PATH}:/usr/lib64/qt4/bin/"
+fi
+
+
+
 DEFAULT_USER=${USER}
 
 export GPG_TTY=$(tty)
