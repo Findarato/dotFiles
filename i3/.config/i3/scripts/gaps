@@ -1,3 +1,0 @@
-exec swaymsg gaps inner all set 10
-exec swaymsg gaps couter all set 10
-exec swaymsg smart_gaps 0
