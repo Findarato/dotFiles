@@ -5,12 +5,6 @@ export SHELL="/bin/zsh"
 export TERM=xterm
 export ZSH=${HOME}/.oh-my-zsh
 
-if ! { [ "$TERM" = "screen" ] && [ -n "$TMUX" ]; } then
-#  export TERM='xterm-256color'
-  #echo "no tmux"
-  #  PS1="@$HOSTNAME $PS1"
-fi
-
 
 # History
 export HISTFILE="$HOME/.zsh_history"
@@ -126,11 +120,11 @@ export GPG_TTY=$(tty)
 source ~/.zplug/init.zsh
 
 # Supports oh-my-zsh plugins and the like
-if [[ $OSTYPE = (linux)* ]]; then
+#if [[ $OSTYPE = (linux)* ]]; then
     #    zplug "plugins/archlinux",      from:oh-my-zsh, if:"(( $+commands[pacman] ))"
     # zplug "plugins/dnf",            from:oh-my-zsh, if:"(( $+commands[dnf] ))"
     #    zplug "plugins/mock",           from:oh-my-zsh, if:"(( $+commands[mock] ))"
-fi
+#fi
 
 # =============================================================================
 #                                   Options
@@ -175,6 +169,7 @@ setopt share_history            # Share history between multiple shells
 
 # Zplugins
 
+zplug "tamcore/autoupdate-oh-my-zsh-plugins", from:github
 zplug "zsh-users/zsh-syntax-highlighting", from:github, defer:3
 zplug "chrissicool/zsh-256color", from:github
 zplug "TamCore/autoupdate-oh-my-zsh-plugins", from:github
