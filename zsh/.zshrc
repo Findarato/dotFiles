@@ -17,23 +17,6 @@ if [[ $OSTYPE = (linux)* ]]; then
     export LS_OPTIONS='--color=auto'
 fi
 
-# DOWNLOADFROMGIT=yes
-# if [ $DOWNLOADFROMGIT ]; then
-#     if [ -d "${HOME}/.oh-my-zsh/" ]; then
-#         mkdir -p ${ZSH_CUSTOM}
-#         if [ ! -d "$ZSH_CUSTOM/powerlevel9k" ]; then
-#             # Only download / clone the repo if the folder does not exsist
-#             /usr/bin/git clone --depth 1 https://github.com/bhilburn/powerlevel9k.git $ZSH_CUSTOM/powerlevel9k
-#             /usr/bin/git clone --depth 1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/powerlevel10k
-#         fi
-#     fi
-#     #ZSH_THEME="powerlevel9k/powerlevel9k"
-#     source "${HOME}/.powerlevel9k"
-# else
-#     # Setting the default theme
-#     ZSH_THEME="pygmalion"
-# fi
-
 mkdir -p ${ZSH_CACHE_DIR} >> /dev/null
 
 export UPDATE_ZSH_DAYS=13
@@ -244,12 +227,7 @@ if [[ $(zsh --version | awk '{print $2}') > 5.1 ]]; then
     # do someting that only higher zsh versions support
     # ZSH_THEME="powerlevel10k/powerlevel10k"
     zplug "romkatv/powerlevel10k", use:powerlevel10k.zsh-theme
-else
-    # do something else for low versions
-    # ZSH_THEME="powerlevel9k/powerlevel9k"
-    zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme
 fi
-
 
 zplug load
 
