@@ -3,6 +3,7 @@ export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 export SHELL="/bin/zsh"
 export TERM=xterm
+export TERM="xterm-256color"
 export ZSH=${HOME}/.oh-my-zsh
 export ZSH_CUSTOM="${HOME}/.oh-my-zsh/custom/themes"
 
