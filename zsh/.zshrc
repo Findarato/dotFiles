@@ -44,27 +44,20 @@ ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="yyyy-mm-dd"
 
-#ZSH_THEME="pygmalion"
-# ZSH_THEME="agnoster"
-ZSH_THEME="powerlevel9k/powerlevel9k"
-#ZSH_THEME="pygmalion"
-#ZSH_THEME="powerlevel10k/powerlevel10k"
-
-#plugins=(
-#    zsh_reload
-#    colorize
-#    docker
-#    git
-#    git-flow
-#    git-prompt
-#    gpg-agent
-#    zsh-autosuggestions
-#)
 
 # User configuration
 
 export PATH="${HOME}/.local/bin:${HOME}/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin:/sbin/"
 
+if [ $(zsh --version | cut -c5-7) > 5.1 ];then
+    # Powerlevel10K time
+    ZSH_THEME="powerlevel10k/powerlevel10k"
+else
+    # Fallback Powerlevel9K time
+    ZSH_THEME="powerlevel9k/powerlevel9k"
+fi
+
+ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # ssh
 export SSH_KEY_PATH="~/.ssh/id_rsa"
@@ -139,10 +132,6 @@ source ~/.zplug/init.zsh
 # =============================================================================
 #                                   Options
 # =============================================================================
-#autoload -Uz add-zsh-hook
-#autoload -Uz compinit && compinit -u
-#autoload -Uz url-quote-magic
-#autoload -Uz vcs_info
 
 #zle -N self-insert url-quote-magic
 
@@ -180,10 +169,9 @@ setopt share_history            # Share history between multiple shells
 # Zplugins
 
 zplug "romkatv/powerlevel10k", use:powerlevel10k.zsh-theme
-#zplug "tamcore/autoupdate-oh-my-zsh-plugins", from:github
+zplug "tamcore/autoupdate-oh-my-zsh-plugins", from:github
 zplug "zsh-users/zsh-syntax-highlighting", from:github, defer:3
 zplug "chrissicool/zsh-256color", from:github
-#zplug "TamCore/autoupdate-oh-my-zsh-plugins", from:github
 zplug "lib/completion", from:oh-my-zsh
 zplug "plugins/docker", from:oh-my-zsh
 zplug "plugins/zsh_reload", from:oh-my-zsh
