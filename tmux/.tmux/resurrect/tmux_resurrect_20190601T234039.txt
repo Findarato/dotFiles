@@ -1,0 +1,34 @@
+pane	0	0	:ComputerSensors	0	:	0	:/var/lib/fahclient	0	zsh	:
+pane	0	0	:ComputerSensors	0	:	0	:/var/lib/fahclient	0	zsh	:
+pane	0	0	:ComputerSensors	0	:	1	:/home/joe	0	bash	:/bin/bash bin/clock.sh
+pane	0	0	:ComputerSensors	0	:	1	:/home/joe	0	bash	:/bin/bash bin/clock.sh
+pane	0	0	:ComputerSensors	0	:	2	:/home/joe	0	bash	:/bin/bash bin/cpu.sh
+pane	0	0	:ComputerSensors	0	:	2	:/home/joe	0	bash	:/bin/bash bin/cpu.sh
+pane	0	0	:ComputerSensors	0	:	3	:/home/joe	0	bash	:/bin/bash bin/gpu.sh
+pane	0	0	:ComputerSensors	0	:	3	:/home/joe	0	bash	:/bin/bash bin/gpu.sh
+pane	0	0	:ComputerSensors	0	:	4	:/home/joe/dotfiles/scripts/bin	1	watch	:watch --color -n 1 nvidia-smi
+pane	0	0	:ComputerSensors	0	:	4	:/home/joe/dotfiles/scripts/bin	1	watch	:watch --color -n 1 nvidia-smi
+pane	0	0	:ComputerSensors	0	:	5	:/home/joe	0	htop	:htop
+pane	0	0	:ComputerSensors	0	:	5	:/home/joe	0	htop	:htop
+pane	0	0	:ComputerSensors	0	:	6	:/home/joe/Documents/src/ansible/ansible-CentOS7-Docker	0	zsh	:
+pane	0	0	:ComputerSensors	0	:	6	:/home/joe/Documents/src/ansible/ansible-CentOS7-Docker	0	zsh	:
+pane	0	1	:Docker hosts	0	:-	0	:/home/joe	0	zsh	:
+pane	0	1	:Docker hosts	0	:-	0	:/home/joe	0	zsh	:
+pane	0	1	:Docker hosts	0	:-	1	:/home/joe	0	zsh	:
+pane	0	1	:Docker hosts	0	:-	1	:/home/joe	0	zsh	:
+pane	0	1	:Docker hosts	0	:-	2	:/home/joe/dotfiles/scripts/bin	0	zsh	:
+pane	0	1	:Docker hosts	0	:-	2	:/home/joe/dotfiles/scripts/bin	0	zsh	:
+pane	0	1	:Docker hosts	0	:-	3	:/home/joe	1	zsh	:
+pane	0	1	:Docker hosts	0	:-	3	:/home/joe	1	zsh	:
+pane	0	3	:Toolbox	1	:*	0	:/home/joe/dotfiles/scripts/bin	0	zsh	:
+pane	0	3	:Toolbox	1	:*	0	:/home/joe/dotfiles/scripts/bin	0	zsh	:
+pane	0	3	:Toolbox	1	:*	1	:/mnt/tarvalon/storage/TV/Merlin	1	wget	:wget -r -np -k -c http://130.185.144.102/TVShows/M-P/Merlin/
+pane	0	3	:Toolbox	1	:*	1	:/mnt/tarvalon/storage/TV/Merlin	1	wget	:wget -r -np -k -c http://130.185.144.102/TVShows/M-P/Merlin/
+window	0	0	0	:	b75f,190x52,0,0{97x52,0,0[97x23,0,0{70x23,0,0,1,26x23,71,0[26x3,71,0,2,26x3,71,4,13,26x15,71,8,14]},97x28,0,24,3],92x52,98,0[92x24,98,0,4,92x27,98,25,5]}
+window	0	1	0	:-	6082,190x52,0,0{114x52,0,0[114x26,0,0,6,114x25,0,27,7],75x52,115,0[75x22,115,0,8,75x29,115,23,9]}
+window	0	3	1	:*	7a94,190x52,0,0[190x16,0,0,10,190x35,0,17,11]
+window	0	0	0	:	b75f,190x52,0,0{97x52,0,0[97x23,0,0{70x23,0,0,1,26x23,71,0[26x3,71,0,2,26x3,71,4,13,26x15,71,8,14]},97x28,0,24,3],92x52,98,0[92x24,98,0,4,92x27,98,25,5]}
+window	0	1	0	:-	6082,190x52,0,0{114x52,0,0[114x26,0,0,6,114x25,0,27,7],75x52,115,0[75x22,115,0,8,75x29,115,23,9]}
+window	0	3	1	:*	7a94,190x52,0,0[190x16,0,0,10,190x35,0,17,11]
+state	0	
+state	0	

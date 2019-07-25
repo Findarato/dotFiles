@@ -10,3 +10,18 @@
 [submodule "nano/.config/nano/nanorc"]
 	path = nano/.config/nano/nanorc
 	url = https://github.com/scopatz/nanorc.git
+[submodule "tmux/.tmux/plugins/tmux-base16-statusline"]
+	path = tmux/.tmux/plugins/tmux-base16-statusline
+	url = https://git::@github.com/jatap/tmux-base16-statusline
+[submodule "tmux/.tmux/plugins/tmux-continuum"]
+	path = tmux/.tmux/plugins/tmux-continuum
+	url = https://git::@github.com/tmux-plugins/tmux-continuum
+[submodule "tmux/.tmux/plugins/tmux-resurrect"]
+	path = tmux/.tmux/plugins/tmux-resurrect
+	url = https://git::@github.com/tmux-plugins/tmux-resurrect
+[submodule "tmux/.tmux/plugins/tmux-sensible"]
+	path = tmux/.tmux/plugins/tmux-sensible
+	url = https://git::@github.com/tmux-plugins/tmux-sensible
+[submodule "tmux/.tmux/plugins/tpm"]
+	path = tmux/.tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm

@@ -1,0 +1,15 @@
+pane	0	0	:ComputerSensors	1	:*	0	:/home/joe	0	zsh	:
+pane	0	0	:ComputerSensors	1	:*	1	:/home/joe/dotfiles/scripts/bin	0	zsh	:
+pane	0	0	:ComputerSensors	1	:*	2	:/home/joe	0	zsh	:
+pane	0	0	:ComputerSensors	1	:*	3	:/home/joe	0	zsh	:
+pane	0	0	:ComputerSensors	1	:*	4	:/home/joe	0	tail	:tail -f badblocks1.txt badblocks2.txt
+pane	0	0	:ComputerSensors	1	:*	5	:/home/joe/Documents/src/ansible/ansible-CentOS7-Docker	1	zsh	:
+pane	0	0	:ComputerSensors	1	:*	6	:/home/joe	0	zsh	:
+pane	0	0	:ComputerSensors	1	:*	7	:/home/joe/Documents/src/python-lifx-sdk/examples	0	zsh	:
+pane	0	1	:Docker hosts	0	:	0	:/home/joe	1	ssh	:ssh docker01
+pane	0	1	:Docker hosts	0	:	1	:/home/joe/dotfiles/scripts/bin	0	ssh	:ssh docker02
+pane	0	3	:Toolbox	0	:-	0	:/mnt/tarvalon/storage/TV	1	zsh	:
+window	0	0	1	:*	2dee,209x59,0,0{105x59,0,0[105x20,0,0[105x4,0,0{53x4,0,0,1,13x4,54,0,2,15x4,68,0,3,21x4,84,0,4},105x15,0,5,5],105x38,0,21,6],103x59,106,0[103x28,106,0,7,103x30,106,29,8]}
+window	0	1	0	:	20c2,209x59,0,0{109x59,0,0,9,99x59,110,0,10}
+window	0	3	0	:-	6ac1,209x59,0,0,12
+state	0	
