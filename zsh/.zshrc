@@ -4,6 +4,7 @@ export LC_ALL="en_US.UTF-8"
 export SHELL="/bin/zsh"
 export TERM=xterm
 export ZSH=${HOME}/.oh-my-zsh
+export ZSH_CUSTOM="${HOME}/.oh-my-zsh/custom/themes"
 
 
 # History
@@ -15,22 +16,31 @@ if [[ $OSTYPE = (linux)* ]]; then
     export LS_OPTIONS='--color=auto'
 fi
 
-DOWNLOADFROMGIT=yes
-GITDOWNLOADLOACTION="${HOME}/.oh-my-zsh/custom/themes/powerlevel9k"
-if [ $DOWNLOADFROMGIT ]; then
-    if [ -d "${HOME}/.oh-my-zsh/" ]; then
-        mkdir -p "${HOME}/.oh-my-zsh/custom/themes/"
-        if [ ! -d "${GITDOWNLOADLOACTION}" ]; then
-            # Only download / clone the repo if the folder does not exsist
-            /usr/bin/git clone --depth 1 https://github.com/bhilburn/powerlevel9k.git $GITDOWNLOADLOACTION
-        fi
-    fi
-    #ZSH_THEME="powerlevel9k/powerlevel9k"
-    source "${HOME}/.powerlevel9k"
-else
-    # Setting the default theme
-    ZSH_THEME="pygmalion"
-fi
+# =============================================================================
+#                                   Plugins
+# =============================================================================
+# Check if zplug is installed
+
+[ ! -d ~/.zplug ] && git clone https://github.com/zplug/zplug ~/.zplug
+source ~/.zplug/init.zsh
+
+
+# DOWNLOADFROMGIT=yes
+# if [ $DOWNLOADFROMGIT ]; then
+#     if [ -d "${HOME}/.oh-my-zsh/" ]; then
+#         mkdir -p ${ZSH_CUSTOM}
+#         if [ ! -d "$ZSH_CUSTOM/powerlevel9k" ]; then
+#             # Only download / clone the repo if the folder does not exsist
+#             /usr/bin/git clone --depth 1 https://github.com/bhilburn/powerlevel9k.git $ZSH_CUSTOM/powerlevel9k
+#             /usr/bin/git clone --depth 1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/powerlevel10k
+#         fi
+#     fi
+#     #ZSH_THEME="powerlevel9k/powerlevel9k"
+#     source "${HOME}/.powerlevel9k"
+# else
+#     # Setting the default theme
+#     ZSH_THEME="pygmalion"
+# fi
 
 export UPDATE_ZSH_DAYS=13
 
@@ -51,13 +61,15 @@ export PATH="${HOME}/.local/bin:${HOME}/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin
 
 if [ $(zsh --version | cut -c5-7) > 5.1 ];then
     # Powerlevel10K time
+    zplug "romkatv/powerlevel10k", use:powerlevel10k.zsh-theme
     ZSH_THEME="powerlevel10k/powerlevel10k"
 else
     # Fallback Powerlevel9K time
+    zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme
     ZSH_THEME="powerlevel9k/powerlevel9k"
 fi
 
-ZSH_THEME="powerlevel9k/powerlevel9k"
+#ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # ssh
 export SSH_KEY_PATH="~/.ssh/id_rsa"
@@ -114,13 +126,7 @@ DEFAULT_USER=${USER}
 
 export GPG_TTY=$(tty)
 
-# =============================================================================
-#                                   Plugins
-# =============================================================================
-# Check if zplug is installed
 
-[ ! -d ~/.zplug ] && git clone https://github.com/zplug/zplug ~/.zplug
-source ~/.zplug/init.zsh
 
 # Supports oh-my-zsh plugins and the like
 #if [[ $OSTYPE = (linux)* ]]; then
@@ -168,7 +174,6 @@ setopt share_history            # Share history between multiple shells
 
 # Zplugins
 
-zplug "romkatv/powerlevel10k", use:powerlevel10k.zsh-theme
 zplug "tamcore/autoupdate-oh-my-zsh-plugins", from:github
 zplug "zsh-users/zsh-syntax-highlighting", from:github, defer:3
 zplug "chrissicool/zsh-256color", from:github
