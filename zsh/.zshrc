@@ -15,7 +15,7 @@ if [[ $OSTYPE = (linux)* ]]; then
     export LS_OPTIONS='--color=auto'
 fi
 
-DOWNLOADFROMGIT=false
+DOWNLOADFROMGIT=yes
 GITDOWNLOADLOACTION="${HOME}/.oh-my-zsh/custom/themes/powerlevel9k"
 if [ $DOWNLOADFROMGIT ]; then
     if [ -d "${HOME}/.oh-my-zsh/" ]; then
@@ -26,7 +26,7 @@ if [ $DOWNLOADFROMGIT ]; then
         fi
     fi
     #ZSH_THEME="powerlevel9k/powerlevel9k"
-    #source "${HOME}/.powerlevel9k"
+    source "${HOME}/.powerlevel9k"
 else
     # Setting the default theme
     ZSH_THEME="pygmalion"
