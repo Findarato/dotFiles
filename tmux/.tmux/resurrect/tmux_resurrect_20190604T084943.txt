@@ -1,0 +1,17 @@
+pane	0	0	:ComputerSensors	0	:	0	:/home/joe	0	zsh	:
+pane	0	0	:ComputerSensors	0	:	1	:/home/joe	0	zsh	:
+pane	0	0	:ComputerSensors	0	:	2	:/home/joe	0	zsh	:
+pane	0	0	:ComputerSensors	0	:	3	:/home/joe	0	bash	:/bin/bash bin/clock.sh
+pane	0	0	:ComputerSensors	0	:	4	:/home/joe	0	zsh	:
+pane	0	0	:ComputerSensors	0	:	5	:/home/joe/dotfiles/scripts/bin	1	bash	:/bin/bash ./funbox.sh
+pane	0	0	:ComputerSensors	0	:	6	:/home/joe	0	htop	:htop
+pane	0	0	:ComputerSensors	0	:	7	:/home/joe/Documents/src/ansible/ansible-CentOS7-Docker	0	zsh	:
+pane	0	1	:Docker hosts	0	:MZ	0	:/mnt/tarvalon/storage/TV/Download	1	zsh	:
+pane	0	1	:Docker hosts	0	:MZ	1	:/home/joe/dotfiles/scripts/bin	0	zsh	:
+pane	0	2	:Scratch	1	:*	0	:/mnt/tarvalon/storage/Movies	1	zsh	:
+pane	0	3	:Toolbox	0	:-	0	:/mnt/tarvalon/storage/TV/Download/130.185.144.102/TVShows/A-D	1	zsh	:
+window	0	0	0	:	17c0,106x58,0,0{55x58,0,0[55x13,0,0[55x3,0,0{1x3,0,0,1,15x3,2,0,2,15x3,18,0,3,21x3,34,0,4},55x9,0,4,5],55x44,0,14,6],50x58,56,0[50x27,56,0,7,50x30,56,28,8]}
+window	0	1	0	:MZ	25b2,106x58,0,0{57x58,0,0,9,48x58,58,0,10}
+window	0	2	1	:*	67f1,106x58,0,0,12
+window	0	3	0	:-	67f0,106x58,0,0,11
+state	0	
