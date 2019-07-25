@@ -3,7 +3,7 @@ export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 export SHELL="/bin/zsh"
 export TERM=xterm
-export ZSH=${HOME}/.oh-my-zsh
+#export ZSH=${HOME}/.oh-my-zsh
 
 
 # History
@@ -15,27 +15,13 @@ if [[ $OSTYPE = (linux)* ]]; then
     export LS_OPTIONS='--color=auto'
 fi
 
-DOWNLOADFROMGIT=false
-GITDOWNLOADLOACTION="${HOME}/.oh-my-zsh/custom/themes/powerlevel9k"
-if [ $DOWNLOADFROMGIT ]; then
-    if [ -d "${HOME}/.oh-my-zsh/" ]; then
-        mkdir -p "${HOME}/.oh-my-zsh/custom/themes/"
-        if [ ! -d "${GITDOWNLOADLOACTION}" ]; then
-            # Only download / clone the repo if the folder does not exsist
-            /usr/bin/git clone --depth 1 https://github.com/bhilburn/powerlevel9k.git $GITDOWNLOADLOACTION
-        fi
-    fi
-    ZSH_THEME="powerlevel9k/powerlevel9k"
-    source "${HOME}/.powerlevel9k"
-else
-    # Setting the default theme
-    ZSH_THEME="pygmalion"
-fi
-
 export UPDATE_ZSH_DAYS=13
 
 # Map out Aliases
 source "${HOME}/.aliases"
+
+# Set some PL9k/10k values
+source "${HOME}/.powerlevel9k"
 
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
@@ -43,9 +29,9 @@ HIST_STAMPS="yyyy-mm-dd"
 
 #ZSH_THEME="pygmalion"
 # ZSH_THEME="agnoster"
-ZSH_THEME="powerlevel9k/powerlevel9k"
+#ZSH_THEME="powerlevel9k/powerlevel9k"
 #ZSH_THEME="pygmalion"
-
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 #plugins=(
 #    zsh_reload
@@ -176,6 +162,7 @@ setopt share_history            # Share history between multiple shells
 
 # Zplugins
 
+zplug "romkatv/powerlevel10k", use:powerlevel10k.zsh-theme
 zplug "tamcore/autoupdate-oh-my-zsh-plugins", from:github
 zplug "zsh-users/zsh-syntax-highlighting", from:github, defer:3
 zplug "chrissicool/zsh-256color", from:github
@@ -249,7 +236,7 @@ zplug load
 
 export ZSH_PLUGINS_ALIAS_TIPS_TEXT='💡 '
 
-source ${ZSH}/oh-my-zsh.sh
+#source ${ZSH}/oh-my-zsh.sh
 
 # Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/"
