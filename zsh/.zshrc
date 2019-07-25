@@ -6,7 +6,7 @@ export TERM=xterm
 export TERM="xterm-256color"
 export ZSH=${HOME}/.oh-my-zsh
 export ZSH_CUSTOM="${HOME}/.oh-my-zsh/custom/themes"
-
+export ZSH_CACHE_DIR="${HOME}/.cache/zsh"
 
 # History
 export HISTFILE="$HOME/.zsh_history"
@@ -33,6 +33,8 @@ fi
 #     # Setting the default theme
 #     ZSH_THEME="pygmalion"
 # fi
+
+mkdir -p ${ZSH_CACHE_DIR} >> /dev/null
 
 export UPDATE_ZSH_DAYS=13
 
