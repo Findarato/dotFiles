@@ -3,8 +3,8 @@ export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 export SHELL="/bin/zsh"
 export TERM=xterm
-#export ZSH=${HOME}/.oh-my-zsh
-export ZSH_CACHE_DIR=${HOME}/.cache/
+export ZSH=${HOME}/.oh-my-zsh
+
 
 # History
 export HISTFILE="$HOME/.zsh_history"
@@ -13,6 +13,23 @@ export SAVEHIST=$HISTSIZE
 
 if [[ $OSTYPE = (linux)* ]]; then
     export LS_OPTIONS='--color=auto'
+fi
+
+DOWNLOADFROMGIT=false
+GITDOWNLOADLOACTION="${HOME}/.oh-my-zsh/custom/themes/powerlevel9k"
+if [ $DOWNLOADFROMGIT ]; then
+    if [ -d "${HOME}/.oh-my-zsh/" ]; then
+        mkdir -p "${HOME}/.oh-my-zsh/custom/themes/"
+        if [ ! -d "${GITDOWNLOADLOACTION}" ]; then
+            # Only download / clone the repo if the folder does not exsist
+            /usr/bin/git clone --depth 1 https://github.com/bhilburn/powerlevel9k.git $GITDOWNLOADLOACTION
+        fi
+    fi
+    #ZSH_THEME="powerlevel9k/powerlevel9k"
+    #source "${HOME}/.powerlevel9k"
+else
+    # Setting the default theme
+    ZSH_THEME="pygmalion"
 fi
 
 export UPDATE_ZSH_DAYS=13
