@@ -50,16 +50,16 @@ HIST_STAMPS="yyyy-mm-dd"
 
 export PATH="${HOME}/.local/bin:${HOME}/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin:/sbin/"
 
-if [ $(zsh --version | cut -c5-7) > 5.1 ];then
-    # Powerlevel10K time
+# if [ $(zsh --version | cut -c5-7) > 5.1 ];then
+#     # Powerlevel10K time
 
-    ZSH_THEME="powerlevel10k/powerlevel10k"
-else
-    # Fallback Powerlevel9K time
-    ZSH_THEME="powerlevel9k/powerlevel9k"
-fi
+#     ZSH_THEME="powerlevel10k/powerlevel10k"
+# else
+#     # Fallback Powerlevel9K time
+#     ZSH_THEME="powerlevel9k/powerlevel9k"
+# fi
 
-#ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # ssh
 export SSH_KEY_PATH="~/.ssh/id_rsa"
@@ -169,7 +169,7 @@ setopt share_history            # Share history between multiple shells
 
 
 # Zplugins
-zplug "romkatv/powerlevel10k", use:powerlevel10k.zsh-theme
+# zplug "romkatv/powerlevel10k", use:powerlevel10k.zsh-theme
 zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme
 zplug "tamcore/autoupdate-oh-my-zsh-plugins", from:github
 zplug "zsh-users/zsh-syntax-highlighting", from:github, defer:3
