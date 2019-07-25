@@ -4,7 +4,7 @@ export LC_ALL="en_US.UTF-8"
 export SHELL="/bin/zsh"
 export TERM=xterm
 #export ZSH=${HOME}/.oh-my-zsh
-
+export ZSH_CACHE_DIR=${HOME}/.cache/
 
 # History
 export HISTFILE="$HOME/.zsh_history"
@@ -163,10 +163,10 @@ setopt share_history            # Share history between multiple shells
 # Zplugins
 
 zplug "romkatv/powerlevel10k", use:powerlevel10k.zsh-theme
-zplug "tamcore/autoupdate-oh-my-zsh-plugins", from:github
+#zplug "tamcore/autoupdate-oh-my-zsh-plugins", from:github
 zplug "zsh-users/zsh-syntax-highlighting", from:github, defer:3
 zplug "chrissicool/zsh-256color", from:github
-zplug "TamCore/autoupdate-oh-my-zsh-plugins", from:github
+#zplug "TamCore/autoupdate-oh-my-zsh-plugins", from:github
 zplug "lib/completion", from:oh-my-zsh
 zplug "plugins/docker", from:oh-my-zsh
 zplug "plugins/zsh_reload", from:oh-my-zsh
