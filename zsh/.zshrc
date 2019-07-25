@@ -170,7 +170,7 @@ setopt share_history            # Share history between multiple shells
 
 
 # Zplugins
-
+zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme
 zplug "tamcore/autoupdate-oh-my-zsh-plugins", from:github
 zplug "zsh-users/zsh-syntax-highlighting", from:github, defer:3
 zplug "chrissicool/zsh-256color", from:github
@@ -242,11 +242,11 @@ fi
 
 if [[ $(zsh --version | awk '{print $2}') > 5.1 ]]; then
     # do someting that only higher zsh versions support
-    ZSH_THEME="powerlevel10k/powerlevel10k"
+    # ZSH_THEME="powerlevel10k/powerlevel10k"
     zplug "romkatv/powerlevel10k", use:powerlevel10k.zsh-theme
 else
     # do something else for low versions
-    ZSH_THEME="powerlevel9k/powerlevel9k"
+    # ZSH_THEME="powerlevel9k/powerlevel9k"
     zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme
 fi
 
