@@ -46,9 +46,9 @@ HIST_STAMPS="yyyy-mm-dd"
 
 #ZSH_THEME="pygmalion"
 # ZSH_THEME="agnoster"
-#ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="powerlevel9k/powerlevel9k"
 #ZSH_THEME="pygmalion"
-ZSH_THEME="powerlevel10k/powerlevel10k"
+#ZSH_THEME="powerlevel10k/powerlevel10k"
 
 #plugins=(
 #    zsh_reload
