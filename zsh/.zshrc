@@ -2,8 +2,8 @@
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 export SHELL="/bin/zsh"
-export TERM=xterm
-export TERM="xterm-256color"
+export TERM="xterm"
+#export TERM="xterm-256color"
 export ZSH=${HOME}/.oh-my-zsh
 export ZSH_CUSTOM="${HOME}/.oh-my-zsh/custom/themes"
 export ZSH_CACHE_DIR="${HOME}/.cache/zsh"
@@ -223,11 +223,11 @@ if ! zplug check --verbose; then
 fi
 
 
-if [[ $(zsh --version | awk '{print $2}') > 5.1 ]]; then
+#if [[ $(zsh --version | awk '{print $2}') > 5.1 ]]; then
     # do someting that only higher zsh versions support
     # ZSH_THEME="powerlevel10k/powerlevel10k"
-    zplug "romkatv/powerlevel10k", use:powerlevel10k.zsh-theme
-fi
+    #zplug "romkatv/powerlevel10k", use:powerlevel10k.zsh-theme
+#fi
 
 zplug load
 
