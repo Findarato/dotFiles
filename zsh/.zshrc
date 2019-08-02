@@ -1,3 +1,7 @@
+#Bind keys
+bindkey '^[[1;5D' backward-word
+bindkey '^[[1;5C' forward-word
+
 # Fix Locale
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
@@ -19,7 +23,7 @@ fi
 
 mkdir -p ${ZSH_CACHE_DIR} >> /dev/null
 
-export UPDATE_ZSH_DAYS=13
+export UPDATE_ZSH_DAYS=7
 
 # Map out Aliases
 source "${HOME}/.aliases"
