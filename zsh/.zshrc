@@ -1,13 +1,17 @@
 #Bind keys
 bindkey '^[[1;5D' backward-word
 bindkey '^[[1;5C' forward-word
+bindkey '^[[H' beginning-of-line
+bindkey '^[[F' end-of-line
+bindkey "${terminfo[kdch1]}" delete-char
+
 
 # Fix Locale
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 export SHELL="/bin/zsh"
 #export TERM="xterm"
-export TERM="xterm-256color"
+#export TERM="xterm-256color"
 export ZSH=${HOME}/.oh-my-zsh
 export ZSH_CUSTOM="${HOME}/.oh-my-zsh/custom/themes"
 export ZSH_CACHE_DIR="${HOME}/.cache/zsh"
