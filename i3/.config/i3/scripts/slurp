@@ -7,6 +7,8 @@ FILEPATH="${HOME}/Pictures/screenshots"
 
 mkdir -p ${FILEPATH}
 
+echo ${FILEPATH}/${FILENAME}
+
 ${SCROT} --select --thumb ${FILEPATH}/${FILENAME}
 
 notify-send "Created Screenshot" ${FILENAME} -t 50000 -i ${FILEPATH}/${THUMBNAME}
