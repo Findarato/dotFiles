@@ -269,7 +269,7 @@ bar {
     focused_workspace  #120F17 #7E25DD #c6c8d1
     inactive_workspace #120F17 #000000 #c6c8d1
   }
-  status_command i3blocks
+  status_command i3blocks -c ~/.config/i3blocks/i3blocks.conf
   # status_command /opt/bumblebee-status/bumblebee-status -m cpu memory weather sensors pasink pasource date time -p time.format="%H:%M"  date.format="%a, %b %d %Y" -t purpleberg
 }
 
