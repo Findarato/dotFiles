@@ -51,8 +51,8 @@ for_window [title="pulsemixer"] floating enable
 # Logo key. Use Mod1 for Alt.
 
 set $mod Mod4
-#set $lock "~/.config/i3/scripts/lock -l"
-set $lock "/usr/bin/xscreensaver-command --lock"
+set $lock "~/.config/i3/scripts/lock -l"
+#set $lock "/usr/bin/xscreensaver-command --activate --restart"
 set $grim ~/.config/i3/scripts/grim
 set $slurp ~/.config/i3/scripts/slurp
 
@@ -263,6 +263,7 @@ gaps outer 0
 bar {
   position top
   font pango:'Font Awesome 5 Brands-Regular-400' 9
+  tray_output primary
   colors {
     background #120F17
     statusline #E2a478
