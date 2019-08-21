@@ -42,6 +42,9 @@ for_window [class="Evolution"] move workspace $ws2
 for_window [class="Evolution" title="Compose Message"] floating enable move right 330px,move down 70px
 for_window [class="Evolution" title="Compose Message"] resize set 800 600
 for_window [class="Evolution" title="Re:*"] floating enable move right 330px,move down 70px resize set 800 600
+for_window [class="Evolution" title="Send & Receive Mail"] floating enable move right 50% ,move down 50%, resize set 100px 200px
+
+
 
 #for_window [title="mutty"] floating enable
 

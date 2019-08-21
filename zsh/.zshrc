@@ -1,3 +1,4 @@
+
 #Bind keys
 bindkey '^[[1;5D' backward-word
 bindkey '^[[1;5C' forward-word
@@ -11,7 +12,7 @@ export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 export SHELL="/bin/zsh"
 #export TERM="xterm"
-#export TERM="xterm-256color"
+export TERM="xterm-256color"
 export ZSH=${HOME}/.oh-my-zsh
 export ZSH_CUSTOM="${HOME}/.oh-my-zsh/custom/themes"
 export ZSH_CACHE_DIR="${HOME}/.cache/zsh"
@@ -230,21 +231,21 @@ if ! zplug check --verbose; then
     fi
 fi
 
-
-#if [[ $(zsh --version | awk '{print $2}') > 5.1 ]]; then
-    # do someting that only higher zsh versions support
-    # ZSH_THEME="powerlevel10k/powerlevel10k"
-    #zplug "romkatv/powerlevel10k", use:powerlevel10k.zsh-theme
-#fi
-
 zplug load
 
 export ZSH_PLUGINS_ALIAS_TIPS_TEXT='💡 '
 
-#source ${ZSH}/oh-my-zsh.sh
+source ${ZSH}/oh-my-zsh.sh
 
 # Base16 Shell
-BASE16_SHELL="$HOME/.config/base16-shell/"
-[ -n "$PS1" ] && \
-    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
-        eval "$("$BASE16_SHELL/profile_helper.sh")"
+#BASE16_SHELL="$HOME/.config/base16-shell/"
+
+#[ -n "$PS1" ] && \
+#    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+#        eval "$("$BASE16_SHELL/profile_helper.sh")"
+
+settitle() {
+   printf "\033k$1\033\\"
+}
+
+DISABLE_AUTO_TITLE=true
