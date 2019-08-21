@@ -8,11 +8,11 @@
 CURL="/usr/bin/curl"
 
 echo -n "Enter Url to test: "
-read url
+read -r url
 
 URL="${url}"
-result=`${CURL} -o /dev/null -s -w %{time_connect}:%{time_starttransfer}:%{time_total} $URL`
-IFS=':' read -a times <<< "${result}"
+result=$("${CURL}" -o /dev/null -s -w "%{time_connect}:%{time_starttransfer}:%{time_total}" "${URL}")
+IFS=':' read -r -a times <<< "${result}"
 
 echo "Results: ${URL}"
 echo "+-----------------------------------------------------+"
