@@ -4,7 +4,7 @@
 # Taken from https://coderwall.com/p/i2hqda/investigate-http-response-times
 # Credit goes to: adamstrawson
 #
-#!/bin/bash
+
 CURL="/usr/bin/curl"
 
 echo -n "Enter Url to test: "
