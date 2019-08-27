@@ -10,7 +10,7 @@ stow pass
 stow rtv
 stow scripts
 stow sway
-stow tilix
+stow Tilix
 stow tmux
 stow zsh
 stow rofi
