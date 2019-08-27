@@ -235,7 +235,7 @@ zplug load
 
 export ZSH_PLUGINS_ALIAS_TIPS_TEXT='💡 '
 
-source ${ZSH}/oh-my-zsh.sh
+#source ${ZSH}/oh-my-zsh.sh
 
 # Base16 Shell
 #BASE16_SHELL="$HOME/.config/base16-shell/"
