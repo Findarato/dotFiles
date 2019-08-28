@@ -12,7 +12,7 @@ pkill --signal 9 Enpass
 
 
 "${HOME}/bin/cleanCache.sh"
-"${HOME}/bin/docker_clean.sh"
+#"${HOME}/bin/docker_clean.sh"
 
 #Call Backup script
-"${HOME}/bin/Backup.sh work"
+"${HOME}/bin/Backup.sh" work
