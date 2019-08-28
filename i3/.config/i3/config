@@ -47,6 +47,9 @@ for_window [class="Evolution" title="Send & Receive Mail"] floating enable move 
 #MPV 
 for_window [class="mpv"] floating enable; move position center
 
+for_window [class="Variety" title="Variety Preferences"] floating enable; move position center; resize 800 600
+
+
 
 #for_window [title="mutty"] floating enable
 
