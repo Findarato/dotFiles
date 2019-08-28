@@ -1,0 +1,12 @@
+{
+    "[php]": {
+        "editor.defaultFormatter": "kokororin.vscode-phpfmt"
+    },
+    "workbench.startupEditor": "newUntitledFile",
+    "ansible.azureRestSpec": "/home/jharry/.vscode/rest",
+    "ansible.credentialsConfigured": true,
+    "terminal.external.linuxExec": "/usr/bin/tilix",
+    "editor.fontFamily": "'Fira Code Regular','Hack', 'monospace', monospace",
+    "terminal.integrated.fontFamily": "'Hack Nerd Font'",
+    "git.autofetch": true,
+}
