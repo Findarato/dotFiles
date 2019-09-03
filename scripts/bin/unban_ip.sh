@@ -1,4 +1,4 @@
 #!/bin/bash
 
-IPADDR=${1}
-fail2ban-client set sshd unbanip ${IPADDR}
+IPADDR="${1}"
+fail2ban-client set sshd unbanip "${IPADDR}"

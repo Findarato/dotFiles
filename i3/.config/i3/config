@@ -38,8 +38,18 @@ for_window [class="(?i)streamlink-twitch-gui"] floating enable
 for_window [title="(?i)Bluetooth"] floating enable
 
 # Evolution
-for_window [class="Evolution" title="Compose Message"] floating enable
-for_window [class="Evolution" title="Reply Message"] floating enable
+for_window [class="Evolution"] move workspace $ws2
+for_window [class="Evolution" title="Compose Message"] floating enable move right 330px,move down 70px
+for_window [class="Evolution" title="Compose Message"] resize set 800 600
+for_window [class="Evolution" title="Re:*"] floating enable; move position center; resize set 800 600
+for_window [class="Evolution" title="Send & Receive Mail"] floating enable; move position center; resize set 100 150
+
+#MPV 
+for_window [class="mpv"] floating enable; move position center
+
+for_window [class="Variety" title="Variety Preferences"] floating enable; move position center; resize 800 600
+
+
 
 #for_window [title="mutty"] floating enable
 
@@ -51,7 +61,8 @@ for_window [title="pulsemixer"] floating enable
 # Logo key. Use Mod1 for Alt.
 
 set $mod Mod4
-set $lock "~/.config/i3/scripts/lock -l"
+set $lock "~/.config/i3/scripts/betterlockscreen -l"
+#set $lock "/usr/bin/xscreensaver-command --activate --restart"
 set $grim ~/.config/i3/scripts/grim
 set $slurp ~/.config/i3/scripts/slurp
 
@@ -262,13 +273,15 @@ gaps outer 0
 bar {
   position top
   font pango:'Font Awesome 5 Brands-Regular-400' 9
+  tray_output primary
   colors {
     background #120F17
     statusline #E2a478
     focused_workspace  #120F17 #7E25DD #c6c8d1
     inactive_workspace #120F17 #000000 #c6c8d1
   }
-  status_command /opt/bumblebee-status/bumblebee-status -m cpu memory weather sensors pasink pasource date time -p time.format="%H:%M"  date.format="%a, %b %d %Y" -t purpleberg
+  status_command i3blocks -c ~/.config/i3blocks/i3blocks.conf
+  # status_command /opt/bumblebee-status/bumblebee-status -m cpu memory weather sensors pasink pasource date time -p time.format="%H:%M"  date.format="%a, %b %d %Y" -t purpleberg
 }
 
 
@@ -288,14 +301,17 @@ client.background 	    #82abba
 exec $ni dunst &
 
 # set desktop background with custom effect
-exec $ni betterlockscreen -w dim
+#exec $ni betterlockscreen -w dim
 
 # Alternative (set last used background)
-exec $ni source ~/.fehbg
+#exec $ni source ~/.fehbg
 
 exec $ni compton -b
 
 exec $ni remmina
 exec $ni pidgin
+exec $ni signal
+exec $ni firefox
+
 
 exec_always "notify-send 'i3' 'Loaded config'"

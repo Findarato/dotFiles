@@ -1,15 +1,17 @@
 #!/bin/bash
 
 SCROT=/usr/bin/scrot
-FILENAME=${HOSTNAME}_$(date +'%Y-%m-%d-%H%M%S.png')
-THUMBNAME=${HOSTNAME}_$(date +'%Y-%m-%d-%H%M%S-thumb.png')
+FILENAME="${HOSTNAME}_$(date +'%Y-%m-%d-%H%M%S.png')"
+THUMBNAME="${HOSTNAME}_$(date +'%Y-%m-%d-%H%M%S-thumb.png')"
 FILEPATH="${HOME}/Pictures/screenshots"
 
-mkdir -p ${FILEPATH}
+mkdir -p "${FILEPATH}"
 
-${SCROT} --select --thumb ${FILEPATH}/${FILENAME}
+echo "${FILEPATH}/${FILENAME}"
 
-notify-send "Created Screenshot" ${FILENAME} -t 50000 -i ${FILEPATH}/${THUMBNAME}
+${SCROT} --select --thumb "${FILEPATH}/${FILENAME}"
+
+notify-send "Created Screenshot" "${FILENAME}" -t 50000 -i "${FILEPATH}/${THUMBNAME}"
 
 
 

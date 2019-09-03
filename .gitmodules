@@ -25,3 +25,6 @@
 [submodule "tmux/.tmux/plugins/tpm"]
 	path = tmux/.tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+[submodule "i3/.config/i3blocks/scripts"]
+	path = i3/.config/i3blocks/scripts
+	url = https://github.com/vivien/i3blocks-contrib.git

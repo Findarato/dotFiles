@@ -203,7 +203,7 @@ set titlecolor brightwhite,blue
 # set errorcolor brightwhite,red
 # set selectedcolor brightwhite,magenta
 # set stripecolor ,yellow
-set numbercolor cyan
+set numbercolor blue
 # set keycolor cyan
 # set functioncolor green
 ## In root's .nanorc you might want to use:
@@ -220,43 +220,6 @@ set numbercolor cyan
 ## Setup of syntax coloring.
 ##
 ## Format:
-##
-## syntax "short description" ["filename regex" ...]
-##
-## The "none" syntax is reserved; specifying it on the command line is
-## the same as not having a syntax at all.  The "default" syntax is
-## special: it takes no filename regexes, and applies to files that
-## don't match any other syntax's filename regexes.
-##
-## color foreground,background "regex" ["regex"...]
-## or
-## icolor foreground,background "regex" ["regex"...]
-##
-## "color" will do case-sensitive matches, while "icolor" will do
-## case-insensitive matches.
-##
-## Valid color names ares: white, black, normal, red, blue, green,
-## yellow, magenta, cyan.  For foreground colors, you may use the
-## prefix "bright" to get a stronger highlight.
-##
-## To use multi-line regexes, use the start="regex" end="regex"
-## [start="regex" end="regex"...] format.
-##
-## If your system supports transparency, not specifying a background
-## color will use a transparent color.  If you don't want this, be sure
-## to set the background color to black or white.
-##
-## All regexes should be extended regular expressions.
-##
-## If you wish, you may put your syntax definitions in separate files.
-## You can make use of such files as follows:
-##
-## include "/path/to/syntax_file.nanorc"
-##
-## Unless otherwise noted, the name of the syntax file (without the
-## ".nanorc" extension) should be the same as the "short description"
-## name inside that file.  These names are kept fairly short to make
-## them easier to remember and faster to type using nano's -Y option.
 
 ## To include all existing syntax definitions, you can do:
 include "/usr/share/nano/*.nanorc"

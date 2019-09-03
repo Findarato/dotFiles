@@ -34,7 +34,10 @@ Cache*/*
 .cache
 
 Steam/*
-.local/share/Steam
+${HOME}/.local/share/Steam
 *.vdi
+# Do not backup audible things
+${HOME}/OpenAudible
+
 
 ${HOME}/.config/Code/logs/*
