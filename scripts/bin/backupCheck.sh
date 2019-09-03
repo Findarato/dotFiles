@@ -7,10 +7,12 @@ else
         source "${HOME}/bin/config/${1}.sh"
     else
         echo "Unable to load config file"
-	    notify-send "Error" "Unable to load config file"
+	      notify-send "Error" "Unable to load config file"
 
         exit;
     fi
 fi
 
-"${RESTIC}" -q -r "${2}" snapshots --no-lock
+echo "${2}"
+
+"${RESTIC}" -q -r "${BACKUP_LOCATION}" snapshots --path="${2}" --no-lock

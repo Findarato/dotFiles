@@ -32,5 +32,5 @@ echo "╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝ 
 echo "$(tput sgr0)"
 #notify-send "Backing Up" "Restic backup running"
 #${RESTIC} -r ${BACKUP_LOCATION} backup ${HOME} --tag 🕐 --tag hourly_backup --tag cron --exclude-file=${EXCLUDE_FILE}
-${RESTIC} -r ${BACKUP_LOCATION} backup ${HOME} --tag 🕐 --tag hourly --exclude-file=${EXCLUDE_FILE}
+${RESTIC} -r ${BACKUP_LOCATION} backup ${HOME} --tag 🕐 --tag hourly --exclude-file=${EXCLUDE_FILE} --verbose 2
 #notify-send "Backing Up" "Restic backup ended"
