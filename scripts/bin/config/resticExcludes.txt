@@ -34,7 +34,7 @@ Cache*/*
 .cache
 
 Steam/*
-.local/share/Steam
+${HOME}/.local/share/Steam
 *.vdi
 
 ${HOME}/.config/Code/logs/*
