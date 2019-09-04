@@ -6,6 +6,9 @@ bindkey '^[[H' beginning-of-line
 bindkey '^[[F' end-of-line
 bindkey "${terminfo[kdch1]}" delete-char
 
+ZSH_TMUX_AUTOSTART="true"
+ZSH_TMUX_AUTOQUIT="true"
+
 
 # Fix Locale
 export LANG="en_US.UTF-8"
