@@ -41,8 +41,9 @@ for_window [title="(?i)Bluetooth"] floating enable
 for_window [class="Evolution"] move workspace $ws2
 for_window [class="Evolution" title="Compose Message"] floating enable move right 330px,move down 70px
 for_window [class="Evolution" title="Compose Message"] resize set 800 600
-for_window [class="Evolution" title="Re:*"] floating enable; move position center; resize set 800 600
-for_window [class="Evolution" title="Send & Receive Mail"] floating enable; move position center; resize set 100 150
+for_window [class="Evolution" title="^Re: *"] floating enable, move position center
+for_window [class="Evolution" title="^Re: *"] resize set 800 600
+for_window [class="Evolution" title="Send & Receive Mail"] floating enable move position center resize set 200 150
 
 #MPV
 for_window [class="mpv"] floating enable; move position center
@@ -88,7 +89,7 @@ set $ws10 "10"
 
 set $ni --no-startup-id
 
-font pango:Hack 10
+font System San Francisco Display:11
 
 # Window borders
 default_border pixel 1
