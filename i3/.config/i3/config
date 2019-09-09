@@ -70,6 +70,14 @@ set $slurp ~/.config/i3/scripts/slurp
 set $saveLayout exec "${HOME}/Documents/src/i3-layout-manager/layout_manager.sh"
 
 
+#Setup Flash focus
+#detect-client-opacity = true;
+#opacity-rule = [
+#  "0:_NET_WM_STATE@:32a *= '_NET_WM_STATE_HIDDEN'"
+#];
+#exec_always --no-startup-id flashfocus
+
+
 # Home row direction keys, like vim
 # set $left Left
 # set $down Down
