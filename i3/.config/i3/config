@@ -37,6 +37,9 @@ for_window [title="(?i)explorer.exe"] floating enable
 for_window [class="(?i)streamlink-twitch-gui"] floating enable
 for_window [title="(?i)Bluetooth"] floating enable
 
+# Enpass
+for_window [class="Enpass" title="Enpass"] floating enable, move position center
+
 # Evolution
 for_window [class="Evolution"] move workspace $ws2
 for_window [class="Evolution" title="Compose Message"] floating enable move right 330px,move down 70px
@@ -64,6 +67,8 @@ set $lock "~/.config/i3/scripts/betterlockscreen -l"
 #set $lock "/usr/bin/xscreensaver-command --activate --restart"
 set $grim ~/.config/i3/scripts/grim
 set $slurp ~/.config/i3/scripts/slurp
+set $saveLayout exec "${HOME}/Documents/src/i3-layout-manager/layout_manager.sh"
+
 
 # Home row direction keys, like vim
 # set $left Left
@@ -124,6 +129,11 @@ bindsym $mod+Return exec $term
 
 # kill focused window
 bindsym $mod+Shift+q kill
+
+# Save Layout focused window
+bindsym $mod+Shift+s $saveLayout
+
+
 
 # start your launcher
 bindsym $mod+d exec $menu
