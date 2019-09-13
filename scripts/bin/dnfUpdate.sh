@@ -15,4 +15,6 @@ dnf clean all;
 
 # Update and Clean up Flatpak
 #sudo su -c "flatpak update -y" jharry;
-#flatpak uninstall --unused -y
+
+flatpak update -y
+flatpak uninstall --unused -y
