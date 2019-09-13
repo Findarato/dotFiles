@@ -37,19 +37,21 @@ for_window [title="(?i)explorer.exe"] floating enable
 for_window [class="(?i)streamlink-twitch-gui"] floating enable
 for_window [title="(?i)Bluetooth"] floating enable
 
+# Enpass
+for_window [class="Enpass" title="Enpass"] floating enable, move position center
+
 # Evolution
 for_window [class="Evolution"] move workspace $ws2
 for_window [class="Evolution" title="Compose Message"] floating enable move right 330px,move down 70px
 for_window [class="Evolution" title="Compose Message"] resize set 800 600
-for_window [class="Evolution" title="Re:*"] floating enable; move position center; resize set 800 600
-for_window [class="Evolution" title="Send & Receive Mail"] floating enable; move position center; resize set 100 150
+for_window [class="Evolution" title="^Re: *"] floating enable, move position center
+for_window [class="Evolution" title="^Re: *"] resize set 800 600
+for_window [class="Evolution" title="Send & Receive Mail"] floating enable move position center resize set 200 150
 
-#MPV 
+#MPV
 for_window [class="mpv"] floating enable; move position center
 
 for_window [class="Variety" title="Variety Preferences"] floating enable; move position center; resize 800 600
-
-
 
 #for_window [title="mutty"] floating enable
 
@@ -65,6 +67,16 @@ set $lock "~/.config/i3/scripts/betterlockscreen -l"
 #set $lock "/usr/bin/xscreensaver-command --activate --restart"
 set $grim ~/.config/i3/scripts/grim
 set $slurp ~/.config/i3/scripts/slurp
+set $saveLayout exec "${HOME}/Documents/src/i3-layout-manager/layout_manager.sh"
+
+
+#Setup Flash focus
+#detect-client-opacity = true;
+#opacity-rule = [
+#  "0:_NET_WM_STATE@:32a *= '_NET_WM_STATE_HIDDEN'"
+#];
+#exec_always --no-startup-id flashfocus
+
 
 # Home row direction keys, like vim
 # set $left Left
@@ -90,7 +102,7 @@ set $ws10 "10"
 
 set $ni --no-startup-id
 
-font pango:Hack 10
+font System San Francisco Display:11
 
 # Window borders
 default_border pixel 1
@@ -125,6 +137,11 @@ bindsym $mod+Return exec $term
 
 # kill focused window
 bindsym $mod+Shift+q kill
+
+# Save Layout focused window
+bindsym $mod+Shift+s $saveLayout
+
+
 
 # start your launcher
 bindsym $mod+d exec $menu
@@ -287,11 +304,11 @@ bar {
 
 # window colors
 #  class                 border   backgr.  text  indicator  child_border
-client.focused          #7E25DD  #285577  #ffffff  #2e9ef4   #285577
-client.focused_inactive #81c2d6  #5f676a  #ffffff  #484e50   #0b6e48
+client.focused          #7E25DD  #285577  #ffffff  #7E25DD   #285577
+client.focused_inactive #81c2d6  #5f676a  #ffffff  #484e50   #292d2e
 client.unfocused        #c9cabb  #222222  #888888  #292d2e   #222222
-client.urgent           #2f343a  #900000  #ffffff  #199475   #900000
-client.placeholder      #a2b4ba  #0c0c0c  #ffffff  #1793d0   #0c0c0c
+client.urgent           #2f343a  #900000  #ffffff  #292d2e   #900000
+client.placeholder      #a2b4ba  #0c0c0c  #ffffff  #7E25DD   #0c0c0c
 client.background 	    #82abba
 
 # # exec_always --no-startup-id  mako --progress-color=#7E25DD50 --markup 1 --actions 1 --icons 1 --border-radius 3 --background-color=#7E25DD50 --font=Hack
