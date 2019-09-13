@@ -10,9 +10,7 @@ NC='\033[0m' # No Color
 #echo "insert a number"
 #read test
 
-  printf ${RED}
-  printf ${TEMP} 
+printf ${RED}
+printf ${TEMP} 
 #  printf ${TEMP} | figlet -f future
-  printf ${NC}
-
-
+printf ${NC}
