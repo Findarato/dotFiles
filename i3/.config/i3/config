@@ -47,6 +47,8 @@ for_window [class="Evolution" title="Compose Message"] resize set 800 600
 for_window [class="Evolution" title="^Re: *"] floating enable, move position center
 for_window [class="Evolution" title="^Re: *"] resize set 800 600
 for_window [class="Evolution" title="Send & Receive Mail"] floating enable move position center resize set 200 150
+for_window [class="Evolution-alarm-notify" title="Reminders"] floating enable, move postion center, resize set 300 200
+
 
 #MPV
 for_window [class="mpv"] floating enable; move position center
