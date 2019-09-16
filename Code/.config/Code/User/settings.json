@@ -56,5 +56,6 @@
         "editor.autoIndent": false
     },
     "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
     
 }
