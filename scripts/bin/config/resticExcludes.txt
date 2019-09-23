@@ -18,7 +18,6 @@ ${HOME}/.config/google-chrome-unstable/Default/GPUCache/
 ${HOME}/.config/google-chrome/Default/Local Storage/
 ${HOME}/.config/google-chrome-unstable/Default/Local Storage/
 ${HOME}/.cache/
-${HOME}/.cache/
 
 # No need to back up flatpaks
 ${HOME}/.local/share/flatpak
@@ -36,8 +35,9 @@ Cache*/*
 Steam/*
 ${HOME}/.local/share/Steam
 *.vdi
+
 # Do not backup audible things
 ${HOME}/OpenAudible
 
-
+# Do not backup log files
 ${HOME}/.config/Code/logs/*

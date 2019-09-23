@@ -7,7 +7,7 @@
     "breadcrumbs.enabled": false,
     "editor.cursorBlinking": "solid",
     "editor.cursorWidth": 5,
-    "editor.fontFamily": "'Fira Code Regular','Hack', 'monospace', monospace",
+    "editor.fontFamily": "'Cascadia Code','Fira Code Regular','Hack', 'monospace', monospace",
     "editor.fontSize": 15,
     "editor.minimap.enabled": false,
     "editor.mouseWheelZoom": true,

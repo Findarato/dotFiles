@@ -5,7 +5,9 @@ pkill --signal 9 firefox
 pkill --signal 9 chrome
 pkill --signal 9 chromium
 pkill --signal 9 vivaldi
-pkill --signal 9 evolution
+#pkill --signal 9 evolution
+evolution --force-shutdown
+
 pkill --signal 9 Enpass
 #NOW=$(date +%A.%H)
 #updateRepos.sh
@@ -16,3 +18,12 @@ pkill --signal 9 Enpass
 
 #Call Backup script
 "${HOME}/bin/Backup.sh" work
+
+
+# Attemping to restore some of them
+
+#start Evolution
+xinit -- /usr/bin/evolution
+
+# Start Enpass
+xinit -- /opt/enpass/Enpass

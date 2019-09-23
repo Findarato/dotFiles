@@ -14,4 +14,4 @@ rm -rf "${CACHE_PATH}/chromium/*"
 #Clean Up apps
 rm -rf "${CACHE_PATH}/libgweather/*"
 rm -rf "${CACHE_PATH}/gnome-software/*"
-
+rm -rf "${CACHE_PATH}/evolution/mail/*"
