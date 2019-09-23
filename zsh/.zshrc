@@ -47,6 +47,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # User configuration
 
 export PATH="${HOME}/.local/bin:${HOME}/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin:/sbin/"
+export PATH="${PATH}:${HOME}/bin/"
 
 # if [ $(zsh --version | cut -c5-7) > 5.1 ];then
 #     # Powerlevel10K time
