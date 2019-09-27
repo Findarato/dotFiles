@@ -166,7 +166,18 @@ setopt share_history            # Share history between multiple shells
 
 
 # Zplugins
-zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme
+
+
+
+if [[ $(zsh --version | awk '{print $2}') > 5.1.0 ]]; then
+  # Newer Zsh version
+  zplug "romkatv/powerlevel10k", as:theme
+else
+  # Should only be needed on CentOS7 and Debian > 10
+  zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme
+fi
+
+
 zplug "tamcore/autoupdate-oh-my-zsh-plugins", from:github
 zplug "zsh-users/zsh-syntax-highlighting", from:github, defer:3
 zplug "chrissicool/zsh-256color", from:github
@@ -241,15 +252,9 @@ export ZSH_PLUGINS_ALIAS_TIPS_TEXT='💡 '
 
 #source ${ZSH}/oh-my-zsh.sh
 
-# Base16 Shell
-#BASE16_SHELL="$HOME/.config/base16-shell/"
-
-#[ -n "$PS1" ] && \
-#    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
-#        eval "$("$BASE16_SHELL/profile_helper.sh")"
-
 settitle() {
    printf "\033k$1\033\\"
 }
 
 DISABLE_AUTO_TITLE=true
+unset ZLE_RPROMPT_INDENT
