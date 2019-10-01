@@ -13,6 +13,10 @@ pkill --signal 9 Enpass
 #updateRepos.sh
 
 
+# Cleaning up some ram
+
+sync; echo 3 > /proc/sys/vm/drop_caches 
+
 "${HOME}/bin/cleanCache.sh"
 #"${HOME}/bin/docker_clean.sh"
 
@@ -22,8 +26,5 @@ pkill --signal 9 Enpass
 
 # Attemping to restore some of them
 
-#start Evolution
-xinit -- /usr/bin/evolution
 
-# Start Enpass
-xinit -- /opt/enpass/Enpass
+swapoff -a && swapon -a
