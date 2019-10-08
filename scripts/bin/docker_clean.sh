@@ -2,12 +2,16 @@
 
 
 
-# Delete all containers
-docker rm $(docker ps -a -q)
-# Delete all images
-docker rmi $(docker images -q)
+if hash docker 2>/dev/null; then
+  # Delete all containers
+  docker rm $(docker ps -a -q)
+  # Delete all images
+  docker rmi $(docker images -q)
+fi
 
-# Delete all containers
-podman rm $(podman ps -a -q)
-# Delete all images
-podman rmi $(podman images -q)
+if hash podman 2>/dev/null; then
+  # Delete all containers
+  podman rm $(podman ps -a -q)
+  # Delete all images
+  podman rmi $(podman images -q)
+fi

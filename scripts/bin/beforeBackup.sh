@@ -5,17 +5,13 @@ pkill --signal 9 firefox
 pkill --signal 9 chrome
 pkill --signal 9 chromium
 pkill --signal 9 vivaldi
-#pkill --signal 9 evolution
+pkill --signal 9 evolution
 evolution --force-shutdown
 
 pkill --signal 9 Enpass
 #NOW=$(date +%A.%H)
 #updateRepos.sh
 
-
-# Cleaning up some ram
-
-sync; echo 3 > /proc/sys/vm/drop_caches 
 
 "${HOME}/bin/cleanCache.sh"
 #"${HOME}/bin/docker_clean.sh"
@@ -24,7 +20,14 @@ sync; echo 3 > /proc/sys/vm/drop_caches
 "${HOME}/bin/Backup.sh" work
 
 
+# Clean up Evolution
+rm -rf "${HOME}/.cache/evolution/mail/8fa38b6ad026c226d6cbaa8e0f506cdf4a54acea/folders/INBOX/subfolders"
+
+
 # Attemping to restore some of them
 
+# Cleaning up some ram
+
+sync; echo 3 > /proc/sys/vm/drop_caches 
 
 swapoff -a && swapon -a
