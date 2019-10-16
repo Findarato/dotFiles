@@ -258,3 +258,6 @@ settitle() {
 
 DISABLE_AUTO_TITLE=true
 unset ZLE_RPROMPT_INDENT
+
+
+eval "$(starship init zsh)"
