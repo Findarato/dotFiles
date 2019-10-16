@@ -41,7 +41,6 @@ KERN_DIR=/usr/src/kernels/`uname -r`
 export KERN_DIR
 
 export EDITOR=/usr/bin/nano
-export ANSIBLE_VAULT_PASSWORD_FILE=~/.vault_pass.txt
 #export DISPLAY=:0.0
 export VAGRANT_DEFAULT_PROVIDER=virtualbox
 
@@ -51,3 +50,4 @@ export VAGRANT_DEFAULT_PROVIDER=virtualbox
 export PATH=${PATH}:/opt/GitKraken
 export GPG_TTY=$(tty)
 
+eval "$(starship init bash)"
