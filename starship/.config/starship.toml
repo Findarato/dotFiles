@@ -2,58 +2,46 @@
 add_newline = false
 
 
-#prompt_order = [
-#    "username",
-#    "hostname",
-#    "kubernetes",
-#    "directory",
-#    "git_branch",
-#    "git_state",
-#    "git_status",
-#    "package",
-#    "dotnet",
-#    "golang",
-#    "java",
-#    "python",
-#    "ruby",
-#    "rust",
-#    "nix_shell",
-#    "conda",
-#    "memory_usage",
-#    "aws",
-#    "env_var",
-#    "cmd_duration",
-#    "line_break",
-#    "jobs",
-#    "battery",
-#    "time",
-#    "character"
-#]
-                                                                                                        
-prompt_order=["hostname","memory_usage","rust","line_break","package","character"]
-
+prompt_order = [
+    "username",
+    "hostname",
+    "directory",
+    "git_branch",
+    "git_state",
+    "git_status",
+    "package",
+    "python",
+    "rust",
+    "conda",
+    "memory_usage",
+    "env_var",
+    "cmd_duration",
+    "jobs",
+    "battery",
+    "character"
+]
 
 # Replace the "❯" symbol in the prompt with "➜"
 [character]      # The name of the module we are configuring is "character"
 symbol = "➜"     # The "symbol" segment is being set to "➜"
 
-# Disable the package module, hiding it from the prompt completely
-[package]
-disabled = true
-
 [hostname]
-ssh_only = false
+ssh_only = true
 prefix = "⟪"
 suffix = "⟫"
-#trim_at = ".companyname.com"
 disabled = false
 
 [memory_usage]
 show_percentage = true
 show_swap = true
-threshold = 50
-icon = " "
+threshold = 10
+icon = " M "
 style = "bold dimmed green"
+disabled = false
+
+[env_var]
+variable = "SHELL"
+default = "unknown shell"
 
 [git_branch]
 symbol = "🌱 "
@@ -76,13 +64,15 @@ staged = "➕"
 renamed = "👅"
 deleted = "🗑"
 
-[line_break]
-disabled = true
-
-[package]
-symbol = "🎁 "
-
 [time]
 disabled = false
 format = "🕙[ %T ]"
-utc_time_offset = -6
+utc_time_offset = -5
+
+[line_break]
+disabled = true
+
+[cmd_duration]
+min_time = 4
+prefix = "underwent "
+disabled = true

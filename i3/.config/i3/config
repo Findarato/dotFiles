@@ -162,7 +162,7 @@ bindsym $mod+Shift+r 			restart
 bindsym $mod+l exec $lock
 
 # capture all screens to clipboard
-bindsym Print exec $grim
+bindsym Print exec "flameshot gui"
 
 # capture the specified screen area to clipboard
 bindsym Shift+Print exec $slurp
