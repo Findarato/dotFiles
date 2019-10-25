@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#cp -r ./Ansible-Template ${1}
+
+echo "Cloning Playbook"
+git clone --depth=1 --branch=master git@gitlab.methnet.org:epic-server-admins/ansible-template.git "${1}" >/dev/null 2>&1
+
+echo "Cleaning up Repo"
+rm -rf ./${1}/.git >/dev/null 2>&1
+
+cd "${1}"
+
+# Initializing Repo
+git init >/dev/null 2>&1
+
+git submodule add git@gitlab.methnet.org:epic-server-admins/ansible-inventory.git hosts >/dev/null 2>&1
+
+git add . >/dev/null 2>&1
+
+git commit -sm ":tada: Initial Commit for ${1}" >/dev/null 2>&1
+
+# For debug
