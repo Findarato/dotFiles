@@ -14,11 +14,6 @@ prompt_order = [
     "rust",
     "conda",
     "memory_usage",
-    "env_var",
-    "cmd_duration",
-    "jobs",
-    "battery",
-    "character"
 ]
 
 # Replace the "❯" symbol in the prompt with "➜"
