@@ -331,6 +331,7 @@ exec $ni remmina
 exec $ni pidgin
 exec $ni signal
 exec $ni firefox
+exec $ni /usr/bin/flameshot
 
 
 exec_always "notify-send 'i3' 'Loaded config'"
