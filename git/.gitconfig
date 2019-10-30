@@ -19,6 +19,6 @@
     browser = google-chrome
 [commit]
 	template = ~/.gitmessage
-    gpgsign = true
+	gpgsign = true
 [gpg]
 	program = /usr/bin/gpg
