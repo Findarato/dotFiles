@@ -108,9 +108,10 @@ alias listenTo='mpv --no-video'
 alias ccat="pygmentize -O style=monokai -f 256 -g"
 alias dig="dig +nocmd any +multiline +noall +answer"
 
-#disable -r time       # disable shell reserved word
-alias time='time -p ' # -p for POSIX output
-
+if [[ "$SHELL" == "/bin/bash" ]]; then
+  #disable -r time       # disable shell reserved word
+  alias time="time " # -p for POSIX output
+fi
 
 # progress bar on file copy. Useful evenlocal.
 alias cpProgress="rsync -aHAXxvu --numeric-ids --progress"

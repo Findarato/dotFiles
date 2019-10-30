@@ -6,6 +6,13 @@
 
 # i3 config file (v4)
 
+
+# Setup Monitor layout
+
+#exec xrandr --output eDP1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP1 --mode 1920x1080 --pos 1920x0 --rotate normal 
+
+exec --no-startup-id xrandr --output eDP1 --primary --left-of DP1 --auto
+
 for_window [class="^.*"] border pixel 1
 # #---Application WS assignment---# #
 assign [class="Steam"] $ws10
@@ -112,22 +119,22 @@ new_float normal
 
 ### Output configuration
 #
-workspace $ws1      output eDP-1
-workspace $ws2      output eDP-1
-workspace $ws3      output eDP-1
-workspace $ws4      output eDP-1
-workspace $ws5      output eDP-1
-workspace $ws6      output DP-1
-workspace $ws7      output DP-1
-workspace $ws8      output DP-1
-workspace $ws9      output DP-1
-workspace $ws10     output DP-1
+workspace $ws1      output eDP1
+workspace $ws2      output eDP1
+workspace $ws3      output eDP1
+workspace $ws4      output eDP1
+workspace $ws5      output eDP1
+workspace $ws6      output DP1
+workspace $ws7      output DP1
+workspace $ws8      output DP1
+workspace $ws9      output DP1
+workspace $ws10     output DP1
 
 # autostart applications
 # exec --no-startup-id i3msg workspace 1
 
 # Start up Email
-exec $ni evolution;workspace $ws2;focus
+#exec $ni evolution;workspace $ws2;focus
 
 ### Key bindings
 #
@@ -332,6 +339,13 @@ exec $ni pidgin
 exec $ni signal
 exec $ni firefox
 exec $ni /usr/bin/flameshot
+exec $ni evolution
+
+# Launch varity
+exec $ni /usr/bin/variety
+
+# Run flatpak version of signal
+exec $ni "flatpak run org.signal.Signal"
 
 
 exec_always "notify-send 'i3' 'Loaded config'"
