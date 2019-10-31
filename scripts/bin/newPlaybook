@@ -6,7 +6,7 @@ echo "Cloning Playbook"
 git clone --depth=1 --branch=master git@gitlab.methnet.org:epic-server-admins/ansible-template.git "${1}" >/dev/null 2>&1
 
 echo "Cleaning up Repo"
-rm -rf ./${1}/.git >/dev/null 2>&1
+rm -rf "./${1}/.git" >/dev/null 2>&1
 
 cd "${1}"
 
@@ -17,6 +17,12 @@ git submodule add git@gitlab.methnet.org:epic-server-admins/ansible-inventory.gi
 
 git add . >/dev/null 2>&1
 
+
+sed "s/ansible-template/${1}/g" package.json > package.tmp
+mv package.tmp package.json
+
+
+echo "Adding Initial Commit"
 git commit -sm ":tada: Initial Commit for ${1}" >/dev/null 2>&1
 
 # For debug
