@@ -19,7 +19,8 @@ set $slurp ~/.config/sway/scripts/slurp
 #set $right Right
 # Your preferred terminal emulator
 #set $term tilix --window-style=disable-csd
-set $term kitty
+#set $term kitty
+set $term alacritty
 # Your preferred application launcher
 # set $menu dmenu_run
 set $menu rofi -show drun
@@ -34,15 +35,15 @@ gaps outer 5
 
 # Window borders
 default_border pixel 1
-new_float normal
+default_floating_border normal
 
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 #output * bg /home/jharry/Pictures/variety-copied-wallpaper-838d2af3a5ac47c3b55b51c9bae8edea.jpg fill
 
-output eDP-1 pos 0 0 res 1920x1080
-output DP-1 pos 1920 0 res 1920x1080
+output DP1 pos 0 0 res 1920x1080
+output eDP1 pos 1920 0 res 1920x1080
 
 workspace 1               output eDP-1
 workspace 2: Email        output eDP-1

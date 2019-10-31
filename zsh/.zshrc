@@ -261,3 +261,6 @@ unset ZLE_RPROMPT_INDENT
 
 
 eval "$(starship init zsh)"
+
+
+unsetopt nomatch
