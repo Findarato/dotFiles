@@ -12,6 +12,7 @@
 #exec xrandr --output eDP1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP1 --mode 1920x1080 --pos 1920x0 --rotate normal 
 
 exec --no-startup-id xrandr --output eDP1 --primary --left-of DP1 --auto
+#exec --no-startup-id xrandr --output eDP1 --primary --left-of DP1 --auto --output DVI-I-1-1 --right-of eDP1 --auto
 
 for_window [class="^.*"] border pixel 1
 # #---Application WS assignment---# #
