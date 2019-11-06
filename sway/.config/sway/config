@@ -42,8 +42,8 @@ default_floating_border normal
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 #output * bg /home/jharry/Pictures/variety-copied-wallpaper-838d2af3a5ac47c3b55b51c9bae8edea.jpg fill
 
-output DP1 pos 0 0 res 1920x1080
-output eDP1 pos 1920 0 res 1920x1080
+output eDP-1 pos 0 0 res 1920x1080
+output DP-1 pos 1920 0 res 1920x1080
 
 workspace 1               output eDP-1
 workspace 2: Email        output eDP-1
