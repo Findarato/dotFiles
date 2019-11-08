@@ -1,5 +1,5 @@
 #!/bin/bash
 
-cd "${HOME}/dotfiles/" || exit
+cd "${HOME}/dotFiles/" || exit
 
 git pull -ff -q
