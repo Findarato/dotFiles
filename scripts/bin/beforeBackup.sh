@@ -5,11 +5,11 @@ pkill --signal 9 firefox
 pkill --signal 9 chrome
 pkill --signal 9 chromium
 pkill --signal 9 vivaldi
-pkill --signal 9 evolution
+#pkill --signal 9 evolution
 evolution --force-shutdown
 
 pkill --signal 9 Enpass
-#NOW=$(date +%A.%H)
+NOW=$(date +%u)
 #updateRepos.sh
 
 
@@ -19,9 +19,12 @@ pkill --signal 9 Enpass
 #Call Backup script
 "${HOME}/bin/Backup.sh" work
 
-
 # Clean up Evolution
 rm -rf "${HOME}/.cache/evolution/mail/8fa38b6ad026c226d6cbaa8e0f506cdf4a54acea/folders/INBOX/subfolders"
+
+# Backup Evolution
+/usr/libexec/evolution/evolution-backup --restart --backup /mnt/home/backup/evolution_backup_${NOW}.tar.gz
+
 
 
 # Attemping to restore some of them
