@@ -104,10 +104,11 @@ set $ws2 "2 📨"
 set $ws3 "3 Servers"
 set $ws4 "4 🏠"
 set $ws5 "5"
-set $ws6 "6 Web"
+set $ws6 "6 🌐"
+#set $ws7 "7 Social 💬"
 set $ws7 "7 Social"
 set $ws8 "8"
-set $ws9 "9 💩"
+set $ws9 "9 💻"
 set $ws10 "10"
 
 set $ni --no-startup-id
@@ -129,7 +130,7 @@ workspace $ws6      output DP1
 workspace $ws7      output DP1
 workspace $ws8      output DP1
 workspace $ws9      output DP1
-workspace $ws10     output DP1
+#workspace $ws10     output DP1
 
 # autostart applications
 # exec --no-startup-id i3msg workspace 1
