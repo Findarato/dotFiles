@@ -41,3 +41,7 @@ ${HOME}/OpenAudible
 
 # Do not backup log files
 ${HOME}/.config/Code/logs/*
+
+# Exclude Evolution
+${HOME}/.config/evolution
+${HOME}/.local/share/evolution
