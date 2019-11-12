@@ -11,7 +11,9 @@
 
 #exec xrandr --output eDP1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP1 --mode 1920x1080 --pos 1920x0 --rotate normal 
 
-exec --no-startup-id xrandr --output eDP1 --primary --left-of DP1 --auto
+#exec --no-startup-id xrandr --output eDP1 --primary --left-of DP1 --auto
+exec xrandr --output eDP1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output DP1 --mode 1920x1080 --pos 3840x0 --rotate normal --output DVI-I-3-1 --mode 1920x1080 --pos 0x0 --rotate normal
+
 #exec --no-startup-id xrandr --output eDP1 --primary --left-of DP1 --auto --output DVI-I-1-1 --right-of eDP1 --auto
 
 for_window [class="^.*"] border pixel 1
@@ -34,6 +36,10 @@ for_window [class="^Firefox$"] move to workspace $ws6
 for_window [class="^Signal$"] move to workspace $ws7
 for_window [class="^Pidgin$"] move to workspace $ws7
 for_window [class="^Hexchat$"] move to workspace $ws7
+for_window [title=".*rtv.*"] move to workspace $ws7
+
+
+
 
 for_window [class="Peek"] floating enable
 
@@ -110,6 +116,7 @@ set $ws7 "7 Social"
 set $ws8 "8"
 set $ws9 "9 💻"
 set $ws10 "10"
+set $ws11 "Extra"
 
 set $ni --no-startup-id
 
@@ -131,6 +138,8 @@ workspace $ws7      output DP1
 workspace $ws8      output DP1
 workspace $ws9      output DP1
 #workspace $ws10     output DP1
+workspace $ws10     output DVI-I-3-1
+#workspace $ws11     output DVI-I-3-1
 
 # autostart applications
 # exec --no-startup-id i3msg workspace 1
@@ -342,6 +351,8 @@ exec $ni signal
 exec $ni firefox
 exec $ni /usr/bin/flameshot
 exec $ni evolution
+exec $ni kitty rtv
+
 
 # Launch varity
 exec $ni /usr/bin/variety
