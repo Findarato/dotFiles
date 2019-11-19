@@ -50,4 +50,4 @@ export VAGRANT_DEFAULT_PROVIDER=virtualbox
 export PATH=${PATH}:/opt/GitKraken
 export GPG_TTY=$(tty)
 
-eval "$(starship init bash)"
+#eval "$(starship init bash)"

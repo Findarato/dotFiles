@@ -58,5 +58,6 @@
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "window.zoomLevel": 0,
+    "terminal.integrated.rendererType": "dom",
     
 }

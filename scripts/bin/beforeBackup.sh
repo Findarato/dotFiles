@@ -23,7 +23,7 @@ NOW=$(date +%u)
 rm -rf "${HOME}/.cache/evolution/mail/8fa38b6ad026c226d6cbaa8e0f506cdf4a54acea/folders/INBOX/subfolders"
 
 # Backup Evolution
-/usr/libexec/evolution/evolution-backup --restart --backup /mnt/home/backup/evolution_backup_${NOW}.tar.gz
+/usr/libexec/evolution/evolution-backup --display=:0 --restart --backup /mnt/home/backup/evolution/evolution_backup_${NOW}.tar.gz
 
 
 
