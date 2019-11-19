@@ -138,7 +138,7 @@ workspace $ws7      output DP1
 workspace $ws8      output DP1
 workspace $ws9      output DP1
 #workspace $ws10     output DP1
-workspace $ws10     output DVI-I-3-1
+#workspace $ws10     output DVI-I-3-1
 #workspace $ws11     output DVI-I-3-1
 
 # autostart applications
