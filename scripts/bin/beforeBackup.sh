@@ -19,18 +19,17 @@ NOW=$(date +%u)
 #Call Backup script
 "${HOME}/bin/Backup.sh" work
 
+# Backup Evolution
+#/usr/libexec/evolution/evolution-backup --display=:0 --restart --backup /mnt/home/backup/evolution/evolution_backup_${NOW}.tar.gz
+
 # Clean up Evolution
 rm -rf "${HOME}/.cache/evolution/mail/8fa38b6ad026c226d6cbaa8e0f506cdf4a54acea/folders/INBOX/subfolders"
-
-# Backup Evolution
-/usr/libexec/evolution/evolution-backup --display=:0 --restart --backup /mnt/home/backup/evolution/evolution_backup_${NOW}.tar.gz
-
 
 
 # Attemping to restore some of them
 
 # Cleaning up some ram
 
-sync; echo 3 > /proc/sys/vm/drop_caches 
+#sync; echo 3 > /proc/sys/vm/drop_caches 
 
-swapoff -a && swapon -a
+#swapoff -a && swapon -a

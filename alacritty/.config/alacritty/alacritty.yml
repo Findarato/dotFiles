@@ -510,8 +510,13 @@ key_bindings:
   - { key: F11,                     chars: "\x1b[23~"                        }
   - { key: F12,                     chars: "\x1b[24~"                        }
   - { key: NumpadEnter,             chars: "\n"                              }
-  - { key: F13,                     chars: "\x1b[25~"                        }
-  - { key: F14,                     chars: "\x1b[26~"                        }
-  - { key: F15,                     chars: "\x1b[28~"                        }
-  - { key: F16,                     chars: "\x1b[29~"                        }
-  - { key: F17,                     chars: "\x1b[31~"                        }
+  - { key: F3,       mods: Shift,   chars: "\x1b[25~"                        } # F13
+  - { key: F4,       mods: Shift,   chars: "\x1b[26~"                        } # F14
+  - { key: F5,       mods: Shift,   chars: "\x1b[31~"                        } # F15
+  - { key: F6,       mods: Shift,   chars: "\x1b[29~"                        } # F16
+  - { key: F7,       mods: Shift,   chars: "\x1b[31~"                        } # F17
+  - { key: F8,       mods: Shift,   chars: "\x1b[32~"                        }
+  - { key: F9,       mods: Shift,   chars: "\x1b[20;2~"                      }
+  - { key: F10,      mods: Shift,   chars: "\x1b[21;2~"                      }
+  - { key: F11,      mods: Shift,   chars: "\x1b[23;2~"                      }
+  - { key: F12,      mods: Shift,   chars: "\x1b[24;2~"                      }
