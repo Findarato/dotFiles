@@ -5,8 +5,7 @@ pkill --signal 9 firefox
 pkill --signal 9 chrome
 pkill --signal 9 chromium
 pkill --signal 9 vivaldi
-#pkill --signal 9 evolution
-evolution --force-shutdown
+#evolution --force-shutdown
 
 pkill --signal 9 Enpass
 NOW=$(date +%u)
@@ -16,15 +15,14 @@ NOW=$(date +%u)
 "${HOME}/bin/cleanCache.sh"
 #"${HOME}/bin/docker_clean.sh"
 
-#Call Backup script
-"${HOME}/bin/Backup.sh" work
+# Clean up Evolution
+rm -rf "${HOME}/.cache/evolution/mail/"
 
 # Backup Evolution
-#/usr/libexec/evolution/evolution-backup --display=:0 --restart --backup /mnt/home/backup/evolution/evolution_backup_${NOW}.tar.gz
+/usr/libexec/evolution/evolution-backup --display=:0 --restart --backup /mnt/home/backup/evolution/evolution_backup_${NOW}.tar.gz
 
-# Clean up Evolution
-rm -rf "${HOME}/.cache/evolution/mail/8fa38b6ad026c226d6cbaa8e0f506cdf4a54acea/folders/INBOX/subfolders"
-
+#Call Backup script
+"${HOME}/bin/Backup.sh" work
 
 # Attemping to restore some of them
 

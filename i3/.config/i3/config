@@ -9,12 +9,12 @@
 
 # Setup Monitor layout
 
-#exec xrandr --output eDP1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP1 --mode 1920x1080 --pos 1920x0 --rotate normal 
+#exec xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --mode 1920x1080 --pos 1920x0 --rotate normal 
 
-#exec --no-startup-id xrandr --output eDP1 --primary --left-of DP1 --auto
-exec xrandr --output eDP1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output DP1 --mode 1920x1080 --pos 3840x0 --rotate normal --output DVI-I-3-1 --mode 1920x1080 --pos 0x0 --rotate normal
+#exec --no-startup-id xrandr --output eDP-1 --primary --left-of DP-1 --auto
+exec xrandr --output eDP-1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output DP-1 --mode 1920x1080 --pos 3840x0 --rotate normal --output DVI-I-1-2 --mode 1920x1080 --pos 0x0 --rotate normal
 
-#exec --no-startup-id xrandr --output eDP1 --primary --left-of DP1 --auto --output DVI-I-1-1 --right-of eDP1 --auto
+#exec --no-startup-id xrandr --output eDP-1 --primary --left-of DP-1 --auto --output DVI-I-1-1 --right-of eDP-1 --auto
 
 for_window [class="^.*"] border pixel 1
 # #---Application WS assignment---# #
@@ -128,16 +128,16 @@ new_float normal
 
 ### Output configuration
 #
-workspace $ws1      output eDP1
-workspace $ws2      output eDP1
-workspace $ws3      output eDP1
-workspace $ws4      output eDP1
-workspace $ws5      output eDP1
-workspace $ws6      output DP1
-workspace $ws7      output DP1
-workspace $ws8      output DP1
-workspace $ws9      output DP1
-#workspace $ws10     output DP1
+workspace $ws1      output eDP-1
+workspace $ws2      output eDP-1
+workspace $ws3      output eDP-1
+workspace $ws4      output eDP-1
+workspace $ws5      output eDP-1
+workspace $ws6      output DP-1
+workspace $ws7      output DP-1
+workspace $ws8      output DP-1
+workspace $ws9      output DP-1
+workspace $ws10     output  DVI-I-1-2
 #workspace $ws10     output DVI-I-3-1
 #workspace $ws11     output DVI-I-3-1
 
