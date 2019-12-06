@@ -1,6 +1,6 @@
 #!/bin/bash
 
-## Config for home
+## Config for work
 USERNAME=jharry
 EXCLUDE_FILE="${HOME}/bin/config/resticExcludes.txt"
 BACKUP_LOCATION=/mnt/home/backup/desktop
