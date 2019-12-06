@@ -20,6 +20,7 @@ SERVER=${1}
 ssh ${SERVER}
 
 xmodmap -e "keycode 67 = F1"
-xmodmap -e "keycode 69 = F3 F3 F3 F3 F3"
-xmodmap -e "keycode 71 = F5 F5 F5 F5 F5"
-xmodmap -e "keycode 73 = F7 F7 F7 F7 F7"
+xmodmap -e "keycode 69 = F3 F13"
+xmodmap -e "keycode 71 = F5 F15"
+xmodmap -e "keycode 73 = F7 F17"
+

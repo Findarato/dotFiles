@@ -1,0 +1,12 @@
+{
+	"publicmethod": {
+		"prefix": "pubf",
+		"body": [
+			"public function $1()",
+			"{",
+			"\t$2",
+			"}"
+		],
+		"description": "Create a Public method"
+	}
+}
