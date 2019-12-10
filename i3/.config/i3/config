@@ -36,7 +36,7 @@ for_window [class="^Firefox$"] move to workspace $ws6
 for_window [class="^Signal$"] move to workspace $ws7
 for_window [class="^Pidgin$"] move to workspace $ws7
 for_window [class="^Hexchat$"] move to workspace $ws7
-for_window [title=".*rtv.*"] move to workspace $ws7
+for_window [title=".*tuir.*"] move to workspace $ws7
 
 
 
@@ -351,7 +351,8 @@ exec $ni signal
 exec $ni firefox
 exec $ni /usr/bin/flameshot
 exec $ni evolution
-exec $ni kitty rtv
+exec $ni i3-msg $ws7; exec kitty tuir
+#exec $ni kitty rtv
 
 
 # Launch varity
