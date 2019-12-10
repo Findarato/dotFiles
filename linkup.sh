@@ -7,7 +7,7 @@ stow git
 stow kitty
 stow misc --ignore=readme.md
 stow pass
-stow rtv
+stow tuir
 stow scripts
 stow sway
 stow Tilix

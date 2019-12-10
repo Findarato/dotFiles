@@ -136,3 +136,11 @@ alias prikey="more ~/.ssh/remote | xclip -selection clipboard | echo '=> Private
 # Kittens
 
 alias icat="kitty +kitten icat"
+
+# 7Zip Aliases
+alias 75='7z a -r -t7z -m0=lzma2 -mx=9 -myx=9 -mqs=on -ms=on'
+alias 74='7z a -r -t7z -m0=lzma2 -mx=9'
+alias 73='7z a -r -t7z -m0=lzma2 -mx=7'
+alias 72='7z a -r -t7z -m0=lzma2 -mx=5'
+alias 71= '7z a -r -t7z -m0=lzma2 -mx=3'
+alias 70='7z a -r -t7z -m0=lzma2 -mx=1'
