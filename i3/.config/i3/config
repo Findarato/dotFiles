@@ -81,8 +81,8 @@ for_window [title="pulsemixer"] floating enable
 set $mod Mod4
 set $lock "~/.config/i3/scripts/betterlockscreen -l"
 #set $lock "/usr/bin/xscreensaver-command --activate --restart"
-set $grim ~/.config/i3/scripts/grim
-set $slurp ~/.config/i3/scripts/slurp
+#set $grim ~/.config/i3/scripts/grim
+#set $slurp ~/.config/i3/scripts/slurp
 set $saveLayout exec "${HOME}/Documents/src/i3-layout-manager/layout_manager.sh"
 
 
@@ -120,7 +120,7 @@ set $ws11 "Extra"
 
 set $ni --no-startup-id
 
-font System San Francisco Display:11
+font Hack:11
 
 # Window borders
 default_border pixel 1

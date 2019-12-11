@@ -18,3 +18,4 @@ stow rofi
 stow irssi
 stow nano
 stow starship
+stow variety
