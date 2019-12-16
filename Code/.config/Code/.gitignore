@@ -1,0 +1,15 @@
+Cache/
+CachedData/
+CachedExtensions/
+Cookies
+Cookies-journal
+GPUCache/
+Network Persistent State
+User/globalStorage/
+User/syncLocalSettings.json
+User/workspaceStorage/
+languagepacks.json
+logs/
+machineid
+rapid_render.json
+storage.json
