@@ -12,9 +12,10 @@
 #exec xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --mode 1920x1080 --pos 1920x0 --rotate normal 
 
 #exec --no-startup-id xrandr --output eDP-1 --primary --left-of DP-1 --auto
-exec xrandr --output eDP-1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output DP-1 --mode 1920x1080 --pos 3840x0 --rotate normal --output DVI-I-1-2 --mode 1920x1080 --pos 0x0 --rotate normal
 
 #exec --no-startup-id xrandr --output eDP-1 --primary --left-of DP-1 --auto --output DVI-I-1-1 --right-of eDP-1 --auto
+
+exec ~/.screenlayout/working2Screen.sh
 
 for_window [class="^.*"] border pixel 1
 # #---Application WS assignment---# #
@@ -37,9 +38,6 @@ for_window [class="^Signal$"] move to workspace $ws7
 for_window [class="^Pidgin$"] move to workspace $ws7
 for_window [class="^Hexchat$"] move to workspace $ws7
 for_window [title=".*tuir.*"] move to workspace $ws7
-
-
-
 
 for_window [class="Peek"] floating enable
 
