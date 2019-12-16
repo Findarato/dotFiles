@@ -8,7 +8,7 @@
     "editor.cursorBlinking": "solid",
     "editor.cursorWidth": 5,
     // "editor.fontFamily": "'Fira Code Regular','Hack', 'monospace', monospace",
-    "editor.fontFamily": "Fira Code",
+    "editor.fontFamily": "'Fira Code','Fira Mono',Hack",
     "editor.fontLigatures": true,
     "editor.fontSize": 13,
     "editor.minimap.enabled": false,
