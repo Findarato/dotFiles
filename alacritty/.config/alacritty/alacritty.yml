@@ -99,10 +99,10 @@ tabspaces: 4
 font:
   # Normal (roman) font face
   normal:
-    family: Hack
-    style: monospace
+    family: monospace
+#    style: regular
   bold:
-    family: Hack  
+    family: monospace  
   italic:
     family: Hack  
   size: 11.0
