@@ -2,7 +2,7 @@
 
 # This is the restore script for stow. It must be ran from the directory it is located
 
-stow bash
+stow bash --ignore=readme.md
 stow git
 stow kitty
 stow misc --ignore=readme.md
