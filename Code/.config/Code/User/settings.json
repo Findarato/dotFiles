@@ -7,8 +7,6 @@
     "breadcrumbs.enabled": false,
     "editor.cursorBlinking": "solid",
     "editor.cursorWidth": 5,
-    // "editor.fontFamily": "'Fira Code Regular','Hack', 'monospace', monospace",
-    "editor.fontFamily": "'Fira Code','Fira Mono',Hack",
     "editor.fontLigatures": true,
     "editor.fontSize": 13,
     "editor.minimap.enabled": false,
@@ -63,5 +61,6 @@
     "terminal.integrated.rendererType": "dom",
     "workbench.statusBar.visible": false,
     "workbench.activityBar.visible": false,
+    "editor.fontFamily": "'Fira Code','Fira Mono','Droid Sans Mono', monospace,'monospace', 'Droid Sans Fallback', 'Noto Color Emoji'",
     
 }

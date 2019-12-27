@@ -58,16 +58,22 @@ for_window [class="Evolution" title="Compose Message"] floating enable move righ
 for_window [class="Evolution" title="Compose Message"] resize set 800 600
 for_window [class="Evolution" title="^Re: *"] floating enable, move position center
 for_window [class="Evolution" title="^Re: *"] resize set 800 600
-for_window [class="Evolution" title="Send & Receive Mail"] floating enable move position center resize set 200 150
-for_window [class="Evolution-alarm-notify" title="Reminders"] floating enable, move postion center, resize set 300 200
+#for_window [class="Evolution" title="Send & Receive Mail"] floating enable move position center resize set 200 150
+#for_window [class="Evolution-alarm-notify" title="Reminders"] floating enable, move postion center, resize set 300 200
 
+# POPUP
+
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="bubble"] floating enable
+for_window [window_role="task_dialog"] floating enable
+for_window [window_role="Preferences"] floating enable
+for_window [window_type="dialog"] floating enable
+for_window [window_type="menu"] floating enable
 
 #MPV
 for_window [class="mpv"] floating enable; move position center
 
 for_window [class="Variety" title="Variety Preferences"] floating enable; move position center; resize 800 600
-
-#for_window [title="mutty"] floating enable
 
 for_window [title="pulsemixer"] floating enable
 
@@ -77,7 +83,8 @@ for_window [title="pulsemixer"] floating enable
 # Logo key. Use Mod1 for Alt.
 
 set $mod Mod4
-set $lock "~/.config/i3/scripts/betterlockscreen -l"
+set $lock "~/.config/i3/scripts/betterlockscreen -l -u ~/Pictures/tapet"
+#set $lock "~/.config/i3/scripts/betterlockscreen -l pixel -u ~/Pictures/tapet"
 #set $lock "/usr/bin/xscreensaver-command --activate --restart"
 #set $grim ~/.config/i3/scripts/grim
 #set $slurp ~/.config/i3/scripts/slurp
