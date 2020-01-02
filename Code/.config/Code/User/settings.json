@@ -13,7 +13,6 @@
     "editor.mouseWheelZoom": true,
     "editor.renderWhitespace": "boundary",
     "editor.rulers": [],
-    "editor.tabSize": 2,
     "explorer.autoReveal": false,
     "git.autofetch": true,
     "shellcheck.disableVersionCheck": true,
@@ -62,5 +61,6 @@
     "workbench.statusBar.visible": false,
     "workbench.activityBar.visible": false,
     "editor.fontFamily": "'Fira Code','Fira Mono','Droid Sans Mono', monospace,'monospace', 'Droid Sans Fallback', 'Noto Color Emoji'",
+    "markdown.extension.tableFormatter.normalizeIndentation": true,
     
 }
