@@ -146,3 +146,5 @@ alias 71='7z a -r -t7z -m0=lzma2 -mx=3'
 alias 70='7z a -r -t7z -m0=lzma2 -mx=1'
 
 alias rtv='tuir'
+
+alias fixX="chmod -x $(find . -type f)"
