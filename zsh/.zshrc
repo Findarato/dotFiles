@@ -121,13 +121,6 @@ export GPG_TTY=$(tty)
 [ ! -d ~/.zplug ] && git clone https://github.com/zplug/zplug ~/.zplug
 source ~/.zplug/init.zsh
 
-# Supports oh-my-zsh plugins and the like
-#if [[ $OSTYPE = (linux)* ]]; then
-    #    zplug "plugins/archlinux",      from:oh-my-zsh, if:"(( $+commands[pacman] ))"
-    # zplug "plugins/dnf",            from:oh-my-zsh, if:"(( $+commands[dnf] ))"
-    #    zplug "plugins/mock",           from:oh-my-zsh, if:"(( $+commands[mock] ))"
-#fi
-
 # =============================================================================
 #                                   Options
 # =============================================================================
@@ -167,8 +160,6 @@ setopt share_history            # Share history between multiple shells
 
 # Zplugins
 
-
-
 if [[ $(zsh --version | awk '{print $2}') > 5.1.0 ]]; then
   # Newer Zsh version
   zplug "romkatv/powerlevel10k", as:theme
@@ -178,20 +169,20 @@ else
 fi
 
 
-zplug "tamcore/autoupdate-oh-my-zsh-plugins", from:github
+#zplug "tamcore/autoupdate-oh-my-zsh-plugins", from:github
 zplug "zsh-users/zsh-syntax-highlighting", from:github, defer:3
-zplug "chrissicool/zsh-256color", from:github
+#zplug "chrissicool/zsh-256color", from:github
 zplug "lib/completion", from:oh-my-zsh
-zplug "plugins/docker", from:oh-my-zsh
+#zplug "plugins/docker", from:oh-my-zsh
 zplug "plugins/zsh_reload", from:oh-my-zsh
 zplug "plugins/git", from:oh-my-zsh
 zplug "plugins/git-flow", from:oh-my-zsh
-zplug "plugins/git-prompt", from:oh-my-zsh
+#zplug "plugins/git-prompt", from:oh-my-zsh
 zplug "plugins/gpg-agent", from:oh-my-zsh
 zplug "plugins/zsh-autosuggestions", from:oh-my-zsh
 zplug "plugins/colorize", from:oh-my-zsh
 zplug "rummik/zsh-tailf"
-zplug "zsh-users/zsh-history-substring-search"
+#zplug "zsh-users/zsh-history-substring-search"
 
 if zplug check "zsh-users/zsh-syntax-highlighting"; then
     typeset -gA ZSH_HIGHLIGHT_STYLES ZSH_HIGHLIGHT_PATTERNS
