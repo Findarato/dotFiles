@@ -132,18 +132,21 @@ font Hack:11
 default_border pixel 1
 new_float normal
 
+set $Display1 "DP-1-1"
+set $Display2 "DP4"
+
 ### Output configuration
 #
-workspace $ws1      output DP-1-1
-workspace $ws2      output DP-1-1
-workspace $ws3      output DP-1-1
-workspace $ws4      output DP-1-1
-workspace $ws5      output DP-1-1
-workspace $ws6      output DP-4
-workspace $ws7      output DP-4
-workspace $ws8      output DP-4
-workspace $ws9      output DP-4
-workspace $ws10     output DP-4
+workspace $ws1      output $Display1
+workspace $ws2      output $Display1
+workspace $ws3      output $Display1
+workspace $ws4      output $Display1
+workspace $ws5      output $Display1
+workspace $ws6      output $Display2
+workspace $ws7      output $Display2
+workspace $ws8      output $Display2
+workspace $ws9      output $Display2
+workspace $ws10     output $Display2
 
 
 # autostart applications
@@ -347,6 +350,10 @@ exec $ni dunst &
 
 # Alternative (set last used background)
 #exec $ni source ~/.fehbg
+
+# kill focused window
+bindsym $mod+Shift+b "killall -9 compton;compton -b"
+
 
 exec $ni compton -b
 
