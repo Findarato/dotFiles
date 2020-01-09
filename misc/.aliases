@@ -74,17 +74,6 @@ alias chown='chown --preserve-root'
 alias chmod='chmod --preserve-root'
 alias chgrp='chgrp --preserve-root'
 
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
-
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
-fi
-
 # if user is not root, pass all commands via sudo #
 if [ $UID -ne 0 ]; then
     alias reboot='sudo reboot'
@@ -138,13 +127,13 @@ alias prikey="more ~/.ssh/remote | xclip -selection clipboard | echo '=> Private
 alias icat="kitty +kitten icat"
 
 # 7Zip Aliases
-alias 75='7z a -r -t7z -m0=lzma2 -mx=9 -myx=9 -mqs=on -ms=on'
-alias 74='7z a -r -t7z -m0=lzma2 -mx=9'
-alias 73='7z a -r -t7z -m0=lzma2 -mx=7'
-alias 72='7z a -r -t7z -m0=lzma2 -mx=5'
-alias 71='7z a -r -t7z -m0=lzma2 -mx=3'
-alias 70='7z a -r -t7z -m0=lzma2 -mx=1'
+#alias 75='7z a -r -t7z -m0=lzma2 -mx=9 -myx=9 -mqs=on -ms=on'
+#alias 74='7z a -r -t7z -m0=lzma2 -mx=9'
+#alias 73='7z a -r -t7z -m0=lzma2 -mx=7'
+#alias 72='7z a -r -t7z -m0=lzma2 -mx=5'
+#alias 71='7z a -r -t7z -m0=lzma2 -mx=3'
+#alias 70='7z a -r -t7z -m0=lzma2 -mx=1'
 
 alias rtv='tuir'
 
-alias fixX="chmod -x $(find . -type f)"
+#alias fixX="chmod -x $(find . -type f)"

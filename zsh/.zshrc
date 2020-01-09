@@ -1,4 +1,4 @@
-
+# zmodload zsh/zprof
 #Bind keys
 bindkey '^[[1;5D' backward-word
 bindkey '^[[1;5C' forward-word
@@ -16,8 +16,8 @@ export LC_ALL="en_US.UTF-8"
 export SHELL="/bin/zsh"
 #export TERM="xterm"
 export TERM="xterm-256color"
-export ZSH=${HOME}/.oh-my-zsh
-export ZSH_CUSTOM="${HOME}/.oh-my-zsh/custom/themes"
+#export ZSH=${HOME}/.oh-my-zsh
+#export ZSH_CUSTOM="${HOME}/.oh-my-zsh/custom/themes"
 export ZSH_CACHE_DIR="${HOME}/.cache/zsh"
 
 # History
@@ -62,11 +62,11 @@ export PATH="${PATH}:${HOME}/bin/"
 export SSH_KEY_PATH="~/.ssh/id_rsa"
 export EDITOR='nano'
 
-if [ hash npm 2>/dev/null  ]; then
-    mkdir -p ~/.npm-global
-    npm config set prefix '~/.npm-global'
-    export PATH=~/.npm-global/bin:$PATH
-fi
+#if [ hash npm 2>/dev/null  ]; then
+#    mkdir -p ~/.npm-global
+#    npm config set prefix '~/.npm-global'
+#    export PATH=~/.npm-global/bin:$PATH
+#fi
 
 DIRPATH="/mnt/cache"
 APPS="${DIRPATH}/apps"
@@ -102,7 +102,7 @@ if [ -d "/opt/etcher-cli" ]; then
     PATH="${PATH}:/opt/etcher-cli/"
 fi
 
-# Add support for etcher
+# Add support for qt4
 if [ -d "/usr/lib64/qt4/bin" ]; then
     PATH="${PATH}:/usr/lib64/qt4/bin/"
 fi
@@ -160,29 +160,30 @@ setopt share_history            # Share history between multiple shells
 
 # Zplugins
 
-if [[ $(zsh --version | awk '{print $2}') > 5.1.0 ]]; then
-  # Newer Zsh version
-  zplug "romkatv/powerlevel10k", as:theme
-else
+#if [[ $(zsh --version | awk '{print $2}') > 5.1.0 ]]; then
+#  # Newer Zsh version
+#else
   # Should only be needed on CentOS7 and Debian > 10
-  zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme
-fi
+#  zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme
+#fi
+
+zplug "romkatv/powerlevel10k", as:theme
 
 
-#zplug "tamcore/autoupdate-oh-my-zsh-plugins", from:github
+zplug "tamcore/autoupdate-oh-my-zsh-plugins", from:github
 zplug "zsh-users/zsh-syntax-highlighting", from:github, defer:3
-#zplug "chrissicool/zsh-256color", from:github
+zplug "chrissicool/zsh-256color", from:github
 zplug "lib/completion", from:oh-my-zsh
-#zplug "plugins/docker", from:oh-my-zsh
+zplug "plugins/docker", from:oh-my-zsh
 zplug "plugins/zsh_reload", from:oh-my-zsh
 zplug "plugins/git", from:oh-my-zsh
 zplug "plugins/git-flow", from:oh-my-zsh
-#zplug "plugins/git-prompt", from:oh-my-zsh
+zplug "plugins/git-prompt", from:oh-my-zsh
 zplug "plugins/gpg-agent", from:oh-my-zsh
 zplug "plugins/zsh-autosuggestions", from:oh-my-zsh
 zplug "plugins/colorize", from:oh-my-zsh
 zplug "rummik/zsh-tailf"
-#zplug "zsh-users/zsh-history-substring-search"
+zplug "zsh-users/zsh-history-substring-search"
 
 if zplug check "zsh-users/zsh-syntax-highlighting"; then
     typeset -gA ZSH_HIGHLIGHT_STYLES ZSH_HIGHLIGHT_PATTERNS
@@ -260,3 +261,4 @@ export QT_SCREEN_SCALE_FACTORS=1
 
 # Multiple Screen
 # export "QT_SCREEN_SCALE_FACTORS=1;1"
+# zprof # bottom of .zshrc
