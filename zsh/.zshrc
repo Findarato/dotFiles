@@ -49,15 +49,6 @@ HIST_STAMPS="yyyy-mm-dd"
 export PATH="${HOME}/.local/bin:${HOME}/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin:/sbin/"
 export PATH="${PATH}:${HOME}/bin/"
 
-# if [ $(zsh --version | cut -c5-7) > 5.1 ];then
-#     # Powerlevel10K time
-
-#     ZSH_THEME="powerlevel10k/powerlevel10k"
-# else
-#     # Fallback Powerlevel9K time
-#     ZSH_THEME="powerlevel9k/powerlevel9k"
-# fi
-
 # ssh
 export SSH_KEY_PATH="~/.ssh/id_rsa"
 export EDITOR='nano'
@@ -160,14 +151,14 @@ setopt share_history            # Share history between multiple shells
 
 # Zplugins
 
-#if [[ $(zsh --version | awk '{print $2}') > 5.1.0 ]]; then
-#  # Newer Zsh version
-#else
+if [[ ${ZSH_VERSION} > 5.1.0 ]]; then
+  # Newer Zsh version
+  zplug "romkatv/powerlevel10k", as:theme
+else
   # Should only be needed on CentOS7 and Debian > 10
-#  zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme
-#fi
+  zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme
+fi
 
-zplug "romkatv/powerlevel10k", as:theme
 
 
 zplug "tamcore/autoupdate-oh-my-zsh-plugins", from:github
