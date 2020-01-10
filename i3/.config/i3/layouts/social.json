@@ -13,18 +13,18 @@
             "floating": "auto_off",
             "geometry": {
                "height": 610,
-               "width": 1011,
-               "x": 1930,
-               "y": 33
+               "width": 937,
+               "x": 1935,
+               "y": 35
             },
             "name": "Signal",
-            "percent": 0.433333333333333,
+            "percent": 0.27681952040387,
             "swallows": [
                {
-               // "class": "^Signal$",
-               // "instance": "^signal$",
-               // "title": "^Signal$",
-               // "window_role": "^browser\\-window$"
+               "class": "^Signal$",
+               "instance": "^signal$",
+               "title": "^Signal$",
+               "window_role": "^browser\\-window$"
                }
             ],
             "type": "con"
@@ -34,19 +34,19 @@
             "current_border_width": 1,
             "floating": "auto_off",
             "geometry": {
-               "height": 505,
-               "width": 1296,
+               "height": 507,
+               "width": 692,
                "x": 0,
                "y": 0
             },
-            "name": "Xander pictures and updates",
-            "percent": 0.433333333333333,
+            "name": "Kip Jebo",
+            "percent": 0.547138812929463,
             "swallows": [
                {
-               // "class": "^Pidgin$",
-               // "instance": "^Pidgin$",
-               // "title": "^Xander\\ pictures\\ and\\ updates$",
-               // "window_role": "^conversation$"
+               "class": "^Pidgin$",
+               "instance": "^Pidgin$",
+               "title": "^Kip\\ Jebo$",
+               "window_role": "^conversation$"
                }
             ],
             "type": "con"
@@ -56,19 +56,19 @@
             "current_border_width": 1,
             "floating": "auto_off",
             "geometry": {
-               "height": 1005,
-               "width": 228,
-               "x": 1921,
-               "y": 24
+               "height": 507,
+               "width": 356,
+               "x": 3468,
+               "y": 34
             },
             "name": "Buddy List",
-            "percent": 0.133333333333333,
+            "percent": 0.176041666666667,
             "swallows": [
                {
-               // "class": "^Pidgin$",
-               // "instance": "^Pidgin$",
-               // "title": "^Buddy\\ List$",
-               // "window_role": "^buddy_list$"
+               "class": "^Pidgin$",
+               "instance": "^Pidgin$",
+               "title": "^Buddy\\ List$",
+               "window_role": "^buddy_list$"
                }
             ],
             "type": "con"
@@ -77,7 +77,7 @@
 }
 
 {
-    // tabbed split container with 2 children
+    // tabbed split container with 1 children
     "border": "pixel",
     "floating": "auto_off",
     "layout": "tabbed",
@@ -85,167 +85,57 @@
     "type": "con",
     "nodes": [
         {
-            "border": "pixel",
-            "current_border_width": 1,
-            "floating": "auto_off",
-            "geometry": {
-               "height": 1080,
-               "width": 722,
-               "x": 0,
-               "y": 0
-            },
-            "name": "1 : 1: Front Page - rtv 1.26.0  ",
-            "percent": 0.5,
-            "swallows": [
-               {
-               // "class": "^Tilix$",
-               // "instance": "^tilix$",
-               // "title": "^1\\ \\:\\ 1\\:\\ Front\\ Page\\ \\-\\ rtv\\ 1\\.26\\.0\\ \\ $"
-               }
-            ],
-            "type": "con"
-        },
-        {
-            "border": "pixel",
-            "current_border_width": 1,
-            "floating": "auto_off",
-            "geometry": {
-               "height": 1080,
-               "width": 722,
-               "x": 0,
-               "y": 0
-            },
-            "name": "1 : 1: Terminal  ",
-            "percent": 0.5,
-            "swallows": [
-               {
-               // "class": "^Tilix$",
-               // "instance": "^tilix$",
-               // "title": "^1\\ \\:\\ 1\\:\\ Terminal\\ \\ $"
-               }
-            ],
-            "type": "con"
-        }
-    ]
-}
-
-// vim:ts=4:sw=4:et
-{
-    // splith split container with 1 children
-    "border": "pixel",
-    "floating": "auto_off",
-    "layout": "splith",
-    "percent": 0.5,
-    "type": "con",
-    "nodes": [
-        {
-            // splith split container with 1 children
+            // tabbed split container with 2 children
             "border": "pixel",
             "floating": "auto_off",
-            "layout": "splith",
-            "percent": 1,
+            "layout": "tabbed",
+            "percent": null,
             "type": "con",
             "nodes": [
                 {
-                    // splith split container with 3 children
                     "border": "pixel",
+                    "current_border_width": 1,
                     "floating": "auto_off",
-                    "layout": "splith",
-                    "percent": 1,
-                    "type": "con",
-                    "nodes": [
-                        {
-                            "border": "pixel",
-                            "current_border_width": 1,
-                            "floating": "auto_off",
-                            "geometry": {
-                               "height": 610,
-                               "width": 800,
-                               "x": 1935,
-                               "y": 38
-                            },
-                            "name": "Signal",
-                            "percent": 0.466145833333333,
-                            "swallows": [
-                               {
-                               // "class": "^Signal$",
-                               // "instance": "^signal$",
-                               // "title": "^Signal$",
-                               // "window_role": "^browser\\-window$"
-                               }
-                            ],
-                            "type": "con"
-                        },
-                        {
-                            "border": "pixel",
-                            "current_border_width": 1,
-                            "floating": "auto_off",
-                            "geometry": {
-                               "height": 505,
-                               "width": 975,
-                               "x": 0,
-                               "y": 0
-                            },
-                            "name": "Ray J Rayburn",
-                            "percent": 0.3921875,
-                            "swallows": [
-                               {
-                               // "class": "^Pidgin$",
-                               // "instance": "^Pidgin$",
-                               // "title": "^Ray\\ J\\ Rayburn$",
-                               // "window_role": "^conversation$"
-                               }
-                            ],
-                            "type": "con"
-                        },
-                        {
-                            "border": "pixel",
-                            "current_border_width": 1,
-                            "floating": "auto_off",
-                            "geometry": {
-                               "height": 505,
-                               "width": 266,
-                               "x": 3558,
-                               "y": 37
-                            },
-                            "name": "Buddy List",
-                            "percent": 0.141666666666667,
-                            "swallows": [
-                               {
-                               // "class": "^Pidgin$",
-                               // "instance": "^Pidgin$",
-                               // "title": "^Buddy\\ List$",
-                               // "window_role": "^buddy_list$"
-                               }
-                            ],
-                            "type": "con"
-                        }
-                    ]
+                    "geometry": {
+                       "height": 1033,
+                       "width": 3815,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "name": "Front Page - tuir 1.28.3",
+                    "percent": 0.5,
+                    "swallows": [
+                       {
+                       "class": "^kitty$",
+                       "instance": "^kitty$",
+                       "title": "^Front\\ Page\\ \\-\\ tuir\\ 1\\.28\\.3$"
+                       }
+                    ],
+                    "type": "con"
+                },
+                {
+                    "border": "pixel",
+                    "current_border_width": 1,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 600,
+                       "width": 800,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "name": "Alacritty",
+                    "percent": 0.5,
+                    "swallows": [
+                       {
+                       "class": "^Alacritty$",
+                       "instance": "^Alacritty$",
+                       "title": "^Alacritty$"
+                       }
+                    ],
+                    "type": "con"
                 }
             ]
         }
     ]
-}
-
-{
-    "border": "pixel",
-    "current_border_width": 1,
-    "floating": "auto_off",
-    "geometry": {
-       "height": 506,
-       "width": 1890,
-       "x": 0,
-       "y": 0
-    },
-    "name": "Front Page - rtv 1.26.0",
-    "percent": 0.5,
-    "swallows": [
-       {
-       // "class": "^kitty$",
-       // "instance": "^kitty$",
-       // "title": "^Front\\ Page\\ \\-\\ rtv\\ 1\\.26\\.0$"
-       }
-    ],
-    "type": "con"
 }
 

@@ -118,7 +118,7 @@ set $term alacritty
 #set $term kitty
 # Your preferred application launcher
 # set $menu dmenu_run
-set $menu rofi -show run
+set $menu rofi -show drun
 #set $menu rofi -show drun
 set $ws1 "1"
 set $ws2 "2 📨"
@@ -174,11 +174,6 @@ bindsym $mod+Return exec $term
 
 # kill focused window
 bindsym $mod+Shift+q kill
-
-# Save Layout focused window
-bindsym $mod+Shift+s $saveLayout
-
-
 
 # start your launcher
 bindsym $mod+d exec $menu
@@ -288,6 +283,54 @@ bindsym $mod+Shift+minus move scratchpad
 # Show the first scratchpad window
 bindsym $mod+minus scratchpad show
 
+
+set $i3_resurrect ~/.local/bin/i3-resurrect
+
+# Save workspace mode.
+mode "save" {
+  bindsym 1 exec $i3_resurrect save -w $ws1
+  bindsym 2 exec $i3_resurrect save -w $ws2
+  bindsym 3 exec $i3_resurrect save -w $ws3
+  bindsym 4 exec $i3_resurrect save -w $ws4
+  bindsym 5 exec $i3_resurrect save -w $ws5
+  bindsym 6 exec $i3_resurrect save -w $ws6
+  bindsym 7 exec $i3_resurrect save -w $ws7
+  bindsym 8 exec $i3_resurrect save -w $ws8
+  bindsym 9 exec $i3_resurrect save -w $ws9
+  bindsym 0 exec $i3_resurrect save -w $ws10
+
+  # Back to normal: Enter, Escape, or s
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+  bindsym s mode "default"
+  bindsym $mod+Shift+s mode "default"
+}
+
+bindsym $mod+Shift+s mode "save"
+
+# Restore workspace mode.
+mode "restore" {
+  bindsym 1 exec $i3_resurrect restore -w $ws1
+  bindsym 2 exec $i3_resurrect restore -w $ws2
+  bindsym 3 exec $i3_resurrect restore -w $ws3
+  bindsym 4 exec $i3_resurrect restore -w $ws4
+  bindsym 5 exec $i3_resurrect restore -w $ws5
+  bindsym 6 exec $i3_resurrect restore -w $ws6
+  bindsym 7 exec $i3_resurrect restore -w $ws7
+  bindsym 8 exec $i3_resurrect restore -w $ws8
+  bindsym 9 exec $i3_resurrect restore -w $ws9
+  bindsym 0 exec $i3_resurrect restore -w $ws10
+
+  # Back to normal: Enter, Escape, or n
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+  bindsym n mode "default"
+  bindsym $mod+Shift+n mode "default"
+}
+
+bindsym $mod+Shift+n mode "restore"
+
+
 #
 # Resizing containers:
 #
@@ -314,9 +357,6 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # # include ${HOME}/.config/i3/config.d/*
-
-# exec --no-startup-id i3msg 'workspace 2: Email; exec evolution;workspace 1'
-# exec --no-startup-id i3msg 'workspace 7: Social; exec pidgin; workspace 1;'
 
 #smart_gaps on
 #smart_borders on
@@ -382,5 +422,15 @@ exec $ni /usr/bin/variety
 # Run flatpak version of signal
 exec $ni "flatpak run org.signal.Signal"
 
+exec $ni $i3_resurrect restore -w $ws1
+exec $ni $i3_resurrect restore -w $ws2
+exec $ni $i3_resurrect restore -w $ws3
+exec $ni $i3_resurrect restore -w $ws4
+exec $ni $i3_resurrect restore -w $ws5
+exec $ni $i3_resurrect restore -w $ws6
+exec $ni $i3_resurrect restore -w $ws7
+exec $ni $i3_resurrect restore -w $ws8
+exec $ni $i3_resurrect restore -w $ws9
+exec $ni $i3_resurrect restore -w $ws10
 
 exec_always "notify-send 'i3' 'Loaded config'"

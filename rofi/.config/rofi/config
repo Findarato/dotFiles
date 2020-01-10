@@ -2,7 +2,6 @@ rofi.combi-modi:    window,drun,ssh
 rofi.theme:         solarized
 rofi.font:          hack 10
 rofi.modi:          combi
-rofi.theme:         /usr/share/rofi/themes/Monokai.rasi
 ! "Enabled modi" Set from: File
 rofi.modi:                           combi
 ! "Window width" Set from: Default
@@ -106,7 +105,6 @@ rofi.combi-modi:                     window,drun,ssh
 ! "Indicate how it match by underlining it." Set from: Default
 ! rofi.show-match:                     true
 ! "New style theme file" Set from: File
-rofi.theme:                          /usr/share/rofi/themes/Monokai.rasi
 ! "Color scheme for normal row" Set from: Default
 ! rofi.color-normal:                   
 ! "Color scheme for urgent row" Set from: Default
@@ -277,3 +275,4 @@ rofi.theme:                          /usr/share/rofi/themes/Monokai.rasi
 ! rofi.me-accept-entry:                MouseDPrimary
 ! "Accept hovered row with custom action" Set from: Default
 ! rofi.me-accept-custom:               Control+MouseDPrimary
+rofi.theme: /usr/share/rofi/themes/Arc-Dark.rasi
