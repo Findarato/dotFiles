@@ -9,49 +9,14 @@
 
 # Setup Monitor layout
 
-#exec xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output DP-1 --mode 1920x1080 --pos 1920x0 --rotate normal 
-
-#exec --no-startup-id xrandr --output eDP-1 --primary --left-of DP-1 --auto
-
-#exec --no-startup-id xrandr --output eDP-1 --primary --left-of DP-1 --auto --output DVI-I-1-1 --right-of eDP-1 --auto
-
 exec ~/.screenlayout/working2Screen.sh
 
 for_window [class="^.*"] border pixel 1
+
 # #---Application WS assignment---# #
-assign [class="Steam"] $ws10
-assign [class="Remmina"] $ws9
-assign [class="obs"] $ws3
-assign [class="chatty-Chatty"] $ws7
-assign [class="(?i)Spotify"] $ws2
-assign [class="(?i)mpv"] $ws4
-assign [class="(?i)discord"] $ws7
-assign [class="(?i)Default - Wine desktop"] $ws10
 
 ### Workplace 2
-
-### Workplace 6
-for_window [class="^Firefox$"] move to workspace $ws6
-
-### Workplace 7 Social
-for_window [class="^Signal$"] move to workspace $ws7
-for_window [class="^Pidgin$"] move to workspace $ws7
-for_window [class="^Hexchat$"] move to workspace $ws7
-for_window [title=".*tuir.*"] move to workspace $ws7
-
-for_window [class="Peek"] floating enable
-
-for_window [class="ProjectM-pulseaudio"] floating enable
-for_window [title="(?i)GIMP Startup"] move workspace $ws5
-for_window [class="(?i)Gimp"] move workspace $ws5
-
-for_window [title="(?i)explorer.exe"] floating enable
-for_window [class="(?i)streamlink-twitch-gui"] floating enable
-for_window [title="(?i)Bluetooth"] floating enable
-
-# Enpass
-for_window [class="Enpass" title="Enpass"] floating enable, move position center
-
+assign [class="(?i)Spotify"] $ws2
 # Evolution
 for_window [class="Evolution"] move workspace $ws2
 for_window [class="Evolution" title="Compose Message"] floating enable move right 330px,move down 70px
@@ -60,6 +25,49 @@ for_window [class="Evolution" title="^Re: *"] floating enable, move position cen
 for_window [class="Evolution" title="^Re: *"] resize set 800 600
 #for_window [class="Evolution" title="Send & Receive Mail"] floating enable move position center resize set 200 150
 #for_window [class="Evolution-alarm-notify" title="Reminders"] floating enable, move postion center, resize set 300 200
+
+### Workplace 3
+assign [class="obs"] $ws3
+
+### Workplace 4
+assign [class="(?i)mpv"] $ws4
+
+### Workplace 5
+for_window [title="(?i)GIMP Startup"] move workspace $ws5
+for_window [class="(?i)Gimp"] move workspace $ws5
+
+### Workplace 6
+for_window [class="^Firefox$"] move to workspace $ws6
+
+### Workplace 7 Social
+assign [class="(?i)discord"] $ws7
+assign [class="chatty-Chatty"] $ws7
+for_window [class="^Signal$"] move to workspace $ws7
+for_window [class="^Pidgin$"] move to workspace $ws7
+for_window [class="^Hexchat$"] move to workspace $ws7
+for_window [title=".*tuir.*"] move to workspace $ws7
+
+### Workplace 8
+
+### Workplace 9
+assign [class="Remmina"] $ws9
+
+### Workplace 10
+assign [class="(?i)Default - Wine desktop"] $ws10
+assign [class="Steam"] $ws10
+
+for_window [class="Peek"] floating enable
+
+for_window [class="ProjectM-pulseaudio"] floating enable
+
+
+for_window [title="(?i)explorer.exe"] floating enable
+for_window [class="(?i)streamlink-twitch-gui"] floating enable
+for_window [title="(?i)Bluetooth"] floating enable
+
+# Enpass
+for_window [class="Enpass" title="Enpass"] floating enable, move position center
+
 
 # POPUP
 
@@ -110,7 +118,8 @@ set $term alacritty
 #set $term kitty
 # Your preferred application launcher
 # set $menu dmenu_run
-set $menu rofi -show drun
+set $menu rofi -show run
+#set $menu rofi -show drun
 set $ws1 "1"
 set $ws2 "2 📨"
 set $ws3 "3 Servers"
