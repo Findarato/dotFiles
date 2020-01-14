@@ -422,15 +422,15 @@ exec $ni /usr/bin/variety
 # Run flatpak version of signal
 exec $ni "flatpak run org.signal.Signal"
 
-exec $ni $i3_resurrect restore -w $ws1
-exec $ni $i3_resurrect restore -w $ws2
-exec $ni $i3_resurrect restore -w $ws3
-exec $ni $i3_resurrect restore -w $ws4
-exec $ni $i3_resurrect restore -w $ws5
-exec $ni $i3_resurrect restore -w $ws6
-exec $ni $i3_resurrect restore -w $ws7
-exec $ni $i3_resurrect restore -w $ws8
-exec $ni $i3_resurrect restore -w $ws9
-exec $ni $i3_resurrect restore -w $ws10
+#exec $ni $i3_resurrect restore -w $ws1
+#exec $ni $i3_resurrect restore -w $ws2
+#exec $ni $i3_resurrect restore -w $ws3
+#exec $ni $i3_resurrect restore -w $ws4
+#exec $ni $i3_resurrect restore -w $ws5
+#exec $ni $i3_resurrect restore -w $ws6
+#exec $ni $i3_resurrect restore -w $ws7
+#exec $ni $i3_resurrect restore -w $ws8
+#exec $ni $i3_resurrect restore -w $ws9
+#exec $ni $i3_resurrect restore -w $ws10
 
 exec_always "notify-send 'i3' 'Loaded config'"
