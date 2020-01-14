@@ -99,12 +99,12 @@ tabspaces: 4
 font:
   # Normal (roman) font face
   normal:
-    family: monospace
+    family: Hack
 #    style: regular
   bold:
-    family: monospace  
+    family: Hack
   italic:
-    family: Hack  
+    family: Hack
   size: 11.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
