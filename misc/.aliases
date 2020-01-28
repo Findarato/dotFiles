@@ -91,9 +91,11 @@ alias nocomment='grep -Ev '\''^(#|$)'\'''
 alias fixFonts="fc-cache -f -v"
 alias fixSSHkey="ssh-copy-id -i ~/.ssh/ansible.pub"
 alias listenTo='mpv --no-video'
+
+
 alias prd='ssh epicprd1.methnet.org'
-
-
+alias prd2='ssh epicprd1.methnet.org'
+alias trn='ssh epictrn-17.methnet.org'
 
 alias ccat="pygmentize -O style=monokai -f 256 -g"
 alias dig="dig +nocmd any +multiline +noall +answer"
