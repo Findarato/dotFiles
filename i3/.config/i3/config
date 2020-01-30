@@ -126,12 +126,13 @@ set $ws3 "3 Servers"
 set $ws4 "4 🏠"
 set $ws5 "5"
 set $ws6 "6 🌐"
-#set $ws7 "7 Social 💬"
+#set $ws7 "7 💬"
 set $ws7 "7 Social"
 set $ws8 "8"
 set $ws9 "9 💻"
 set $ws10 "10"
 set $ws11 "Extra"
+set $ws12 "Junk"
 
 set $ni --no-startup-id
 
@@ -143,19 +144,22 @@ new_float normal
 
 set $disp1 DP-1-1
 set $disp2 DP4
+set $disp2 HDMI-1-2
 
 ### Output configuration #
 
-workspace $ws1      output DP-1-1
-workspace $ws2      output DP-1-1
-workspace $ws3      output DP-1-1
-workspace $ws4      output DP-1-1
-workspace $ws5      output DP-1-1
-workspace $ws6      output DP-4
-workspace $ws7      output DP-4
-workspace $ws8      output DP-4
-workspace $ws9      output DP-4
-workspace $ws10     output DP-4
+workspace $ws1        output DP-1-1
+workspace $ws2        output DP-1-1
+workspace $ws3        output DP-1-1
+workspace $ws4        output DP-1-1
+workspace $ws5        output DP-1-1
+workspace $ws6        output DP-4
+workspace $ws7        output DP-4
+workspace $ws8        output DP-4
+workspace $ws9        output DP-4
+workspace $ws10       output DP-4
+workspace $ws11       output HDMI-1-2
+workspace $ws12       output HDMI-1-2
 
 
 # autostart applications
@@ -198,7 +202,7 @@ bindsym Print exec "flameshot gui"
 bindsym Shift+Print exec $slurp
 
 # capture the focused monitor to clipboard
-bindsym Shift+Control+Print exec grim -o $(i3msg -t get_outputs | jq -r '.[] | select(.focused) | .name') - | wl-copy
+#bindsym Shift+Control+Print exec grim -o $(i3msg -t get_outputs | jq -r '.[] | select(.focused) | .name') - | wl-copy
 
 #
 # Moving around:
