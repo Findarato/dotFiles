@@ -405,10 +405,10 @@ exec $ni dunst &
 #exec $ni source ~/.fehbg
 
 # kill focused window
-bindsym $mod+Shift+b "killall -9 compton;compton -b"
+bindsym $mod+Shift+b "killall -9 picom;picomn -b"
 
 
-exec $ni compton -b
+exec $ni picom -b
 
 exec $ni remmina
 exec $ni pidgin
