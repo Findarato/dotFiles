@@ -10,6 +10,6 @@ export RESTIC_PASSWORD=$(pass computer/restic)
 RESTIC=/usr/bin/restic
 
 #Retention settings
-DAYS=7
-WEEKS=5
-MONTHS=3
+DAYS=30
+WEEKS=1
+MONTHS=12
