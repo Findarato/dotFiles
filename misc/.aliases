@@ -140,3 +140,5 @@ alias icat="kitty +kitten icat"
 alias rtv='tuir'
 
 #alias fixX="chmod -x $(find . -type f)"
+
+alias hollywood='podman run --rm -it bcbcarl/hollywood'

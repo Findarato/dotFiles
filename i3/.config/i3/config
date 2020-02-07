@@ -9,7 +9,7 @@
 
 # Setup Monitor layout
 
-exec ~/.screenlayout/working2Screen.sh
+exec ~/.screenlayout/working3Screen.sh
 
 for_window [class="^.*"] border pixel 1
 
@@ -405,10 +405,10 @@ exec $ni dunst &
 #exec $ni source ~/.fehbg
 
 # kill focused window
-bindsym $mod+Shift+b "killall -9 picom;picomn -b"
+bindsym $mod+Shift+b "killall -9 picom && picomn -b --experimental-backends"
 
 
-exec $ni picom -b
+exec $ni picom -b --experimental-backends
 
 exec $ni remmina
 exec $ni pidgin
