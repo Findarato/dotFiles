@@ -144,7 +144,7 @@ new_float normal
 
 set $disp1 DP-1-1
 set $disp2 DP4
-set $disp2 HDMI-1-2
+set $disp2 DP6
 
 ### Output configuration #
 
@@ -152,14 +152,14 @@ workspace $ws1        output DP-1-1
 workspace $ws2        output DP-1-1
 workspace $ws3        output DP-1-1
 workspace $ws4        output DP-1-1
-workspace $ws5        output DP-1-1
+workspace $ws5        output DP-4
 workspace $ws6        output DP-4
 workspace $ws7        output DP-4
 workspace $ws8        output DP-4
 workspace $ws9        output DP-4
-workspace $ws10       output DP-4
-workspace $ws11       output HDMI-1-2
-workspace $ws12       output HDMI-1-2
+workspace $ws10       output DP-6
+workspace $ws11       output DP-6
+workspace $ws12       output DP-6
 
 
 # autostart applications
@@ -242,6 +242,8 @@ bindsym Shift+Print exec $slurp
 	bindsym $mod+8 		workspace $ws8
 	bindsym $mod+9 		workspace $ws9
 	bindsym $mod+0 		workspace $ws10
+	bindsym Mod1+Shift+1 		workspace $ws11
+	bindsym Mod1+Shift+2 		workspace $ws12
 
 	# move focused container to workspace
 	bindsym $mod+Shift+1 move container to workspace $ws1
