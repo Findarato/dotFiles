@@ -59,7 +59,7 @@
     "window.zoomLevel": 0,
     "terminal.integrated.rendererType": "dom",
     "workbench.statusBar.visible": false,
-    "workbench.activityBar.visible": false,
+    "workbench.activityBar.visible": true,
     "editor.fontFamily": "'Fira Code','Fira Mono','Droid Sans Mono', monospace,'monospace', 'Droid Sans Fallback', 'Noto Color Emoji'",
     "markdown.extension.tableFormatter.normalizeIndentation": true,
     
