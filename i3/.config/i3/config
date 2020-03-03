@@ -60,8 +60,8 @@ for_window [class="Peek"] floating enable
 
 for_window [class="ProjectM-pulseaudio"] floating enable
 
+for_window [class="Gnome-calculator" title="Calculator"] floating enable, move position center
 
-for_window [title="(?i)explorer.exe"] floating enable
 for_window [class="(?i)streamlink-twitch-gui"] floating enable
 for_window [title="(?i)Bluetooth"] floating enable
 
@@ -148,18 +148,18 @@ set $disp2 DP6
 
 ### Output configuration #
 
-workspace $ws1        output DP-1-1
-workspace $ws2        output DP-1-1
-workspace $ws3        output DP-1-1
-workspace $ws4        output DP-1-1
-workspace $ws5        output DP-4
-workspace $ws6        output DP-4
-workspace $ws7        output DP-4
-workspace $ws8        output DP-4
-workspace $ws9        output DP-4
-workspace $ws10       output DP-6
-workspace $ws11       output DP-6
-workspace $ws12       output DP-6
+workspace $ws1        output DP-2
+workspace $ws2        output DP-2
+workspace $ws3        output DP-2
+workspace $ws4        output DP-2
+workspace $ws5        output DP-6
+workspace $ws6        output DP-6
+workspace $ws7        output DP-6
+workspace $ws8        output DP-6
+workspace $ws9        output DP-6
+workspace $ws10       output DP-4
+workspace $ws11       output DP-4
+workspace $ws12       output DP-4
 
 
 # autostart applications
