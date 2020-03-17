@@ -84,7 +84,7 @@ scrolling:
   # to allow mouse scrolling for applications like `man`.
   #
   # Specifying `0` will disable faux scrolling.
-  auto_scroll: false
+  auto_scroll: true
 
 # Spaces per Tab (changes require restart)
 #
@@ -99,12 +99,14 @@ tabspaces: 4
 font:
   # Normal (roman) font face
   normal:
-    family: Hack
-#    style: regular
+    family: Fira Mono
+#    style: retina
   bold:
-    family: Hack
+    family: Fira Mono
+    style: Bold
   italic:
-    family: Hack
+    family: Fira Mono
+    style: Italic
   size: 11.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
@@ -120,6 +122,7 @@ font:
     x: 0
     y: 0
   use_thin_strokes: true
+
 draw_bold_text_with_bright_colors: true
 
 background_opacity: .9
@@ -179,12 +182,6 @@ key_bindings:
   - { key: Copy,                    action: Copy                             }
   - { key: L,        mods: Control, action: ClearLogNotice                   }
   - { key: L,        mods: Control, chars: "\x0c"                            }
-  - { key: Home,     mods: Alt,     chars: "\x1b[1;3H"                       }
-  - { key: Home,                    chars: "\x1bOH",        mode: AppCursor  }
-  - { key: Home,                    chars: "\x1b[H",        mode: ~AppCursor }
-  - { key: End,      mods: Alt,     chars: "\x1b[1;3F"                       }
-  - { key: End,                     chars: "\x1bOF",        mode: AppCursor  }
-  - { key: End,                     chars: "\x1b[F",        mode: ~AppCursor }
   - { key: PageUp,   mods: Shift,   action: ScrollPageUp,   mode: ~Alt       }
   - { key: PageUp,   mods: Shift,   chars: "\x1b[5;2~",     mode: Alt        }
   - { key: PageUp,   mods: Control, chars: "\x1b[5;5~"                       }
