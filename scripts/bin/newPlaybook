@@ -2,6 +2,8 @@
 
 #cp -r ./Ansible-Template ${1}
 
+#if !${1}
+
 echo "Cloning Playbook"
 git clone --depth=1 --branch=master git@gitlab.methnet.org:epic-server-admins/ansible-template.git "${1}" >/dev/null 2>&1
 
