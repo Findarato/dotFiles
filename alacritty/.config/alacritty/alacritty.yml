@@ -84,8 +84,6 @@ scrolling:
   # to allow mouse scrolling for applications like `man`.
   #
   # Specifying `0` will disable faux scrolling.
-  auto_scroll: true
-
 # Spaces per Tab (changes require restart)
 #
 # This setting defines the width of a tab in cells.
