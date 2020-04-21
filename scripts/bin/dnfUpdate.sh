@@ -6,6 +6,8 @@ if [ "$EUID" -ne 0 ]; then
   exit
 fi
 
+dnf remove $(dnf repoquery --installonly --latest-limit=-2 -q)
+
 #Update and clean up dnf
 #dnf clean all
 dnf upgrade --best --allowerasing -y;
