@@ -18,5 +18,8 @@ dnf distro-sync --best --allowerasing -y;
 # Update and Clean up Flatpak
 #sudo su -c "flatpak update -y" jharry;
 
+rm -rf /var/tmp/flatpak-cache-*
+
 flatpak update -y --user
+flatpak update -y
 flatpak uninstall --unused -y
