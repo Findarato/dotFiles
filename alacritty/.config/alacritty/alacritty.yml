@@ -96,10 +96,10 @@ scrolling:
 font:
   # Normal (roman) font face
   normal:
-    family: Fira Mono
+    family: Hack
 #    style: retina
   bold:
-    family: Fira Mono
+    family: Hack
     style: Bold
   italic:
     family: Fira Mono
