@@ -20,3 +20,4 @@ stow nano
 stow starship
 stow variety
 stow dunst
+stow Code
