@@ -84,8 +84,6 @@ scrolling:
   # to allow mouse scrolling for applications like `man`.
   #
   # Specifying `0` will disable faux scrolling.
-  auto_scroll: true
-
 # Spaces per Tab (changes require restart)
 #
 # This setting defines the width of a tab in cells.
@@ -93,16 +91,15 @@ scrolling:
 # Some applications, like Emacs, rely on knowing about the width of a tab.
 # To prevent unexpected behavior in these applications, it's also required to
 # change the `it` value in terminfo when altering this setting.
-tabspaces: 4
 
 # Font configuration (changes require restart)
 font:
   # Normal (roman) font face
   normal:
-    family: Fira Mono
+    family: Hack
 #    style: retina
   bold:
-    family: Fira Mono
+    family: Hack
     style: Bold
   italic:
     family: Fira Mono
