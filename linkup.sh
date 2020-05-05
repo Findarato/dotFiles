@@ -21,3 +21,4 @@ stow starship
 stow variety
 stow dunst
 stow Code
+stow systemd
