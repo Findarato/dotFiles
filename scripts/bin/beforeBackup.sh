@@ -12,6 +12,9 @@ NOW=$(date +%u)
 #updateRepos.sh
 
 
+# Mount Box
+/usr/bin/rclone mount Box:/backup/workDesktop /mnt/box/ --daemon
+
 "${HOME}/bin/cleanCache.sh"
 #"${HOME}/bin/docker_clean.sh"
 
@@ -20,6 +23,7 @@ rm -rf "${HOME}/.cache/evolution/mail/"
 
 # Backup Evolution
 /usr/libexec/evolution/evolution-backup --display=:0 --restart --backup /mnt/home/backup/evolution/evolution_backup_${NOW}.tar.gz
+/usr/libexec/evolution/evolution-backup --display=:0 --restart --backup /mnt/box/evolution/evolution_backup_${NOW}.tar.gz
 
 #Call Backup script
 "${HOME}/bin/Backup.sh" work
@@ -32,4 +36,6 @@ rm -rf "${HOME}/.cache/evolution/mail/"
 
 #swapoff -a && swapon -a
 
-/usr/bin/rclone copy /mnt/home/backup Box:/backup/workDesktop/ --create-empty-src-dirs
+#/usr/bin/rclone copy /mnt/home/backup Box:/backup/workDesktop/ --create-empty-src-dirs
+
+fusermount -u /mnt/box
