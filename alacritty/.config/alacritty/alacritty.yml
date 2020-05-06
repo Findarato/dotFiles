@@ -95,15 +95,15 @@ scrolling:
 # Font configuration (changes require restart)
 font:
   # Normal (roman) font face
-  normal:
-    family: Fira Mono
+ # normal:
+ #   family: Hack
 #    style: retina
-  bold:
-    family: Fira Mono
-    style: Bold
-  italic:
-    family: Fira Mono
-    style: Italic
+#  bold:
+#    family: Hack
+#    style: Bold
+#  italic:
+#    family: Fira Mono
+#    style: Italic
   size: 11.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
