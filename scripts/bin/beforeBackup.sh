@@ -31,3 +31,5 @@ rm -rf "${HOME}/.cache/evolution/mail/"
 #sync; echo 3 > /proc/sys/vm/drop_caches 
 
 #swapoff -a && swapon -a
+
+/usr/bin/rclone copy /mnt/home/backup Box:/backup/workDesktop/ --create-empty-src-dirs
