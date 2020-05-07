@@ -60,8 +60,8 @@ export EDITOR='nano'
 #fi
 
 DIRPATH="/mnt/cache"
-APPS="${DIRPATH}/apps"
-BROWSERS="${DIRPATH}/browsers"
+APPS="${DIRPATH}/${USER}/apps"
+BROWSERS="${DIRPATH}/${USER}/browsers"
 
 if [ -d "${DIRPATH}" ]; then
     if [ ! -d "${APPS}" ]; then
