@@ -3,5 +3,8 @@
 		{
 			"path": "/home/jharry/Documents/src/changelog"
 		}
-	]
+	],
+	"settings": {
+		"python.pythonPath": "/usr/bin/python3"
+	}
 }

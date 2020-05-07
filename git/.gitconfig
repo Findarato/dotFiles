@@ -1,5 +1,5 @@
 [user]
-    name = Joseph Harry
+	name = Joe
     email = findarato@gmail.com
     excludesFile = ~/.gitignore
     editor = nano
