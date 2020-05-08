@@ -13,6 +13,8 @@ else
     fi
 fi
 
-echo "${2}"
+eval ${RUNBEFORE}
 
 "${RESTIC}" -q -r "${BACKUP_LOCATION}" snapshots --path="${2}" --no-lock
+
+eval ${RUNAFTER}

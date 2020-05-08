@@ -12,9 +12,6 @@ NOW=$(date +%u)
 #updateRepos.sh
 
 
-# Mount Box
-/usr/bin/rclone mount Box:/backup/workDesktop /mnt/box/ --daemon
-
 "${HOME}/bin/cleanCache.sh"
 #"${HOME}/bin/docker_clean.sh"
 
@@ -35,7 +32,3 @@ rm -rf "${HOME}/.cache/evolution/mail/"
 #sync; echo 3 > /proc/sys/vm/drop_caches 
 
 #swapoff -a && swapon -a
-
-#/usr/bin/rclone copy /mnt/home/backup Box:/backup/workDesktop/ --create-empty-src-dirs
-
-fusermount -u /mnt/box

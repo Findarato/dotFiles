@@ -15,13 +15,9 @@ else
     fi
 fi
 
-# if [ ${1} == "work"];then
-# source
-
-# fi
+eval ${RUNBEFORE}
 
 echo "$(tput sgr0)"
-
 
 if [ ! -d "${BACKUP_LOCATION}" ];then
     "${RESTIC}" init --repo "${BACKUP_LOCATION}"
@@ -64,3 +60,6 @@ echo " ╚═════╝╚═╝  ╚═╝╚══════╝ ╚═�
 echo "$(tput sgr0)"
 
 "${RESTIC}" -r "${BACKUP_LOCATION}" check
+
+
+eval ${RUNAFTER}
