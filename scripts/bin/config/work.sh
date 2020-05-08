@@ -16,4 +16,4 @@ WEEKS=1
 MONTHS=1
 
 RUNBEFORE="echo 'mounting Box';rclone mount Box:/backup/desktop /mnt/box --daemon; sleep 20"
-RUNAFTER="echo 'Unmounting Box';fusermount -u /mnt/box"
+RUNAFTER="echo 'Unmounting Box';sleep 60;fusermount -u /mnt/box"

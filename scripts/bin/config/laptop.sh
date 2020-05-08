@@ -17,4 +17,4 @@ MONTHS=1
 
 # Run After
 RUNBEFORE="/usr/bin/rclone mount Box:/backup/laptop /mnt/box --daemon;sleep 20"
-RUNAFTER="fusermount -u /mnt/box"
+RUNAFTER="sleep 60;fusermount -u /mnt/box"
