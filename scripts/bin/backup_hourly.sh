@@ -17,7 +17,6 @@ eval ${RUNBEFORE}
 ${HOME}/bin/cleanCache.sh
 
 
-
 echo "$(tput sgr0)"
 
 if [ ! -d ${BACKUP_LOCATION} ];then
