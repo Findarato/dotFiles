@@ -423,7 +423,9 @@ exec $ni i3-msg $ws7; exec kitty tuir
 
 
 # Launch varity
-exec $ni /usr/bin/variety
+#exec $ni /usr/bin/variety
+
+exec $ni ~/Downloads/superpaper-2.0.1-x86_64.AppImage
 
 # Run flatpak version of signal
 exec $ni "flatpak run org.signal.Signal"
