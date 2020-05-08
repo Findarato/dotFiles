@@ -15,3 +15,6 @@ RESTIC=/usr/bin/restic
 DAYS=30
 WEEKS=1
 MONTHS=1
+
+RUNBEFORE=""
+RUNAFTER=""

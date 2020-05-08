@@ -14,3 +14,6 @@ RESTIC=/usr/bin/restic
 DAYS=7
 WEEKS=1
 MONTHS=1
+
+RUNBEFORE="rclone mount Box:/backup/laptop /mnt/box --daemon"
+RUNAFTER="fusermount -u /mnt/box"
