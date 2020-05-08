@@ -8,7 +8,7 @@ alias gl="git log --pretty=full --graph --decorate=full"
 alias ssh-copy-id="ssh-copy-id -o PreferredAuthentications=password -o PubkeyAuthentication=no"
 alias pushall="git remote | xargs -L1 git push --all"
 alias na='git reset --hard;git clean -df;'
-
+alias updateAll="git submodule update --recursive --remote"
 
 # I know I am bad
 alias pa="php artisan"
