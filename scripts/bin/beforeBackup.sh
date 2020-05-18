@@ -22,7 +22,7 @@ else
         "${HOME}/bin/Backup.sh" ${1}
     else
         echo "Unable to load config file"
-	    notify-send "Error" "Unable to load config file"
+	      notify-send "Error" "Unable to load config file"
         exit;
     fi
 fi
@@ -36,10 +36,6 @@ rm -rf "${HOME}/.cache/evolution/mail/"
 # /usr/libexec/evolution/evolution-backup --display=:0 --restart --backup /mnt/box/evolution/evolution_backup_${NOW}.tar.gz
 
 #Call Backup script
-
-
-
-
 
 # Attemping to restore some of them
 
