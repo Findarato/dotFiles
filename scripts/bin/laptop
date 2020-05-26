@@ -1,0 +1,1 @@
+sudo sshfs -o allow_other,default_permissions,IdentityFile=~/.ssh/id_rsa jharry@10.1.1.172:/home/jharry /mnt/joetop
