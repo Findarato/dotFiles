@@ -12,6 +12,7 @@ else
         exit;
     fi
 fi
+eval ${RUNBEFORE}
 
 #Check Backup
 echo "$(tput setaf 2)"
@@ -28,3 +29,5 @@ echo "$(tput sgr0)"
 "${RESTIC}" -q -r "${BACKUP_LOCATION}" snapshots --no-lock
 
 #${RESTIC} -q -r ${BACKUP_LOCATION} stats
+
+eval ${RUNEFTER}
