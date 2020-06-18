@@ -422,10 +422,21 @@ exec $ni i3-msg $ws7; exec kitty tuir
 #exec $ni kitty rtv
 
 
+
+# Lets start in some Gnome stuff
+exec $ni /usr/lib/gsd-xsettings
+exec_always $ni gnome-power-manager
+exec $ni /usr/bin/gnome-screensaver
+exec dbus-send --type=method_call --dest=org.gnome.ScreenSaver /org/gnome/ScreenSaver org.gnome.ScreenSaver.Lock
+
+
+
+exec $ni superpaper
+
+
+
 # Launch varity
 #exec $ni /usr/bin/variety
-
-exec $ni ~/Downloads/superpaper-2.0.1-x86_64.AppImage
 
 # Run flatpak version of signal
 exec $ni "flatpak run org.signal.Signal"

@@ -6,25 +6,28 @@
 
 # i3 config file (v4)
 
-
-# Setup Monitor layout
-
-exec ~/.screenlayout/working3Screen.sh
-
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 3
 
 # #---Application WS assignment---# #
 
-### Workplace 2
-assign [class="(?i)Spotify"] $ws2
+### Workplace Games
+#for_window [class="steam_app*"] move workspace $ws2
+
+
 # Evolution
-for_window [class="Evolution"] move workspace $ws2
 for_window [class="Evolution" title="Compose Message"] floating enable move right 330px,move down 70px
+for_window [class="Evolution"] move workspace $ws2
 for_window [class="Evolution" title="Compose Message"] resize set 800 600
 for_window [class="Evolution" title="^Re: *"] floating enable, move position center
 for_window [class="Evolution" title="^Re: *"] resize set 800 600
 #for_window [class="Evolution" title="Send & Receive Mail"] floating enable move position center resize set 200 150
 #for_window [class="Evolution-alarm-notify" title="Reminders"] floating enable, move postion center, resize set 300 200
+
+### Workplace 1
+#workspace $ws1 gaps outer 0
+for_window [class="Gnome-flashback" title="Desktop"] floating enable
+for_window [class="Gnome-flashback" title="Desktop"] move scratchpad
+
 
 ### Workplace 3
 assign [class="obs"] $ws3
@@ -91,13 +94,19 @@ for_window [title="pulsemixer"] floating enable
 # Logo key. Use Mod1 for Alt.
 
 set $mod Mod4
-set $lock "~/.config/i3/scripts/betterlockscreen -l -u ~/Pictures/tapet"
+#set $lock "~/.config/i3/scripts/betterlockscreen -l -u ~/Pictures/tapet"
+
+set $lock dbus-send --type=method_call --dest=org.gnome.ScreenSaver /org/gnome/ScreenSaver org.gnome.ScreenSaver.Lock
 #set $lock "~/.config/i3/scripts/betterlockscreen -l pixel -u ~/Pictures/tapet"
 #set $lock "/usr/bin/xscreensaver-command --activate --restart"
 #set $grim ~/.config/i3/scripts/grim
 #set $slurp ~/.config/i3/scripts/slurp
 set $saveLayout exec "${HOME}/Documents/src/i3-layout-manager/layout_manager.sh"
 
+
+# Setup Monitor layout
+
+exec ~/.screenlayout/2Display.sh
 
 #Setup Flash focus
 #detect-client-opacity = true;
@@ -121,7 +130,7 @@ set $term alacritty
 set $menu rofi -show drun
 #set $menu rofi -show drun
 set $ws1 "1"
-set $ws2 "2 📨"
+set $ws2 "2 🎲"
 set $ws3 "3 Servers"
 set $ws4 "4 🏠"
 set $ws5 "5"
@@ -130,9 +139,7 @@ set $ws6 "6 🌐"
 set $ws7 "7 Social"
 set $ws8 "8"
 set $ws9 "9 💻"
-set $ws10 "10"
-set $ws11 "Extra"
-set $ws12 "Junk"
+set $ws10 "10 🎮"
 
 set $ni --no-startup-id
 
@@ -148,18 +155,16 @@ set $disp2 DP6
 
 ### Output configuration #
 
-workspace $ws1        output DP-2
-workspace $ws2        output DP-2
-workspace $ws3        output DP-2
-workspace $ws4        output DP-2
-workspace $ws5        output DP-6
-workspace $ws6        output DP-6
-workspace $ws7        output DP-6
-workspace $ws8        output DP-6
-workspace $ws9        output DP-6
+workspace $ws1        output DP-0
+workspace $ws2        output DP-0
+workspace $ws3        output DP-0
+workspace $ws4        output DP-0
+workspace $ws5        output DP-0
+workspace $ws6        output DP-4
+workspace $ws7        output DP-4
+workspace $ws8        output DP-4
+workspace $ws9        output DP-4
 workspace $ws10       output DP-4
-workspace $ws11       output DP-4
-workspace $ws12       output DP-4
 
 
 # autostart applications
@@ -412,13 +417,13 @@ bindsym $mod+Shift+b "killall -9 picom && picomn -b"
 
 exec $ni picom -b --experimental-backends
 
-exec $ni remmina
-exec $ni pidgin
+#exec $ni remmina
+#exec $ni pidgin
 exec $ni signal
 exec $ni firefox
 exec $ni /usr/bin/flameshot
 exec $ni evolution
-exec $ni i3-msg $ws7; exec kitty tuir
+exec $ni i3-msg $ws7; exec $term -e tuir
 #exec $ni kitty rtv
 
 
@@ -428,7 +433,7 @@ exec $ni i3-msg $ws7; exec kitty tuir
 exec $ni ~/Downloads/superpaper-2.0.1-x86_64.AppImage
 
 # Run flatpak version of signal
-exec $ni "flatpak run org.signal.Signal"
+#exec $ni "flatpak run org.signal.Signal"
 
 #exec $ni $i3_resurrect restore -w $ws1
 #exec $ni $i3_resurrect restore -w $ws2
@@ -440,5 +445,14 @@ exec $ni "flatpak run org.signal.Signal"
 #exec $ni $i3_resurrect restore -w $ws8
 #exec $ni $i3_resurrect restore -w $ws9
 #exec $ni $i3_resurrect restore -w $ws10
+
+exec --no-startup-id superpaper
+
+# Gnome stuff
+exec_always --no-startup-id gnome-power-manager
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id gnome-flashback
+#exec $nsi gnome-session --session=gnome-flashback-compiz
+
 
 exec_always "notify-send 'i3' 'Loaded config'"
