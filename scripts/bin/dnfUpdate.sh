@@ -23,3 +23,5 @@ rm -rf /var/tmp/flatpak-cache-*
 flatpak update -y --user
 flatpak update -y
 flatpak uninstall --unused -y
+
+sudo -u joe flatpak uninstall --unused -y --user
