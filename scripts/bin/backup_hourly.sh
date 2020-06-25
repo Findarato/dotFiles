@@ -25,6 +25,8 @@ if [ ! -d ${BACKUP_LOCATION} ];then
     ${RESTIC} init --repo ${BACKUP_LOCATION}
 fi
 
+${RESTIC} cache --cleanup
+
 ${RESTIC} -r ${BACKUP_LOCATION} unlock  # Unlock repo
 
 echo "$(tput setaf 2)"
