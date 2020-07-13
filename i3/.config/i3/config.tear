@@ -74,6 +74,10 @@ for_window [class="Gnome-calculator" title="Calculator"] floating enable, move p
 for_window [class="(?i)streamlink-twitch-gui"] floating enable
 for_window [title="(?i)Bluetooth"] floating enable
 
+
+
+#for_window [class="Gnome-control-center" ] floating enabled, move position center
+
 # Enpass
 for_window [class="Enpass" title="Enpass"] floating enable, move position center
 

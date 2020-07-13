@@ -62,5 +62,6 @@
     "workbench.activityBar.visible": true,
     "editor.fontFamily": "'Fira Code','Fira Mono','Droid Sans Mono', monospace,'monospace', 'Droid Sans Fallback', 'Noto Color Emoji'",
     "markdown.extension.tableFormatter.normalizeIndentation": true,
+    "editor.renderControlCharacters": false,
     
 }
