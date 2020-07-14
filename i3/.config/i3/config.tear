@@ -381,8 +381,27 @@ bindsym $mod+r mode "resize"
 
 #smart_gaps on
 #smart_borders on
-gaps inner 15
+gaps inner 10
 gaps outer 0
+
+set_from_resource $color0 i3wm.color0 #f0f0f0
+set_from_resource $color1 i3wm.color1 #f0f0f0
+set_from_resource $color2 i3wm.color2 #f0f0f0
+set_from_resource $color3 i3wm.color3 #f0f0f0
+set_from_resource $color4 i3wm.color4 #f0f0f0
+set_from_resource $color5 i3wm.color5 #f0f0f0
+set_from_resource $color6 i3wm.color6 #f0f0f0
+set_from_resource $color7 i3wm.color7 #f0f0f0
+set_from_resource $color8 i3wm.color8 #f0f0f0
+set_from_resource $color9 i3wm.color9 #f0f0f0
+set_from_resource $color10 i3wm.color10 #f0f0f0
+set_from_resource $color11 i3wm.color11 #f0f0f0
+set_from_resource $color12 i3wm.color12 #f0f0f0
+set_from_resource $color13 i3wm.color13 #f0f0f0
+set_from_resource $color14 i3wm.color14 #f0f0f0
+set_from_resource $color15 i3wm.color15 #f0f0f0
+
+
 
 
 bar {
@@ -390,10 +409,10 @@ bar {
   font pango:'Font Awesome 5 Brands-Regular-400' 9
   tray_output primary
   colors {
-    background #120F17
-    statusline #E2a478
-    focused_workspace  #120F17 #7E25DD #c6c8d1
-    inactive_workspace #120F17 #000000 #c6c8d1
+    background $color0
+    statusline $color8
+    focused_workspace  $color0 $color6 $color0
+    inactive_workspace $color0 $color0 $color1
   }
   status_command i3blocks -c ~/.config/i3blocks/i3blocks.conf
   # status_command /opt/bumblebee-status/bumblebee-status -m cpu memory weather sensors pasink pasource date time -p time.format="%H:%M"  date.format="%a, %b %d %Y" -t purpleberg
@@ -402,12 +421,25 @@ bar {
 
 # window colors
 #  class                 border   backgr.  text  indicator  child_border
-client.focused          #7E25DD  #285577  #ffffff  #7E25DD   #285577
-client.focused_inactive #81c2d6  #5f676a  #ffffff  #484e50   #292d2e
-client.unfocused        #c9cabb  #222222  #888888  #292d2e   #222222
-client.urgent           #2f343a  #900000  #ffffff  #292d2e   #900000
-client.placeholder      #a2b4ba  #0c0c0c  #ffffff  #7E25DD   #0c0c0c
-client.background 	    #82abba
+#client.focused          #7E25DD  #285577  #ffffff  #7E25DD   #285577
+#client.focused_inactive #81c2d6  #5f676a  #ffffff  #484e50   #292d2e
+#client.unfocused        #c9cabb  #222222  #888888  #292d2e   #222222
+#client.urgent           #2f343a  #900000  #ffffff  #292d2e   #900000
+#client.placeholder      #a2b4ba  #0c0c0c  #ffffff  #7E25DD   #0c0c0c
+#client.background 	    #82abba
+
+
+
+
+# class                 border      backgr.     text     indicator     child_border
+client.focused          $color4     $color12     $color6  $color0       $color0
+client.focused_inactive $color0     $color0     $color6  $color0       $color0
+client.unfocused        $color0     $color0     $color6  $color0       $color0
+client.urgent           $color0     $color0     $color6  $color0       $color0
+client.placeholder      $color0     $color0     $color6  $color0       $color0
+
+client.background       $bg
+
 
 # # exec_always --no-startup-id  mako --progress-color=#7E25DD50 --markup 1 --actions 1 --icons 1 --border-radius 3 --background-color=#7E25DD50 --font=Hack
 
@@ -455,7 +487,7 @@ exec $ni i3-msg $ws7; exec $term -e tuir
 #exec $ni $i3_resurrect restore -w $ws9
 #exec $ni $i3_resurrect restore -w $ws10
 
-exec $ni superpaper
+#exec $ni superpaper
 
 # Gnome stuff
 exec_always --no-startup-id gnome-power-manager
@@ -465,3 +497,5 @@ exec $ni gnome-flashback
 
 
 exec_always "notify-send 'i3' 'Loaded config'"
+
+exec $ni ~/bin/wall_watch.sh /home/joe/.cache/superpaper/temp
