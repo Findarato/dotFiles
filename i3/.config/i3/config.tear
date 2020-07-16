@@ -379,10 +379,10 @@ bindsym $mod+r mode "resize"
 
 # # include ${HOME}/.config/i3/config.d/*
 
-#smart_gaps on
+smart_gaps on
 #smart_borders on
 gaps inner 10
-gaps outer 0
+gaps outer 5
 
 set_from_resource $color0 i3wm.color0 #f0f0f0
 set_from_resource $color1 i3wm.color1 #f0f0f0
@@ -410,8 +410,8 @@ bar {
   tray_output primary
   colors {
     background $color0
-    statusline $color8
-    focused_workspace  $color0 $color6 $color0
+    statusline $color1
+    focused_workspace  $color6 $color0 $color1
     inactive_workspace $color0 $color0 $color1
   }
   status_command i3blocks -c ~/.config/i3blocks/i3blocks.conf
@@ -421,18 +421,18 @@ bar {
 
 # window colors
 #  class                 border   backgr.  text  indicator  child_border
-#client.focused          #7E25DD  #285577  #ffffff  #7E25DD   #285577
-#client.focused_inactive #81c2d6  #5f676a  #ffffff  #484e50   #292d2e
-#client.unfocused        #c9cabb  #222222  #888888  #292d2e   #222222
-#client.urgent           #2f343a  #900000  #ffffff  #292d2e   #900000
-#client.placeholder      #a2b4ba  #0c0c0c  #ffffff  #7E25DD   #0c0c0c
-#client.background 	    #82abba
+client.focused          #7E25DD  #285577  #ffffff  #7E25DD   #285577
+client.focused_inactive #81c2d6  #5f676a  #ffffff  #484e50   #292d2e
+client.unfocused        #c9cabb  #222222  #888888  #292d2e   #222222
+client.urgent           #2f343a  #900000  #ffffff  #292d2e   #900000
+client.placeholder      #a2b4ba  #0c0c0c  #ffffff  #7E25DD   #0c0c0c
+client.background 	    #82abba
 
 
 
 
 # class                 border      backgr.     text     indicator     child_border
-client.focused          $color4     $color12     $color6  $color0       $color0
+client.focused          $color4     $color2     $color6  $color0       $color0
 client.focused_inactive $color0     $color0     $color6  $color0       $color0
 client.unfocused        $color0     $color0     $color6  $color0       $color0
 client.urgent           $color0     $color0     $color6  $color0       $color0
@@ -444,8 +444,6 @@ client.background       $bg
 # # exec_always --no-startup-id  mako --progress-color=#7E25DD50 --markup 1 --actions 1 --icons 1 --border-radius 3 --background-color=#7E25DD50 --font=Hack
 
 # Startup Programs
-
-exec $ni dunst &
 
 # set desktop background with custom effect
 #exec $ni betterlockscreen -w dim
@@ -487,7 +485,7 @@ exec $ni i3-msg $ws7; exec $term -e tuir
 #exec $ni $i3_resurrect restore -w $ws9
 #exec $ni $i3_resurrect restore -w $ws10
 
-#exec $ni superpaper
+exec $ni superpaper
 
 # Gnome stuff
 exec_always --no-startup-id gnome-power-manager
@@ -496,6 +494,8 @@ exec $ni gnome-flashback
 #exec $nsi gnome-session --session=gnome-flashback-compiz
 
 
-exec_always "notify-send 'i3' 'Loaded config'"
+exec $ni ~/bin/wal_watch.sh /home/joe/.cache/superpaper/temp
 
-exec $ni ~/bin/wall_watch.sh /home/joe/.cache/superpaper/temp
+exec $ni dunst &
+
+exec_always "notify-send 'i3' 'Loaded config'"
