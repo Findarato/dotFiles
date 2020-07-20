@@ -153,7 +153,7 @@ set $ws10 "10 🎮"
 
 set $ni --no-startup-id
 
-font Hack:11
+font Hack
 
 # Window borders
 default_border pixel 1
@@ -257,8 +257,6 @@ bindsym Shift+Print exec $slurp
 	bindsym $mod+8 		workspace $ws8
 	bindsym $mod+9 		workspace $ws9
 	bindsym $mod+0 		workspace $ws10
-	bindsym Mod1+Shift+1 		workspace $ws11
-	bindsym Mod1+Shift+2 		workspace $ws12
 
 	# move focused container to workspace
 	bindsym $mod+Shift+1 move container to workspace $ws1
@@ -438,7 +436,7 @@ client.unfocused        $color0     $color0     $color6  $color0       $color0
 client.urgent           $color0     $color0     $color6  $color0       $color0
 client.placeholder      $color0     $color0     $color6  $color0       $color0
 
-client.background       $bg
+client.background       $color0
 
 
 # # exec_always --no-startup-id  mako --progress-color=#7E25DD50 --markup 1 --actions 1 --icons 1 --border-radius 3 --background-color=#7E25DD50 --font=Hack
@@ -457,14 +455,9 @@ bindsym $mod+Shift+b "killall -9 picom && picomn -b"
 
 exec $ni picom -b --experimental-backends
 
-#exec $ni remmina
-#exec $ni pidgin
-exec $ni signal
 exec $ni firefox
 exec $ni /usr/bin/flameshot
-exec $ni evolution
-exec $ni i3-msg $ws7; exec $term -e tuir
-#exec $ni kitty rtv
+exec $ni i3-msg $ws7; exec $term -e tuir --theme color-wal
 
 
 # Launch varity
@@ -472,7 +465,7 @@ exec $ni i3-msg $ws7; exec $term -e tuir
 
 
 # Run flatpak version of signal
-#exec $ni "flatpak run org.signal.Signal"
+exec $ni "flatpak run org.signal.Signal"
 
 #exec $ni $i3_resurrect restore -w $ws1
 #exec $ni $i3_resurrect restore -w $ws2
@@ -493,9 +486,8 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec $ni gnome-flashback
 #exec $nsi gnome-session --session=gnome-flashback-compiz
 
-
 exec $ni ~/bin/wal_watch.sh /home/joe/.cache/superpaper/temp
 
-exec $ni dunst &
+exec $ni pkill dunst; sleep 60 && dunst -config ~/.config/dunst/dunstrc &
 
 exec_always "notify-send 'i3' 'Loaded config'"
