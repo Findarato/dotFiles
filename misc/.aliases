@@ -13,6 +13,8 @@ alias updateAll="git submodule update --recursive --remote"
 # I know I am bad
 alias pa="php artisan"
 
+alias lo='libreoffice'
+
 
 #Web stuff
 alias a='atom .'
