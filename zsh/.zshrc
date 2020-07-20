@@ -254,4 +254,8 @@ export QT_SCREEN_SCALE_FACTORS=1
 # export "QT_SCREEN_SCALE_FACTORS=1;1"
 # zprof # bottom of .zshrc
 
-(cat ~/.cache/wal/sequences &)
+# Wal setup
+if [ -d "~/.cache/wal" ]; then
+    (cat ~/.cache/wal/sequences &)
+fi
+

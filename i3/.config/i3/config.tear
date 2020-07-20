@@ -378,39 +378,43 @@ bindsym $mod+r mode "resize"
 # # include ${HOME}/.config/i3/config.d/*
 
 smart_gaps on
-#smart_borders on
+smart_borders on
 gaps inner 10
 gaps outer 5
 
-set_from_resource $color0 i3wm.color0 #f0f0f0
-set_from_resource $color1 i3wm.color1 #f0f0f0
-set_from_resource $color2 i3wm.color2 #f0f0f0
-set_from_resource $color3 i3wm.color3 #f0f0f0
-set_from_resource $color4 i3wm.color4 #f0f0f0
-set_from_resource $color5 i3wm.color5 #f0f0f0
-set_from_resource $color6 i3wm.color6 #f0f0f0
-set_from_resource $color7 i3wm.color7 #f0f0f0
-set_from_resource $color8 i3wm.color8 #f0f0f0
-set_from_resource $color9 i3wm.color9 #f0f0f0
-set_from_resource $color10 i3wm.color10 #f0f0f0
-set_from_resource $color11 i3wm.color11 #f0f0f0
-set_from_resource $color12 i3wm.color12 #f0f0f0
-set_from_resource $color13 i3wm.color13 #f0f0f0
-set_from_resource $color14 i3wm.color14 #f0f0f0
-set_from_resource $color15 i3wm.color15 #f0f0f0
+set_from_resource $color0 i3wm.color0
+set_from_resource $color1 i3wm.color1
+set_from_resource $color2 i3wm.color2
+set_from_resource $color3 i3wm.color3
+set_from_resource $color4 i3wm.color4
+set_from_resource $color5 i3wm.color5
+set_from_resource $color6 i3wm.color6
+set_from_resource $color7 i3wm.color7
+set_from_resource $color8 i3wm.color8
+set_from_resource $color9 i3wm.color9
+set_from_resource $color10 i3wm.color10
+set_from_resource $color11 i3wm.color11
+set_from_resource $color12 i3wm.color12
+set_from_resource $color13 i3wm.color13
+set_from_resource $color14 i3wm.color14
+set_from_resource $color15 i3wm.color15
 
 
 
 
 bar {
   position top
-  font pango:'Font Awesome 5 Brands-Regular-400' 9
+  font pango:'Font Awesome 5 Brands-Regular-400' 10
   tray_output primary
   colors {
     background $color0
     statusline $color1
-    focused_workspace  $color6 $color0 $color1
-    inactive_workspace $color0 $color0 $color1
+    #                  border  #backgr #text
+    focused_workspace  $color0 $color15 $color0
+    inactive_workspace $color0 $color0  $color1
+    active_workspace   $color0 $color12 $color0
+    inactive_workspace $color0 $color0  $color4
+    urgent_workspace   $color0 $color0  $color4
   }
   status_command i3blocks -c ~/.config/i3blocks/i3blocks.conf
   # status_command /opt/bumblebee-status/bumblebee-status -m cpu memory weather sensors pasink pasource date time -p time.format="%H:%M"  date.format="%a, %b %d %Y" -t purpleberg
@@ -427,8 +431,6 @@ client.placeholder      #a2b4ba  #0c0c0c  #ffffff  #7E25DD   #0c0c0c
 client.background 	    #82abba
 
 
-
-
 # class                 border      backgr.     text     indicator     child_border
 client.focused          $color4     $color2     $color6  $color0       $color0
 client.focused_inactive $color0     $color0     $color6  $color0       $color0
@@ -438,8 +440,6 @@ client.placeholder      $color0     $color0     $color6  $color0       $color0
 
 client.background       $color0
 
-
-# # exec_always --no-startup-id  mako --progress-color=#7E25DD50 --markup 1 --actions 1 --icons 1 --border-radius 3 --background-color=#7E25DD50 --font=Hack
 
 # Startup Programs
 
@@ -490,4 +490,4 @@ exec $ni ~/bin/wal_watch.sh /home/joe/.cache/superpaper/temp
 
 exec $ni pkill dunst; sleep 60 && dunst -config ~/.config/dunst/dunstrc &
 
-exec_always "notify-send 'i3' 'Loaded config'"
+#exec_always "notify-send 'i3' 'Loaded config'"
