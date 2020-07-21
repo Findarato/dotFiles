@@ -377,8 +377,8 @@ bindsym $mod+r mode "resize"
 
 # # include ${HOME}/.config/i3/config.d/*
 
-smart_gaps on
-smart_borders on
+#smart_gaps on
+#smart_borders on
 gaps inner 10
 gaps outer 5
 
@@ -432,8 +432,8 @@ client.background 	    #82abba
 
 
 # class                 border      backgr.     text     indicator     child_border
-client.focused          $color4     $color2     $color6  $color0       $color0
-client.focused_inactive $color0     $color0     $color6  $color0       $color0
+client.focused          $color0     $color15    $color0  $color0       $color0
+client.focused_inactive $color5     $color0     $color6  $color0       $color0
 client.unfocused        $color0     $color0     $color6  $color0       $color0
 client.urgent           $color0     $color0     $color6  $color0       $color0
 client.placeholder      $color0     $color0     $color6  $color0       $color0
