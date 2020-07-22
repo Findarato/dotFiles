@@ -15,11 +15,11 @@ for_window [class="^.*"] border pixel 3
 
 
 # Evolution
-for_window [class="Evolution" title="Compose Message"] floating enable move right 330px,move down 70px
-for_window [class="Evolution"] move workspace $ws2
-for_window [class="Evolution" title="Compose Message"] resize set 800 600
-for_window [class="Evolution" title="^Re: *"] floating enable, move position center
-for_window [class="Evolution" title="^Re: *"] resize set 800 600
+#for_window [class="Evolution" title="Compose Message"] floating enable move right 330px,move down 70px
+#for_window [class="Evolution"] move workspace $ws2
+#for_window [class="Evolution" title="Compose Message"] resize set 800 600
+#for_window [class="Evolution" title="^Re: *"] floating enable, move position center
+#for_window [class="Evolution" title="^Re: *"] resize set 800 600
 #for_window [class="Evolution" title="Send & Receive Mail"] floating enable move position center resize set 200 150
 #for_window [class="Evolution-alarm-notify" title="Reminders"] floating enable, move postion center, resize set 300 200
 
@@ -145,7 +145,6 @@ set $ws3 "3 Servers"
 set $ws4 "4 🏠"
 set $ws5 "5"
 set $ws6 "6 🌐"
-#set $ws7 "7 💬"
 set $ws7 "7 Social"
 set $ws8 "8"
 set $ws9 "9 💻"
@@ -153,7 +152,7 @@ set $ws10 "10 🎮"
 
 set $ni --no-startup-id
 
-font Hack
+font pango:Hack 11
 
 # Window borders
 default_border pixel 1
@@ -375,11 +374,7 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-# # include ${HOME}/.config/i3/config.d/*
-
-#smart_gaps on
-#smart_borders on
-gaps inner 10
+gaps inner 5
 gaps outer 5
 
 set_from_resource $color0 i3wm.color0
@@ -399,25 +394,21 @@ set_from_resource $color13 i3wm.color13
 set_from_resource $color14 i3wm.color14
 set_from_resource $color15 i3wm.color15
 
-
-
-
 bar {
   position top
   font pango:'Font Awesome 5 Brands-Regular-400' 10
   tray_output primary
   colors {
-    background $color0
-    statusline $color1
+    #background $color0
+    #statusline $color1
     #                  border  #backgr #text
-    focused_workspace  $color0 $color15 $color0
-    inactive_workspace $color0 $color0  $color1
-    active_workspace   $color0 $color    $color0
-    inactive_workspace $color0 $color0  $color4
-    urgent_workspace   $color0 $color3  $color0
+    #focused_workspace  $color0 $color15 $color0
+    #inactive_workspace $color0 $color0  $color1
+    #active_workspace   $color0 $color0  $color0
+    #inactive_workspace $color0 $color0  $color4
+    #urgent_workspace   $color0 $color3  $color0
   }
   status_command i3blocks -c ~/.config/i3blocks/i3blocks.conf
-  # status_command /opt/bumblebee-status/bumblebee-status -m cpu memory weather sensors pasink pasource date time -p time.format="%H:%M"  date.format="%a, %b %d %Y" -t purpleberg
 }
 
 
@@ -432,13 +423,12 @@ client.background 	    #82abba
 
 
 # class                 border      backgr.     text     indicator     child_border
-client.focused          $color0     $color15    $color0  $color0       $color0
-client.focused_inactive $color5     $color0     $color6  $color0       $color0
-client.unfocused        $color0     $color0     $color6  $color0       $color0
-client.urgent           $color0     $color5     $color0  $color0       $color0
-client.placeholder      $color0     $color0     $color6  $color0       $color0
-
-client.background       $color0
+#client.focused          $color0     $color15    $color0  $color0       $color0
+#client.focused_inactive $color5     $color0     $color6  $color0       $color0
+#client.unfocused        $color0     $color0     $color6  $color0       $color0
+#client.urgent           $color0     $color5     $color0  $color0       $color0
+#client.placeholder      $color0     $color0     $color6  $color0       $color0
+#client.background       $color0
 
 
 # Startup Programs
