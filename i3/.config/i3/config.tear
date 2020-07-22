@@ -412,9 +412,9 @@ bar {
     #                  border  #backgr #text
     focused_workspace  $color0 $color15 $color0
     inactive_workspace $color0 $color0  $color1
-    active_workspace   $color0 $color12 $color0
+    active_workspace   $color0 $color    $color0
     inactive_workspace $color0 $color0  $color4
-    urgent_workspace   $color0 $color0  $color4
+    urgent_workspace   $color0 $color3  $color0
   }
   status_command i3blocks -c ~/.config/i3blocks/i3blocks.conf
   # status_command /opt/bumblebee-status/bumblebee-status -m cpu memory weather sensors pasink pasource date time -p time.format="%H:%M"  date.format="%a, %b %d %Y" -t purpleberg
@@ -435,7 +435,7 @@ client.background 	    #82abba
 client.focused          $color0     $color15    $color0  $color0       $color0
 client.focused_inactive $color5     $color0     $color6  $color0       $color0
 client.unfocused        $color0     $color0     $color6  $color0       $color0
-client.urgent           $color0     $color0     $color6  $color0       $color0
+client.urgent           $color0     $color5     $color0  $color0       $color0
 client.placeholder      $color0     $color0     $color6  $color0       $color0
 
 client.background       $color0
@@ -453,7 +453,8 @@ client.background       $color0
 bindsym $mod+Shift+b "killall -9 picom && picomn -b"
 
 
-exec $ni picom -b --experimental-backends
+#exec $ni picom -b --experimental-backends
+exec $ni picom -b
 
 exec $ni firefox
 exec $ni /usr/bin/flameshot
@@ -478,7 +479,7 @@ exec $ni "flatpak run org.signal.Signal"
 #exec $ni $i3_resurrect restore -w $ws9
 #exec $ni $i3_resurrect restore -w $ws10
 
-exec $ni superpaper
+exec $ni superpaper && sleep 10
 
 # Gnome stuff
 exec_always --no-startup-id gnome-power-manager
