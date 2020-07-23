@@ -153,7 +153,7 @@ setopt share_history            # Share history between multiple shells
 
 if [[ ${ZSH_VERSION} > 5.1.0 ]]; then
   # Newer Zsh version
-  zplug "romkatv/powerlevel10k", as:theme
+  zplug romkatv/powerlevel10k, as:theme, depth:1
 else
   # Should only be needed on CentOS7 and Debian > 10
   zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme
@@ -254,4 +254,8 @@ export QT_SCREEN_SCALE_FACTORS=1
 # export "QT_SCREEN_SCALE_FACTORS=1;1"
 # zprof # bottom of .zshrc
 
-(cat ~/.cache/wal/sequences &)
+# Wal setup
+if [ -d "~/.cache/wal" ]; then
+    (cat ~/.cache/wal/sequences &)
+fi
+
