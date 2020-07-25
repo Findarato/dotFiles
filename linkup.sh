@@ -22,3 +22,4 @@ stow variety
 stow dunst
 stow Code
 stow systemd
+stow wal
