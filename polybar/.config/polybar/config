@@ -1,0 +1,291 @@
+[fonts]
+opensansreg = DroidSans:Regular:size=8
+opensanssemibold = DroidSans:SemiBold:size=8
+opensansbold = DroidSans:Bold:size=8
+opensansboldhigh = DroidSans:Bold:size=11
+opensansital = DroidSans:Italic:size=9
+xos = xos4\ Terminus:size=14;0
+nerd = Hack mono:size=10;2
+
+
+
+
+
+[colors]
+light-red = #D95B5B
+light-green = #249824
+light-purple = #A44BA0
+
+menucol-yellow = #F7F272
+menucol-blue = #1771F1
+menucol-orange = #FFAF60
+menucol-red = #F85C50
+menucol-green = #77BD8B
+menucol-sealine = #00CF91
+menucol-purple = #9A76B3
+menucol-pink = #FF77BF
+menucol-deepblue = #6560FF
+menucol-lightblue = #60FFF7
+
+fav-purple = #6633FF
+dark = #111
+dark-red = #311
+dark-green = #131
+dark-purple = #201134
+light = #eee
+gray = #999
+dark-gray = #333
+
+background = ${xrdb:color0:#222}
+
+
+[settings]
+screenchange-reload = true
+
+
+################################################################################
+################################################################################
+############                       MODULE I3                        ############
+################################################################################
+################################################################################
+
+[module/i3]
+;https://github.com/jaagr/polybar/wiki/Module:-i3
+type = internal/i3
+
+pin-workspaces = true
+strip-wsnumbers = true
+index-sort = true
+
+format = <label-state> <label-mode>
+
+label-dimmed-underline = ${colors.background}
+
+;On editing mode (resize for ex)
+label-mode = %mode%
+label-mode-background = ${colors.dark-purple}
+label-mode-underline = ${colors.fav-purple}
+label-mode-padding = 2
+label-mode-font = 0
+
+label-focused = %index%
+label-focused-background = ${colors.dark-green}
+label-focused-underline = ${colors.light-green}
+label-focused-padding = 3
+label-focused-font = 3
+
+label-unfocused = %index%
+label-unfocused-foreground = ${colors.gray}
+label-unfocused-padding = 3
+label-unfocused-font = 3
+
+label-visible = %index%
+label-visible-background = ${colors.dark-purple}
+label-visible-underline = ${colors.light-purple}
+label-visible-padding = 3
+label-visible-font = 3
+
+label-urgent = %index%
+label-urgent-background = ${colors.dark-red}
+label-urgent-underline = ${colors.light-red}
+label-urgent-padding = 3
+label-urgent-font = 3
+
+
+
+
+[bar/bar1]
+monitor = DP-0
+bottom = false
+width = 100%
+height = 22;px
+
+;List of fonts
+font-0 = "Hack mono:size=10;2"
+font-1 = "Hack  Nerd Font:size=11;3"
+font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=8;1"
+font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=8;1"
+font-4 = "Font Awesome 5 Brands:pixelsize=8;1"
+
+background = ${colors.dark}
+foreground = ${colors.light}
+
+line-color = ${colors.light-purple}
+line-size = 2
+
+separator = "   "
+
+wm-restack = i3
+tray-position = right
+
+modules-left = i3
+modules-center = 
+modules-right = sound memory memoryswap cpu powermenu date
+
+
+[bar/bar2]
+monitor = DP-4
+bottom = false
+width = 100%
+height = 22;px
+
+;List of fonts
+font-0 = "Hack mono:size=10;2"
+font-1 = "Hack  Nerd Font:size=11;3"
+font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=8;1"
+font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=8;1"
+font-4 = "Font Awesome 5 Brands:pixelsize=8;1"
+
+background = ${colors.dark}
+foreground = ${colors.light}
+
+line-color = ${colors.light-purple}
+line-size = 2
+
+separator = "   "
+
+wm-restack = i3
+
+modules-left = i3
+modules-center = 
+modules-right = esoStatus
+
+[module/esoStatus]
+type = custom/script
+exec = python3 /home/joe/.config/i3blocks/custom/eso/eso.py
+interval = 100
+;format-underline = ${colors.white}
+
+label = ESO Status: %output%
+
+;Date correction
+[module/date]
+type = internal/date
+
+time = %H:%M
+date = %A, %B %d
+date-alt = %A, %B %d, %Y
+time-alt = %H:%M:%S
+
+format-prefix = " "
+format-padding = 2
+format-underline = ${colors.menucol-orange}
+format-foreground = ${colors.menucol-orange}
+interval = 20
+
+label = %date%, %time%
+label-font = 1
+label-foreground = ${colors.light}
+
+
+[module/appfilemanager]
+type = custom/text
+content = F
+content-font = 7
+content-padding = 2
+click-left = "nautilus > /dev/null 2>&1 &"
+
+[module/xkillapp]
+type = custom/text
+content = Kill
+content-font = 0
+content-padding = 2
+click-left = sleep 0.5 && xkill > /dev/null 2>&1 &
+
+
+;Sound
+[module/sound]
+type = internal/alsa
+
+format-volume = <ramp-volume> <label-volume>
+format-volume-padding = 2
+format-volume-underline = ${colors.menucol-sealine}
+
+label-volume = %percentage%
+label-volume-font = 3
+
+label-muted =  (%percentage%)
+label-muted-font = 3
+label-muted-padding = 2
+label-muted-foreground = ${colors.gray}
+label-muted-underline = ${colors.gray}
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-font = 7
+ramp-volume-foreground = ${colors.menucol-sealine}
+
+;Custom Exit Button
+[module/powermenu]
+type = custom/text
+
+content = ⏻
+content-font = 1
+content-padding = 2
+content-foreground = ${colors.menucol-lightblue}
+content-underline = ${colors.menucol-lightblue}
+
+click-left = sh ~/.config/i3/powermenu.sh
+
+[module/cpu]
+type = internal/cpu
+interval = 0.5
+format = <label>
+format-padding = 2
+format-underline = ${colors.menucol-red}
+
+format-prefix = 
+format-prefix-foreground = ${colors.menucol-red}
+
+label = " %percentage%"
+label-font = 7
+
+
+[module/memory]
+type = internal/memory
+interval = 3
+format = <label>
+format-padding = 2
+format-underline = ${colors.menucol-purple}
+
+format-prefix = 
+format-prefix-foreground = ${colors.menucol-purple}
+
+label = " %gb_used%"
+label-font = 3
+
+
+#################################################################################
+
+[module/wired-network]
+;https://github.com/jaagr/polybar/wiki/Module:-network
+type = internal/network
+interface = enp4s0
+;interface = enp14s0
+interval = 3.0
+
+; Available tokens:
+;   %ifname%    [wireless+wired]
+;   %local_ip%  [wireless+wired]
+;   %essid%     [wireless]
+;   %signal%    [wireless]
+;   %upspeed%   [wireless+wired]
+;   %downspeed% [wireless+wired]
+;   %linkspeed% [wired]
+; Default: %ifname% %local_ip%
+label-connected =  %ifname%
+label-disconnected = %ifname% disconnected
+
+format-connected-foreground = ${colors.foreground}
+format-connected-background = ${colors.background}
+format-connected-underline = #55aa55
+format-connected-prefix = " "
+format-connected-prefix-foreground = #55aa55
+format-connected-prefix-background = ${colors.background}
+
+format-disconnected = <label-disconnected>
+format-disconnected-underline = ${colors.alert}
+label-disconnected-foreground = ${colors.foreground}
+
+
