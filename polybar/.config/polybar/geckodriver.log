@@ -1,0 +1,1154 @@
+1595876165673	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileP1ZNcL"
+*** You are running in headless mode.
+1595876167112	Marionette	INFO	Listening on port 37059
+1595876167178	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595876170407	Marionette	INFO	Stopped listening on port 37059
+1595876211984	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile1VIlUJ"
+*** You are running in headless mode.
+1595876213445	Marionette	INFO	Listening on port 40209
+1595876213490	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595876216670	Marionette	INFO	Stopped listening on port 40209
+1595876220079	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileWxTJDq"
+*** You are running in headless mode.
+1595876221505	Marionette	INFO	Listening on port 41379
+1595876221584	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595876224523	Marionette	INFO	Stopped listening on port 41379
+1595876325114	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileN621Kk"
+*** You are running in headless mode.
+1595876326497	Marionette	INFO	Listening on port 40943
+1595876326521	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595876329400	Marionette	INFO	Stopped listening on port 40943
+1595876348573	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileD2cEt0"
+*** You are running in headless mode.
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 136: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+1595876350040	Marionette	INFO	Listening on port 38485
+1595876350078	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595876353956	Marionette	INFO	Stopped listening on port 38485
+1595876364634	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile1ZIYQA"
+*** You are running in headless mode.
+1595876366081	Marionette	INFO	Listening on port 36505
+1595876366139	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595876369046	Marionette	INFO	Stopped listening on port 36505
+1595876381934	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileO9A2rF"
+*** You are running in headless mode.
+1595876383326	Marionette	INFO	Listening on port 44775
+1595876383339	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595876386428	Marionette	INFO	Stopped listening on port 44775
+1595876390846	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilez6Sqjs"
+*** You are running in headless mode.
+1595876392248	Marionette	INFO	Listening on port 37613
+1595876392253	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595876395132	Marionette	INFO	Stopped listening on port 37613
+1595876398553	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile72tOfb"
+*** You are running in headless mode.
+1595876399965	Marionette	INFO	Listening on port 45473
+1595876400060	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595876403435	Marionette	INFO	Stopped listening on port 45473
+1595876415739	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile7fNWG2"
+*** You are running in headless mode.
+1595876417208	Marionette	INFO	Listening on port 38639
+1595876417247	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595876421204	Marionette	INFO	Stopped listening on port 38639
+1595876424646	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilei04alQ"
+*** You are running in headless mode.
+1595876426140	Marionette	INFO	Listening on port 40603
+1595876426151	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595876428951	Marionette	INFO	Stopped listening on port 40603
+1595876432375	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileGVgOdG"
+*** You are running in headless mode.
+1595876433822	Marionette	INFO	Listening on port 41185
+1595876433879	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595876436725	Marionette	INFO	Stopped listening on port 41185
+1595876455261	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilexSfnw9"
+*** You are running in headless mode.
+1595876456662	Marionette	INFO	Listening on port 38449
+1595876456674	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595876459616	Marionette	INFO	Stopped listening on port 38449
+1595876469779	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileoK1uPG"
+*** You are running in headless mode.
+1595876471178	Marionette	INFO	Listening on port 36319
+1595876471185	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595876474046	Marionette	INFO	Stopped listening on port 36319
+1595876477462	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileaMkLGx"
+*** You are running in headless mode.
+1595876478884	Marionette	INFO	Listening on port 35587
+1595876478967	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595876481896	Marionette	INFO	Stopped listening on port 35587
+1595876485313	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileLvhWGq"
+*** You are running in headless mode.
+1595876486704	Marionette	INFO	Listening on port 37213
+1595876486718	Marionette	WARN	TLS certificate errors will be ignored for this session
+1595876489506	Marionette	INFO	Stopped listening on port 37213
+JavaScript error: https://start.fedoraproject.org/, line 291: ReferenceError: $ is not defined
+1595876515815	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile6JddBR"
+*** You are running in headless mode.
+1595876517226	Marionette	INFO	Listening on port 40087
+1595876517320	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595876520142	Marionette	INFO	Stopped listening on port 40087
+1595876524066	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileD5Z5VI"
+*** You are running in headless mode.
+1595876525478	Marionette	INFO	Listening on port 37153
+1595876525573	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595876528486	Marionette	INFO	Stopped listening on port 37153
+1595876628827	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileuI2rvJ"
+*** You are running in headless mode.
+1595876630230	Marionette	INFO	Listening on port 45023
+1595876630332	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595876633300	Marionette	INFO	Stopped listening on port 45023
+1595876744677	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileX5Ve6Y"
+*** You are running in headless mode.
+1595876746028	Marionette	INFO	Listening on port 35393
+1595876746083	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595876748815	Marionette	INFO	Stopped listening on port 35393
+1595876852185	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile6h6XCZ"
+*** You are running in headless mode.
+1595876853561	Marionette	INFO	Listening on port 33391
+1595876853589	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595876856639	Marionette	INFO	Stopped listening on port 33391
+1595876959005	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileqpAUsl"
+*** You are running in headless mode.
+1595876960387	Marionette	INFO	Listening on port 37963
+1595876960410	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595876963508	Marionette	INFO	Stopped listening on port 37963
+1595877066882	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileT3N48p"
+*** You are running in headless mode.
+1595877068257	Marionette	INFO	Listening on port 41065
+1595877068287	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595877071074	Marionette	INFO	Stopped listening on port 41065
+1595877174445	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilek0hOwS"
+*** You are running in headless mode.
+1595877175825	Marionette	INFO	Listening on port 33699
+1595877175850	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595877178828	Marionette	INFO	Stopped listening on port 33699
+1595877281202	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilencyHPa"
+*** You are running in headless mode.
+1595877282552	Marionette	INFO	Listening on port 43835
+1595877282608	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595877285457	Marionette	INFO	Stopped listening on port 43835
+1595877388827	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilezXBI3A"
+*** You are running in headless mode.
+1595877390204	Marionette	INFO	Listening on port 38329
+1595877390231	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595877393091	Marionette	INFO	Stopped listening on port 38329
+1595877495457	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilefBixR5"
+*** You are running in headless mode.
+1595877496824	Marionette	INFO	Listening on port 41631
+1595877496861	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595877499722	Marionette	INFO	Stopped listening on port 41631
+1595877602095	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile9SMBu2"
+*** You are running in headless mode.
+1595877603477	Marionette	INFO	Listening on port 35349
+1595877603499	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595877606401	Marionette	INFO	Stopped listening on port 35349
+1595877709773	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileCM6DJc"
+*** You are running in headless mode.
+1595877711149	Marionette	INFO	Listening on port 44055
+1595877711177	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595877714037	Marionette	INFO	Stopped listening on port 44055
+1595877816404	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejdD7z6"
+*** You are running in headless mode.
+1595877817772	Marionette	INFO	Listening on port 40365
+1595877817809	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595877820565	Marionette	INFO	Stopped listening on port 40365
+1595877922932	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilen9Ue20"
+*** You are running in headless mode.
+1595877924328	Marionette	INFO	Listening on port 35503
+1595877924339	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595877927241	Marionette	INFO	Stopped listening on port 35503
+1595878030610	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile4s3HUH"
+*** You are running in headless mode.
+1595878031987	Marionette	INFO	Listening on port 46739
+1595878032015	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595878034940	Marionette	INFO	Stopped listening on port 46739
+1595878142321	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilecSHGGy"
+*** You are running in headless mode.
+1595878143673	Marionette	INFO	Listening on port 35771
+1595878143726	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595878146522	Marionette	INFO	Stopped listening on port 35771
+1595878249897	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilebXeOZy"
+*** You are running in headless mode.
+1595878251271	Marionette	INFO	Listening on port 43499
+1595878251301	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595878254204	Marionette	INFO	Stopped listening on port 43499
+1595878356574	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejNYe6O"
+*** You are running in headless mode.
+1595878357946	Marionette	INFO	Listening on port 43885
+1595878357979	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595878360817	Marionette	INFO	Stopped listening on port 43885
+1595878464191	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileHDo1lJ"
+*** You are running in headless mode.
+1595878465563	Marionette	INFO	Listening on port 43839
+1595878465595	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595878468578	Marionette	INFO	Stopped listening on port 43839
+1595878570948	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilezSS3JU"
+*** You are running in headless mode.
+1595878572332	Marionette	INFO	Listening on port 40809
+1595878572353	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595878575264	Marionette	INFO	Stopped listening on port 40809
+1595878678633	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileJhGDqE"
+*** You are running in headless mode.
+1595878680017	Marionette	INFO	Listening on port 44729
+1595878680038	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595878682877	Marionette	INFO	Stopped listening on port 44729
+1595878786246	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileP7uOZK"
+*** You are running in headless mode.
+1595878787607	Marionette	INFO	Listening on port 42079
+1595878787651	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595878790403	Marionette	INFO	Stopped listening on port 42079
+1595878892771	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile1jbg1g"
+*** You are running in headless mode.
+1595878894136	Marionette	INFO	Listening on port 39719
+1595878894175	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595878899192	Marionette	INFO	Stopped listening on port 39719
+1595879002566	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileYuR9Q6"
+*** You are running in headless mode.
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 136: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+1595879003956	Marionette	INFO	Listening on port 36573
+1595879003973	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595879006882	Marionette	INFO	Stopped listening on port 36573
+1595879111256	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileBWgjgj"
+*** You are running in headless mode.
+1595879112611	Marionette	INFO	Listening on port 36797
+1595879112661	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595879118513	Marionette	INFO	Stopped listening on port 36797
+1595879220880	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilemfa0y6"
+*** You are running in headless mode.
+1595879222260	Marionette	INFO	Listening on port 39401
+1595879222285	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595879225236	Marionette	INFO	Stopped listening on port 39401
+1595879327604	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileIyaam7"
+*** You are running in headless mode.
+1595879328981	Marionette	INFO	Listening on port 45437
+1595879329009	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595879331782	Marionette	INFO	Stopped listening on port 45437
+1595879435157	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilecA9N6e"
+*** You are running in headless mode.
+1595879436554	Marionette	INFO	Listening on port 42527
+1595879436563	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595879439480	Marionette	INFO	Stopped listening on port 42527
+1595879541852	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiledncKO9"
+*** You are running in headless mode.
+1595879543222	Marionette	INFO	Listening on port 33207
+1595879543257	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595879546199	Marionette	INFO	Stopped listening on port 33207
+1595879657578	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileNCN5TL"
+*** You are running in headless mode.
+1595879658945	Marionette	INFO	Listening on port 46417
+1595879658982	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595879661928	Marionette	INFO	Stopped listening on port 46417
+1595879764301	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile7ERIgx"
+*** You are running in headless mode.
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 136: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+1595879765698	Marionette	INFO	Listening on port 41869
+1595879765709	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595879768510	Marionette	INFO	Stopped listening on port 41869
+1595879870879	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilekxxRI9"
+*** You are running in headless mode.
+1595879872273	Marionette	INFO	Listening on port 35029
+1595879872284	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595879875286	Marionette	INFO	Stopped listening on port 35029
+1595879977654	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileaiUlR6"
+*** You are running in headless mode.
+1595879979025	Marionette	INFO	Listening on port 36185
+1595879979058	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595879982031	Marionette	INFO	Stopped listening on port 36185
+1595880085406	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileo8DoyU"
+*** You are running in headless mode.
+1595880086786	Marionette	INFO	Listening on port 38685
+1595880086811	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595880089674	Marionette	INFO	Stopped listening on port 38685
+1595880193048	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileKujzBM"
+*** You are running in headless mode.
+1595880194433	Marionette	INFO	Listening on port 44125
+1595880194453	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595880197298	Marionette	INFO	Stopped listening on port 44125
+1595880304675	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileRHxfDs"
+*** You are running in headless mode.
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 136: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+1595880306045	Marionette	INFO	Listening on port 36881
+1595880306080	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595880308899	Marionette	INFO	Stopped listening on port 36881
+1595880412269	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileIZz0Ai"
+*** You are running in headless mode.
+1595880413631	Marionette	INFO	Listening on port 39423
+1595880413674	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595880416430	Marionette	INFO	Stopped listening on port 39423
+1595880519797	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileGmHzMI"
+*** You are running in headless mode.
+1595880521174	Marionette	INFO	Listening on port 42869
+1595880521201	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595880524130	Marionette	INFO	Stopped listening on port 42869
+1595880627505	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileQk92Jc"
+*** You are running in headless mode.
+1595880628879	Marionette	INFO	Listening on port 41665
+1595880628910	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595880631973	Marionette	INFO	Stopped listening on port 41665
+1595880734358	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilelyPfS9"
+*** You are running in headless mode.
+1595880735714	Marionette	INFO	Listening on port 45655
+1595880735763	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595880739040	Marionette	INFO	Stopped listening on port 45655
+1595880841417	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilebw1H1N"
+*** You are running in headless mode.
+1595880842781	Marionette	INFO	Listening on port 43399
+1595880842822	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595880845660	Marionette	INFO	Stopped listening on port 43399
+1595880949027	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilezEjImE"
+*** You are running in headless mode.
+1595880950403	Marionette	INFO	Listening on port 36545
+1595880950437	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595880953498	Marionette	INFO	Stopped listening on port 36545
+1595881056866	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileizQE5g"
+*** You are running in headless mode.
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 136: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+1595881058256	Marionette	INFO	Listening on port 34661
+1595881058271	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595881061194	Marionette	INFO	Stopped listening on port 34661
+1595881164562	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileRUle2U"
+*** You are running in headless mode.
+1595881165942	Marionette	INFO	Listening on port 42723
+1595881165966	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595881169073	Marionette	INFO	Stopped listening on port 42723
+1595881272448	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileTriOxH"
+*** You are running in headless mode.
+1595881273816	Marionette	INFO	Listening on port 40761
+1595881273853	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595881276639	Marionette	INFO	Stopped listening on port 40761
+1595881380007	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileEc5MEQ"
+*** You are running in headless mode.
+1595881381397	Marionette	INFO	Listening on port 34957
+1595881381413	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595881384260	Marionette	INFO	Stopped listening on port 34957
+1595881487628	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileLkZ9Z0"
+*** You are running in headless mode.
+1595881489004	Marionette	INFO	Listening on port 39007
+1595881489033	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595881491867	Marionette	INFO	Stopped listening on port 39007
+1595881595236	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilep04896"
+*** You are running in headless mode.
+1595881596595	Marionette	INFO	Listening on port 33923
+1595881596642	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595881599516	Marionette	INFO	Stopped listening on port 33923
+1595881702887	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileNRyfzN"
+*** You are running in headless mode.
+1595881704245	Marionette	INFO	Listening on port 32809
+1595881704291	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595881708199	Marionette	INFO	Stopped listening on port 32809
+1595881810566	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile7mYHMC"
+*** You are running in headless mode.
+1595881811923	Marionette	INFO	Listening on port 41851
+1595881811977	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595881817478	Marionette	INFO	Stopped listening on port 41851
+1595881920853	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile0pzqIb"
+*** You are running in headless mode.
+1595881922233	Marionette	INFO	Listening on port 38883
+1595881922258	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595881925013	Marionette	INFO	Stopped listening on port 38883
+1595882027384	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileKYVHtf"
+*** You are running in headless mode.
+1595882028774	Marionette	INFO	Listening on port 35591
+1595882028790	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595882031519	Marionette	INFO	Stopped listening on port 35591
+1595882143905	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile3tpGlJ"
+*** You are running in headless mode.
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 136: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+1595882145281	Marionette	INFO	Listening on port 35865
+1595882145310	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595882148097	Marionette	INFO	Stopped listening on port 35865
+1595882250464	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiled0rdgW"
+*** You are running in headless mode.
+1595882251852	Marionette	INFO	Listening on port 44589
+1595882251869	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595882254588	Marionette	INFO	Stopped listening on port 44589
+1595882357961	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiledxmN4W"
+*** You are running in headless mode.
+1595882359334	Marionette	INFO	Listening on port 36783
+1595882359365	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595882362060	Marionette	INFO	Stopped listening on port 36783
+1595882464429	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileT1JHke"
+*** You are running in headless mode.
+1595882465781	Marionette	INFO	Listening on port 38923
+1595882465833	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595882468798	Marionette	INFO	Stopped listening on port 38923
+1595882573176	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilez9nFZi"
+*** You are running in headless mode.
+1595882574557	Marionette	INFO	Listening on port 39109
+1595882574580	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595882577332	Marionette	INFO	Stopped listening on port 39109
+1595882679703	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilerl8Nna"
+*** You are running in headless mode.
+1595882681053	Marionette	INFO	Listening on port 40649
+1595882681110	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595882686783	Marionette	INFO	Stopped listening on port 40649
+1595882790154	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileHjBbtL"
+*** You are running in headless mode.
+1595882791552	Marionette	INFO	Listening on port 38381
+1595882791560	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595882794375	Marionette	INFO	Stopped listening on port 38381
+1595882897749	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileMCVFs1"
+*** You are running in headless mode.
+1595882899102	Marionette	INFO	Listening on port 35845
+1595882899153	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595882901757	Marionette	INFO	Stopped listening on port 35845
+1595883005124	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile8WsT48"
+*** You are running in headless mode.
+1595883006443	Marionette	INFO	Listening on port 41389
+1595883006528	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595883009803	Marionette	INFO	Stopped listening on port 41389
+1595883113170	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile6P9Qgg"
+*** You are running in headless mode.
+1595883114565	Marionette	INFO	Listening on port 42101
+1595883114574	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595883117371	Marionette	INFO	Stopped listening on port 42101
+1595883219756	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiles6B08J"
+*** You are running in headless mode.
+1595883221125	Marionette	INFO	Listening on port 35837
+1595883221164	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595883224875	Marionette	INFO	Stopped listening on port 35837
+1595883327243	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile6V4c4j"
+*** You are running in headless mode.
+1595883328624	Marionette	INFO	Listening on port 36691
+1595883328648	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595883331236	Marionette	INFO	Stopped listening on port 36691
+1595883434606	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileEYPkZZ"
+*** You are running in headless mode.
+1595883435923	Marionette	INFO	Listening on port 39999
+1595883436014	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595883438774	Marionette	INFO	Stopped listening on port 39999
+1595883542141	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileMLx2Zn"
+*** You are running in headless mode.
+1595883543514	Marionette	INFO	Listening on port 35785
+1595883543545	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595883546304	Marionette	INFO	Stopped listening on port 35785
+1595883654690	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileugSO18"
+*** You are running in headless mode.
+1595883656104	Marionette	INFO	Listening on port 37673
+1595883656195	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595883658921	Marionette	INFO	Stopped listening on port 37673
+1595883761290	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiledO7i8R"
+*** You are running in headless mode.
+1595883762647	Marionette	INFO	Listening on port 45553
+1595883762695	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595883765443	Marionette	INFO	Stopped listening on port 45553
+1595883868810	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileibKrse"
+*** You are running in headless mode.
+1595883870183	Marionette	INFO	Listening on port 41341
+1595883870214	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595883872925	Marionette	INFO	Stopped listening on port 41341
+1595883978297	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileucMPRw"
+*** You are running in headless mode.
+1595883979683	Marionette	INFO	Listening on port 33335
+1595883979702	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595883982671	Marionette	INFO	Stopped listening on port 33335
+1595884086048	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileTkhnF0"
+*** You are running in headless mode.
+1595884087402	Marionette	INFO	Listening on port 35425
+1595884087452	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595884090151	Marionette	INFO	Stopped listening on port 35425
+1595884192517	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileG0MP9a"
+*** You are running in headless mode.
+1595884193864	Marionette	INFO	Listening on port 35969
+1595884193922	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595884196660	Marionette	INFO	Stopped listening on port 35969
+1595884300030	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilebbUn5u"
+*** You are running in headless mode.
+1595884301356	Marionette	INFO	Listening on port 42449
+1595884301434	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595884304183	Marionette	INFO	Stopped listening on port 42449
+1595884407552	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileq920VE"
+*** You are running in headless mode.
+1595884408949	Marionette	INFO	Listening on port 41279
+1595884408957	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595884411629	Marionette	INFO	Stopped listening on port 41279
+1595884514997	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilegl6dg0"
+*** You are running in headless mode.
+1595884516349	Marionette	INFO	Listening on port 38787
+1595884516401	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595884519083	Marionette	INFO	Stopped listening on port 38787
+1595884624452	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileZC7mmh"
+*** You are running in headless mode.
+1595884625835	Marionette	INFO	Listening on port 41803
+1595884625857	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595884628609	Marionette	INFO	Stopped listening on port 41803
+1595884731988	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5wK1uV"
+*** You are running in headless mode.
+1595884733360	Marionette	INFO	Listening on port 40011
+1595884733395	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595884736084	Marionette	INFO	Stopped listening on port 40011
+1595884839468	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile0F5IHy"
+*** You are running in headless mode.
+1595884840848	Marionette	INFO	Listening on port 40607
+1595884840872	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595884843677	Marionette	INFO	Stopped listening on port 40607
+1595884947052	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilecJknZx"
+*** You are running in headless mode.
+1595884948415	Marionette	INFO	Listening on port 37127
+1595884948457	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595884951159	Marionette	INFO	Stopped listening on port 37127
+1595885054532	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilecb3Vx0"
+*** You are running in headless mode.
+1595885055915	Marionette	INFO	Listening on port 41219
+1595885055940	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595885058743	Marionette	INFO	Stopped listening on port 41219
+1595885162110	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileTErdx7"
+*** You are running in headless mode.
+1595885163477	Marionette	INFO	Listening on port 35501
+1595885163520	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595885166143	Marionette	INFO	Stopped listening on port 35501
+1595885269515	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileiKrrgc"
+*** You are running in headless mode.
+1595885270880	Marionette	INFO	Listening on port 41593
+1595885270919	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595885273608	Marionette	INFO	Stopped listening on port 41593
+1595885376977	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilecPY8pE"
+*** You are running in headless mode.
+1595885378339	Marionette	INFO	Listening on port 38461
+1595885378382	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595885381301	Marionette	INFO	Stopped listening on port 38461
+1595885484673	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilebUKuuq"
+*** You are running in headless mode.
+1595885486058	Marionette	INFO	Listening on port 40253
+1595885486078	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595885488940	Marionette	INFO	Stopped listening on port 40253
+1595885594317	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiled2X4Ou"
+*** You are running in headless mode.
+1595885595693	Marionette	INFO	Listening on port 46199
+1595885595722	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595885599180	Marionette	INFO	Stopped listening on port 46199
+console.error: PushService: 
+  clearOriginData: Error clearing origin data:
+  TypeError
+1595885703663	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilelzmIyI"
+*** You are running in headless mode.
+1595885705301	Marionette	INFO	Listening on port 40169
+1595885705385	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595885708232	Marionette	INFO	Stopped listening on port 40169
+1595885819713	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilez8dWCx"
+*** You are running in headless mode.
+1595885821681	Marionette	INFO	Listening on port 37269
+1595885821722	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595885826225	Marionette	INFO	Stopped listening on port 37269
+1595885929770	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilegx5r79"
+*** You are running in headless mode.
+1595885931715	Marionette	INFO	Listening on port 37559
+1595885931777	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595885934594	Marionette	INFO	Stopped listening on port 37559
+1595886038033	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilePr19YW"
+*** You are running in headless mode.
+1595886039672	Marionette	INFO	Listening on port 40459
+1595886039748	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595886042488	Marionette	INFO	Stopped listening on port 40459
+1595886145953	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileLU4ADL"
+*** You are running in headless mode.
+1595886147728	Marionette	INFO	Listening on port 36575
+1595886147764	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595886150504	Marionette	INFO	Stopped listening on port 36575
+1595886261975	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilet8KVfG"
+*** You are running in headless mode.
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 136: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+1595886263704	Marionette	INFO	Listening on port 42775
+1595886263781	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595886266531	Marionette	INFO	Stopped listening on port 42775
+1595886369967	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile7ABtUV"
+*** You are running in headless mode.
+1595886371686	Marionette	INFO	Listening on port 37375
+1595886371819	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595886374609	Marionette	INFO	Stopped listening on port 37375
+1595886478040	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileu4Y3qe"
+*** You are running in headless mode.
+1595886479746	Marionette	INFO	Listening on port 38635
+1595886479849	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595886482524	Marionette	INFO	Stopped listening on port 38635
+1595886585984	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileQK1TVh"
+*** You are running in headless mode.
+1595886588037	Marionette	INFO	Listening on port 40809
+1595886588098	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595886590969	Marionette	INFO	Stopped listening on port 40809
+1595886694373	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilecIAUpb"
+*** You are running in headless mode.
+1595886695960	Marionette	INFO	Listening on port 44295
+1595886695988	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595886698827	Marionette	INFO	Stopped listening on port 44295
+1595886802340	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileNysYGB"
+*** You are running in headless mode.
+1595886803931	Marionette	INFO	Listening on port 41277
+1595886803950	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595886806781	Marionette	INFO	Stopped listening on port 41277
+1595886910293	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilexNOTEG"
+*** You are running in headless mode.
+1595886911985	Marionette	INFO	Listening on port 33569
+1595886912041	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595886914794	Marionette	INFO	Stopped listening on port 33569
+1595887018207	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilesql4rw"
+*** You are running in headless mode.
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 136: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+1595887019803	Marionette	INFO	Listening on port 36335
+1595887019832	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595887022774	Marionette	INFO	Stopped listening on port 36335
+1595887127208	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilePHr0dd"
+*** You are running in headless mode.
+1595887128811	Marionette	INFO	Listening on port 33797
+1595887128920	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595887131554	Marionette	INFO	Stopped listening on port 33797
+1595887236087	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileUKRUN4"
+*** You are running in headless mode.
+1595887238807	Marionette	INFO	Listening on port 36841
+1595887238896	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595887241785	Marionette	INFO	Stopped listening on port 36841
+1595887347197	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile8so4aW"
+*** You are running in headless mode.
+1595887348765	Marionette	INFO	Listening on port 42067
+1595887348836	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595887352616	Marionette	INFO	Stopped listening on port 42067
+1595887458135	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilewDoKN2"
+*** You are running in headless mode.
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 136: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+1595887459746	Marionette	INFO	Listening on port 38235
+1595887459851	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595887462793	Marionette	INFO	Stopped listening on port 38235
+1595887566308	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileiCXVMh"
+*** You are running in headless mode.
+1595887567901	Marionette	INFO	Listening on port 45791
+1595887567918	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595887570663	Marionette	INFO	Stopped listening on port 45791
+1595887675085	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilearQKv6"
+*** You are running in headless mode.
+1595887676855	Marionette	INFO	Listening on port 37317
+1595887676893	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595887680638	Marionette	INFO	Stopped listening on port 37317
+1595887783046	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilehb70rB"
+*** You are running in headless mode.
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 136: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+1595887784657	Marionette	INFO	Listening on port 45589
+1595887784753	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595887787494	Marionette	INFO	Stopped listening on port 45589
+1595887893915	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiled1LH5f"
+*** You are running in headless mode.
+1595887895667	Marionette	INFO	Listening on port 40291
+1595887895724	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595887898470	Marionette	INFO	Stopped listening on port 40291
+1595888007903	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile0TfHcL"
+*** You are running in headless mode.
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 136: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+1595888009656	Marionette	INFO	Listening on port 36961
+1595888009714	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595888012519	Marionette	INFO	Stopped listening on port 36961
+1595888116018	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileq7XlxM"
+*** You are running in headless mode.
+1595888117651	Marionette	INFO	Listening on port 38525
+1595888117743	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595888120434	Marionette	INFO	Stopped listening on port 38525
+1595888223850	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileREkNX8"
+*** You are running in headless mode.
+1595888225458	Marionette	INFO	Listening on port 38181
+1595888225558	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595888228284	Marionette	INFO	Stopped listening on port 38181
+1595888336708	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileemCn6y"
+*** You are running in headless mode.
+1595888338202	Marionette	INFO	Listening on port 43821
+1595888338213	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595888340988	Marionette	INFO	Stopped listening on port 43821
+1595888443376	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilesWynkk"
+*** You are running in headless mode.
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 136: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+1595888444811	Marionette	INFO	Listening on port 38857
+1595888444881	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595888448174	Marionette	INFO	Stopped listening on port 38857
+1595888551551	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileW03BoC"
+*** You are running in headless mode.
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 136: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+1595888552995	Marionette	INFO	Listening on port 43861
+1595888553055	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595888555782	Marionette	INFO	Stopped listening on port 43861
+1595888658179	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilesUgPzz"
+*** You are running in headless mode.
+1595888659627	Marionette	INFO	Listening on port 43923
+1595888659684	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595888662501	Marionette	INFO	Stopped listening on port 43923
+1595888765900	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileD3n3Tb"
+*** You are running in headless mode.
+1595888767324	Marionette	INFO	Listening on port 36951
+1595888767404	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595888771129	Marionette	INFO	Stopped listening on port 36951
+1595888873504	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileuhADrk"
+*** You are running in headless mode.
+1595888874955	Marionette	INFO	Listening on port 36823
+1595888875008	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595888877804	Marionette	INFO	Stopped listening on port 36823
+1595888981185	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile1JLSIN"
+*** You are running in headless mode.
+1595888982659	Marionette	INFO	Listening on port 43321
+1595888982690	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595888986407	Marionette	INFO	Stopped listening on port 43321
+1595889088786	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile2LuWPh"
+*** You are running in headless mode.
+1595889090263	Marionette	INFO	Listening on port 42021
+1595889090291	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595889093093	Marionette	INFO	Stopped listening on port 42021
+1595889195470	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilekrI5oc"
+*** You are running in headless mode.
+1595889196942	Marionette	INFO	Listening on port 34519
+1595889196992	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595889199742	Marionette	INFO	Stopped listening on port 34519
+1595889303131	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5HU6e2"
+*** You are running in headless mode.
+1595889304572	Marionette	INFO	Listening on port 45495
+1595889304636	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595889307405	Marionette	INFO	Stopped listening on port 45495
+1595889410805	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilen5kzLx"
+*** You are running in headless mode.
+1595889412520	Marionette	INFO	Listening on port 39399
+1595889412611	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595889415225	Marionette	INFO	Stopped listening on port 39399
+1595889518744	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileFRwqm0"
+*** You are running in headless mode.
+1595889520990	Marionette	INFO	Listening on port 37173
+1595889521052	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595889523786	Marionette	INFO	Stopped listening on port 37173
+1595889627285	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileGADADc"
+*** You are running in headless mode.
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 136: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+1595889628839	Marionette	INFO	Listening on port 39289
+1595889628938	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595889631719	Marionette	INFO	Stopped listening on port 39289
+1595889734118	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileuic1PB"
+*** You are running in headless mode.
+1595889735719	Marionette	INFO	Listening on port 35343
+1595889735725	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595889738456	Marionette	INFO	Stopped listening on port 35343
+1595889841858	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilevPRrqu"
+*** You are running in headless mode.
+1595889843386	Marionette	INFO	Listening on port 39013
+1595889843476	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595889846190	Marionette	INFO	Stopped listening on port 39013
+1595889949626	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile4rf6lr"
+*** You are running in headless mode.
+1595889951267	Marionette	INFO	Listening on port 45923
+1595889951354	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595889953972	Marionette	INFO	Stopped listening on port 45923
+1595890062275	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilew2YQBH"
+*** You are running in headless mode.
+1595890063805	Marionette	INFO	Listening on port 43601
+1595890063907	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595890066588	Marionette	INFO	Stopped listening on port 43601
+1595890171077	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileu3q2ig"
+*** You are running in headless mode.
+1595890172699	Marionette	INFO	Listening on port 33183
+1595890172785	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595890175450	Marionette	INFO	Stopped listening on port 33183
+1595890283898	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile0Txpzz"
+*** You are running in headless mode.
+1595890285587	Marionette	INFO	Listening on port 44085
+1595890285616	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595890288342	Marionette	INFO	Stopped listening on port 44085
+1595890391849	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilec4rKOm"
+*** You are running in headless mode.
+1595890393567	Marionette	INFO	Listening on port 45303
+1595890393662	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595890396401	Marionette	INFO	Stopped listening on port 45303
+1595890500794	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileJfyZH4"
+*** You are running in headless mode.
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 136: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+1595890502409	Marionette	INFO	Listening on port 36351
+1595890502503	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595890505308	Marionette	INFO	Stopped listening on port 36351
+1595890608709	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileEPSd8A"
+*** You are running in headless mode.
+1595890610454	Marionette	INFO	Listening on port 41099
+1595890610516	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595890613158	Marionette	INFO	Stopped listening on port 41099
+1595890720684	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilemY3goC"
+*** You are running in headless mode.
+1595890722612	Marionette	INFO	Listening on port 36237
+1595890722691	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595890725444	Marionette	INFO	Stopped listening on port 36237
+1595890829083	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileTrsWB2"
+*** You are running in headless mode.
+1595890831319	Marionette	INFO	Listening on port 44471
+1595890831394	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595890834179	Marionette	INFO	Stopped listening on port 44471
+1595890937838	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilev1hwpG"
+*** You are running in headless mode.
+1595890939828	Marionette	INFO	Listening on port 42545
+1595890939851	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595890942550	Marionette	INFO	Stopped listening on port 42545
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B0011,name=PHttpChannel::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x6B0029,name=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1595891046130	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilesU1e3m"
+*** You are running in headless mode.
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 136: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+1595891047999	Marionette	INFO	Listening on port 44537
+1595891048046	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595891050755	Marionette	INFO	Stopped listening on port 44537
+1595891156472	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileXG6MyO"
+*** You are running in headless mode.
+1595891157912	Marionette	INFO	Listening on port 41309
+1595891157977	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595891160663	Marionette	INFO	Stopped listening on port 41309
+1595891168294	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilefXNgWB"
+*** You are running in headless mode.
+1595891169708	Marionette	INFO	Listening on port 42197
+1595891169861	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595891172461	Marionette	INFO	Stopped listening on port 42197
+1595891181243	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileS1P49n"
+*** You are running in headless mode.
+1595891182638	Marionette	INFO	Listening on port 32879
+1595891182650	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595891186350	Marionette	INFO	Stopped listening on port 32879
+1595891190721	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileiUDi4z"
+*** You are running in headless mode.
+1595891192133	Marionette	INFO	Listening on port 35065
+1595891192228	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595891197086	Marionette	INFO	Stopped listening on port 35065
+1595891240182	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilec7r6TN"
+*** You are running in headless mode.
+1595891241617	Marionette	INFO	Listening on port 42279
+1595891241738	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595891244349	Marionette	INFO	Stopped listening on port 42279
+1595891252606	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileY4W59l"
+*** You are running in headless mode.
+1595891254039	Marionette	INFO	Listening on port 44851
+1595891254114	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595891256715	Marionette	INFO	Stopped listening on port 44851
+1595891261144	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile8BuRV9"
+*** You are running in headless mode.
+1595891262550	Marionette	INFO	Listening on port 36067
+1595891262650	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595891265384	Marionette	INFO	Stopped listening on port 36067
+1595891356788	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileAzNFO9"
+*** You are running in headless mode.
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 136: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+1595891358223	Marionette	INFO	Listening on port 46315
+1595891358293	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595891361169	Marionette	INFO	Stopped listening on port 46315
+1595891396645	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilerQsOIJ"
+*** You are running in headless mode.
+1595891398044	Marionette	INFO	Listening on port 42581
+1595891398052	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595891400757	Marionette	INFO	Stopped listening on port 42581
+1595891404168	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileESrKOr"
+*** You are running in headless mode.
+1595891405560	Marionette	INFO	Listening on port 37987
+1595891405574	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595891408328	Marionette	INFO	Stopped listening on port 37987
+1595891411747	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileFUpSEF"
+*** You are running in headless mode.
+1595891413186	Marionette	INFO	Listening on port 39481
+1595891413252	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595891416050	Marionette	INFO	Stopped listening on port 39481
+1595891418476	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilepRnmdY"
+*** You are running in headless mode.
+1595891419859	Marionette	INFO	Listening on port 39503
+1595891419883	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595891422604	Marionette	INFO	Stopped listening on port 39503
+1595891425028	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilepyIrqO"
+*** You are running in headless mode.
+1595891426461	Marionette	INFO	Listening on port 34403
+1595891426584	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595891429237	Marionette	INFO	Stopped listening on port 34403
+1595891440326	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile1yuCd4"
+*** You are running in headless mode.
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 136: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+1595891441756	Marionette	INFO	Listening on port 44035
+1595891441831	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595891444553	Marionette	INFO	Stopped listening on port 44035
+1595891447966	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilekDGeHO"
+*** You are running in headless mode.
+1595891449367	Marionette	INFO	Listening on port 42589
+1595891449373	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595891452035	Marionette	INFO	Stopped listening on port 42589
+1595891472580	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileekLZDN"
+*** You are running in headless mode.
+1595891473964	Marionette	INFO	Listening on port 39561
+1595891473986	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595891477725	Marionette	INFO	Stopped listening on port 39561
+1595891484444	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5sur85"
+*** You are running in headless mode.
+1595891485857	Marionette	INFO	Listening on port 32813
+1595891485949	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595891488783	Marionette	INFO	Stopped listening on port 32813
+1595891503145	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileLnMKkc"
+*** You are running in headless mode.
+1595891504550	Marionette	INFO	Listening on port 38887
+1595891504662	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595891507343	Marionette	INFO	Stopped listening on port 38887
+1595891577879	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileWEOLWy"
+*** You are running in headless mode.
+1595891579260	Marionette	INFO	Listening on port 35731
+1595891579284	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595891581965	Marionette	INFO	Stopped listening on port 35731
+1595891585377	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5QzYCB"
+*** You are running in headless mode.
+1595891586780	Marionette	INFO	Listening on port 43365
+1595891586787	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595891589425	Marionette	INFO	Stopped listening on port 43365
+1595891598743	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileo4GgYX"
+*** You are running in headless mode.
+1595891600141	Marionette	INFO	Listening on port 35477
+1595891600148	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595891603932	Marionette	INFO	Stopped listening on port 35477
+1595891614704	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilej8Pvqv"
+*** You are running in headless mode.
+1595891616092	Marionette	INFO	Listening on port 33539
+1595891616110	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595891629623	Marionette	INFO	Stopped listening on port 33539
+1595891633056	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileSJ1b8m"
+*** You are running in headless mode.
+1595891634452	Marionette	INFO	Listening on port 34269
+1595891634462	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595891636621	Marionette	INFO	Stopped listening on port 34269
+1595891639030	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileZebaRv"
+*** You are running in headless mode.
+1595891640385	Marionette	INFO	Listening on port 37971
+1595891640434	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595891642668	Marionette	INFO	Stopped listening on port 37971
+1595891666842	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileDkeLNZ"
+*** You are running in headless mode.
+1595891668227	Marionette	INFO	Listening on port 41905
+1595891668247	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595891670434	Marionette	INFO	Stopped listening on port 41905
+1595891675697	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileG6r0cB"
+*** You are running in headless mode.
+1595891677088	Marionette	INFO	Listening on port 41189
+1595891677102	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595891679276	Marionette	INFO	Stopped listening on port 41189
+1595891687490	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile21l73T"
+*** You are running in headless mode.
+1595891688854	Marionette	INFO	Listening on port 43353
+1595891688896	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595891691123	Marionette	INFO	Stopped listening on port 43353
+1595891694548	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilemV6Y8E"
+*** You are running in headless mode.
+1595891695939	Marionette	INFO	Listening on port 40135
+1595891695954	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595891698102	Marionette	INFO	Stopped listening on port 40135
+1595891739828	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilesoLNG6"
+*** You are running in headless mode.
+1595891741221	Marionette	INFO	Listening on port 33247
+1595891741233	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595891743382	Marionette	INFO	Stopped listening on port 33247
+1595891759575	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileUQN2zP"
+*** You are running in headless mode.
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 136: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+1595891760983	Marionette	INFO	Listening on port 32787
+1595891761139	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595891763416	Marionette	INFO	Stopped listening on port 32787
+1595891867798	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilegOVXw5"
+*** You are running in headless mode.
+1595891869158	Marionette	INFO	Listening on port 33555
+1595891869202	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595891871402	Marionette	INFO	Stopped listening on port 33555
+1595891886687	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileOrnzml"
+*** You are running in headless mode.
+1595891888101	Marionette	INFO	Listening on port 45293
+1595891888192	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1595891891307	Marionette	INFO	Stopped listening on port 45293
