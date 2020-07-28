@@ -1,17 +1,14 @@
-[fonts]
-opensansreg = DroidSans:Regular:size=8
-opensanssemibold = DroidSans:SemiBold:size=8
-opensansbold = DroidSans:Bold:size=8
-opensansboldhigh = DroidSans:Bold:size=11
-opensansital = DroidSans:Italic:size=9
-xos = xos4\ Terminus:size=14;0
-nerd = Hack mono:size=10;2
-
-
-
-
-
 [colors]
+white    = #fdfff1
+base     = #272821
+orange   = #fc961f
+purple   = #161613
+red      = #f82570
+yellow   = #e4db73
+cyan     = #66d9ee
+cyan2    = #ae81ff
+contrast = #3b3c35
+
 light-red = #D95B5B
 light-green = #249824
 light-purple = #A44BA0
@@ -36,11 +33,34 @@ light = #eee
 gray = #999
 dark-gray = #333
 
-background = ${xrdb:color0:#222}
+
+[fonts]
+;List of fonts
+font-0 = "Hack mono:size=10;2"
+font-1 = "Hack Nerd Font:size=11;3"
+font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=8;1"
+font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=8;1"
+font-4 = "Font Awesome 5 Brands:pixelsize=10;1"
+
+;background = ${xrdb:color0:#222}
 
 
 [settings]
+compositing-background = source
+compositing-border = out
+compositing-foreground = over
+compositing-overline = over
+compositing-underline = out
+pseudo-transparency = false
 screenchange-reload = true
+throttle-input-for = 30
+throttle-output = 5
+throttle-output-for = 10
+
+[global/wm]
+
+margin-bottom = 0
+margin-top = 0
 
 
 ################################################################################
@@ -68,33 +88,35 @@ label-mode-underline = ${colors.fav-purple}
 label-mode-padding = 2
 label-mode-font = 0
 
-label-focused = %index%
+label-focused = %icon% %name%
 label-focused-background = ${colors.dark-green}
 label-focused-underline = ${colors.light-green}
 label-focused-padding = 3
-label-focused-font = 3
+label-focused-font = 1
 
-label-unfocused = %index%
+label-unfocused = %icon% %name%
 label-unfocused-foreground = ${colors.gray}
 label-unfocused-padding = 3
-label-unfocused-font = 3
+label-unfocused-font = 1
 
-label-visible = %index%
+label-visible = %icon% %name%
 label-visible-background = ${colors.dark-purple}
 label-visible-underline = ${colors.light-purple}
 label-visible-padding = 3
 label-visible-font = 3
 
-label-urgent = %index%
+label-urgent = %icon% %name%
 label-urgent-background = ${colors.dark-red}
 label-urgent-underline = ${colors.light-red}
 label-urgent-padding = 3
 label-urgent-font = 3
 
-
-
+;extra icons to choose from
+;http://fontawesome.io/cheatsheet/
+;       v     
 
 [bar/bar1]
+enable-ipc = true
 monitor = DP-0
 bottom = false
 width = 100%
@@ -102,28 +124,33 @@ height = 22;px
 
 ;List of fonts
 font-0 = "Hack mono:size=10;2"
-font-1 = "Hack  Nerd Font:size=11;3"
+font-1 = "Noto Color Emoji:pixelsize=16:style=Regular:scale=10;2"
+;font-1 = "Hack Nerd Font:size=11;3"
 font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=8;1"
 font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=8;1"
-font-4 = "Font Awesome 5 Brands:pixelsize=8;1"
+font-4 = "Font Awesome 5 Brands:pixelsize=10;1"
+font-5 = "Mono:size=16:weight=regular;2"
+font-6 = "Noto Color Emoji:pixelsize=16:style=Regular:scale=10;2"
 
-background = ${colors.dark}
-foreground = ${colors.light}
+background = ${colors.contrast}
+foreground = ${colors.white}
 
-line-color = ${colors.light-purple}
-line-size = 2
+;line-color = ${colors.light-purple}
+;line-size = 2
 
-separator = "   "
+separator = " "
 
 wm-restack = i3
 tray-position = right
 
-modules-left = i3
+modules-left = i3 appfilemanager
 modules-center = 
-modules-right = sound memory memoryswap cpu powermenu date
+modules-right = date
+;modules-right = sound memory memoryswap cpu powermenu date
 
 
 [bar/bar2]
+enable-ipc = true
 monitor = DP-4
 bottom = false
 width = 100%
@@ -131,65 +158,78 @@ height = 22;px
 
 ;List of fonts
 font-0 = "Hack mono:size=10;2"
-font-1 = "Hack  Nerd Font:size=11;3"
+font-1 = "Noto Color Emoji:pixelsize=16:style=Regular:scale=10;2"
+;font-1 = "Hack Nerd Font:size=11;3"
 font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=8;1"
 font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=8;1"
-font-4 = "Font Awesome 5 Brands:pixelsize=8;1"
+font-4 = "Font Awesome 5 Brands:pixelsize=10;1"
+font-5 = "Mono:size=16:weight=regular;2"
+font-6 = "Noto Color Emoji:pixelsize=16:style=Regular:scale=10;2"
 
-background = ${colors.dark}
-foreground = ${colors.light}
+background = ${colors.contrast}
+foreground = ${colors.white}
 
-line-color = ${colors.light-purple}
-line-size = 2
+;line-color = ${colors.light-purple}
+;line-size = 2
 
 separator = "   "
 
 wm-restack = i3
 
 modules-left = i3
-modules-center = 
-modules-right = esoStatus
+modules-center = esoStatus
+modules-right = 
+
+
+###########################################################
+####### ESO Server Status   ###############################
+###########################################################
 
 [module/esoStatus]
 type = custom/script
+
 exec = python3 /home/joe/.config/i3blocks/custom/eso/eso.py
 interval = 100
-;format-underline = ${colors.white}
-
+format-underline = ${colors.white}
+format-prefix = "💻 "
+format-prefix-font = 6
+format-padding = 3
+format = <label>
 label = ESO Status: %output%
 
-;Date correction
+
 [module/date]
 type = internal/date
 
 time = %H:%M
-date = %A, %B %d
+date = "%A, %B %d"
 date-alt = %A, %B %d, %Y
 time-alt = %H:%M:%S
 
-format-prefix = " "
-format-padding = 2
-format-underline = ${colors.menucol-orange}
-format-foreground = ${colors.menucol-orange}
+format-prefix = "📅 "
+format-prefix-font = 6
+format-padding = 3
+format-underline = ${colors.orange}
+format-foreground = ${colors.orange}
 interval = 20
 
 label = %date%, %time%
 label-font = 1
-label-foreground = ${colors.light}
 
+label-foreground = ${colors.yellow}
 
 [module/appfilemanager]
 type = custom/text
-content = F
-content-font = 7
+content = ""
+content-font = 5
 content-padding = 2
 click-left = "nautilus > /dev/null 2>&1 &"
 
 [module/xkillapp]
 type = custom/text
-content = Kill
-content-font = 0
+content-font = ${fonts.FA5_brands}
 content-padding = 2
+content = "💀"
 click-left = sleep 0.5 && xkill > /dev/null 2>&1 &
 
 
@@ -199,7 +239,7 @@ type = internal/alsa
 
 format-volume = <ramp-volume> <label-volume>
 format-volume-padding = 2
-format-volume-underline = ${colors.menucol-sealine}
+format-volume-underline = ${colors.mcyan}
 
 label-volume = %percentage%
 label-volume-font = 3
