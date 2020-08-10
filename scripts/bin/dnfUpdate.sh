@@ -9,10 +9,10 @@ fi
 dnf remove $(dnf repoquery --installonly --latest-limit=-2 -q)
 
 #Update and clean up dnf
-#dnf clean all
-dnf upgrade --best --allowerasing -y;
+dnf clean all
+dnf upgrade --skip-broken --best --allowerasing -y;
 
-dnf distro-sync --best --allowerasing -y;
+dnf distro-sync --skip-broken --best --allowerasing -y;
 #dnf clean all;
 
 # Update and Clean up Flatpak
@@ -24,4 +24,8 @@ flatpak update -y --user
 flatpak update -y
 flatpak uninstall --unused -y
 
-sudo -u joe flatpak uninstall --unused -y --user
+BASEUSER=$(whoami | awk '{print $1}')
+
+echo "${BASEUSER}"
+
+sudo -u "${BASEUSER}" flatpak uninstall --unused -y --user
