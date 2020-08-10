@@ -26,7 +26,7 @@ alias du='du -ch'
 alias du1='du -ch -d 1'
 
 alias s="sudo"
-#alias sudo='sudo -H'
+alias sudo='sudo -H'
 alias dirs='dirs -v'
 #alias ls='ls -la'
 alias ls='exa -la --color=always --group-directories-first'
