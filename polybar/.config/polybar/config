@@ -1,38 +1,48 @@
 [colors]
-white    = #fdfff1
-base     = #272821
-orange   = #fc961f
-purple   = #161613
-red      = #f82570
-yellow   = #e4db73
-cyan     = #66d9ee
-cyan2    = #ae81ff
-contrast = #3b3c35
+white             = #fdfff1
+base              = #272821
+orange            = #fc961f
+purple            = #161613
+red               = #f82570
+yellow            = #e4db73
+cyan              = #66d9ee
+cyan2             = #ae81ff
+contrast          = #CC3b3c35
 
-light-red = #D95B5B
-light-green = #249824
-light-purple = #A44BA0
+light-red         = #D95B5B
+light-green       = #249824
+light-purple      = #A44BA0
 
-menucol-yellow = #F7F272
-menucol-blue = #1771F1
-menucol-orange = #FFAF60
-menucol-red = #F85C50
-menucol-green = #77BD8B
-menucol-sealine = #00CF91
-menucol-purple = #9A76B3
-menucol-pink = #FF77BF
-menucol-deepblue = #6560FF
+menucol-yellow    = #F7F272
+menucol-blue      = #1771F1
+menucol-orange    = #FFAF60
+menucol-red       = #F85C50
+menucol-green     = #77BD8B
+menucol-sealine   = #00CF91
+menucol-purple    = #9A76B3
+menucol-pink      = #FF77BF
+menucol-deepblue  = #6560FF
 menucol-lightblue = #60FFF7
 
-fav-purple = #6633FF
-dark = #111
-dark-red = #311
-dark-green = #131
-dark-purple = #201134
-light = #eee
-gray = #999
-dark-gray = #333
+base00           = #272822
+base01           = #383830
+base02           = #49483e
+base03           = #75715e
+base04           = #a59f85
+base05           = #f8f8f2
+base06           = #f5f4f1
+base07           = #f9f8f5
+base08           = #f92672
+base09           = #fd971f
+base0A           = #f4bf75
+base0B           = #a6e22e
+base0C           = #a1efe4
+base0D           = #66d9ef
+base0E           = #ae81ff
+base0F           = #cc6633
 
+background = ${colors.base00}
+foreground = ${colors.base05}
 
 [fonts]
 ;List of fonts
@@ -47,15 +57,15 @@ font-4 = "Font Awesome 5 Brands:pixelsize=10;1"
 
 [settings]
 compositing-background = source
-compositing-border = out
+compositing-border     = out
 compositing-foreground = over
-compositing-overline = over
-compositing-underline = out
-pseudo-transparency = false
-screenchange-reload = true
-throttle-input-for = 30
-throttle-output = 5
-throttle-output-for = 10
+compositing-overline   = over
+;compositing-underline  = out
+pseudo-transparency    = true
+screenchange-reload    = true
+throttle-input-for     = 30
+throttle-output        = 5
+throttle-output-for    = 10
 
 [global/wm]
 
@@ -71,114 +81,135 @@ margin-top = 0
 
 [module/i3]
 ;https://github.com/jaagr/polybar/wiki/Module:-i3
-type = internal/i3
+type                       = internal/i3
 
-pin-workspaces = true
-strip-wsnumbers = true
-index-sort = true
+pin-workspaces             = true
+strip-wsnumbers            = true
+index-sort                 = true
+fuzzy-match                = true
+format                     = <label-state> <label-mode>
 
-format = <label-state> <label-mode>
-
-label-dimmed-underline = ${colors.background}
+label-dimmed-underline     = ${colors.base02}
 
 ;On editing mode (resize for ex)
-label-mode = %mode%
-label-mode-background = ${colors.dark-purple}
-label-mode-underline = ${colors.fav-purple}
-label-mode-padding = 2
-label-mode-font = 0
+label-mode                 = %mode%
+label-mode-forground       = ${colors.base08}
+label-mode-background      = ${colors.background}
+label-mode-underline       = ${colors.base08}
+label-mode-padding         = 2
+label-mode-font            = 1
 
-label-focused = %icon% %name%
-label-focused-background = ${colors.dark-green}
-label-focused-underline = ${colors.light-green}
-label-focused-padding = 3
-label-focused-font = 1
+label-focused              = %icon% %name%
+label-focused-foreground   = ${colors.base06}
+label-focused-background   = ${colors.background}
+label-focused-underline    = ${colors.base0E}
+label-focused-padding      = 2
+label-focused-font         = 1
 
-label-unfocused = %icon% %name%
-label-unfocused-foreground = ${colors.gray}
-label-unfocused-padding = 3
-label-unfocused-font = 1
+label-unfocused            = %icon% %name%
+label-unfocused-foreground = ${colors.foreground}
+label-unfocused-background = ${colors.background}
+label-unfocused-underline  = ${colors.base02}
+label-unfocused-padding    = 2
+label-unfocused-font       = 1
 
-label-visible = %icon% %name%
-label-visible-background = ${colors.dark-purple}
-label-visible-underline = ${colors.light-purple}
-label-visible-padding = 3
-label-visible-font = 3
+label-visible              = %icon% %name%
+label-visible-foreground   = ${colors.foreground}
+label-visible-background   = ${colors.background}
+label-visible-underline    = ${colors.base0D}
+label-visible-padding      = 2
+label-visible-font         = 1
 
-label-urgent = %icon% %name%
-label-urgent-background = ${colors.dark-red}
-label-urgent-underline = ${colors.light-red}
-label-urgent-padding = 3
-label-urgent-font = 3
+label-urgent               =  %icon% %name%
+label-urgent-forground     = ${colors.foreground}
+label-urgent-background    = ${colors.background}
+label-urgent-underline     = ${colors.base08}
+label-urgent-padding       = 2
+label-urgent-font          = 1
+
+ws-icon-0  = "1;"
+ws-icon-1  = "2;"
+ws-icon-2  = "3;"
+ws-icon-3  = "4;"
+ws-icon-4  = "5;"
+ws-icon-5  = "6;"
+ws-icon-6  = "7;"
+ws-icon-7  = "8;"
+ws-icon-8  = "9;"
+ws-icon-9  = "10;"
+ws-icon-default = "T"
+
 
 ;extra icons to choose from
 ;http://fontawesome.io/cheatsheet/
 ;       v     
 
 [bar/bar1]
-enable-ipc = true
-monitor = DP-0
-bottom = false
-width = 100%
-height = 22;px
+enable-ipc      = true
+monitor         = DP-0
+bottom          = false
+width           = 100%
+height          = 32;px
+line-size       = 3
+line-color      = #f00
+border-size     = 0
+border-top-size = 0
+border-color    = ${colors.base00}
+fixed-center    = true
+background      = ${colors.background}
+foreground      = ${colors.foreground}
+; offset-x      = 10%
+; offset-y      = 5%
 
 ;List of fonts
-font-0 = "Hack mono:size=10;2"
-font-1 = "Noto Color Emoji:pixelsize=16:style=Regular:scale=10;2"
-;font-1 = "Hack Nerd Font:size=11;3"
-font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=8;1"
-font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=8;1"
-font-4 = "Font Awesome 5 Brands:pixelsize=10;1"
-font-5 = "Mono:size=16:weight=regular;2"
-font-6 = "Noto Color Emoji:pixelsize=16:style=Regular:scale=10;2"
+font-0          = "Hack mono:size=10:style=Regular:scale=10;2"
+font-1          = "Noto Color Emoji:pixelsize=16:style=Regular:scale=10;2"
+font-2          = "Font Awesome 5 Free:style=Regular:pixelsize=8;1"
+font-3          = "Font Awesome 5 Free:style=Solid:pixelsize=8;1"
+font-4          = "Font Awesome 5 Brands:pixelsize=10;1"
+font-5          = "Mono:size=16:weight=regular;2"
+font-6          = "Noto Color Emoji:pixelsize=16:style=Regular:scale=10;2"
 
-background = ${colors.contrast}
-foreground = ${colors.white}
+separator       = "   "
+wm-restack      = i3
 
-;line-color = ${colors.light-purple}
-;line-size = 2
-
-separator = " "
-
-wm-restack = i3
-tray-position = right
-
-modules-left = i3 appfilemanager
-modules-center = 
-modules-right = date
-;modules-right = sound memory memoryswap cpu powermenu date
-
+tray-position   = right
+modules-left    = i3 appfilemanager xkillapp
+modules-center  =
+modules-right   = weather cpu memory date
 
 [bar/bar2]
-enable-ipc = true
-monitor = DP-4
-bottom = false
-width = 100%
-height = 22;px
+enable-ipc      = true
+monitor         = DP-4
+bottom          = false
+width           = 100%
+height          = 32;px
+line-size       = 3
+line-color      = #f00
+border-size     = 0
+border-top-size = 0
+border-color    = ${colors.base00}
+fixed-center    = true
+background      = ${colors.background}
+foreground      = ${colors.foreground}
+; offset-x      = 10%
+; offset-y      = 5%
 
 ;List of fonts
-font-0 = "Hack mono:size=10;2"
-font-1 = "Noto Color Emoji:pixelsize=16:style=Regular:scale=10;2"
-;font-1 = "Hack Nerd Font:size=11;3"
-font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=8;1"
-font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=8;1"
-font-4 = "Font Awesome 5 Brands:pixelsize=10;1"
-font-5 = "Mono:size=16:weight=regular;2"
-font-6 = "Noto Color Emoji:pixelsize=16:style=Regular:scale=10;2"
+font-0          = "Hack mono:size=10:style=Regular:scale=10;2"
+font-1          = "Noto Color Emoji:pixelsize=16:style=Regular:scale=10;2"
+font-2          = "Font Awesome 5 Free:style=Regular:pixelsize=8;1"
+font-3          = "Font Awesome 5 Free:style=Solid:pixelsize=8;1"
+font-4          = "Font Awesome 5 Brands:pixelsize=10;1"
+font-5          = "Mono:size=16:weight=regular;2"
+font-6          = "Noto Color Emoji:pixelsize=16:style=Regular:scale=10;2"
 
-background = ${colors.contrast}
-foreground = ${colors.white}
+separator       = "   "
+wm-restack      = i3
 
-;line-color = ${colors.light-purple}
-;line-size = 2
-
-separator = "   "
-
-wm-restack = i3
-
-modules-left = i3
-modules-center = esoStatus
-modules-right = 
+modules-left    = i3
+modules-center  = esoStatus
+modules-right   =
 
 
 ###########################################################
@@ -186,16 +217,16 @@ modules-right =
 ###########################################################
 
 [module/esoStatus]
-type = custom/script
+type               = custom/script
 
-exec = python3 /home/joe/.config/i3blocks/custom/eso/eso.py
-interval = 100
-format-underline = ${colors.white}
-format-prefix = "💻 "
+exec               = python3 /home/joe/.config/i3blocks/custom/eso/eso.py
+interval           = 100
+format-underline   = ${colors.white}
+format-prefix      = "💻 "
 format-prefix-font = 6
-format-padding = 3
-format = <label>
-label = ESO Status: %output%
+format-padding     = 3
+format             = <label>
+label              = ESO Status: %output%
 
 
 [module/date]
@@ -220,18 +251,32 @@ label-foreground = ${colors.yellow}
 
 [module/appfilemanager]
 type = custom/text
-content = ""
+;content = "" steam
+content = "📁"
 content-font = 5
 content-padding = 2
 click-left = "nautilus > /dev/null 2>&1 &"
 
 [module/xkillapp]
 type = custom/text
-content-font = ${fonts.FA5_brands}
+content-font = 5
 content-padding = 2
 content = "💀"
+format-font = 6
 click-left = sleep 0.5 && xkill > /dev/null 2>&1 &
 
+
+[module/kernel]
+type = custom/script
+exec = uname -r
+tail = false
+interval = 1024
+
+format-foreground = ${colors.white}
+format-background = ${colors.base00}
+format-prefix = "  "
+format-prefix-foreground = #0084FF
+format-underline = #4B5665
 
 ;Sound
 [module/sound]
@@ -256,30 +301,21 @@ ramp-volume-2 = 
 ramp-volume-font = 7
 ramp-volume-foreground = ${colors.menucol-sealine}
 
-;Custom Exit Button
-[module/powermenu]
-type = custom/text
-
-content = ⏻
-content-font = 1
-content-padding = 2
-content-foreground = ${colors.menucol-lightblue}
-content-underline = ${colors.menucol-lightblue}
-
-click-left = sh ~/.config/i3/powermenu.sh
-
 [module/cpu]
 type = internal/cpu
 interval = 0.5
 format = <label>
 format-padding = 2
-format-underline = ${colors.menucol-red}
+format-foreground = ${colors.white}
+format-background = ${colors.base00}
+format-prefix-foreground = ${colors.cyan2}
+;format-underline = ${colors.menucol-red}
 
-format-prefix = 
-format-prefix-foreground = ${colors.menucol-red}
+format-prefix = 
+;format-prefix-foreground = ${colors.menucol-red}
 
 label = " %percentage%"
-label-font = 7
+label-font = 1
 
 
 [module/memory]
@@ -287,45 +323,19 @@ type = internal/memory
 interval = 3
 format = <label>
 format-padding = 2
-format-underline = ${colors.menucol-purple}
+format-underline = ${colors.base0C}
 
-format-prefix = 
-format-prefix-foreground = ${colors.menucol-purple}
+format-prefix = 
+format-prefix-foreground = ${colors.base0C}
 
 label = " %gb_used%"
-label-font = 3
+label-font = 1
 
-
-#################################################################################
-
-[module/wired-network]
-;https://github.com/jaagr/polybar/wiki/Module:-network
-type = internal/network
-interface = enp4s0
-;interface = enp14s0
-interval = 3.0
-
-; Available tokens:
-;   %ifname%    [wireless+wired]
-;   %local_ip%  [wireless+wired]
-;   %essid%     [wireless]
-;   %signal%    [wireless]
-;   %upspeed%   [wireless+wired]
-;   %downspeed% [wireless+wired]
-;   %linkspeed% [wired]
-; Default: %ifname% %local_ip%
-label-connected =  %ifname%
-label-disconnected = %ifname% disconnected
-
-format-connected-foreground = ${colors.foreground}
-format-connected-background = ${colors.background}
-format-connected-underline = #55aa55
-format-connected-prefix = " "
-format-connected-prefix-foreground = #55aa55
-format-connected-prefix-background = ${colors.background}
-
-format-disconnected = <label-disconnected>
-format-disconnected-underline = ${colors.alert}
-label-disconnected-foreground = ${colors.foreground}
-
-
+[module/weather]
+type = custom/script
+format = <label>
+format-underline = ${colors.base0E}
+format-prefix-foreground = ${colors.base0E}
+format-prefix = "  "
+exec = curl -Ss 'https://wttr.in?0&T&Q' | cut -c 16- | head -2 | xargs echo
+interval = 3600
