@@ -14,3 +14,5 @@ else
     nvidia-settings --assign CurrentMetaMode="DP-0: 2560x1440_144 +0+0"
     notify-send "Dualscreen - disabled" -t 4000 -i messagebox_info
 fi
+
+. ${HOME}/.config/polybar/launch.sh
