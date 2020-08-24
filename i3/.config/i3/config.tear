@@ -23,10 +23,16 @@ for_window [class="^.*"] border pixel 3
 #for_window [class="Evolution" title="Send & Receive Mail"] floating enable move position center resize set 200 150
 #for_window [class="Evolution-alarm-notify" title="Reminders"] floating enable, move postion center, resize set 300 200
 
-### Workplace 1
-#workspace $ws1 gaps outer 0
+
+# Scratch
 for_window [class="Gnome-flashback" title="Desktop"] floating enable
 for_window [class="Gnome-flashback" title="Desktop"] move scratchpad
+
+for_window [class="Syncthing GTK" title="Syncthing-GTK"] floating enable, move scratchpad
+
+
+### Workplace 1
+#workspace $ws1 gaps outer 0
 
 ### workplace 2
 assign [class="minecraft-launcher"] $ws2
@@ -93,6 +99,11 @@ for_window [window_type="menu"] floating enable
 for_window [class="jetbrains-phpstorm" instance="jetbrains-phpstorm" title="win0"] floating enable; move position center
 for_window [class="jetbrains-pycharm*" instance="jetbrains-pycharm*" title="win0"] floating enable; move position center
 for_window [class="jetbrains-pycharm*" instance="jetbrains-pycharm*" title="Welcome to PyCharm"] floating enable; move position center
+
+# ESO
+for_window [class="steam_app_306130" instance="bethesda.net_launcher.exe" title="Launcher"] floating enable; move position center
+
+
 
 #MPV
 for_window [class="mpv"] floating enable; move position center
@@ -488,7 +499,7 @@ exec $ni picom -b
 
 exec $ni firefox
 exec $ni /usr/bin/flameshot
-exec $ni i3-msg $ws7; exec $term -e tuir --theme color-wal
+exec $ni i3-msg $ws7; exec $term -e tuir
 
 
 # Launch varity
@@ -511,6 +522,9 @@ exec $ni "flatpak run org.signal.Signal"
 
 exec $ni superpaper && sleep 10
 
+exec $ni flatpak run me.kozec.syncthingtk && sleep 10
+
+
 # Gnome stuff
 exec_always --no-startup-id gnome-power-manager
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
@@ -519,7 +533,7 @@ exec $ni gnome-flashback
 
 #exec $ni ~/bin/wal_watch.sh /home/joe/.cache/superpaper/temp
 
-exec $ni pkill dunst; sleep 60 && dunst -config ~/.config/dunst/dunstrc &
+exec_always $ni pkill dunst; sleep 60 && dunst -config ~/.config/dunst/dunstrc &
 
 #exec_always "notify-send 'i3' 'Loaded config'"
 

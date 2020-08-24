@@ -17,6 +17,7 @@ window:
   #
   # Specified in number of columns/lines, not pixels.
   # If both are `0`, this setting is ignored.
+  dynamic_title: true
   dimensions:
     columns: 0
     lines: 0
@@ -137,7 +138,6 @@ mouse:
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>"
   save_to_clipboard: false
-dynamic_title: true
 
 cursor:
   style: Block
