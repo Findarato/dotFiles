@@ -1,0 +1,14 @@
+[Unit]
+Description=Backup with Restic
+
+[Service]
+Type=oneshot
+ExecStart=/home/jharry/bin/backup_hourly.sh work
+
+# Hardening
+SystemCallArchitectures=native
+MemoryDenyWriteExecute=true
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target
