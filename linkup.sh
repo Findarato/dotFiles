@@ -23,3 +23,4 @@ stow dunst
 stow Code
 stow systemd
 stow wal
+stow compton
