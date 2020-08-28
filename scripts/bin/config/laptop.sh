@@ -13,7 +13,7 @@ RESTIC=/usr/bin/restic
 #Retention settings
 DAYS=30
 WEEKS=1
-MONTHS=1
+MONTHS=12
 
 # Run After
 RUNBEFORE="echo 'mounting Box';/usr/bin/rclone mount Box:/backup/laptop /mnt/box --daemon;sleep 20"
