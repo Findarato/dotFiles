@@ -491,7 +491,7 @@ client.background       $base07
 #exec $ni source ~/.fehbg
 
 # kill focused window
-bindsym $mod+Shift+b "killall -9 picom && picomn -b"
+#bindsym $mod+Shift+b "killall -9 picom && picomn -b"
 
 
 #exec $ni picom -b --experimental-backends
