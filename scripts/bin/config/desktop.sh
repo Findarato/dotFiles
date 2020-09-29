@@ -14,7 +14,7 @@ RESTIC=/usr/bin/restic
 
 #Retention settings
 DAYS=30
-WEEKS=1
+WEEKS=4
 MONTHS=12
 
 RUNBEFORE=""

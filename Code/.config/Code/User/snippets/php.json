@@ -8,5 +8,18 @@
 			"}"
 		],
 		"description": "Create a Public method"
+	},
+	"test": {
+		"prefix": "test",
+		"body": [
+			"    /** @test */",
+			"    public function can_see_knowledge_base()",
+			"    {",
+			"        $response = $this->get('/knowledge');",
+			"",
+			"        $response->assertStatus(202);",
+			"    }"
+		],
+		"description": "Create a PHPunit test"
 	}
 }
