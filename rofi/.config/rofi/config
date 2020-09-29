@@ -275,4 +275,4 @@ rofi.combi-modi:                     window,drun,ssh
 ! "Accept hovered row with custom action" Set from: Default
 ! rofi.me-accept-custom:               Control+MouseDPrimary
 #rofi.theme: ~/.cache/wal/colors-rofi-dark.rasi
-rofi.theme: /home/joe/.config/rofi/theme/Monokai.rasi
+rofi.theme: ~/.config/rofi/theme/Monokai.rasi

@@ -92,6 +92,12 @@ fi
 if [ -d "/opt/etcher-cli" ]; then
     PATH="${PATH}:/opt/etcher-cli/"
 fi
+# Add support for composer
+if [ -d "${HOME}/.config/composer/vendor/bin" ]; then
+    PATH="${PATH}:${HOME}/.config/composer/vendor/bin"
+fi
+
+
 
 # Add support for qt4
 if [ -d "/usr/lib64/qt4/bin" ]; then
