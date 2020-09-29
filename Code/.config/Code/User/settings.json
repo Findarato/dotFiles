@@ -11,7 +11,7 @@
     "editor.fontSize": 13,
     "editor.minimap.enabled": false,
     "editor.mouseWheelZoom": true,
-    "editor.renderWhitespace": "boundary",
+    "editor.renderWhitespace": "trailing",
     "editor.rulers": [],
     "explorer.autoReveal": false,
     "git.autofetch": true,
@@ -22,7 +22,6 @@
     "terminal.integrated.fontSize": 15,
     "window.title": "${activeEditorLong}",
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "Slime",
     "workbench.colorCustomizations": {
         // "activityBar.background": "#021e45",
         // "statusBar.background": "#021e45",
@@ -63,5 +62,8 @@
     "editor.fontFamily": "'Fira Code','Fira Mono','Droid Sans Mono', monospace,'monospace', 'Droid Sans Fallback', 'Noto Color Emoji'",
     "markdown.extension.tableFormatter.normalizeIndentation": true,
     "editor.renderControlCharacters": false,
+    "workbench.colorTheme": "Allure Contrast (rainglow)",
+    "intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": true,
+    "workbench.iconTheme": "vscode-icons",
     
 }

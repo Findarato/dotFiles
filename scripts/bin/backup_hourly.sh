@@ -12,7 +12,7 @@ else
     fi
 fi
 
-${HOME}/bin/docker_clean.sh
+#${HOME}/bin/docker_clean.sh
 
 eval ${RUNBEFORE}
 
