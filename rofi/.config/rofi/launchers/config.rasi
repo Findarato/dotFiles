@@ -1,0 +1,12 @@
+/** Configured For Applets **/
+
+configuration {
+  show-icons:         true;
+  icon-theme:         "Papirus";
+  location: 4;
+  yoffset: 50%;
+  xoffset: 50%;
+}
+
+
+@import "themes/Monokai.rasi"
