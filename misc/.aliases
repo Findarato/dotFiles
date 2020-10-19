@@ -30,7 +30,9 @@ alias sudo='sudo -H'
 alias dirs='dirs -v'
 #alias ls='ls -la'
 
-if exa ;then
+EXA=$(which exa)
+
+if [ $? -eq 0 ] ;then
     alias ls='exa -la --color=always --group-directories-first'
 else
     alias ls='ls --classify --tabsize=0 --group-directories-first --literal --color=auto --show-control-chars --human-readable'
