@@ -21,6 +21,11 @@ ${HOME}/.config/google-chrome/Default/Local Storage/
 ${HOME}/.config/google-chrome-unstable/Default/Local Storage/
 ${HOME}/.cache/
 
+${HOME}/.mozilla/firefox/Crash\ Reports
+${HOME}/.mozilla/firefox/*.default-*/crashes
+${HOME}/.mozilla/firefox/*.default-*/*.sqlite
+
+
 # No need to back up flatpaks
 ${HOME}/.local/share/flatpak
 
