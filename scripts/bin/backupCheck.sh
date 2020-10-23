@@ -17,4 +17,7 @@ eval ${RUNBEFORE}
 
 "${RESTIC}" -q -r "${BACKUP_LOCATION}" snapshots --path="${2}" --no-lock
 
+"${RESTIC}" -r "${BACKUP_LOCATION}" rebuild-index
+
+
 eval ${RUNAFTER}

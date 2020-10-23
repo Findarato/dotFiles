@@ -37,7 +37,7 @@ export UPDATE_ZSH_DAYS=7
 source "${HOME}/.aliases"
 
 # Set some PL9k/10k values
-source "${HOME}/.powerlevel9k"
+source "${HOME}/.powerlevel10k"
 
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
@@ -171,11 +171,10 @@ zplug "tamcore/autoupdate-oh-my-zsh-plugins", from:github
 zplug "zsh-users/zsh-syntax-highlighting", from:github, defer:3
 zplug "chrissicool/zsh-256color", from:github
 zplug "lib/completion", from:oh-my-zsh
-zplug "plugins/docker", from:oh-my-zsh
 zplug "plugins/zsh_reload", from:oh-my-zsh
-zplug "plugins/git", from:oh-my-zsh
-zplug "plugins/git-flow", from:oh-my-zsh
-zplug "plugins/git-prompt", from:oh-my-zsh
+#zplug "plugins/git", from:oh-my-zsh
+#zplug "plugins/git-flow", from:oh-my-zsh
+#zplug "plugins/git-prompt", from:oh-my-zsh
 zplug "plugins/gpg-agent", from:oh-my-zsh
 zplug "plugins/zsh-autosuggestions", from:oh-my-zsh
 zplug "plugins/colorize", from:oh-my-zsh
