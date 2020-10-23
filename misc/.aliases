@@ -12,6 +12,7 @@ alias updateAll="git submodule update --recursive --remote"
 
 # I know I am bad
 alias pa="php artisan"
+alias pu="./vendor/bin/phpunit"
 
 alias lo='libreoffice'
 
@@ -29,7 +30,9 @@ alias s="sudo"
 alias sudo='sudo -H'
 alias dirs='dirs -v'
 #alias ls='ls -la'
-alias ls='exa -la --color=always --group-directories-first'
+alias lz='ls -laZ'
+
+#alias ls='exa -la --color=always --group-directories-first'
 #alias ls='ls --classify --tabsize=0 --group-directories-first --literal --color=auto --show-control-chars --human-readable'
 alias la='ls -la'
 alias lsdf='ls -a .*(.)'
