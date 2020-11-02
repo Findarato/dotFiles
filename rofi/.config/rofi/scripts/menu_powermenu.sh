@@ -12,8 +12,8 @@ cpu=$(sh ~/.config/rofi/bin/usedcpu)
 memory=$(sh ~/.config/rofi/bin/usedram)
 
 # Options
-shutdown="襤"
-reboot="ﰇ"
+shutdown=""
+reboot="R"
 lock=""
 suspend="鈴"
 logout=""
@@ -30,7 +30,7 @@ case $chosen in
         systemctl reboot
         ;;
     $lock)
-        i3lock
+        #i3lock
         ;;
     $suspend)
         mpc -q pause

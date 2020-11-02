@@ -57,13 +57,15 @@
     "explorer.confirmDragAndDrop": false,
     "window.zoomLevel": 0,
     "terminal.integrated.rendererType": "dom",
-    "workbench.statusBar.visible": false,
+    "workbench.statusBar.visible": true,
     "workbench.activityBar.visible": true,
     "editor.fontFamily": "'Fira Code','Fira Mono','Droid Sans Mono', monospace,'monospace', 'Droid Sans Fallback', 'Noto Color Emoji'",
     "markdown.extension.tableFormatter.normalizeIndentation": true,
     "editor.renderControlCharacters": false,
-    "workbench.colorTheme": "Allure Contrast (rainglow)",
     "intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": true,
     "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "Base16 Dark Monokai",
+    "extensions.ignoreRecommendations": false,
+    "blade.format.enable": true,
     
 }
