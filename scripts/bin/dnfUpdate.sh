@@ -29,3 +29,6 @@ BASEUSER=$(whoami | awk '{print $1}')
 echo "${BASEUSER}"
 
 sudo -u "${BASEUSER}" flatpak uninstall --unused -y --user
+
+echo "Checking if restart is needed"
+dnf needs-restarting -r
