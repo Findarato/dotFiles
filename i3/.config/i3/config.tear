@@ -35,17 +35,18 @@ for_window [class="Syncthing GTK" title="Syncthing-GTK"] floating enable, move s
 #workspace $ws1 gaps outer 0
 
 ### workplace 2
-assign [class="minecraft-launcher"] $ws2
-for_window [class="minecraft-launcher"] floating enable, move position center
-assign [class="Minecraft*"] $ws2 
 #for_window [class="Minecraft*"] move to workspace floating enable, move position center
 
 
 ### Workplace 3
 assign [class="obs"] $ws3
 
-### Workplace 4
-assign [class="(?i)mpv"] $ws4
+### Workplace 4 Games
+#assign [class="(?i)mpv"] $ws4
+assign [class="minecraft-launcher"] $ws4
+for_window [class="minecraft-launcher"] floating enable, move position center
+assign [class="Minecraft*"] $ws4
+
 
 ### Workplace 5
 for_window [title="(?i)GIMP Startup"] move workspace $ws5
@@ -126,7 +127,6 @@ set $lock dbus-send --type=method_call --dest=org.gnome.ScreenSaver /org/gnome/S
 #set $lock "/usr/bin/xscreensaver-command --activate --restart"
 #set $grim ~/.config/i3/scripts/grim
 #set $slurp ~/.config/i3/scripts/slurp
-set $saveLayout exec "${HOME}/Documents/src/i3-layout-manager/layout_manager.sh"
 
 
 # Setup Monitor layout
@@ -152,7 +152,8 @@ set $term alacritty
 #set $term kitty
 # Your preferred application launcher
 # set $menu dmenu_run
-set $menu rofi -show drun
+#set $menu rofi -show drun
+set $menu ~/.config/rofi/launcher.sh
 #set $menu rofi -show drun
 
 #set $ws1 "1"
@@ -220,6 +221,9 @@ bindsym $mod+Return exec $term
 
 # kill focused window
 bindsym $mod+Shift+q kill
+
+# Open Power Menu
+bindsym $mod+p exec --no-startup-id ~/.config/rofi/scripts/powermenu.sh
 
 # start your launcher
 bindsym $mod+d exec $menu
@@ -334,16 +338,29 @@ set $i3_resurrect ~/.local/bin/i3-resurrect
 
 # Save workspace mode.
 mode "save" {
-  bindsym 1 exec $i3_resurrect save -w $ws1
-  bindsym 2 exec $i3_resurrect save -w $ws2
-  bindsym 3 exec $i3_resurrect save -w $ws3
-  bindsym 4 exec $i3_resurrect save -w $ws4
-  bindsym 5 exec $i3_resurrect save -w $ws5
-  bindsym 6 exec $i3_resurrect save -w $ws6
-  bindsym 7 exec $i3_resurrect save -w $ws7
-  bindsym 8 exec $i3_resurrect save -w $ws8
-  bindsym 9 exec $i3_resurrect save -w $ws9
-  bindsym 0 exec $i3_resurrect save -w $ws10
+#  bindsym 1 exec $i3_resurrect save -w $ws1
+#  bindsym 2 exec $i3_resurrect save -w $ws2
+#  bindsym 3 exec $i3_resurrect save -w $ws3
+#  bindsym 4 exec $i3_resurrect save -w $ws4
+#  bindsym 5 exec $i3_resurrect save -w $ws5
+#  bindsym 6 exec $i3_resurrect save -w $ws6
+#  bindsym 7 exec $i3_resurrect save -w $ws7
+#  bindsym 8 exec $i3_resurrect save -w $ws8
+#  bindsym 9 exec $i3_resurrect save -w $ws9
+#  bindsym 0 exec $i3_resurrect save -w $ws10
+
+
+  bindsym 1 exec "$i3_resurrect save -w 1 --swallow=class,instance,title"
+  bindsym 2 exec "$i3_resurrect save -w 2 --swallow=class,instance,title"
+  bindsym 3 exec "$i3_resurrect save -w 3 --swallow=class,instance,title"
+  bindsym 4 exec "$i3_resurrect save -w 4 --swallow=class,instance,title"
+  bindsym 5 exec "$i3_resurrect save -w 5 --swallow=class,instance,title"
+  bindsym 6 exec "$i3_resurrect save -w 6 --swallow=class,instance,title"
+  bindsym 7 exec "$i3_resurrect save -w 7 --swallow=class,instance,title"
+  bindsym 8 exec "$i3_resurrect save -w 8 --swallow=class,instance,title"
+  bindsym 9 exec "$i3_resurrect save -w 9 --swallow=class,instance,title"
+  bindsym 0 exec "$i3_resurrect save -w 10 --swallow=class,instance,title"
+
 
   # Back to normal: Enter, Escape, or s
   bindsym Return mode "default"
@@ -511,7 +528,7 @@ exec $ni i3-msg $ws7; exec $term -e tuir
 exec $ni "flatpak run org.signal.Signal"
 
 #exec $ni $i3_resurrect restore -w $ws1
-#exec $ni $i3_resurrect restore -w $ws2
+exec $ni $i3_resurrect restore -w $ws2
 #exec $ni $i3_resurrect restore -w $ws3
 #exec $ni $i3_resurrect restore -w $ws4
 #exec $ni $i3_resurrect restore -w $ws5

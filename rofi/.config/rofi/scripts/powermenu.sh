@@ -9,10 +9,10 @@ rofi_command="rofi -theme themes/powermenu.rasi"
 uptime=$(uptime -p | sed -e 's/up //g')
 
 # Options
-shutdown="襤"
+shutdown=""
 reboot="ﰇ"
-lock=""
-suspend="鈴"
+lock=""
+suspend=""
 logout=""
 
 # Variable passed to rofi
@@ -27,7 +27,8 @@ case $chosen in
         systemctl reboot
         ;;
     $lock)
-        i3lock
+        #i3lock\
+        dbus-send --type=method_call --dest=org.gnome.ScreenSaver /org/gnome/ScreenSaver org.gnome.ScreenSaver.Lock
         ;;
     $suspend)
         mpc -q pause
@@ -35,7 +36,7 @@ case $chosen in
         systemctl suspend
         ;;
     $logout)
-        openbox --exit
+        i3-msg exit
         ;;
 esac
 

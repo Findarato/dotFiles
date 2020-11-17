@@ -13,9 +13,10 @@
 
 * {
   /* General */
-  text-font:                            "Comfortaa 14";
-  icon-font:                            "Hurmit Nerd Font Mono 48";
-  icon-font-small:                      "Hurmit Nerd Font Mono 24";
+
+  text-font:                            "Hack 14";
+  icon-font:                            "Font Awesome 5 Free 48";
+  icon-font-small:                      "Font Awesome 5 Free 24";
 
   option-6-listview-spacing:            10px;
 

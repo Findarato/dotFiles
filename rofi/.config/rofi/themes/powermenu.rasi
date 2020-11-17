@@ -13,9 +13,9 @@
 
 * {
   /* General */
-  text-font:                            "Comfortaa 12";
-  icon-font:                            "Hurmit Nerd Font Mono 32";
-  icon-font-small:                      "Hurmit Nerd Font Mono 24";
+  text-font:                            "Hack 12";
+  icon-font:                            "Font Awesome 5 Free 48";
+  icon-font-small:                      "Font Awesome 5 Free 24";
 
   option-6-listview-spacing:            10px;
 
@@ -23,15 +23,15 @@
   menu-inputbar-margin:                  10px 0px;
   menu-prompt-padding:                   10px 20px 10px 20px;
   menu-prompt-margin:                    0px 0px 0px -2px;
-  menu-element-border:                   10px;
-  menu-element-padding:                  3px 8px -1px -40px;
+  menu-element-border:                   5px;
+  menu-element-padding:                  2px;
 }
 
 /* ########### */
 
 #window {
   width: 29%;
-  height: 20%;
+  height: 15%;
 }
 
 /* ########### */
