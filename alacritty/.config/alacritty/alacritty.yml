@@ -1,42 +1,13 @@
-# Configuration for Alacritty, the GPU enhanced terminal emulator.
-
-# Any items in the `env` entry below will be added as
-# environment variables. Some entries may override variables
-# set by alacritty itself.
 env:
-  # TERM variable
-  #
-  # This value is used to set the `$TERM` environment variable for
-  # each instance of Alacritty. If it is not present, alacritty will
-  # check the local terminfo database and use `alacritty` if it is
-  # available, otherwise `xterm-256color` is used.
   TERM: xterm-256color
-
 window:
-  # Window dimensions (changes require restart)
-  #
-  # Specified in number of columns/lines, not pixels.
-  # If both are `0`, this setting is ignored.
   dynamic_title: true
   dimensions:
     columns: 0
     lines: 0
-
-  # Window position (changes require restart)
-  #
-  # Specified in number of pixels.
-  # If the position is not set, the window manager will handle the placement.
-  #position:
-  #  x: 0
-  #  y: 0
-
-  # Window padding (changes require restart)
-  #
-  # Blank space added around the window in pixels. This padding is scaled
-  # by DPI and the specified value is always added at both opposing sides.
   padding:
-    x: 1
-    y: 1
+    x: 5
+    y: 5
 
   # Spread additional padding evenly around the terminal content.
   dynamic_padding: true
@@ -146,34 +117,13 @@ cursor:
 live_config_reload: true
 working_directory: None
 enable_experimental_conpty_backend: false
-
-# Send ESC (\x1b) before characters when alt is pressed.
 alt_send_esc: true
-
 debug:
-  # Display the time it takes to redraw each frame.
   render_timer: false
-
-  # Keep the log file after quitting Alacritty.
   persistent_logging: false
-
-  # Log level
-  #
-  # Values for `log_level`:
-  #   - None
-  #   - Error
-  #   - Warn
-  #   - Info
-  #   - Debug
-  #   - Trace
   log_level: Warn
-
-  # Print all received window events.
   print_events: false
-
-  # Record all characters and escape sequences as test data.
   ref_test: false
-
 key_bindings:
   - { key: Paste,                   action: Paste                            }
   - { key: Copy,                    action: Copy                             }
@@ -268,32 +218,46 @@ key_bindings:
 #     white:   '0xe6e6e6'
 
 # Colors (Molokai Dark)
-colors:
-  draw_bold_text_with_bright_colors: true
-  # Default colors
-  primary:           
-    backgroundColor: '#17191c'
-    foregroundColor: '#c0ccdb'
-    borderColor:     '#2e3238'
-    cursorColor:     '#ffffff'
-  # Normal colors
-  normal:            
-    black:           '#23262a'
-    red:             '#ba0e2e'
-    green:           '#5da892'
-    yellow:          '#e4d294'
-    blue:            '#ffffff'
-    magenta:         '#5da892'
-    cyan:            '#e4d294'
-    white:           '#d0d9e4'
-  # Bright colors
-  bright:            
-    black:           '#3a3f46'
-    red:             '#e61f44'
-    green:           '#9fccbf'
-    yellow:          '#f9f4e5'
-    blue:            '#ffffff'
-    magenta:         '#9fccbf'
-    cyan:            '#f9f4e5'
-    white:           '#f1f3f7'
 
+# Base16 Monokai 256 - alacritty color config
+# Wimer Hazenberg (http://www.monokai.nl)
+colors:
+  # Default colors
+  primary:
+    background:   '#272822'
+    foreground:   '#f8f8f2'
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text:         '#272822'
+    cursor:       '#f8f8f2'
+
+  # Normal colors
+  normal:
+    black:        '#272822'
+    red:          '#f92672'
+    green:        '#a6e22e'
+    yellow:       '#f4bf75'
+    blue:         '#66d9ef'
+    magenta:      '#ae81ff'
+    cyan:         '#a1efe4'
+    white:        '#f8f8f2'
+
+  # Bright colors
+  bright:
+    black:        '#75715e'
+    red:          '#f92672'
+    green:        '#a6e22e'
+    yellow:       '#f4bf75'
+    blue:         '#66d9ef'
+    magenta:      '#ae81ff'
+    cyan:         '#a1efe4'
+    white:        '#f9f8f5'
+
+  indexed_colors:
+    - { index:    16, color: '#fd971f' }
+    - { index:    17, color: '#cc6633' }
+    - { index:    18, color: '#383830' }
+    - { index:    19, color: '#49483e' }
+    - { index:    20, color: '#a59f85' }
+    - { index: 21, color: '#f5f4f1' }

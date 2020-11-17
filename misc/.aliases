@@ -12,6 +12,7 @@ alias updateAll="git submodule update --recursive --remote"
 
 # I know I am bad
 alias pa="php artisan"
+alias pu="./vendor/bin/phpunit"
 
 alias lo='libreoffice'
 
