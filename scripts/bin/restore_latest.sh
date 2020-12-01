@@ -22,7 +22,9 @@ ${RESTIC} -r ${BACKUP_LOCATION} unlock  # Unlock repo
 
 #${RESTIC} -r ${BACKUP_LOCATION} restore latst --target ${HOME}   # Unlock repo
 
-${RESTIC} -r ${BACKUP_LOCATION} restore latest --target / --include "/home/jharry/.mozilla"  # Unlock repo
+#${RESTIC} -r ${BACKUP_LOCATION} restore latest --target / --include "/home/jharry/.mozilla"  # Unlock repo
+
+${RESTIC} -r ${BACKUP_LOCATION} restore 53ce76fb --target / --include "/home/joe/.mozilla"  # Unlock repo
 
 #${RESTIC} -r ${BACKUP_LOCATION} restore b03b2c9f --target "/"  --include "/home/jharry/todo.md"  # Unlock repo
 

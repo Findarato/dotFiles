@@ -81,9 +81,7 @@ for_window [class="Gnome-calculator" title="Calculator"] floating enable, move p
 for_window [class="(?i)streamlink-twitch-gui"] floating enable
 for_window [title="(?i)Bluetooth"] floating enable
 
-
-
-#for_window [class="Gnome-control-center" ] floating enabled, move position center
+for_window [class="Gnome-control-center" ] floating enabled, move position center
 
 # Enpass
 for_window [class="Enpass" title="Enpass"] floating enable, move position center
@@ -516,7 +514,7 @@ client.background       $base07
 exec $ni picom -b
 
 exec $ni firefox
-exec $ni /usr/bin/flameshot
+ exec $ni /usr/bin/flameshot
 exec $ni i3-msg $ws7; exec $term -e tuir
 
 
@@ -560,3 +558,4 @@ exec_always $ni pkill dunst; sleep 60 && dunst -config ~/.config/dunst/dunstrc &
 
 #Polybar
 exec_always --no-startup-id sh $HOME/.config/polybar/launch.sh
+exec_always $ni gsettings set org.gnome.desktop.lockdown disable-lock-screen false 
