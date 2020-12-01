@@ -25,6 +25,9 @@ ${HOME}/.mozilla/firefox/Crash\ Reports
 ${HOME}/.mozilla/firefox/*.default-*/crashes
 ${HOME}/.mozilla/firefox/*.default-*/*.sqlite
 
+~/.phoronix-test-suite
+${HOME}/.phoronix-test-suite
+
 
 # No need to back up flatpaks
 ${HOME}/.local/share/flatpak
