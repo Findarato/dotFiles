@@ -11,6 +11,7 @@ alias na='git reset --hard;git clean -df;'
 alias updateAll="git submodule update --recursive --remote"
 
 # I know I am bad
+alias mfs="php artisan migrate:fresh --seed"
 alias pa="php artisan"
 alias pu="./vendor/bin/phpunit"
 
