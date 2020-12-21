@@ -121,23 +121,10 @@ set $mod Mod4
 #set $lock "~/.config/i3/scripts/betterlockscreen -l -u ~/Pictures/tapet"
 
 set $lock dbus-send --type=method_call --dest=org.gnome.ScreenSaver /org/gnome/ScreenSaver org.gnome.ScreenSaver.Lock
-#set $lock "~/.config/i3/scripts/betterlockscreen -l pixel -u ~/Pictures/tapet"
-#set $lock "/usr/bin/xscreensaver-command --activate --restart"
-#set $grim ~/.config/i3/scripts/grim
-#set $slurp ~/.config/i3/scripts/slurp
-
 
 # Setup Monitor layout
 
 exec ~/.screenlayout/2Display.sh
-
-#Setup Flash focus
-#detect-client-opacity = true;
-#opacity-rule = [
-#  "0:_NET_WM_STATE@:32a *= '_NET_WM_STATE_HIDDEN'"
-#];
-#exec_always --no-startup-id flashfocus
-
 
 # Home row direction keys, like vim
 # set $left Left
@@ -153,17 +140,6 @@ set $term alacritty
 #set $menu rofi -show drun
 set $menu ~/.config/rofi/launcher.sh
 #set $menu rofi -show drun
-
-#set $ws1 "1"
-#set $ws2 "2 🎮"
-#set $ws3 "3 Servers"
-#set $ws4 "4 🏠"
-#set $ws5 "5"
-#set $ws6 "6 🌐"
-#set $ws7 "7 Social"
-#set $ws8 "8"
-#set $ws9 "9 💻"
-#set $ws10 "10 "
 
 set $ws1 "1"
 set $ws2 "2"
@@ -252,21 +228,12 @@ bindsym Shift+Print exec $slurp
 # Moving around:
 #
     # Move your focus around
-#    bindsym $mod+$left focus left
-#    bindsym $mod+$down focus down
-#    bindsym $mod+$up focus up
-#    bindsym $mod+$right focus right
-    # or use $mod+[up|down|left|right]
     bindsym $mod+Left focus left
     bindsym $mod+Down focus down
     bindsym $mod+Up focus up
     bindsym $mod+Right focus right
 
     # _move_ the focused window with the same, but add Shift
-#    bindsym $mod+Shift+$left move left
-#    bindsym $mod+Shift+$down move down
-#    bindsym $mod+Shift+$up move up
-#    bindsym $mod+Shift+$right move right
     # ditto, with arrow keys
     bindsym $mod+Shift+Left move left
     bindsym $mod+Shift+Down move down
@@ -336,28 +303,17 @@ set $i3_resurrect ~/.local/bin/i3-resurrect
 
 # Save workspace mode.
 mode "save" {
-#  bindsym 1 exec $i3_resurrect save -w $ws1
-#  bindsym 2 exec $i3_resurrect save -w $ws2
-#  bindsym 3 exec $i3_resurrect save -w $ws3
-#  bindsym 4 exec $i3_resurrect save -w $ws4
-#  bindsym 5 exec $i3_resurrect save -w $ws5
-#  bindsym 6 exec $i3_resurrect save -w $ws6
-#  bindsym 7 exec $i3_resurrect save -w $ws7
-#  bindsym 8 exec $i3_resurrect save -w $ws8
-#  bindsym 9 exec $i3_resurrect save -w $ws9
-#  bindsym 0 exec $i3_resurrect save -w $ws10
 
-
-  bindsym 1 exec "$i3_resurrect save -w 1 --swallow=class,instance,title"
-  bindsym 2 exec "$i3_resurrect save -w 2 --swallow=class,instance,title"
-  bindsym 3 exec "$i3_resurrect save -w 3 --swallow=class,instance,title"
-  bindsym 4 exec "$i3_resurrect save -w 4 --swallow=class,instance,title"
-  bindsym 5 exec "$i3_resurrect save -w 5 --swallow=class,instance,title"
-  bindsym 6 exec "$i3_resurrect save -w 6 --swallow=class,instance,title"
-  bindsym 7 exec "$i3_resurrect save -w 7 --swallow=class,instance,title"
-  bindsym 8 exec "$i3_resurrect save -w 8 --swallow=class,instance,title"
-  bindsym 9 exec "$i3_resurrect save -w 9 --swallow=class,instance,title"
-  bindsym 0 exec "$i3_resurrect save -w 10 --swallow=class,instance,title"
+  bindsym 1 exec "$i3_resurrect save -w 1 --swallow=class,instance"
+  bindsym 2 exec "$i3_resurrect save -w 2 --swallow=class,instance"
+  bindsym 3 exec "$i3_resurrect save -w 3 --swallow=class,instance"
+  bindsym 4 exec "$i3_resurrect save -w 4 --swallow=class,instance"
+  bindsym 5 exec "$i3_resurrect save -w 5 --swallow=class,instance"
+  bindsym 6 exec "$i3_resurrect save -w 6 --swallow=class,instance"
+  bindsym 7 exec "$i3_resurrect save -w 7 --swallow=class,instance"
+  bindsym 8 exec "$i3_resurrect save -w 8 --swallow=class,instance"
+  bindsym 9 exec "$i3_resurrect save -w 9 --swallow=class,instance"
+  bindsym 0 exec "$i3_resurrect save -w 10 --swallow=class,instance"
 
 
   # Back to normal: Enter, Escape, or s
@@ -537,7 +493,6 @@ exec $ni $i3_resurrect restore -w $ws2
 #exec $ni $i3_resurrect restore -w $ws10
 
 exec $ni superpaper && sleep 10
-
 exec $ni flatpak run me.kozec.syncthingtk && sleep 10
 
 

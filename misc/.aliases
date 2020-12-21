@@ -107,7 +107,7 @@ alias fixFonts="fc-cache -f -v"
 alias fixSSHkey="ssh-copy-id -i ~/.ssh/ansible.pub"
 alias listenTo='mpv --no-video'
 alias joetop='ssh joetop'
-
+alias mpv='mpv --hwdec=cuda'
 
 
 

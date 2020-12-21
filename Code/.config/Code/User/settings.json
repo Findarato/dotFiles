@@ -67,5 +67,6 @@
     "workbench.colorTheme": "Base16 Dark Monokai",
     "extensions.ignoreRecommendations": false,
     "blade.format.enable": true,
+    "git.enableSmartCommit": true,
     
 }
