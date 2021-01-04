@@ -32,3 +32,7 @@ sudo -u "${BASEUSER}" flatpak uninstall --unused -y --user
 
 echo "Checking if restart is needed"
 dnf needs-restarting -r
+
+#if [$1 -eq "reboot" ]; then
+#  sudo systemctl start reboot.target
+#fi
