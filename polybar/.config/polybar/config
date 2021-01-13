@@ -174,9 +174,9 @@ separator       = "   "
 wm-restack      = i3
 
 tray-position   = right
-modules-left    = i3 appfilemanager xkillapp
+modules-left    = i3 appfilemanager xkillapp picomToggle
 modules-center  =
-modules-right   = weather cpu memory date
+modules-right   = vpn-wireguard-wg weather cpu memory date
 
 [bar/bar2]
 enable-ipc      = true
@@ -204,7 +204,7 @@ font-4          = "Font Awesome 5 Brands:pixelsize=10;1"
 font-5          = "Mono:size=16:weight=regular;2"
 font-6          = "Noto Color Emoji:pixelsize=16:style=Regular:scale=10;2"
 
-separator       = "   "
+separator       = " "
 wm-restack      = i3
 
 modules-left    = i3
@@ -219,14 +219,29 @@ modules-right   =
 [module/esoStatus]
 type               = custom/script
 
-exec               = python3 /home/joe/.config/i3blocks/custom/eso/eso.py
+exec               = python3 /home/joe/.config/i3/scripts/eso/eso.py
 interval           = 100
 format-underline   = ${colors.white}
 format-prefix      = "💻 "
 format-prefix-font = 6
 format-padding     = 3
 format             = <label>
-label              = ESO Status: %output%
+label              = ESO: %output%
+
+
+###########################################################
+####### Wireguard Module    ###############################
+###########################################################
+
+[module/vpn-wireguard-wg]
+type = custom/script
+exec = ~/.config/i3/scripts/vpn-wireguard-wg.sh
+interval = 5
+content-font = 5
+content-padding = 2
+format-prefix = "VPN: "
+click-left = ~/.config/i3/scripts/vpn-wireguard-wg.sh --toggle &
+
 
 
 [module/date]
@@ -256,6 +271,18 @@ content = "📁"
 content-font = 5
 content-padding = 2
 click-left = "nautilus > /dev/null 2>&1 &"
+
+[module/picomToggle]
+type = custom/script
+content-font = 5
+content-padding = 2
+click-left = "~/.config/i3/scripts/picomStatus.sh --toggle> /dev/null 2>&1 &"
+format = <label>
+format-prefix=" Picom "
+#label = %output%
+exec = ~/.config/i3/scripts/picomStatus.sh
+interval = 5
+
 
 [module/xkillapp]
 type = custom/text

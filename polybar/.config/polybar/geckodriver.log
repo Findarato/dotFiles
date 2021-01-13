@@ -4419,3 +4419,1222 @@ console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Err
 1596551155565	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
 1596551157775	Marionette	INFO	Stopped listening on port 44315
+1610557515553	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilePNLrhZ"
+*** You are running in headless mode.
+
+(firefox:75691): GLib-GObject-WARNING **: 11:05:15.786: invalid (NULL) pointer instance
+
+(firefox:75691): GLib-GObject-CRITICAL **: 11:05:15.786: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:75881): GLib-GObject-WARNING **: 11:05:16.115: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:75881): GLib-GObject-CRITICAL **: 11:05:16.115: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:75902): GLib-GObject-WARNING **: 11:05:16.227: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:75902): GLib-GObject-CRITICAL **: 11:05:16.227: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:75981): GLib-GObject-WARNING **: 11:05:16.731: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:75981): GLib-GObject-CRITICAL **: 11:05:16.731: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610557517005	Marionette	INFO	Listening on port 40893
+
+(/usr/lib64/firefox/firefox:76028): GLib-GObject-WARNING **: 11:05:17.108: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:76028): GLib-GObject-CRITICAL **: 11:05:17.108: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610557517134	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610557522181	Marionette	INFO	Stopped listening on port 40893
+1610557583477	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilewRkrno"
+*** You are running in headless mode.
+
+(firefox:76215): GLib-GObject-WARNING **: 11:06:23.711: invalid (NULL) pointer instance
+
+(firefox:76215): GLib-GObject-CRITICAL **: 11:06:23.711: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:76397): GLib-GObject-WARNING **: 11:06:24.035: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:76397): GLib-GObject-CRITICAL **: 11:06:24.035: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:76419): GLib-GObject-WARNING **: 11:06:24.148: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:76419): GLib-GObject-CRITICAL **: 11:06:24.148: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:76498): GLib-GObject-WARNING **: 11:06:24.658: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:76498): GLib-GObject-CRITICAL **: 11:06:24.658: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610557584922	Marionette	INFO	Listening on port 39029
+
+(/usr/lib64/firefox/firefox:76544): GLib-GObject-WARNING **: 11:06:25.041: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:76544): GLib-GObject-CRITICAL **: 11:06:25.041: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610557585063	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610557588769	Marionette	INFO	Stopped listening on port 39029
+1610557689247	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileGmas3a"
+*** You are running in headless mode.
+
+(firefox:77188): GLib-GObject-WARNING **: 11:08:09.478: invalid (NULL) pointer instance
+
+(firefox:77188): GLib-GObject-CRITICAL **: 11:08:09.478: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:77361): GLib-GObject-WARNING **: 11:08:09.801: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:77361): GLib-GObject-CRITICAL **: 11:08:09.801: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:77382): GLib-GObject-WARNING **: 11:08:09.909: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:77382): GLib-GObject-CRITICAL **: 11:08:09.909: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:77462): GLib-GObject-WARNING **: 11:08:10.402: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:77462): GLib-GObject-CRITICAL **: 11:08:10.402: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610557690633	Marionette	INFO	Listening on port 35383
+1610557690667	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib64/firefox/firefox:77509): GLib-GObject-WARNING **: 11:08:10.792: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:77509): GLib-GObject-CRITICAL **: 11:08:10.793: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610557694030	Marionette	INFO	Stopped listening on port 35383
+1610557794507	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilemYpVut"
+*** You are running in headless mode.
+
+(firefox:78082): GLib-GObject-WARNING **: 11:09:54.738: invalid (NULL) pointer instance
+
+(firefox:78082): GLib-GObject-CRITICAL **: 11:09:54.738: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:78263): GLib-GObject-WARNING **: 11:09:55.057: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:78263): GLib-GObject-CRITICAL **: 11:09:55.057: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:78284): GLib-GObject-WARNING **: 11:09:55.168: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:78284): GLib-GObject-CRITICAL **: 11:09:55.168: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:78363): GLib-GObject-WARNING **: 11:09:55.670: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:78363): GLib-GObject-CRITICAL **: 11:09:55.670: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610557795891	Marionette	INFO	Listening on port 32773
+1610557795927	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib64/firefox/firefox:78409): GLib-GObject-WARNING **: 11:09:56.052: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:78409): GLib-GObject-CRITICAL **: 11:09:56.052: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610557799078	Marionette	INFO	Stopped listening on port 32773
+JavaScript error: resource://gre/modules/PageThumbUtils.jsm, line 38: TypeError: aWindow is null
+1610557899558	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileETl2tJ"
+*** You are running in headless mode.
+
+(firefox:78718): GLib-GObject-WARNING **: 11:11:39.791: invalid (NULL) pointer instance
+
+(firefox:78718): GLib-GObject-CRITICAL **: 11:11:39.791: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:78899): GLib-GObject-WARNING **: 11:11:40.113: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:78899): GLib-GObject-CRITICAL **: 11:11:40.113: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:78920): GLib-GObject-WARNING **: 11:11:40.222: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:78920): GLib-GObject-CRITICAL **: 11:11:40.222: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:78996): GLib-GObject-WARNING **: 11:11:40.728: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:78996): GLib-GObject-CRITICAL **: 11:11:40.728: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610557900955	Marionette	INFO	Listening on port 46569
+1610557900978	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib64/firefox/firefox:79046): GLib-GObject-WARNING **: 11:11:41.119: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:79046): GLib-GObject-CRITICAL **: 11:11:41.119: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610557904204	Marionette	INFO	Stopped listening on port 46569
+JavaScript error: resource://gre/modules/PageThumbUtils.jsm, line 38: TypeError: aWindow is null
+1610558004684	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilelwkoYv"
+*** You are running in headless mode.
+
+(firefox:79340): GLib-GObject-WARNING **: 11:13:24.928: invalid (NULL) pointer instance
+
+(firefox:79340): GLib-GObject-CRITICAL **: 11:13:24.928: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:79519): GLib-GObject-WARNING **: 11:13:25.254: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:79519): GLib-GObject-CRITICAL **: 11:13:25.254: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:79540): GLib-GObject-WARNING **: 11:13:25.372: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:79540): GLib-GObject-CRITICAL **: 11:13:25.372: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:79619): GLib-GObject-WARNING **: 11:13:25.873: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:79619): GLib-GObject-CRITICAL **: 11:13:25.873: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610558006084	Marionette	INFO	Listening on port 37231
+1610558006113	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib64/firefox/firefox:79665): GLib-GObject-WARNING **: 11:13:26.244: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:79665): GLib-GObject-CRITICAL **: 11:13:26.244: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610558009280	Marionette	INFO	Stopped listening on port 37231
+JavaScript error: resource://gre/modules/BackgroundPageThumbs.jsm, line 718: TypeError: captureCallback is not a function
+1610558109755	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileobAYwz"
+*** You are running in headless mode.
+
+(firefox:79942): GLib-GObject-WARNING **: 11:15:09.997: invalid (NULL) pointer instance
+
+(firefox:79942): GLib-GObject-CRITICAL **: 11:15:09.997: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:80129): GLib-GObject-WARNING **: 11:15:10.324: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:80129): GLib-GObject-CRITICAL **: 11:15:10.324: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:80150): GLib-GObject-WARNING **: 11:15:10.436: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:80150): GLib-GObject-CRITICAL **: 11:15:10.436: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:80228): GLib-GObject-WARNING **: 11:15:10.930: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:80228): GLib-GObject-CRITICAL **: 11:15:10.930: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610558111171	Marionette	INFO	Listening on port 33299
+
+(/usr/lib64/firefox/firefox:80276): GLib-GObject-WARNING **: 11:15:11.317: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:80276): GLib-GObject-CRITICAL **: 11:15:11.317: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610558111351	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610558114344	Marionette	INFO	Stopped listening on port 33299
+1610558214819	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileofibt0"
+*** You are running in headless mode.
+
+(firefox:80677): GLib-GObject-WARNING **: 11:16:55.052: invalid (NULL) pointer instance
+
+(firefox:80677): GLib-GObject-CRITICAL **: 11:16:55.052: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:80838): GLib-GObject-WARNING **: 11:16:55.372: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:80838): GLib-GObject-CRITICAL **: 11:16:55.372: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:80859): GLib-GObject-WARNING **: 11:16:55.482: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:80859): GLib-GObject-CRITICAL **: 11:16:55.482: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:80937): GLib-GObject-WARNING **: 11:16:55.999: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:80937): GLib-GObject-CRITICAL **: 11:16:55.999: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610558216238	Marionette	INFO	Listening on port 38655
+
+(/usr/lib64/firefox/firefox:80984): GLib-GObject-WARNING **: 11:16:56.370: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:80984): GLib-GObject-CRITICAL **: 11:16:56.370: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610558216397	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610558219367	Marionette	INFO	Stopped listening on port 38655
+1610558319845	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileAf0iQb"
+*** You are running in headless mode.
+
+(firefox:81249): GLib-GObject-WARNING **: 11:18:40.079: invalid (NULL) pointer instance
+
+(firefox:81249): GLib-GObject-CRITICAL **: 11:18:40.079: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:81436): GLib-GObject-WARNING **: 11:18:40.406: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:81436): GLib-GObject-CRITICAL **: 11:18:40.406: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:81457): GLib-GObject-WARNING **: 11:18:40.518: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:81457): GLib-GObject-CRITICAL **: 11:18:40.518: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:81537): GLib-GObject-WARNING **: 11:18:41.042: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:81537): GLib-GObject-CRITICAL **: 11:18:41.042: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610558321299	Marionette	INFO	Listening on port 32785
+
+(/usr/lib64/firefox/firefox:81583): GLib-GObject-WARNING **: 11:18:41.399: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:81583): GLib-GObject-CRITICAL **: 11:18:41.399: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610558321429	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610558324378	Marionette	INFO	Stopped listening on port 32785
+1610558376838	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileXhtO4B"
+*** You are running in headless mode.
+
+(firefox:81807): GLib-GObject-WARNING **: 11:19:37.076: invalid (NULL) pointer instance
+
+(firefox:81807): GLib-GObject-CRITICAL **: 11:19:37.076: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:81978): GLib-GObject-WARNING **: 11:19:37.406: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:81978): GLib-GObject-CRITICAL **: 11:19:37.406: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:82000): GLib-GObject-WARNING **: 11:19:37.520: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:82000): GLib-GObject-CRITICAL **: 11:19:37.520: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:82078): GLib-GObject-WARNING **: 11:19:38.036: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:82078): GLib-GObject-CRITICAL **: 11:19:38.036: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610558378306	Marionette	INFO	Listening on port 39221
+
+(/usr/lib64/firefox/firefox:82130): GLib-GObject-WARNING **: 11:19:38.398: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:82130): GLib-GObject-CRITICAL **: 11:19:38.398: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610558378417	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610558381366	Marionette	INFO	Stopped listening on port 39221
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+JavaScript error: resource://gre/modules/PageThumbUtils.jsm, line 38: TypeError: aWindow is null
+1610558425739	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile8sUklY"
+*** You are running in headless mode.
+
+(firefox:82298): GLib-GObject-WARNING **: 11:20:25.981: invalid (NULL) pointer instance
+
+(firefox:82298): GLib-GObject-CRITICAL **: 11:20:25.981: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:82459): GLib-GObject-WARNING **: 11:20:26.306: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:82459): GLib-GObject-CRITICAL **: 11:20:26.306: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:82480): GLib-GObject-WARNING **: 11:20:26.421: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:82480): GLib-GObject-CRITICAL **: 11:20:26.422: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:82559): GLib-GObject-WARNING **: 11:20:26.936: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:82559): GLib-GObject-CRITICAL **: 11:20:26.936: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610558427204	Marionette	INFO	Listening on port 45685
+
+(/usr/lib64/firefox/firefox:82605): GLib-GObject-WARNING **: 11:20:27.299: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:82605): GLib-GObject-CRITICAL **: 11:20:27.299: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610558427322	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610558430294	Marionette	INFO	Stopped listening on port 45685
+1610558454146	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileXmeHXm"
+*** You are running in headless mode.
+
+(firefox:82814): GLib-GObject-WARNING **: 11:20:54.384: invalid (NULL) pointer instance
+
+(firefox:82814): GLib-GObject-CRITICAL **: 11:20:54.384: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:82999): GLib-GObject-WARNING **: 11:20:54.711: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:82999): GLib-GObject-CRITICAL **: 11:20:54.711: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:83020): GLib-GObject-WARNING **: 11:20:54.821: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:83020): GLib-GObject-CRITICAL **: 11:20:54.822: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:83097): GLib-GObject-WARNING **: 11:20:55.381: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:83097): GLib-GObject-CRITICAL **: 11:20:55.382: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610558455607	Marionette	INFO	Listening on port 37149
+
+(/usr/lib64/firefox/firefox:83144): GLib-GObject-WARNING **: 11:20:55.703: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:83144): GLib-GObject-CRITICAL **: 11:20:55.703: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610558455734	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610558458709	Marionette	INFO	Stopped listening on port 37149
+JavaScript error: resource://gre/modules/PageThumbUtils.jsm, line 38: TypeError: aWindow is null
+1610558482203	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5fEZw0"
+*** You are running in headless mode.
+
+(firefox:83283): GLib-GObject-WARNING **: 11:21:22.449: invalid (NULL) pointer instance
+
+(firefox:83283): GLib-GObject-CRITICAL **: 11:21:22.449: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:83461): GLib-GObject-WARNING **: 11:21:22.771: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:83461): GLib-GObject-CRITICAL **: 11:21:22.771: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:83482): GLib-GObject-WARNING **: 11:21:22.882: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:83482): GLib-GObject-CRITICAL **: 11:21:22.882: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:83559): GLib-GObject-WARNING **: 11:21:23.409: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:83559): GLib-GObject-CRITICAL **: 11:21:23.409: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610558483636	Marionette	INFO	Listening on port 37191
+1610558483721	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib64/firefox/firefox:83609): GLib-GObject-WARNING **: 11:21:23.785: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:83609): GLib-GObject-CRITICAL **: 11:21:23.785: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610558486765	Marionette	INFO	Stopped listening on port 37191
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+JavaScript error: resource://gre/modules/PageThumbUtils.jsm, line 38: TypeError: aWindow is null
+1610558518872	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilebqbVAe"
+*** You are running in headless mode.
+
+(firefox:83877): GLib-GObject-WARNING **: 11:21:59.110: invalid (NULL) pointer instance
+
+(firefox:83877): GLib-GObject-CRITICAL **: 11:21:59.110: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:84053): GLib-GObject-WARNING **: 11:21:59.439: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:84053): GLib-GObject-CRITICAL **: 11:21:59.439: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:84074): GLib-GObject-WARNING **: 11:21:59.552: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:84074): GLib-GObject-CRITICAL **: 11:21:59.552: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:84155): GLib-GObject-WARNING **: 11:22:00.057: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:84155): GLib-GObject-CRITICAL **: 11:22:00.057: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610558520335	Marionette	INFO	Listening on port 36471
+
+(/usr/lib64/firefox/firefox:84210): GLib-GObject-WARNING **: 11:22:00.437: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:84210): GLib-GObject-CRITICAL **: 11:22:00.437: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610558520456	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610558523514	Marionette	INFO	Stopped listening on port 36471
+1610558608573	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileTgAHbp"
+*** You are running in headless mode.
+
+(firefox:84449): GLib-GObject-WARNING **: 11:23:28.820: invalid (NULL) pointer instance
+
+(firefox:84449): GLib-GObject-CRITICAL **: 11:23:28.820: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:84611): GLib-GObject-WARNING **: 11:23:29.145: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:84611): GLib-GObject-CRITICAL **: 11:23:29.145: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:84632): GLib-GObject-WARNING **: 11:23:29.255: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:84632): GLib-GObject-CRITICAL **: 11:23:29.256: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:84711): GLib-GObject-WARNING **: 11:23:29.773: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:84711): GLib-GObject-CRITICAL **: 11:23:29.773: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610558609996	Marionette	INFO	Listening on port 34379
+
+(/usr/lib64/firefox/firefox:84762): GLib-GObject-WARNING **: 11:23:30.152: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:84762): GLib-GObject-CRITICAL **: 11:23:30.152: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610558610159	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610558613107	Marionette	INFO	Stopped listening on port 34379
+1610558713583	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileav73m3"
+*** You are running in headless mode.
+
+(firefox:85020): GLib-GObject-WARNING **: 11:25:13.816: invalid (NULL) pointer instance
+
+(firefox:85020): GLib-GObject-CRITICAL **: 11:25:13.816: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:85190): GLib-GObject-WARNING **: 11:25:14.142: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:85190): GLib-GObject-CRITICAL **: 11:25:14.142: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:85221): GLib-GObject-WARNING **: 11:25:14.255: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:85221): GLib-GObject-CRITICAL **: 11:25:14.255: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:85300): GLib-GObject-WARNING **: 11:25:14.780: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:85300): GLib-GObject-CRITICAL **: 11:25:14.780: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610558714973	Marionette	INFO	Listening on port 45133
+1610558715009	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib64/firefox/firefox:85347): GLib-GObject-WARNING **: 11:25:15.130: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:85347): GLib-GObject-CRITICAL **: 11:25:15.130: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610558718119	Marionette	INFO	Stopped listening on port 45133
+JavaScript error: resource://gre/modules/PageThumbUtils.jsm, line 38: TypeError: aWindow is null
+1610558804484	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilep0P5it"
+*** You are running in headless mode.
+
+(firefox:85591): GLib-GObject-WARNING **: 11:26:44.723: invalid (NULL) pointer instance
+
+(firefox:85591): GLib-GObject-CRITICAL **: 11:26:44.723: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:85773): GLib-GObject-WARNING **: 11:26:45.053: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:85773): GLib-GObject-CRITICAL **: 11:26:45.053: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:85794): GLib-GObject-WARNING **: 11:26:45.164: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:85794): GLib-GObject-CRITICAL **: 11:26:45.164: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:85870): GLib-GObject-WARNING **: 11:26:45.672: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:85870): GLib-GObject-CRITICAL **: 11:26:45.672: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610558805889	Marionette	INFO	Listening on port 34311
+
+(/usr/lib64/firefox/firefox:85920): GLib-GObject-WARNING **: 11:26:46.045: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:85920): GLib-GObject-CRITICAL **: 11:26:46.045: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610558806069	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610558809001	Marionette	INFO	Stopped listening on port 34311
+1610558843445	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileZChNup"
+*** You are running in headless mode.
+
+(firefox:86077): GLib-GObject-WARNING **: 11:27:23.682: invalid (NULL) pointer instance
+
+(firefox:86077): GLib-GObject-CRITICAL **: 11:27:23.682: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:86262): GLib-GObject-WARNING **: 11:27:24.015: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:86262): GLib-GObject-CRITICAL **: 11:27:24.015: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:86283): GLib-GObject-WARNING **: 11:27:24.125: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:86283): GLib-GObject-CRITICAL **: 11:27:24.125: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:86360): GLib-GObject-WARNING **: 11:27:24.661: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:86360): GLib-GObject-CRITICAL **: 11:27:24.661: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610558844889	Marionette	INFO	Listening on port 36109
+
+(/usr/lib64/firefox/firefox:86410): GLib-GObject-WARNING **: 11:27:25.030: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:86410): GLib-GObject-CRITICAL **: 11:27:25.030: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610558845033	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610558848042	Marionette	INFO	Stopped listening on port 36109
+JavaScript error: resource://gre/modules/PageThumbUtils.jsm, line 38: TypeError: aWindow is null
+1610558948520	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileKFieZC"
+*** You are running in headless mode.
+
+(firefox:86673): GLib-GObject-WARNING **: 11:29:08.761: invalid (NULL) pointer instance
+
+(firefox:86673): GLib-GObject-CRITICAL **: 11:29:08.761: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:86831): GLib-GObject-WARNING **: 11:29:09.086: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:86831): GLib-GObject-CRITICAL **: 11:29:09.086: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:86852): GLib-GObject-WARNING **: 11:29:09.199: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:86852): GLib-GObject-CRITICAL **: 11:29:09.199: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:86928): GLib-GObject-WARNING **: 11:29:09.717: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:86928): GLib-GObject-CRITICAL **: 11:29:09.717: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610558949962	Marionette	INFO	Listening on port 42097
+
+(/usr/lib64/firefox/firefox:86978): GLib-GObject-WARNING **: 11:29:10.077: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:86978): GLib-GObject-CRITICAL **: 11:29:10.077: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610558950095	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610558953167	Marionette	INFO	Stopped listening on port 42097
+JavaScript error: resource://gre/modules/PageThumbUtils.jsm, line 38: TypeError: aWindow is null
+1610559053648	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilez2fDsw"
+*** You are running in headless mode.
+
+(firefox:87251): GLib-GObject-WARNING **: 11:30:53.880: invalid (NULL) pointer instance
+
+(firefox:87251): GLib-GObject-CRITICAL **: 11:30:53.880: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:87433): GLib-GObject-WARNING **: 11:30:54.213: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:87433): GLib-GObject-CRITICAL **: 11:30:54.213: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:87454): GLib-GObject-WARNING **: 11:30:54.324: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:87454): GLib-GObject-CRITICAL **: 11:30:54.324: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:87532): GLib-GObject-WARNING **: 11:30:54.835: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:87532): GLib-GObject-CRITICAL **: 11:30:54.835: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610559055095	Marionette	INFO	Listening on port 40433
+1610559055173	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib64/firefox/firefox:87579): GLib-GObject-WARNING **: 11:30:55.238: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:87579): GLib-GObject-CRITICAL **: 11:30:55.238: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610559058145	Marionette	INFO	Stopped listening on port 40433
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+JavaScript error: resource://gre/modules/PageThumbUtils.jsm, line 38: TypeError: aWindow is null
+1610559158628	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileEN0sWD"
+*** You are running in headless mode.
+
+(firefox:87825): GLib-GObject-WARNING **: 11:32:38.871: invalid (NULL) pointer instance
+
+(firefox:87825): GLib-GObject-CRITICAL **: 11:32:38.871: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:87998): GLib-GObject-WARNING **: 11:32:39.199: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:87998): GLib-GObject-CRITICAL **: 11:32:39.199: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:88019): GLib-GObject-WARNING **: 11:32:39.310: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:88019): GLib-GObject-CRITICAL **: 11:32:39.310: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:88099): GLib-GObject-WARNING **: 11:32:39.833: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:88099): GLib-GObject-CRITICAL **: 11:32:39.833: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610559160032	Marionette	INFO	Listening on port 46499
+
+(/usr/lib64/firefox/firefox:88145): GLib-GObject-WARNING **: 11:32:40.213: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:88145): GLib-GObject-CRITICAL **: 11:32:40.213: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610559160216	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610559163225	Marionette	INFO	Stopped listening on port 46499
+JavaScript error: resource://gre/modules/PageThumbUtils.jsm, line 38: TypeError: aWindow is null
+1610559179240	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilemZnlLV"
+*** You are running in headless mode.
+
+(firefox:88278): GLib-GObject-WARNING **: 11:32:59.475: invalid (NULL) pointer instance
+
+(firefox:88278): GLib-GObject-CRITICAL **: 11:32:59.476: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:88448): GLib-GObject-WARNING **: 11:32:59.806: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:88448): GLib-GObject-CRITICAL **: 11:32:59.806: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:88469): GLib-GObject-WARNING **: 11:32:59.918: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:88469): GLib-GObject-CRITICAL **: 11:32:59.918: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:88548): GLib-GObject-WARNING **: 11:33:00.451: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:88548): GLib-GObject-CRITICAL **: 11:33:00.451: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610559180658	Marionette	INFO	Listening on port 38355
+1610559180759	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib64/firefox/firefox:88596): GLib-GObject-WARNING **: 11:33:00.831: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:88596): GLib-GObject-CRITICAL **: 11:33:00.832: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610559183938	Marionette	INFO	Stopped listening on port 38355
+JavaScript error: resource://gre/modules/PageThumbUtils.jsm, line 38: TypeError: aWindow is null
+1610559282441	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileFAQzc6"
+*** You are running in headless mode.
+
+(firefox:88878): GLib-GObject-WARNING **: 11:34:42.674: invalid (NULL) pointer instance
+
+(firefox:88878): GLib-GObject-CRITICAL **: 11:34:42.674: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:89064): GLib-GObject-WARNING **: 11:34:43.000: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:89064): GLib-GObject-CRITICAL **: 11:34:43.000: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:89085): GLib-GObject-WARNING **: 11:34:43.112: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:89085): GLib-GObject-CRITICAL **: 11:34:43.112: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:89165): GLib-GObject-WARNING **: 11:34:43.641: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:89165): GLib-GObject-CRITICAL **: 11:34:43.641: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610559283832	Marionette	INFO	Listening on port 45169
+1610559283874	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib64/firefox/firefox:89211): GLib-GObject-WARNING **: 11:34:44.003: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:89211): GLib-GObject-CRITICAL **: 11:34:44.003: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610559288962	Marionette	INFO	Stopped listening on port 45169
+1610559335971	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileNG4foe"
+*** You are running in headless mode.
+
+(firefox:89395): GLib-GObject-WARNING **: 11:35:36.211: invalid (NULL) pointer instance
+
+(firefox:89395): GLib-GObject-CRITICAL **: 11:35:36.211: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:89577): GLib-GObject-WARNING **: 11:35:36.536: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:89577): GLib-GObject-CRITICAL **: 11:35:36.536: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:89598): GLib-GObject-WARNING **: 11:35:36.647: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:89598): GLib-GObject-CRITICAL **: 11:35:36.647: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:89676): GLib-GObject-WARNING **: 11:35:37.148: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:89676): GLib-GObject-CRITICAL **: 11:35:37.148: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610559337390	Marionette	INFO	Listening on port 35305
+
+(/usr/lib64/firefox/firefox:89725): GLib-GObject-WARNING **: 11:35:37.527: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:89725): GLib-GObject-CRITICAL **: 11:35:37.527: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610559337568	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610559341588	Marionette	INFO	Stopped listening on port 35305
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x1F0011,name=PBackgroundStorage::Msg_Observe) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x1F0011,name=PBackgroundStorage::Msg_Observe) Channel error: cannot send/recv
+
+1610559353931	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilefbJ2N6"
+*** You are running in headless mode.
+
+(firefox:89868): GLib-GObject-WARNING **: 11:35:54.169: invalid (NULL) pointer instance
+
+(firefox:89868): GLib-GObject-CRITICAL **: 11:35:54.169: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:90050): GLib-GObject-WARNING **: 11:35:54.493: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:90050): GLib-GObject-CRITICAL **: 11:35:54.493: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:90072): GLib-GObject-WARNING **: 11:35:54.602: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:90072): GLib-GObject-CRITICAL **: 11:35:54.602: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:90151): GLib-GObject-WARNING **: 11:35:55.119: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:90151): GLib-GObject-CRITICAL **: 11:35:55.119: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610559355356	Marionette	INFO	Listening on port 34245
+
+(/usr/lib64/firefox/firefox:90198): GLib-GObject-WARNING **: 11:35:55.489: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:90198): GLib-GObject-CRITICAL **: 11:35:55.489: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610559355513	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610559358854	Marionette	INFO	Stopped listening on port 34245
+1610559372632	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilecqy3gQ"
+*** You are running in headless mode.
+
+(firefox:90313): GLib-GObject-WARNING **: 11:36:12.865: invalid (NULL) pointer instance
+
+(firefox:90313): GLib-GObject-CRITICAL **: 11:36:12.865: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:90494): GLib-GObject-WARNING **: 11:36:13.188: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:90494): GLib-GObject-CRITICAL **: 11:36:13.188: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:90515): GLib-GObject-WARNING **: 11:36:13.300: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:90515): GLib-GObject-CRITICAL **: 11:36:13.300: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:90591): GLib-GObject-WARNING **: 11:36:13.818: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:90591): GLib-GObject-CRITICAL **: 11:36:13.818: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610559374049	Marionette	INFO	Listening on port 41517
+
+(/usr/lib64/firefox/firefox:90640): GLib-GObject-WARNING **: 11:36:14.215: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:90640): GLib-GObject-CRITICAL **: 11:36:14.215: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610559374218	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610559377424	Marionette	INFO	Stopped listening on port 41517
+1610559384984	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile9sov5n"
+*** You are running in headless mode.
+
+(firefox:90826): GLib-GObject-WARNING **: 11:36:25.228: invalid (NULL) pointer instance
+
+(firefox:90826): GLib-GObject-CRITICAL **: 11:36:25.228: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:91000): GLib-GObject-WARNING **: 11:36:25.552: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:91000): GLib-GObject-CRITICAL **: 11:36:25.552: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:91021): GLib-GObject-WARNING **: 11:36:25.663: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:91021): GLib-GObject-CRITICAL **: 11:36:25.663: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:91097): GLib-GObject-WARNING **: 11:36:26.209: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:91097): GLib-GObject-CRITICAL **: 11:36:26.209: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610559386445	Marionette	INFO	Listening on port 39357
+
+(/usr/lib64/firefox/firefox:91144): GLib-GObject-WARNING **: 11:36:26.548: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:91144): GLib-GObject-CRITICAL **: 11:36:26.548: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610559386572	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610559389603	Marionette	INFO	Stopped listening on port 39357
+JavaScript error: resource://gre/modules/PageThumbUtils.jsm, line 38: TypeError: aWindow is null
+1610559490082	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilekHYQto"
+*** You are running in headless mode.
+
+(firefox:91395): GLib-GObject-WARNING **: 11:38:10.319: invalid (NULL) pointer instance
+
+(firefox:91395): GLib-GObject-CRITICAL **: 11:38:10.319: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:91572): GLib-GObject-WARNING **: 11:38:10.650: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:91572): GLib-GObject-CRITICAL **: 11:38:10.650: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:91593): GLib-GObject-WARNING **: 11:38:10.761: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:91593): GLib-GObject-CRITICAL **: 11:38:10.761: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:91671): GLib-GObject-WARNING **: 11:38:11.262: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:91671): GLib-GObject-CRITICAL **: 11:38:11.262: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610559491480	Marionette	INFO	Listening on port 45601
+1610559491502	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib64/firefox/firefox:91717): GLib-GObject-WARNING **: 11:38:11.642: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:91717): GLib-GObject-CRITICAL **: 11:38:11.642: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610559494478	Marionette	INFO	Stopped listening on port 45601
+1610559594957	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile9oDt8W"
+*** You are running in headless mode.
+
+(firefox:91957): GLib-GObject-WARNING **: 11:39:55.191: invalid (NULL) pointer instance
+
+(firefox:91957): GLib-GObject-CRITICAL **: 11:39:55.191: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:92130): GLib-GObject-WARNING **: 11:39:55.522: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:92130): GLib-GObject-CRITICAL **: 11:39:55.522: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:92151): GLib-GObject-WARNING **: 11:39:55.646: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:92151): GLib-GObject-CRITICAL **: 11:39:55.646: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:92230): GLib-GObject-WARNING **: 11:39:56.152: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:92230): GLib-GObject-CRITICAL **: 11:39:56.152: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610559596370	Marionette	INFO	Listening on port 37315
+
+(/usr/lib64/firefox/firefox:92276): GLib-GObject-WARNING **: 11:39:56.527: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:92276): GLib-GObject-CRITICAL **: 11:39:56.527: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610559596557	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610559601442	Marionette	INFO	Stopped listening on port 37315
+1610559701922	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileLZUhPU"
+*** You are running in headless mode.
+
+(firefox:92500): GLib-GObject-WARNING **: 11:41:42.158: invalid (NULL) pointer instance
+
+(firefox:92500): GLib-GObject-CRITICAL **: 11:41:42.159: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:92673): GLib-GObject-WARNING **: 11:41:42.481: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:92673): GLib-GObject-CRITICAL **: 11:41:42.481: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:92694): GLib-GObject-WARNING **: 11:41:42.593: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:92694): GLib-GObject-CRITICAL **: 11:41:42.593: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:92772): GLib-GObject-WARNING **: 11:41:43.106: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:92772): GLib-GObject-CRITICAL **: 11:41:43.107: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610559703327	Marionette	INFO	Listening on port 41181
+
+(/usr/lib64/firefox/firefox:92819): GLib-GObject-WARNING **: 11:41:43.478: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:92819): GLib-GObject-CRITICAL **: 11:41:43.478: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610559703501	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610559707544	Marionette	INFO	Stopped listening on port 41181
+1610559727868	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile0BdQ0F"
+*** You are running in headless mode.
+
+(firefox:92962): GLib-GObject-WARNING **: 11:42:08.105: invalid (NULL) pointer instance
+
+(firefox:92962): GLib-GObject-CRITICAL **: 11:42:08.105: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:93133): GLib-GObject-WARNING **: 11:42:08.436: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:93133): GLib-GObject-CRITICAL **: 11:42:08.436: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:93155): GLib-GObject-WARNING **: 11:42:08.550: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:93155): GLib-GObject-CRITICAL **: 11:42:08.550: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:93231): GLib-GObject-WARNING **: 11:42:09.089: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:93231): GLib-GObject-CRITICAL **: 11:42:09.089: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610559729350	Marionette	INFO	Listening on port 37333
+
+(/usr/lib64/firefox/firefox:93278): GLib-GObject-WARNING **: 11:42:09.433: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:93278): GLib-GObject-CRITICAL **: 11:42:09.433: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610559729456	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610559732812	Marionette	INFO	Stopped listening on port 37333
+1610559734442	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile4A9RGu"
+*** You are running in headless mode.
+
+(firefox:93397): GLib-GObject-WARNING **: 11:42:14.675: invalid (NULL) pointer instance
+
+(firefox:93397): GLib-GObject-CRITICAL **: 11:42:14.675: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:93572): GLib-GObject-WARNING **: 11:42:14.999: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:93572): GLib-GObject-CRITICAL **: 11:42:14.999: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:93593): GLib-GObject-WARNING **: 11:42:15.109: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:93593): GLib-GObject-CRITICAL **: 11:42:15.109: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:93668): GLib-GObject-WARNING **: 11:42:15.634: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:93668): GLib-GObject-CRITICAL **: 11:42:15.635: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610559735846	Marionette	INFO	Listening on port 36047
+
+(/usr/lib64/firefox/firefox:93718): GLib-GObject-WARNING **: 11:42:16.021: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:93718): GLib-GObject-CRITICAL **: 11:42:16.021: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610559736024	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610559739240	Marionette	INFO	Stopped listening on port 36047
+JavaScript error: resource://gre/modules/PageThumbUtils.jsm, line 38: TypeError: aWindow is null
+1610559839716	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileqdF15O"
+*** You are running in headless mode.
+
+(firefox:94054): GLib-GObject-WARNING **: 11:43:59.951: invalid (NULL) pointer instance
+
+(firefox:94054): GLib-GObject-CRITICAL **: 11:43:59.951: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:94227): GLib-GObject-WARNING **: 11:44:00.275: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:94227): GLib-GObject-CRITICAL **: 11:44:00.275: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:94248): GLib-GObject-WARNING **: 11:44:00.388: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:94248): GLib-GObject-CRITICAL **: 11:44:00.388: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:94323): GLib-GObject-WARNING **: 11:44:00.895: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:94323): GLib-GObject-CRITICAL **: 11:44:00.895: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610559841117	Marionette	INFO	Listening on port 40287
+1610559841140	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib64/firefox/firefox:94376): GLib-GObject-WARNING **: 11:44:01.270: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:94376): GLib-GObject-CRITICAL **: 11:44:01.270: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610559844301	Marionette	INFO	Stopped listening on port 40287
+JavaScript error: resource://gre/modules/PageThumbUtils.jsm, line 38: TypeError: aWindow is null
+1610559945979	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileeEcU1i"
+*** You are running in headless mode.
+
+(firefox:94707): GLib-GObject-WARNING **: 11:45:46.221: invalid (NULL) pointer instance
+
+(firefox:94707): GLib-GObject-CRITICAL **: 11:45:46.221: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:94881): GLib-GObject-WARNING **: 11:45:46.550: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:94881): GLib-GObject-CRITICAL **: 11:45:46.550: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:94902): GLib-GObject-WARNING **: 11:45:46.659: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:94902): GLib-GObject-CRITICAL **: 11:45:46.659: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:94986): GLib-GObject-WARNING **: 11:45:47.161: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:94986): GLib-GObject-CRITICAL **: 11:45:47.161: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610559947388	Marionette	INFO	Listening on port 43781
+
+(/usr/lib64/firefox/firefox:95034): GLib-GObject-WARNING **: 11:45:47.556: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:95034): GLib-GObject-CRITICAL **: 11:45:47.556: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610559947561	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610559950503	Marionette	INFO	Stopped listening on port 43781
+1610560050983	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile2VuYIh"
+*** You are running in headless mode.
+
+(firefox:95622): GLib-GObject-WARNING **: 11:47:31.218: invalid (NULL) pointer instance
+
+(firefox:95622): GLib-GObject-CRITICAL **: 11:47:31.219: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:95794): GLib-GObject-WARNING **: 11:47:31.541: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:95794): GLib-GObject-CRITICAL **: 11:47:31.541: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:95815): GLib-GObject-WARNING **: 11:47:31.652: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:95815): GLib-GObject-CRITICAL **: 11:47:31.652: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:95895): GLib-GObject-WARNING **: 11:47:32.154: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:95895): GLib-GObject-CRITICAL **: 11:47:32.154: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610560052370	Marionette	INFO	Listening on port 36055
+1610560052403	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib64/firefox/firefox:95942): GLib-GObject-WARNING **: 11:47:32.531: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:95942): GLib-GObject-CRITICAL **: 11:47:32.531: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610560055394	Marionette	INFO	Stopped listening on port 36055
+1610560142994	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileAT1zt2"
+*** You are running in headless mode.
+
+(firefox:96323): GLib-GObject-WARNING **: 11:49:03.236: invalid (NULL) pointer instance
+
+(firefox:96323): GLib-GObject-CRITICAL **: 11:49:03.237: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:96506): GLib-GObject-WARNING **: 11:49:03.559: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:96506): GLib-GObject-CRITICAL **: 11:49:03.559: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:96528): GLib-GObject-WARNING **: 11:49:03.668: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:96528): GLib-GObject-CRITICAL **: 11:49:03.669: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:96608): GLib-GObject-WARNING **: 11:49:04.184: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:96608): GLib-GObject-CRITICAL **: 11:49:04.184: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610560144389	Marionette	INFO	Listening on port 40515
+1610560144417	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib64/firefox/firefox:96654): GLib-GObject-WARNING **: 11:49:04.552: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:96654): GLib-GObject-CRITICAL **: 11:49:04.552: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610560147538	Marionette	INFO	Stopped listening on port 40515
+JavaScript error: resource://gre/modules/PageThumbUtils.jsm, line 38: TypeError: aWindow is null
+1610560165415	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileloOpWI"
+*** You are running in headless mode.
+
+(firefox:96808): GLib-GObject-WARNING **: 11:49:25.658: invalid (NULL) pointer instance
+
+(firefox:96808): GLib-GObject-CRITICAL **: 11:49:25.658: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:96978): GLib-GObject-WARNING **: 11:49:25.982: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:96978): GLib-GObject-CRITICAL **: 11:49:25.983: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:96999): GLib-GObject-WARNING **: 11:49:26.094: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:96999): GLib-GObject-CRITICAL **: 11:49:26.094: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:97077): GLib-GObject-WARNING **: 11:49:26.605: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:97077): GLib-GObject-CRITICAL **: 11:49:26.605: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610560166878	Marionette	INFO	Listening on port 38371
+1610560166935	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib64/firefox/firefox:97125): GLib-GObject-WARNING **: 11:49:26.999: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:97125): GLib-GObject-CRITICAL **: 11:49:27.000: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610560172092	Marionette	INFO	Stopped listening on port 38371
+1610560215818	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilexrDHIx"
+*** You are running in headless mode.
+
+(firefox:97383): GLib-GObject-WARNING **: 11:50:16.060: invalid (NULL) pointer instance
+
+(firefox:97383): GLib-GObject-CRITICAL **: 11:50:16.060: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:97563): GLib-GObject-WARNING **: 11:50:16.383: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:97563): GLib-GObject-CRITICAL **: 11:50:16.383: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:97584): GLib-GObject-WARNING **: 11:50:16.493: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:97584): GLib-GObject-CRITICAL **: 11:50:16.493: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:97659): GLib-GObject-WARNING **: 11:50:17.002: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:97659): GLib-GObject-CRITICAL **: 11:50:17.002: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610560217229	Marionette	INFO	Listening on port 43817
+
+(/usr/lib64/firefox/firefox:97710): GLib-GObject-WARNING **: 11:50:17.374: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:97710): GLib-GObject-CRITICAL **: 11:50:17.374: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610560217400	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610560221428	Marionette	INFO	Stopped listening on port 43817
+1610560280297	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilePnid05"
+*** You are running in headless mode.
+
+(firefox:97980): GLib-GObject-WARNING **: 11:51:20.539: invalid (NULL) pointer instance
+
+(firefox:97980): GLib-GObject-CRITICAL **: 11:51:20.539: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:98153): GLib-GObject-WARNING **: 11:51:20.863: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:98153): GLib-GObject-CRITICAL **: 11:51:20.863: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:98175): GLib-GObject-WARNING **: 11:51:20.971: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:98175): GLib-GObject-CRITICAL **: 11:51:20.971: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:98254): GLib-GObject-WARNING **: 11:51:21.492: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:98254): GLib-GObject-CRITICAL **: 11:51:21.492: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610560281724	Marionette	INFO	Listening on port 37225
+
+(/usr/lib64/firefox/firefox:98301): GLib-GObject-WARNING **: 11:51:21.868: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:98301): GLib-GObject-CRITICAL **: 11:51:21.868: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610560281892	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610560285210	Marionette	INFO	Stopped listening on port 37225
+1610560329746	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile6zUE60"
+*** You are running in headless mode.
+
+(firefox:98525): GLib-GObject-WARNING **: 11:52:09.986: invalid (NULL) pointer instance
+
+(firefox:98525): GLib-GObject-CRITICAL **: 11:52:09.986: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:98704): GLib-GObject-WARNING **: 11:52:10.313: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:98704): GLib-GObject-CRITICAL **: 11:52:10.313: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:98725): GLib-GObject-WARNING **: 11:52:10.425: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:98725): GLib-GObject-CRITICAL **: 11:52:10.425: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:98802): GLib-GObject-WARNING **: 11:52:10.936: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:98802): GLib-GObject-CRITICAL **: 11:52:10.936: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610560331233	Marionette	INFO	Listening on port 35049
+
+(/usr/lib64/firefox/firefox:98850): GLib-GObject-WARNING **: 11:52:11.326: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:98850): GLib-GObject-CRITICAL **: 11:52:11.326: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610560331334	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610560334499	Marionette	INFO	Stopped listening on port 35049
+JavaScript error: resource://gre/modules/PageThumbUtils.jsm, line 38: TypeError: aWindow is null
+1610560360685	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileeryf5b"
+*** You are running in headless mode.
+
+(firefox:99036): GLib-GObject-WARNING **: 11:52:40.926: invalid (NULL) pointer instance
+
+(firefox:99036): GLib-GObject-CRITICAL **: 11:52:40.926: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:99211): GLib-GObject-WARNING **: 11:52:41.247: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:99211): GLib-GObject-CRITICAL **: 11:52:41.247: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:99233): GLib-GObject-WARNING **: 11:52:41.355: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:99233): GLib-GObject-CRITICAL **: 11:52:41.356: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:99311): GLib-GObject-WARNING **: 11:52:41.858: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:99311): GLib-GObject-CRITICAL **: 11:52:41.858: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610560362080	Marionette	INFO	Listening on port 37873
+1610560362106	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib64/firefox/firefox:99360): GLib-GObject-WARNING **: 11:52:42.238: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:99360): GLib-GObject-CRITICAL **: 11:52:42.238: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610560365312	Marionette	INFO	Stopped listening on port 37873
+JavaScript error: resource://gre/modules/BackgroundPageThumbs.jsm, line 476: TypeError: this._captureQueue is undefined
+1610560456014	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileNDYHim"
+*** You are running in headless mode.
+
+(firefox:99811): GLib-GObject-WARNING **: 11:54:16.252: invalid (NULL) pointer instance
+
+(firefox:99811): GLib-GObject-CRITICAL **: 11:54:16.253: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:99977): GLib-GObject-WARNING **: 11:54:16.575: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:99977): GLib-GObject-CRITICAL **: 11:54:16.576: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:99999): GLib-GObject-WARNING **: 11:54:16.684: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:99999): GLib-GObject-CRITICAL **: 11:54:16.684: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:100077): GLib-GObject-WARNING **: 11:54:17.200: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:100077): GLib-GObject-CRITICAL **: 11:54:17.200: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610560457412	Marionette	INFO	Listening on port 35205
+1610560457449	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib64/firefox/firefox:100126): GLib-GObject-WARNING **: 11:54:17.566: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:100126): GLib-GObject-CRITICAL **: 11:54:17.566: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610560460506	Marionette	INFO	Stopped listening on port 35205
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+1610560464524	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileN3Gp8X"
+*** You are running in headless mode.
+
+(firefox:100249): GLib-GObject-WARNING **: 11:54:24.767: invalid (NULL) pointer instance
+
+(firefox:100249): GLib-GObject-CRITICAL **: 11:54:24.767: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:100418): GLib-GObject-WARNING **: 11:54:25.092: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:100418): GLib-GObject-CRITICAL **: 11:54:25.093: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:100439): GLib-GObject-WARNING **: 11:54:25.202: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:100439): GLib-GObject-CRITICAL **: 11:54:25.202: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:100515): GLib-GObject-WARNING **: 11:54:25.701: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:100515): GLib-GObject-CRITICAL **: 11:54:25.701: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610560465924	Marionette	INFO	Listening on port 37247
+1610560465958	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib64/firefox/firefox:100561): GLib-GObject-WARNING **: 11:54:26.084: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:100561): GLib-GObject-CRITICAL **: 11:54:26.084: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610560468921	Marionette	INFO	Stopped listening on port 37247
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+JavaScript error: resource://gre/modules/PageThumbUtils.jsm, line 38: TypeError: aWindow is null
+1610560562435	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile31jqSm"
+*** You are running in headless mode.
+
+(firefox:100988): GLib-GObject-WARNING **: 11:56:02.674: invalid (NULL) pointer instance
+
+(firefox:100988): GLib-GObject-CRITICAL **: 11:56:02.674: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:101162): GLib-GObject-WARNING **: 11:56:02.999: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:101162): GLib-GObject-CRITICAL **: 11:56:02.999: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib64/firefox/firefox:101183): GLib-GObject-WARNING **: 11:56:03.108: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:101183): GLib-GObject-CRITICAL **: 11:56:03.108: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:101263): GLib-GObject-WARNING **: 11:56:03.607: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:101263): GLib-GObject-CRITICAL **: 11:56:03.607: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1610560563818	Marionette	INFO	Listening on port 33245
+1610560563856	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib64/firefox/firefox:101310): GLib-GObject-WARNING **: 11:56:03.991: invalid (NULL) pointer instance
+
+(/usr/lib64/firefox/firefox:101310): GLib-GObject-CRITICAL **: 11:56:03.991: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1610560566964	Marionette	INFO	Stopped listening on port 33245
+JavaScript error: resource://gre/modules/PageThumbUtils.jsm, line 38: TypeError: aWindow is null
