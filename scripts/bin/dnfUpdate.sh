@@ -20,19 +20,28 @@ dnf distro-sync --skip-broken --best --allowerasing -y;
 
 rm -rf /var/tmp/flatpak-cache-*
 
-flatpak update -y --user
 flatpak update -y
 flatpak uninstall --unused -y
 
-BASEUSER=$(whoami | awk '{print $1}')
 
 echo "${BASEUSER}"
 
-sudo -u "${BASEUSER}" flatpak uninstall --unused -y --user
 
 echo "Checking if restart is needed"
 dnf needs-restarting -r
 
+exit
+
+
+echo "Reverting to Base User"
+flatpak update -y --user
+flatpak uninstall --unused -y --user
+
 #if [$1 -eq "reboot" ]; then
+if [ $(dnf needs-restarting -r) ]; then
+  echo "NEEDS Rebooting?"
 #  sudo systemctl start reboot.target
-#fi
+else
+  echo "DOES NOT NEED Rebooting?"
+
+fi
