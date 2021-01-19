@@ -27,11 +27,12 @@ case "$1" in
     ;;
 *)
     if [ "$(connection_status)" = "1" ]; then
-        echo "#1 $config_name"
+        #echo "$config_name"
+        echo " "
     elif [ "$(connection_status)" = "3" ]; then
         echo "#3 Config not found!"
     else
-        echo "#2 down"
+        echo " "
     fi
     ;;
 esac
