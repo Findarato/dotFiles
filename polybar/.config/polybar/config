@@ -176,7 +176,7 @@ wm-restack      = i3
 tray-position   = right
 modules-left    = i3 appfilemanager xkillapp picomToggle
 modules-center  =
-modules-right   = vpn-wireguard-wg weather cpu memory date
+modules-right   = network-publicip vpn-wireguard-wg weather cpu memory date
 
 [bar/bar2]
 enable-ipc      = true
@@ -208,8 +208,8 @@ separator       = " "
 wm-restack      = i3
 
 modules-left    = i3
-modules-center  = esoStatus
-modules-right   =
+modules-center  = 
+modules-right   = esoStatus
 
 
 ###########################################################
@@ -218,7 +218,6 @@ modules-right   =
 
 [module/esoStatus]
 type               = custom/script
-
 exec               = python3 /home/joe/.config/i3/scripts/eso/eso.py
 interval           = 100
 format-underline   = ${colors.white}
@@ -239,9 +238,20 @@ exec = ~/.config/i3/scripts/vpn-wireguard-wg.sh
 interval = 5
 content-font = 5
 content-padding = 2
-format-prefix = "VPN: "
+format-prefix-foreground = ${colors.red}
+format-prefix = " "
+format-underline   = ${colors.red}
 click-left = ~/.config/i3/scripts/vpn-wireguard-wg.sh --toggle &
 
+
+###########################################################
+####### public IP           ###############################
+###########################################################
+
+[module/network-publicip]
+type = custom/script
+exec = ~/.config/i3/scripts/info-publicip.sh
+interval = 60
 
 
 [module/date]
@@ -258,10 +268,8 @@ format-padding = 3
 format-underline = ${colors.orange}
 format-foreground = ${colors.orange}
 interval = 20
-
 label = %date%, %time%
 label-font = 1
-
 label-foreground = ${colors.yellow}
 
 [module/appfilemanager]
@@ -279,10 +287,8 @@ content-padding = 2
 click-left = "~/.config/i3/scripts/picomStatus.sh --toggle> /dev/null 2>&1 &"
 format = <label>
 format-prefix=" Picom "
-#label = %output%
 exec = ~/.config/i3/scripts/picomStatus.sh
 interval = 5
-
 
 [module/xkillapp]
 type = custom/text
@@ -292,13 +298,11 @@ content = "💀"
 format-font = 6
 click-left = sleep 0.5 && xkill > /dev/null 2>&1 &
 
-
 [module/kernel]
 type = custom/script
 exec = uname -r
 tail = false
 interval = 1024
-
 format-foreground = ${colors.white}
 format-background = ${colors.base00}
 format-prefix = "  "
@@ -337,13 +341,10 @@ format-foreground = ${colors.white}
 format-background = ${colors.base00}
 format-prefix-foreground = ${colors.cyan2}
 ;format-underline = ${colors.menucol-red}
-
 format-prefix = 
 ;format-prefix-foreground = ${colors.menucol-red}
-
 label = " %percentage%"
 label-font = 1
-
 
 [module/memory]
 type = internal/memory
