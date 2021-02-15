@@ -3,7 +3,8 @@ Description=Run Restic backup
 
 [Timer]
 OnBootSec=120s
-OnCalendar=00/1:00
+OnCalendar=00/2:00
+#OnCalendar=00/1:00
 Unit=restic.service
 
 [Install]

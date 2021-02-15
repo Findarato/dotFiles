@@ -467,10 +467,10 @@ client.background       $base07
 
 
 #exec $ni picom -b --experimental-backends
-exec $ni picom -b
+#exec $ni picom -b
 
 exec $ni firefox
- exec $ni /usr/bin/flameshot
+exec $ni /usr/bin/flameshot
 exec $ni i3-msg $ws7; exec $term -e tuir
 
 
