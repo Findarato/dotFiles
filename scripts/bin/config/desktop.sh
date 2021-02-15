@@ -17,5 +17,5 @@ DAYS=30
 WEEKS=4
 MONTHS=12
 
-RUNBEFORE=""
-RUNAFTER=""
+RUNBEFORE="systemctl --user stop psd"
+RUNAFTER="systemctl --user start psd"
