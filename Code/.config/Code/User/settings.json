@@ -68,5 +68,7 @@
     "extensions.ignoreRecommendations": false,
     "blade.format.enable": true,
     "git.enableSmartCommit": true,
+    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
+    "namespaceResolver.highlightOnOpen": true,
     
 }
