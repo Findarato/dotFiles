@@ -63,7 +63,6 @@ compositing-overline   = over
 ;compositing-underline  = out
 pseudo-transparency    = true
 screenchange-reload    = true
-throttle-input-for     = 30
 throttle-output        = 5
 throttle-output-for    = 10
 
