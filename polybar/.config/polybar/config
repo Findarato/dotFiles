@@ -175,7 +175,7 @@ wm-restack      = i3
 tray-position   = right
 modules-left    = i3 appfilemanager xkillapp picomToggle
 modules-center  =
-modules-right   = network-publicip vpn-wireguard-wg weather cpu memory date
+modules-right   = kernel network-publicip vpn-wireguard-wg weather cpu memory date
 
 [bar/bar2]
 enable-ipc      = true
@@ -301,7 +301,7 @@ click-left = sleep 0.5 && xkill > /dev/null 2>&1 &
 type = custom/script
 exec = uname -r
 tail = false
-interval = 1024
+;interval = 1024
 format-foreground = ${colors.white}
 format-background = ${colors.base00}
 format-prefix = "  "
