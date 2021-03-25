@@ -127,24 +127,6 @@ key_bindings:
   - { key: F11,      mods: Shift,   chars: "\x1b[23;2~"                      }
   - { key: F12,      mods: Shift,   chars: "\x1b[24;2~"                      }
 
-# # Colors (Dracula)
-# colors:
-#   # Default colors
-#   primary:
-#     background: '0x282a36'
-#     foreground: '0xf8f8f2'
-
-#   # Normal colors
-#   normal:
-#     black:   '0x000000'
-#     red:     '0xff5555'
-#     green:   '0x50fa7b'
-#     yellow:  '0xf1fa8c'
-#     blue:    '0xcaa9fa'
-#     magenta: '0xff79c6'
-#     cyan:    '0x8be9fd'
-#     white:   '0xbfbfbf'
-
 #   # Bright colors
 #   bright:
 #     black:   '0x575b70'
@@ -200,3 +182,8 @@ colors:
     - { index:    19, color: '#49483e' }
     - { index:    20, color: '#a59f85' }
     - { index:    21, color: '#f5f4f1' }
+
+import:
+  - $HOME/.config/alacritty/dracula.yml
+
+
