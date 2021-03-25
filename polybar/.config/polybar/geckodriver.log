@@ -14371,3 +14371,18 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 (/usr/lib64/firefox/firefox:75061): GLib-GObject-CRITICAL **: 09:47:44.280: g_object_set: assertion 'G_IS_OBJECT (object)' failed
 JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
 1616683665689	Marionette	INFO	Stopped listening on port 45911
+1616683766183	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiledEdAbY"
+*** You are running in headless mode.
+
+(/usr/lib64/firefox/firefox:76343): GLib-GObject-CRITICAL **: 09:49:26.873: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib64/firefox/firefox:76364): GLib-GObject-CRITICAL **: 09:49:26.998: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:76442): GLib-GObject-CRITICAL **: 09:49:27.623: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1616683767838	Marionette	INFO	Listening on port 42461
+1616683767903	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib64/firefox/firefox:76487): GLib-GObject-CRITICAL **: 09:49:27.924: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1616683769276	Marionette	INFO	Stopped listening on port 42461
