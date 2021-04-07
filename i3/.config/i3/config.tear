@@ -30,6 +30,9 @@ for_window [class="Gnome-flashback" title="Desktop"] move scratchpad
 
 for_window [class="Syncthing GTK" title="Syncthing-GTK"] floating enable, move scratchpad
 
+for_window [class="Alacritty" instance="SystemUpdate"] floating enable, move position center
+
+
 
 ### Workplace 1
 #workspace $ws1 gaps outer 0
