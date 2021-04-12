@@ -28,7 +28,7 @@ case $chosen in
         ;;
     $lock)
         #i3lock\
-        dbus-send --type=method_call --dest=org.gnome.ScreenSaver /org/gnome/ScreenSaver org.gnome.ScreenSaver.Lock
+        ~/.config/i3/scripts/lockscreen.sh
         ;;
     $suspend)
         mpc -q pause
