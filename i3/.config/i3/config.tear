@@ -30,6 +30,9 @@ for_window [class="Gnome-flashback" title="Desktop"] move scratchpad
 
 for_window [class="Syncthing GTK" title="Syncthing-GTK"] floating enable, move scratchpad
 
+for_window [class="Alacritty" instance="SystemUpdate"] floating enable, move position center
+
+
 
 ### Workplace 1
 #workspace $ws1 gaps outer 0
@@ -120,7 +123,8 @@ for_window [title="pulsemixer"] floating enable
 set $mod Mod4
 #set $lock "~/.config/i3/scripts/betterlockscreen -l -u ~/Pictures/tapet"
 
-set $lock dbus-send --type=method_call --dest=org.gnome.ScreenSaver /org/gnome/ScreenSaver org.gnome.ScreenSaver.Lock
+#set $lock dbus-send --type=method_call --dest=org.gnome.ScreenSaver /org/gnome/ScreenSaver org.gnome.ScreenSaver.Lock
+set $lock ~/.config/i3/scripts/lockscreen.sh
 
 # Setup Monitor layout
 
