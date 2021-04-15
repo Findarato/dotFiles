@@ -50,7 +50,7 @@
         "**/tmp": true,
     },
     "[yaml]": {
-        "editor.autoIndent": false
+        "editor.autoIndent": "none"
     },
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
@@ -61,18 +61,22 @@
     "editor.fontFamily": "'Fira Code','Fira Mono','Droid Sans Mono', monospace,'monospace', 'Droid Sans Fallback', 'Noto Color Emoji'",
     "markdown.extension.tableFormatter.normalizeIndentation": true,
     "intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": true,
-    "workbench.iconTheme": "vscode-icons",
+    "workbench.iconTheme": "eq-material-theme-icons",
     "workbench.colorTheme": "Dracula",
     "extensions.ignoreRecommendations": false,
-    "blade.format.enable": true,
     "git.enableSmartCommit": true,
     "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
     "namespaceResolver.highlightOnOpen": true,
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
+    "bracketPairColorizer.activeScopeCSS": [
+        "borderStyle : solid",
+        "borderWidth : 1px",
+        "borderColor : {color}; opacity: 0.5"
     ],
-    
+    "[blade]": {
+        "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+    },
+    "blade.format.enable": true,
+    // "bladeFormatter.format.wrapAttributes": "preserve-aligned",
+    "bladeFormatter.format.wrapLineLength": 9999,
+    "bladeFormatter.format.wrapAttributes": "force-expand-multiline",
 }
