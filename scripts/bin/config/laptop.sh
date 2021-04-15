@@ -16,5 +16,5 @@ WEEKS=1
 MONTHS=12
 
 # Run After
-RUNBEFORE="echo 'mounting Box';/usr/bin/rclone mount Box:/backup/laptop /mnt/box --daemon;sleep 20"
+RUNBEFORE="echo 'mounting Box';/usr/bin/rclone mount Box:/backup/laptop /mnt/box --daemon --allow-non-empty;sleep 20"
 RUNAFTER="echo 'unmounting Box';sleep 60;fusermount -u /mnt/box"
