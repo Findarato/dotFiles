@@ -10,13 +10,23 @@ dnf remove $(dnf repoquery --installonly --latest-limit=-2 -q)
 
 #Update and clean up dnf
 #dnf clean all
-dnf upgrade --skip-broken --best --allowerasing -y;
+dnf upgrade --refresh --skip-broken --best --allowerasing -y;
 
 dnf distro-sync --skip-broken --best --allowerasing -y;
+
+sudo dnf autoremove
 #dnf clean all;
 
 # Update and Clean up Flatpak
 #sudo su -c "flatpak update -y" jharry;
+
+
+sudo fwupdmgr get-devices
+
+sudo fwupdmgr refresh --force
+
+sudo fwupdmgr get-updates
+sudo fwupdmgr update
 
 rm -rf /var/tmp/flatpak-cache-*
 
