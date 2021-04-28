@@ -1,0 +1,12 @@
+[Unit]
+Description=Full Backup before Shutdown
+DefaultDependencies=no
+After=final.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/joe/bin/Backup.sh desktop
+
+[Install]
+WantedBy=final.target
+
