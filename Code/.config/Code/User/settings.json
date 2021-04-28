@@ -79,4 +79,10 @@
     // "bladeFormatter.format.wrapAttributes": "preserve-aligned",
     "bladeFormatter.format.wrapLineLength": 9999,
     "bladeFormatter.format.wrapAttributes": "force-expand-multiline",
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
 }
