@@ -108,9 +108,12 @@ alias fixFonts="fc-cache -f -v"
 alias fixSSHkey="ssh-copy-id -i ~/.ssh/ansible.pub"
 alias listenTo='mpv --no-video'
 alias joetop='ssh joetop'
+alias jump='ssh jharry@10.200.6.42'
 alias mpv='mpv --hwdec=cuda'
 
 
+
+alias jump='ssh 10.200.6.42'
 
 alias prd='ssh epicprd1.methnet.org'
 alias prd2='ssh epicprd2.methnet.org'
