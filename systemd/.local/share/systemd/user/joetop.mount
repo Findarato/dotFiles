@@ -1,7 +1,0 @@
-[Unit]
-Description=Mount Joetop
-
-[Mount]
-Where=/mnt/foo
-What=/home/user/foo
-Type=ext4
