@@ -85,4 +85,5 @@
             "filenamePattern": "*.ipynb"
         }
     ],
+    "editor.stickyTabStops": true,
 }

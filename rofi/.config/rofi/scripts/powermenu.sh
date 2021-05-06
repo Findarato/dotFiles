@@ -27,8 +27,8 @@ case $chosen in
         systemctl reboot
         ;;
     $lock)
-        #i3lock\
-        ~/.config/i3/scripts/lockscreen.sh
+        i3lock\
+        #~/.config/i3/scripts/lockscreen.sh
         ;;
     $suspend)
         mpc -q pause
