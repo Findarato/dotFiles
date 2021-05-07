@@ -48,6 +48,7 @@ HIST_STAMPS="yyyy-mm-dd"
 
 export PATH="${HOME}/.local/bin:${HOME}/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin:/sbin/"
 export PATH="${PATH}:${HOME}/bin/"
+export PATH="${PATH}:${HOME}.cargo/bin/"
 export PATH="${PATH}:/usr/local/bin/"
 
 # ssh
