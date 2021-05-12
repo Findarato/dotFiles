@@ -27,7 +27,7 @@ case $chosen in
         systemctl reboot
         ;;
     $lock)
-        i3lock\
+        ~/.config/i3/scripts/betterlockscreen -l -u ~/Pictures/tapet
         #~/.config/i3/scripts/lockscreen.sh
         ;;
     $suspend)
