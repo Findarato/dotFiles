@@ -86,4 +86,6 @@
         }
     ],
     "editor.stickyTabStops": true,
+    "markdown-checkbox.strikeThroughWhenChecked": false,
+    "insertDateString.format": "YYYY-MM-DD",
 }
