@@ -40,10 +40,6 @@
         "**/node_modules": true,
         "**/tmp": true,
     },
-    "[yaml]": {
-    
-        "editor.autoIndent": "none"
-    },
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "window.zoomLevel": 0,
