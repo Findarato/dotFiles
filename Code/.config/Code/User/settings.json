@@ -2,8 +2,6 @@
     "[php]": {
         "editor.defaultFormatter": "kokororin.vscode-phpfmt"
     },
-    "ansible.azureRestSpec": "/home/jharry/.vscode/rest",
-    "ansible.credentialsConfigured": true,
     "editor.cursorBlinking": "solid",
     "editor.cursorWidth": 5,
     "editor.fontLigatures": true,
@@ -21,13 +19,6 @@
     "terminal.integrated.fontSize": 15,
     "window.title": "${activeEditorLong}",
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorCustomizations": {
-        // "activityBar.background": "#021e45",
-        // "statusBar.background": "#021e45",
-        // "statusBar.foreground": "#e0e0e0",
-        // "editorLineNumber.foreground": "#d1d1d1",
-        // "editorOverviewRuler.errorForeground": "#fff"
-    },
     "files.exclude": {
         "**/__pycache__": true,
         "**/_site": true,
@@ -50,6 +41,7 @@
         "**/tmp": true,
     },
     "[yaml]": {
+    
         "editor.autoIndent": "none"
     },
     "explorer.confirmDelete": false,
