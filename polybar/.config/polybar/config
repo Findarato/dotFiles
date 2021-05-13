@@ -24,22 +24,40 @@ menucol-pink      = #FF77BF
 menucol-deepblue  = #6560FF
 menucol-lightblue = #60FFF7
 
-base00           = #272822
-base01           = #383830
-base02           = #49483e
-base03           = #75715e
-base04           = #a59f85
-base05           = #f8f8f2
-base06           = #f5f4f1
-base07           = #f9f8f5
-base08           = #f92672
-base09           = #fd971f
-base0A           = #f4bf75
-base0B           = #a6e22e
-base0C           = #a1efe4
-base0D           = #66d9ef
-base0E           = #ae81ff
-base0F           = #cc6633
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+base00           = #000000
+base01           = #FF5454
+base02           = #50FA7B
+base03           = #F1FA8C
+base04           = #BD93F9
+base05           = #FF79C6
+base06           = #8BE8FD
+base07           = #BFBFBF
+base08           = #4D4D4D
+base09           = #FF6E67
+base0A           = #5AF78D
+base0B           = #F4F99D
+base0C           = #CAA8FA
+base0D           = #FF92D0
+base0E           = #9AEDFE
+base0F           = #E6E6E6
 
 background = ${colors.base00}
 foreground = ${colors.base05}
