@@ -128,4 +128,4 @@ key_bindings:
   - { key: F12,      mods: Shift,   chars: "\x1b[24;2~"                      }
 
 import:
-  - ${HOME}/.config/alacritty/dracula.yml
+  - /home/joe/.config/alacritty/dracula.yml
