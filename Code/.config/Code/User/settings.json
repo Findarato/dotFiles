@@ -76,4 +76,8 @@
     "editor.stickyTabStops": true,
     "markdown-checkbox.strikeThroughWhenChecked": false,
     "insertDateString.format": "YYYY-MM-DD",
+    "redhat.telemetry.enabled": true,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
 }
