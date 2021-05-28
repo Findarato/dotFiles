@@ -59,3 +59,57 @@ JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).
 1595871890544	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
 1595871892616	Marionette	INFO	Stopped listening on port 40819
+1622119683857	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilebx90cF"
+*** You are running in headless mode.
+1622119684997	Marionette	INFO	Marionette enabled
+
+(/usr/lib64/firefox/firefox:3616): GLib-GObject-CRITICAL **: 07:48:06.123: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib64/firefox/firefox:3643): GLib-GObject-CRITICAL **: 07:48:06.233: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:3878): GLib-GObject-CRITICAL **: 07:48:07.296: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1622119687604	Marionette	INFO	Listening on port 43199
+
+(/usr/lib64/firefox/firefox:4026): GLib-GObject-CRITICAL **: 07:48:07.615: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1622119687705	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1622119689285	Marionette	INFO	Stopped listening on port 43199
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1622119982010	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileNcQAnx"
+*** You are running in headless mode.
+1622119982261	Marionette	INFO	Marionette enabled
+
+(/usr/lib64/firefox/firefox:8783): GLib-GObject-CRITICAL **: 07:53:02.629: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib64/firefox/firefox:8803): GLib-GObject-CRITICAL **: 07:53:02.734: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:8884): GLib-GObject-CRITICAL **: 07:53:03.258: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1622119983393	Marionette	INFO	Listening on port 39467
+1622119983425	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib64/firefox/firefox:8932): GLib-GObject-CRITICAL **: 07:53:03.635: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1622119985104	Marionette	INFO	Stopped listening on port 39467
+1622120108361	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilefnHDr9"
+*** You are running in headless mode.
+1622120108728	Marionette	INFO	Marionette enabled
+
+(/usr/lib64/firefox/firefox:12220): GLib-GObject-CRITICAL **: 07:55:09.329: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib64/firefox/firefox:12307): GLib-GObject-CRITICAL **: 07:55:09.533: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib64/firefox/firefox:12579): GLib-GObject-CRITICAL **: 07:55:10.198: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1622120110478	Marionette	INFO	Listening on port 42493
+
+(/usr/lib64/firefox/firefox:12689): GLib-GObject-CRITICAL **: 07:55:10.495: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1622120110504	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://start.fedoraproject.org/, line 292: TypeError: $(...).uls is not a function
+1622120112131	Marionette	INFO	Stopped listening on port 42493
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
