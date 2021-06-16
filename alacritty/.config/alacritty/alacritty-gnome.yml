@@ -20,4 +20,4 @@ font:
 
   # Window class (Linux only):
   class: Alacritty
-
+background_opacity: .95

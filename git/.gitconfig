@@ -24,3 +24,5 @@
 	program = /usr/bin/gpg
 [pull]
 	rebase = false
+[init]
+	defaultBrach = main
