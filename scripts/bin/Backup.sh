@@ -25,6 +25,7 @@ fi
 
 "${RESTIC}" -r "${BACKUP_LOCATION}" unlock  # Unlock repo
 
+"${RESTIC}" -r "${BACKUP_LOCATION}" rebuild-index # Cleanup
 
 "${RESTIC}" -r "${BACKUP_LOCATION}" prune # Cleanup
 

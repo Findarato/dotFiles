@@ -55,3 +55,10 @@ ${HOME}/.config/Code/logs/*
 # Exclude Evolution
 ${HOME}/.config/evolution
 ${HOME}/.local/share/evolution
+${HOME}/.minecraft
+${HOME}/.cargo
+${HOME}/.gradle
+${HOME}/.local/lib/python3.9/
+${HOME}/.local/lib/python3*
+${HOME}/.local/share/gnome-boxes/
+${HOME}/.nv/
