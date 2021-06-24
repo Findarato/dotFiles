@@ -207,7 +207,7 @@ typing-extensions==3.10.0.0
 tzlocal==2.1
 Unidecode==1.2.0
 uritemplate==3.0.1
-urllib3==1.26.4
+urllib3==1.26.5
 usb==0.0.83.dev0
 uvicorn==0.13.4
 variety==0.8.5
