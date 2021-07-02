@@ -1,0 +1,9 @@
+[Unit]
+Description=Run Full Restic backup
+
+[Timer]
+OnBootSec=20s
+Unit=restic_full.service
+
+[Install]
+WantedBy=timers.target
