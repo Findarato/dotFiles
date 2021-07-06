@@ -38,8 +38,8 @@ echo "██████╔╝██║  ██║╚██████╗██
 echo "╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝  ╚═════╝ ╚═╝     ";
 echo "$(tput sgr0)"
 
-"${RESTIC}" -r "${BACKUP_LOCATION}" backup "${HOME}"  --tag 🌜 --tag nightly --exclude-file="${EXCLUDE_FILE}"
-
+#"${RESTIC}" -r "${BACKUP_LOCATION}" backup "${HOME}"  --tag 🌞 --tag Daily --exclude-file="${EXCLUDE_FILE}"
+"${RESTIC}" -r "${BACKUP_LOCATION}" backup "${HOME}" --exclude-file="${EXCLUDE_FILE}"
 
 echo "$(tput setaf 2)"
 echo " ██████╗██╗  ██╗███████╗ ██████╗██╗  ██╗██╗███╗   ██╗ ██████╗ ";
@@ -67,7 +67,7 @@ echo "╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═
 echo "$(tput sgr0)"
 
 # Whole Home folder
-"${RESTIC}" -r "${BACKUP_LOCATION}" forget --keep-daily "${DAYS}" --keep-weekly "${WEEKS}" --keep-monthly "${MONTHS}"
+"${RESTIC}" -r "${BACKUP_LOCATION}" forget --keep-hourly "${HOURS}" --keep-daily "${DAYS}" --keep-weekly "${WEEKS}" --keep-monthly "${MONTHS}"
 
 "${RESTIC}" -r "${BACKUP_LOCATION}" prune # Cleanup
 
