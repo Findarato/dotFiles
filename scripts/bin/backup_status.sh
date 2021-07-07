@@ -6,8 +6,8 @@ else
     if [ -f "${HOME}/bin/config/${1}.sh" ];then
         source "${HOME}/bin/config/${1}.sh"
     else
-        echo "Unable to load config file"
-	    notify-send "Error" "Unable to load config file"
+        echo "Unable to load config file ${1}"
+	      notify-send "Error" "Unable to load config file"
 
         exit;
     fi
