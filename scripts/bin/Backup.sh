@@ -38,8 +38,8 @@ echo "██████╔╝██║  ██║╚██████╗██
 echo "╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝  ╚═════╝ ╚═╝     ";
 echo "$(tput sgr0)"
 
-#"${RESTIC}" -r "${BACKUP_LOCATION}" backup "${HOME}"  --tag 🌞 --tag Daily --exclude-file="${EXCLUDE_FILE}"
-"${RESTIC}" -r "${BACKUP_LOCATION}" backup "${HOME}" --exclude-file="${EXCLUDE_FILE}"
+"${RESTIC}" -r "${BACKUP_LOCATION}" backup "${HOME}"  --tag 🌞 --tag Full --exclude-file="${EXCLUDE_FILE}"
+#"${RESTIC}" -r "${BACKUP_LOCATION}" backup "${HOME}" --exclude-file="${EXCLUDE_FILE}"
 
 echo "$(tput setaf 2)"
 echo " ██████╗██╗  ██╗███████╗ ██████╗██╗  ██╗██╗███╗   ██╗ ██████╗ ";
