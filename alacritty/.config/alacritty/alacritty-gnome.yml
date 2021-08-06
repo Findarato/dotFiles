@@ -1,6 +1,5 @@
 import:
   - /home/joe/.config/alacritty/dracula.yml
-  - /home/joe/.config/alacritty/alacritty.yml
 
 env:
   TERM: xterm-256color
@@ -22,3 +21,4 @@ font:
   # Window class (Linux only):
   class: Alacritty
 background_opacity: .90
+

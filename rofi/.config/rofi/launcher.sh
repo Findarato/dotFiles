@@ -15,5 +15,6 @@
 # style_normal_rainbow_sidebar
 
 style="style_normal_grid_round"
+style="style_normal"
 
 rofi -no-lazy-grab -show drun -theme launchers/"$style".rasi
