@@ -17,7 +17,7 @@ export AWS_SECRET_ACCESS_KEY=$(pass computer/blacktower/s3AccessSecret)
 RESTIC=/usr/bin/restic
 
 #Retention settings
-HOURS=12
+HOURS=24
 DAYS=30
 WEEKS=4
 MONTHS=1
