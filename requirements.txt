@@ -54,7 +54,7 @@ filelock==3.0.12
 Flask==2.0.0
 fros==1.1
 future==0.18.2
-Glances==3.1.7
+Glances==3.2.1
 google-api-core==1.26.3
 google-api-python-client==2.3.0
 google-auth==1.30.0
