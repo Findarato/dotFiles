@@ -19,6 +19,10 @@ alias pu="./vendor/bin/phpunit"
 
 alias lo='libreoffice'
 
+alias bbTest='sudo badblocks -b 4096 -wsv'
+
+
+
 
 #Web stuff
 alias a='atom .'
