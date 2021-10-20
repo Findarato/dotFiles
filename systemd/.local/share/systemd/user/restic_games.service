@@ -1,0 +1,14 @@
+[Unit]
+Description=Backup Games with Restic
+
+[Service]
+Type=oneshot
+ExecStart=/home/joe/bin/backup_hourly.sh desktop_games
+
+# Hardening
+SystemCallArchitectures=native
+MemoryDenyWriteExecute=true
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target

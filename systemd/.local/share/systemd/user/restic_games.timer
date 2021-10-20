@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Restic Games backup
+
+[Timer]
+OnBootSec=20s
+OnCalendar=00/1:00
+#OnCalendar=00/1:00
+Unit=restic_games.service
+
+[Install]
+WantedBy=timers.target
