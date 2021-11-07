@@ -21,6 +21,8 @@ alias lo='libreoffice'
 
 alias bbTest='sudo badblocks -b 4096 -wsv'
 
+#gedit bad
+alias gedit='leafpad'
 
 
 
