@@ -38,8 +38,18 @@ echo "██████╔╝██║  ██║╚██████╗██
 echo "╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝  ╚═════╝ ╚═╝     ";
 echo "$(tput sgr0)"
 #notify-send "Backing Up" "Restic backup running"
-#${RESTIC} -r ${BACKUP_LOCATION} backup ${HOME} --tag 🕐 --tag hourly_backup --tag cron --exclude-file=${EXCLUDE_FILE}
-${RESTIC} -r ${BACKUP_LOCATION} backup ${HOME} --tag 🕐 --tag hourly --exclude-file=${EXCLUDE_FILE}
+
+${RESTIC} -r ${BACKUP_LOCATION} backup ${BACKUP_SRC} --tag 🕐 --tag hourly --exclude-file=${EXCLUDE_FILE}
+
+
+#${RESTIC} -r ${BACKUP_LOCATION} backup ${HOME} --tag hourly --exclude-file=${EXCLUDE_FILE}
+#${RESTIC} -r ${BACKUP_LOCATION} backup ${HOME} --exclude-file=${EXCLUDE_FILE}
 #notify-send "Backing Up" "Restic backup ended"
+
+# Whole Home folder
+"${RESTIC}" -r "${BACKUP_LOCATION}" forget --keep-hourly "${HOURS}" --keep-daily "${DAYS}" --keep-weekly "${WEEKS}" --keep-monthly "${MONTHS}"
+
+"${RESTIC}" -r "${BACKUP_LOCATION}" prune # Cleanup
+
 
 eval ${RUNAFTER}

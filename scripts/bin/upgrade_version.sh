@@ -6,6 +6,6 @@ sudo dnf upgrade -y --refresh
 
 sudo dnf install -y dnf-plugin-system-upgrade
 
-sudo dnf system-upgrade download -y --releasever="${VERSION}" --allowerasing
+sudo dnf system-upgrade download  --releasever="${VERSION}" --allowerasing
 
 #sudo dnf system-upgrade reboot

@@ -13,7 +13,7 @@ font:
   size: 12
   # Spread additional padding evenly around the terminal content.
   dynamic_padding: true
-  decorations: full
+  decorations: none
   startup_mode: Windowed
 
   # Window class (Linux only):

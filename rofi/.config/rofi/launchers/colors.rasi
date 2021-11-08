@@ -19,5 +19,6 @@
  *
  */
 
-@import "../themes/colorschemes/Monokai.rasi"
+#@import "../themes/colorschemes/Monokai.rasi"
 @import "../themes/colorschemes/arc-dark.rasi"
+@import "../themes/colorschemes/dracula.rasi"

@@ -3,8 +3,8 @@ alias gs="git status"
 alias ga="git add --all"
 alias gc="git commit -s -S"
 alias gca="git commit -s -S --amend"
-alias gp="git pull"
-alias gpp="git pull --recurse-submodules; git push; git push --tags"
+alias gp="git pull; git submodule update --remote"
+alias gpp="git pull; git submodule update --remote; git push; git push --tags"
 alias gl="git log --pretty=full --graph --decorate=full"
 alias ssh-copy-id="ssh-copy-id -o PreferredAuthentications=password"
 alias sshp="ssh -o PreferredAuthentications=password"
@@ -18,6 +18,12 @@ alias pa="php artisan"
 alias pu="./vendor/bin/phpunit"
 
 alias lo='libreoffice'
+
+alias bbTest='sudo badblocks -b 4096 -wsv'
+
+#gedit bad
+alias gedit='leafpad'
+
 
 
 #Web stuff
@@ -34,10 +40,10 @@ alias sudo='sudo -H'
 alias dirs='dirs -v'
 #alias ls='ls -la'
 
-EXA=$(which exa)
 
-if [ $? -eq 0 ] ;then
-    alias ls='exa -la --color=always --group-directories-first --group'
+if ! command -v exa &> /dev/null
+then
+    alias ls='exa -la --group-directories-first --icons --color-scale --group'
 else
     alias ls='ls --classify --tabsize=0 --group-directories-first --literal --color=auto --show-control-chars --human-readable'
 fi
@@ -110,6 +116,9 @@ alias fixSSHkey="ssh-copy-id -i ~/.ssh/ansible.pub"
 alias listenTo='mpv --no-video'
 alias joetop='ssh joetop'
 alias jump='ssh jharry@10.200.6.42'
+alias laraplex='cd /mnt/laraplex'
+
+
 #alias mpv='mpv --hwdec=cuda'
 
 

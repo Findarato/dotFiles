@@ -7,4 +7,4 @@ printf "\n"
 
 printf "icanhazip.com\n"
 curl -s https://icanhazip.com -4
-#curl -s https://icanhazip.com -6
+curl -s https://icanhazip.com -6

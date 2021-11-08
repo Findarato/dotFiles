@@ -18,7 +18,6 @@ stow rofi
 stow irssi
 stow nano
 stow starship
-stow variety
 stow dunst
 stow Code
 stow systemd
