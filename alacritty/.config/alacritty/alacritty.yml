@@ -23,7 +23,7 @@ font:
   size: 11
   normal:
     Default:
-      family: monospace
+      family: "Hack Nerd Font"
       size: 11.0
   offset:
     x: 0
