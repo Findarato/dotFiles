@@ -20,7 +20,6 @@ scrolling:
   history: 10000
   multiplier: 3
 font:
-  size: 11
   normal:
     Default:
       family: "Hack Nerd Font"
@@ -32,8 +31,10 @@ font:
     x: 0
     y: 0
   use_thin_strokes: true
+  size: 11
 draw_bold_text_with_bright_colors: true
 background_opacity: .90
+
 mouse_bindings:
   - { mouse: Middle, action: PasteSelection }
 mouse:
