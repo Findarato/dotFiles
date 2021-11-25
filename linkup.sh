@@ -23,3 +23,4 @@ stow Code
 stow systemd
 # stow wal
 stow compton
+stow alacritty
