@@ -37,7 +37,7 @@ export UPDATE_ZSH_DAYS=7
 source "${HOME}/.aliases"
 
 # Set some PL9k/10k values
-source "${HOME}/.powerlevel10k"
+# source "${HOME}/.powerlevel10k"
 
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
@@ -101,14 +101,10 @@ if [ -d "${HOME}/.config/composer/vendor/bin" ]; then
     PATH="${PATH}:${HOME}/.config/composer/vendor/bin"
 fi
 
-
-
 # Add support for qt4
 if [ -d "/usr/lib64/qt4/bin" ]; then
     PATH="${PATH}:/usr/lib64/qt4/bin/"
 fi
-
-
 
 DEFAULT_USER=${USER}
 
@@ -162,23 +158,17 @@ setopt share_history            # Share history between multiple shells
 # Zplugins
 
 if [[ ${ZSH_VERSION} > 5.1.0 ]]; then
-  # Newer Zsh version
-  zplug romkatv/powerlevel10k, as:theme, depth:1
+    # Newer Zsh version
+    zplug romkatv/powerlevel10k, as:theme, depth:1
 else
-  # Should only be needed on CentOS7 and Debian > 10
-  zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme
+    # Should only be needed on CentOS7 and Debian > 10
+    zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme
 fi
-
-
 
 zplug "tamcore/autoupdate-oh-my-zsh-plugins", from:github
 zplug "zsh-users/zsh-syntax-highlighting", from:github, defer:3
 zplug "chrissicool/zsh-256color", from:github
-zplug "lib/completion", from:oh-my-zsh
 zplug "plugins/zsh_reload", from:oh-my-zsh
-#zplug "plugins/git", from:oh-my-zsh
-#zplug "plugins/git-flow", from:oh-my-zsh
-#zplug "plugins/git-prompt", from:oh-my-zsh
 zplug "plugins/gpg-agent", from:oh-my-zsh
 zplug "plugins/zsh-autosuggestions", from:oh-my-zsh
 zplug "plugins/colorize", from:oh-my-zsh
@@ -187,7 +177,7 @@ zplug "zsh-users/zsh-history-substring-search"
 
 if zplug check "zsh-users/zsh-syntax-highlighting"; then
     typeset -gA ZSH_HIGHLIGHT_STYLES ZSH_HIGHLIGHT_PATTERNS
-
+    
     ZSH_HIGHLIGHT_STYLES[default]='none'
     ZSH_HIGHLIGHT_STYLES[cursor]='fg=yellow'
     ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=red'
@@ -218,9 +208,9 @@ if zplug check "zsh-users/zsh-syntax-highlighting"; then
     ZSH_HIGHLIGHT_STYLES[bracket-level-3]='fg=magenta,bold'
     ZSH_HIGHLIGHT_STYLES[bracket-level-4]='fg=yellow,bold'
     ZSH_HIGHLIGHT_STYLES[assign]='none'
-
+    
     ZSH_HIGHLIGHT_PATTERNS=('rm -rf *' 'fg=white,bold,bg=red')
-
+    
     ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor line)
 fi
 
@@ -245,7 +235,7 @@ export ZSH_PLUGINS_ALIAS_TIPS_TEXT='💡 '
 #source ${ZSH}/oh-my-zsh.sh
 
 settitle() {
-   printf "\033k$1\033\\"
+    printf "\033k$1\033\\"
 }
 
 DISABLE_AUTO_TITLE=true
@@ -257,7 +247,7 @@ unsetopt nomatch
 
 # For Enpass
 export QT_AUTO_SCREEN_SCALE_FACTOR=0
-export QT_SCREEN_SCALE_FACTORS=1 
+export QT_SCREEN_SCALE_FACTORS=1
 
 # Multiple Screen
 # export "QT_SCREEN_SCALE_FACTORS=1;1"
@@ -269,3 +259,6 @@ if [ -d "~/.cache/wal" ]; then
 fi
 
 #/usr/local/bin/cbonsai -p
+
+
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
