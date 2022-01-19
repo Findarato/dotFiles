@@ -12,7 +12,7 @@ alias pushall="git remote | xargs -L1 git push --all"
 alias na='git reset --hard;git clean -df;'
 alias updateAll="git submodule update --recursive --remote"
 
-# I know I am bad
+# Laravel Quick commands
 alias mfs="php artisan migrate:fresh --seed"
 alias pa="php artisan"
 alias pu="./vendor/bin/phpunit"
@@ -23,8 +23,6 @@ alias bbTest='sudo badblocks -b 4096 -wsv'
 
 #gedit bad
 alias gedit='leafpad'
-
-
 
 #Web stuff
 alias a='atom .'
@@ -40,14 +38,11 @@ alias sudo='sudo -H'
 alias dirs='dirs -v'
 #alias ls='ls -la'
 
+# Lets setup some defaults for LS
+alias ls='ls --classify --tabsize=0 --group-directories-first --literal --color=auto --show-control-chars --human-readable'
 
-if ! command -v ~/.cargo/bin/exa &> /dev/null
-then
-    alias ls='~/.cargo/bin/exa -la --group-directories-first --icons --color-scale --group'
-else
-    alias ls='ls --classify --tabsize=0 --group-directories-first --literal --color=auto --show-control-chars --human-readable'
-fi
-
+# If we have cargo, lets use it
+[[ ! -f ~/.cargo/bin/exa ]] || alias ls='~/.cargo/bin/exa -la --group-directories-first --icons --color-scale --group'
 
 alias la='ls -la'
 alias lsdf='ls -a .*(.)'
