@@ -16,6 +16,7 @@ alias updateAll="git submodule update --recursive --remote"
 alias mfs="php artisan migrate:fresh --seed"
 alias pa="php artisan"
 alias pu="./vendor/bin/phpunit"
+alias pat="php artisan test"
 
 alias lo='libreoffice'
 
