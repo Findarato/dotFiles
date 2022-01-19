@@ -139,7 +139,8 @@
   # POWERLEVEL9K_MODE=compatible, or install the recommended Powerlevel10k font from
   # https://github.com/romkatv/powerlevel10k/#recommended-meslo-nerd-font-patched-for-powerlevel10k
   # and set POWERLEVEL9K_MODE=nerdfont-complete.
-  typeset -g POWERLEVEL9K_MODE=awesome-fontconfig
+  typeset -g POWERLEVEL9K_MODE=nerdfont-complete
+  # typeset -g POWERLEVEL9K_MODE=awesome-fontconfig
 
   # When set to true, icons appear before content on both sides of the prompt. When set
   # to false, icons go after content. If empty or not set, icons go before content in the left
@@ -199,7 +200,7 @@
   fi
 
   #################################[ os_icon: os identifier ]##################################
-  # OS identifier color.
+  # OS identifier color. 
   typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND=
   # Make the icon bold.
   typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION='%B${P9K_CONTENT// }'
@@ -278,7 +279,7 @@
   typeset -g POWERLEVEL9K_DIR_SHOW_WRITABLE=true
   # Show this icon when the current directory is not writable. POWERLEVEL9K_DIR_SHOW_WRITABLE
   # above must be set to true for this parameter to have effect.
-  # typeset -g POWERLEVEL9K_DIR_NOT_WRITABLE_VISUAL_IDENTIFIER_EXPANSION='⭐'
+  typeset -g POWERLEVEL9K_DIR_NOT_WRITABLE_VISUAL_IDENTIFIER_EXPANSION='🔒'
 
   # Custom prefix.
   # typeset -g POWERLEVEL9K_DIR_PREFIX='%fin '
@@ -296,10 +297,10 @@
   #
   # Example:
   #
-  #   typeset -g POWERLEVEL9K_DIR_CLASSES=(
-  #       '~/work(|/*)'  WORK     '(╯°□°）╯︵ ┻━┻'
-  #       '~(|/*)'       HOME     '⌂'
-  #       '*'            DEFAULT  '')
+  # typeset -g POWERLEVEL9K_DIR_CLASSES=(
+  #     '~/work(|/*)'  WORK     '(╯°□°）╯︵ ┻━┻'
+  #     '~(|/*)'       HOME     '⌂'
+  #     '*'            DEFAULT  '')
   #
   # With these settings, the current directory in the prompt may look like this:
   #
