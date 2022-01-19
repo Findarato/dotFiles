@@ -21,9 +21,8 @@ scrolling:
   multiplier: 3
 font:
   normal:
-    Default:
-      family: "MesloLGS NF"
-      size: 11.0
+    family: "MesloLGS NF"
+    size: 11.0
   offset:
     x: 0
     y: 0
