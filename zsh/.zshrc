@@ -175,6 +175,8 @@ zplug "plugins/colorize", from:oh-my-zsh
 zplug "rummik/zsh-tailf"
 zplug "zsh-users/zsh-history-substring-search"
 zplug "lib/completion", from:oh-my-zsh
+zplug "birdhackor/zsh-exa-ls-plugin"
+
 
 if zplug check "zsh-users/zsh-syntax-highlighting"; then
     typeset -gA ZSH_HIGHLIGHT_STYLES ZSH_HIGHLIGHT_PATTERNS

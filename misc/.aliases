@@ -43,7 +43,7 @@ alias dirs='dirs -v'
 alias ls='ls --classify --tabsize=0 --group-directories-first --literal --color=auto --show-control-chars --human-readable'
 
 # If we have cargo, lets use it
-[[ ! -f ~/.cargo/bin/exa ]] || alias ls='~/.cargo/bin/exa -la --group-directories-first --icons --color-scale --group'
+#[[ ! -f ~/.cargo/bin/exa ]] || alias ls='~/.cargo/bin/exa -la --group-directories-first --icons --color-scale --group'
 
 alias la='ls -la'
 alias lsdf='ls -a .*(.)'
