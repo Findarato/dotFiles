@@ -2,13 +2,9 @@
 
 ## Config for home
 USERNAME=joe
-BACKUP_LOCATION="${HOME}"
-
+BACKUP_SRC="${HOME}"
 
 EXCLUDE_FILE="${HOME}/bin/config/resticExcludes.txt"
-#BACKUP_LOCATION=/mnt/tarvalon/home/backup/desktop
-#BACKUP_LOCATION=/mnt/tarvalon/storage/Backup/desktop
-#BACKUP_LOCATION=/mnt/blacktower/backup/joe/desktop
 BACKUP_LOCATION=s3:https://blacktower.telaranrhiod.space:9000/desktop-backup
 
 export RESTIC_PASSWORD=$(pass computer/restic)
@@ -22,7 +18,7 @@ RESTIC=/usr/bin/restic
 HOURS=24
 DAYS=30
 WEEKS=4
-MONTHS=1
+MONTHS=0
 
 RUNBEFORE=""
 RUNAFTER=""

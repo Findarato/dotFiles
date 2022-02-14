@@ -6,7 +6,7 @@ EXCLUDE_FILE="${HOME}/bin/config/resticExcludes.txt"
 # BACKUP_LOCATION=/mnt/home/backup/desktop
 #BACKUP_LOCATION=/mnt/box/
 BACKUP_LOCATION=s3:https://itc-tn-01.methnet.org:9000/joe.backup
-BACKUP_SRC=/home/jharry/
+BACKUP_SRC="${HOME}"
 
 
 export RESTIC_PASSWORD=$(pass computer/restic)
@@ -20,10 +20,6 @@ HOURS=12
 DAYS=30
 WEEKS=1
 MONTHS=12
-
-
-#RUNBEFORE="echo 'mounting Box';rclone mount Box:/backup/desktop /mnt/box --daemon; sleep 20"
-#RUNAFTER="echo 'Unmounting Box';sleep 60;fusermount -u /mnt/box"
 
 RUNBEFORE=""
 RUNAFTER=""

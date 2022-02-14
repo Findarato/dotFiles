@@ -19,58 +19,21 @@ eval ${RUNBEFORE}
 
 echo "$(tput sgr0)"
 
-if [ ! -d "${BACKUP_LOCATION}" ];then
-    "${RESTIC}" init --repo "${BACKUP_LOCATION}"
+if [ ! -d "${BACKUP_SRC}" ];then
+    "${RESTIC}" init --repo "${BACKUP_SRC}"
 fi
 
-"${RESTIC}" -r "${BACKUP_LOCATION}" unlock  # Unlock repo
+"${RESTIC}" -r "${BACKUP_SRC}" unlock  # Unlock repo
 
-"${RESTIC}" -r "${BACKUP_LOCATION}" rebuild-index # Cleanup
+"${RESTIC}" -r "${BACKUP_SRC}" rebuild-index # Cleanup
 
-"${RESTIC}" -r "${BACKUP_LOCATION}" prune # Cleanup
+"${RESTIC}" -r "${BACKUP_SRC}" backup "${HOME}"  --tag 🌞 --tag Full --exclude-file="${EXCLUDE_FILE}"
 
-echo "$(tput setaf 2)"
-echo "██████╗  █████╗  ██████╗██╗  ██╗██╗███╗   ██╗ ██████╗ ██╗   ██╗██████╗ ";
-echo "██╔══██╗██╔══██╗██╔════╝██║ ██╔╝██║████╗  ██║██╔════╝ ██║   ██║██╔══██╗";
-echo "██████╔╝███████║██║     █████╔╝ ██║██╔██╗ ██║██║  ███╗██║   ██║██████╔╝";
-echo "██╔══██╗██╔══██║██║     ██╔═██╗ ██║██║╚██╗██║██║   ██║██║   ██║██╔═══╝ ";
-echo "██████╔╝██║  ██║╚██████╗██║  ██╗██║██║ ╚████║╚██████╔╝╚██████╔╝██║     ";
-echo "╚═════╝ ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝  ╚═════╝ ╚═╝     ";
-echo "$(tput sgr0)"
-
-"${RESTIC}" -r "${BACKUP_LOCATION}" backup "${HOME}"  --tag 🌞 --tag Full --exclude-file="${EXCLUDE_FILE}"
-#"${RESTIC}" -r "${BACKUP_LOCATION}" backup "${HOME}" --exclude-file="${EXCLUDE_FILE}"
-
-echo "$(tput setaf 2)"
-echo " ██████╗██╗  ██╗███████╗ ██████╗██╗  ██╗██╗███╗   ██╗ ██████╗ ";
-echo "██╔════╝██║  ██║██╔════╝██╔════╝██║ ██╔╝██║████╗  ██║██╔════╝ ";
-echo "██║     ███████║█████╗  ██║     █████╔╝ ██║██╔██╗ ██║██║  ███╗";
-echo "██║     ██╔══██║██╔══╝  ██║     ██╔═██╗ ██║██║╚██╗██║██║   ██║";
-echo "╚██████╗██║  ██║███████╗╚██████╗██║  ██╗██║██║ ╚████║╚██████╔╝";
-echo " ╚═════╝╚═╝  ╚═╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ";
-echo "$(tput sgr0)"
-
-"${RESTIC}" -r "${BACKUP_LOCATION}" check --check-unused --read-data
-
-"${RESTIC}" -r "${BACKUP_LOCATION}" check
-
-"${RESTIC}" -r "${BACKUP_LOCATION}" rebuild-index
-
-
-echo "$(tput setaf 2)"
-echo "██████╗ ██████╗ ██╗   ██╗███╗   ██╗███████╗";
-echo "██╔══██╗██╔══██╗██║   ██║████╗  ██║██╔════╝";
-echo "██████╔╝██████╔╝██║   ██║██╔██╗ ██║█████╗  ";
-echo "██╔═══╝ ██╔══██╗██║   ██║██║╚██╗██║██╔══╝  ";
-echo "██║     ██║  ██║╚██████╔╝██║ ╚████║███████╗";
-echo "╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝";
-echo "$(tput sgr0)"
+"${RESTIC}" -r "${BACKUP_SRC}" check --check-unused --read-data
 
 # Whole Home folder
-"${RESTIC}" -r "${BACKUP_LOCATION}" forget --keep-hourly "${HOURS}" --keep-daily "${DAYS}" --keep-weekly "${WEEKS}" --keep-monthly "${MONTHS}"
+"${RESTIC}" -r "${BACKUP_SRC}" forget --keep-hourly "${HOURS}" --keep-daily "${DAYS}" --keep-weekly "${WEEKS}" --keep-monthly "${MONTHS}"
 
-"${RESTIC}" -r "${BACKUP_LOCATION}" prune # Cleanup
-
-
+"${RESTIC}" -r "${BACKUP_SRC}" prune # Cleanup
 
 eval ${RUNAFTER}
