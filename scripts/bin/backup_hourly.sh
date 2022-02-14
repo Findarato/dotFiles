@@ -21,22 +21,23 @@ ${HOME}/bin/cleanCache.sh
 
 echo "$(tput sgr0)"
 
-if [ ! -d ${BACKUP_SRC} ];then
-    ${RESTIC} init --repo ${BACKUP_SRC}
+if [ ! -d ${BACKUP_LOCATION} ];then
+    ${RESTIC} init --repo ${BACKUP_LOCATION}
 fi
 
 ${RESTIC} cache --cleanup
 
-${RESTIC} -r ${BACKUP_SRC} unlock  # Unlock repo
+${RESTIC} -r ${BACKUP_LOCATION} unlock  # Unlock repo
 
-"${RESTIC}" -r "${BACKUP_SRC}" rebuild-index # Cleanup
+"${RESTIC}" -r "${BACKUP_LOCATION}" rebuild-index # Cleanup
 #notify-send "Backing Up" "Restic backup running"
 
-${RESTIC} -r ${BACKUP_SRC} backup ${BACKUP_SRC} --tag 🕐 --exclude-file=${EXCLUDE_FILE}
+${RESTIC} -r ${BACKUP_LOCATION} backup ${BACKUP_SRC} --tag 🕐 --exclude-file=${EXCLUDE_FILE}
 
-# Whole Home folder
-"${RESTIC}" -r "${BACKUP_SRC}" forget --keep-hourly "${HOURS}" --keep-daily "${DAYS}" --keep-weekly "${WEEKS}" --keep-monthly "${MONTHS}"
+# # Whole Home folder
+# "${RESTIC}" -r "${BACKUP_LOCATION}" forget --keep-hourly "${HOURS}" --keep-daily "${DAYS}" --keep-weekly "${WEEKS}" --keep-monthly "${MONTHS}"
 
-"${RESTIC}" -r "${BACKUP_SRC}" prune # Cleanup
+# "${RESTIC}" -r "${BACKUP_LOCATION}" prune # Cleanup
+
 
 eval ${RUNAFTER}
