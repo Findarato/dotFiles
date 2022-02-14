@@ -1,0 +1,10 @@
+[Unit]
+Description=Run Restic backup laptop
+
+[Timer]
+OnBootSec=120s
+OnCalendar=00/1:00
+Unit=restic-work-laptop.service
+
+[Install]
+WantedBy=timers.target
