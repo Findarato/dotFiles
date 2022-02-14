@@ -65,3 +65,4 @@ ${HOME}/.nv/
 
 ${HOME}/.wine
 .wine
+.config/Mailspring/files/
