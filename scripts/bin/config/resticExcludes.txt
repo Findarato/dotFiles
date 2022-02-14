@@ -62,3 +62,6 @@ ${HOME}/.local/lib/python3.9/
 ${HOME}/.local/lib/python3*
 ${HOME}/.local/share/gnome-boxes/
 ${HOME}/.nv/
+
+${HOME}/.wine
+.wine
