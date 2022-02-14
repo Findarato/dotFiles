@@ -6,6 +6,8 @@ BACKUP_SRC="${HOME}"
 
 EXCLUDE_FILE="${HOME}/bin/config/resticExcludes.txt"
 BACKUP_LOCATION=s3:https://blacktower.telaranrhiod.space:9000/desktop-backup
+TAGS="--tag 🕐 --tag desktop"
+
 
 export RESTIC_PASSWORD=$(pass computer/restic)
 export AWS_ACCESS_KEY_ID=$(pass computer/blacktower/s3Access)
