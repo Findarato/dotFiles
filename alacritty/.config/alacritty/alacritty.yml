@@ -23,7 +23,7 @@ font:
   normal:
     Default:
       family: "MesloLGS NF"
-      size: 11.0
+      size: 12.0
   offset:
     x: 0
     y: 0
