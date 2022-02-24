@@ -35,9 +35,8 @@ ${RESTIC} -r ${BACKUP_LOCATION} unlock  # Unlock repo
 ${RESTIC} -r ${BACKUP_LOCATION} backup ${BACKUP_SRC} --tag 🕐 --exclude-file=${EXCLUDE_FILE}
 
 # # Whole Home folder
-# "${RESTIC}" -r "${BACKUP_LOCATION}" forget --keep-hourly "${HOURS}" --keep-daily "${DAYS}" --keep-weekly "${WEEKS}" --keep-monthly "${MONTHS}"
+"${RESTIC}" -r "${BACKUP_LOCATION}" forget --keep-hourly "${HOURS}" --keep-daily "${DAYS}" --keep-weekly "${WEEKS}" --keep-monthly "${MONTHS}"
 
-# "${RESTIC}" -r "${BACKUP_LOCATION}" prune # Cleanup
-
+"${RESTIC}" -r "${BACKUP_LOCATION}" prune # Cleanup
 
 eval ${RUNAFTER}
