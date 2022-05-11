@@ -78,4 +78,7 @@
         "editor.defaultFormatter": "vscode.json-language-features"
     },
     "security.workspace.trust.untrustedFiles": "open",
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
 }

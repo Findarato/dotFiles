@@ -118,6 +118,7 @@ alias laraplex='cd /mnt/laraplex'
 #alias mpv='mpv --hwdec=cuda'
 
 
+alias pvirt='python3 -m venv'
 
 alias jump='ssh 10.200.6.42'
 
