@@ -6,13 +6,16 @@ if [ "$EUID" -ne 0 ]; then
   exit
 fi
 
-dnf remove $(dnf repoquery --installonly --latest-limit=-2 -q)
+#dnf remove $(dnf repoquery --installonly --latest-limit=-2 -q)
 
 #Update and clean up dnf
 #dnf clean all
-dnf upgrade --refresh --skip-broken --best --allowerasing -y;
+#dnf offline-upgrade de --refresh --skip-broken --best --allowerasing -y;
 
-dnf distro-sync --skip-broken --best --allowerasing -y;
+#dnf distro-sync --skip-broken --best --allowerasing -y;
+
+dnf offline-upgrade download
+
 
 sudo dnf autoremove
 #dnf clean all;
@@ -50,6 +53,8 @@ flatpak uninstall --unused -y --user
 #if [$1 -eq "reboot" ]; then
 if [ $(dnf needs-restarting -r) ]; then
   echo "NEEDS Rebooting?"
+  dnf offline-upgrade reboot
+
 #  sudo systemctl start reboot.target
 else
   echo "DOES NOT NEED Rebooting?"
