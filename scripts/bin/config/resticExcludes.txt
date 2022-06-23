@@ -62,7 +62,9 @@ ${HOME}/.local/lib/python3.9/
 ${HOME}/.local/lib/python3*
 ${HOME}/.local/share/gnome-boxes/
 ${HOME}/.nv/
+${HOME}/.phoronix-test-suite
 
 ${HOME}/.wine
 .wine
 .config/Mailspring/files/
+.phoronix-test-suite
