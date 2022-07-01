@@ -23,10 +23,11 @@ alias lo='libreoffice'
 alias bbTest='sudo badblocks -b 4096 -wsv'
 
 #gedit bad
-alias gedit='leafpad'
+alias gedit='gnome-text-editor'
 
 #Web stuff
 alias a='atom .'
+alias c='code'
 alias npmWatch='npm run watch'
 alias mkImage="sudo dd status=progress bs=8M oflag=direct"
 

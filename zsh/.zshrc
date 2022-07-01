@@ -263,3 +263,5 @@ fi
 
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+pokemon-colorscripts -r --no-title
