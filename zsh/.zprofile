@@ -46,3 +46,5 @@ fi
 #chmod 660 /dev/shm/looking-glass
 
 export PATH="$HOME/.cargo/bin:$PATH"
+
+pokemon-colorscripts -r --no-title

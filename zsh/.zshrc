@@ -254,14 +254,5 @@ export QT_SCREEN_SCALE_FACTORS=1
 # export "QT_SCREEN_SCALE_FACTORS=1;1"
 # zprof # bottom of .zshrc
 
-# Wal setup
-if [ -d "~/.cache/wal" ]; then
-    (cat ~/.cache/wal/sequences &)
-fi
-
-#/usr/local/bin/cbonsai -p
-
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-pokemon-colorscripts -r --no-title
