@@ -9,7 +9,8 @@
 [status]
     submoduleSummary = true
 [core]
-    editor = nano
+    #editor = nano
+    editor = "flatpak run --file-forwarding re.sonny.Commit @@"
 [color]
     branch = auto
     diff = auto
