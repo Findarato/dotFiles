@@ -27,3 +27,4 @@
 	rebase = false
 [init]
 	defaultBrach = main
+	defaultBranch = main
