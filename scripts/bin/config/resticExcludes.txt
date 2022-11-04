@@ -65,6 +65,7 @@ ${HOME}/.nv/
 ${HOME}/.phoronix-test-suite
 
 ${HOME}/.wine
+${HOME}/Videos/WIP/*
 .wine
 .config/Mailspring/files/
 .phoronix-test-suite

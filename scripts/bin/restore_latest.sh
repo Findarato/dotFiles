@@ -24,7 +24,7 @@ ${RESTIC} -r ${BACKUP_LOCATION} unlock  # Unlock repo
 
 #${RESTIC} -r ${BACKUP_LOCATION} restore latest --target / --include "/home/jharry/.mozilla"  # Unlock repo
 
-${RESTIC} -r ${BACKUP_LOCATION} restore e02615c8 --target / --include "/home/joe/.config/vivaldi"  # Unlock repo
+${RESTIC} -r ${BACKUP_LOCATION} restore 3f3e74e9 --target / --include "/home/joe/.mozilla"  # Unlock repo
 
 #${RESTIC} -r ${BACKUP_LOCATION} restore 68a67dc0 --target / --include "/home/joe/.config/vivaldi"  # Unlock repo
 
