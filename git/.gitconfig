@@ -6,6 +6,8 @@
 	signingKey = C663DAFF140BE59FCBC3B1BF672E70D2EB06270B
 [fetch]
     prune = true
+[push]
+    autoSetupRemote = true
 [status]
     submoduleSummary = true
 [core]
@@ -27,3 +29,4 @@
 	rebase = false
 [init]
 	defaultBrach = main
+	defaultBranch = main
