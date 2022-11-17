@@ -21,9 +21,9 @@ ${HOME}/bin/cleanCache.sh
 
 echo "$(tput sgr0)"
 
-if [ ! -d ${BACKUP_LOCATION} ];then
-    ${RESTIC} init --repo ${BACKUP_LOCATION}
-fi
+#if [ ! -d ${BACKUP_LOCATION} ];then
+#    ${RESTIC} init --repo ${BACKUP_LOCATION}
+#fi
 
 ${RESTIC} cache --cleanup
 

@@ -13,6 +13,7 @@
 [core]
     #editor = nano
     editor = "flatpak run --file-forwarding re.sonny.Commit @@"
+    hooksPath = ./git_hooks
 [color]
     branch = auto
     diff = auto
