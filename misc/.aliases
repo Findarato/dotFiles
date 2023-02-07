@@ -6,8 +6,7 @@ alias gca="git commit -s -S --amend"
 alias gp="git pull; git submodule update --remote"
 alias gpp="git pull; git submodule update --remote; git push; git push --tags"
 alias gl="git log --pretty=full --graph --decorate=full"
-alias ssh-copy-id="ssh-copy-id -o PreferredAuthentications=password"
-alias sshp="ssh -o PreferredAuthentications=password"
+
 alias pushall="git remote | xargs -L1 git push --all"
 alias na='git reset --hard;git clean -df;'
 alias updateAll="git submodule update --recursive --remote"
@@ -21,6 +20,11 @@ alias pat="php artisan test"
 alias lo='libreoffice'
 
 alias bbTest='sudo badblocks -b 4096 -wsv'
+
+
+# SSH 
+alias ssh-copy-id="ssh-copy-id -o PreferredAuthentications=password"
+alias sshp="ssh -o PreferredAuthentications=password"
 
 #gedit bad
 alias gedit='gnome-text-editor'
@@ -103,6 +107,10 @@ if [ $UID -ne 0 ]; then
     alias update='sudo dnf update -y'
     alias distro-sync='sudo dnf clean all && sudo dnf update -y'
 fi
+
+#
+# DistroBox
+#
 
 # New commands
 

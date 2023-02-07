@@ -48,3 +48,16 @@ fi
 export PATH="$HOME/.cargo/bin:$PATH"
 
 pokemon-colorscripts -r --no-title
+# New environment setting added by SD5 on Mon Nov 21 13:43:36 CST 2022 1.
+# The unmodified version of this file is saved in /home/joe/.zprofile1020715113.
+# Do NOT modify these lines; they are used to uninstall.
+PATH="${PATH}:/opt/Supermicro/SuperDoctor5"
+export PATH
+# End comments by InstallAnywhere on Mon Nov 21 13:43:36 CST 2022 1.
+
+# New environment setting added by SD5 on Mon Nov 21 13:43:37 CST 2022 4.
+# The unmodified version of this file is saved in /home/joe/.zprofile1020715113.
+# Do NOT modify these lines; they are used to uninstall.
+SD5_HOME=/opt/Supermicro/SuperDoctor5/
+export SD5_HOME
+# End comments by InstallAnywhere on Mon Nov 21 13:43:37 CST 2022 4.

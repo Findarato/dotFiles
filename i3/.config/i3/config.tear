@@ -128,7 +128,7 @@ set $lock ~/.config/i3/scripts/lockscreen.sh
 
 # Setup Monitor layout
 
-exec ~/.screenlayout/2Display.sh
+exec ~/.screenlayout/2DisplayRightVerticle.sh*
 
 # Home row direction keys, like vim
 # set $left Left
