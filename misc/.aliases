@@ -17,6 +17,9 @@ alias pa="php artisan"
 alias pu="./vendor/bin/phpunit"
 alias pat="php artisan test"
 
+
+# Libreoffice
+alias libreoffice='flatpak run org.libreoffice.LibreOffice'
 alias lo='libreoffice'
 
 alias bbTest='sudo badblocks -b 4096 -wsv'
@@ -84,6 +87,9 @@ alias cdansible='cd ${HOME}/Documents/src/Ansible'
 alias pp='prettyping --nolegend'
 # alias fastping='ping -c 100 -s.2'
 alias ports='netstat -tulanp'
+
+# Working with work laptop
+alias workansible='cd /mnt/worktop/home/Documents/src/Ansible/'
 
 
 #Safty Nets
