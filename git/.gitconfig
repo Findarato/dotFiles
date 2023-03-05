@@ -11,8 +11,8 @@
 [status]
     submoduleSummary = true
 [core]
-    #editor = nano
-    editor = "flatpak run --file-forwarding re.sonny.Commit @@"
+    editor = nano
+    #editor = "flatpak run --file-forwarding re.sonny.Commit @@"
     hooksPath = ./git_hooks
 [color]
     branch = auto
