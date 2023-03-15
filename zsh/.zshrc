@@ -171,8 +171,6 @@ zplug "plugins/gpg-agent", from:oh-my-zsh
 zplug "plugins/zsh-autosuggestions", from:oh-my-zsh
 zplug "plugins/colorize", from:oh-my-zsh
 zplug "rummik/zsh-tailf"
-zplug "zsh-users/zsh-history-substring-search"
-zplug "lib/completion", from:oh-my-zsh
 zplug "birdhackor/zsh-exa-ls-plugin"
 
 

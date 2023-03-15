@@ -91,6 +91,9 @@ alias ports='netstat -tulanp'
 # Working with work laptop
 alias workansible='cd /mnt/worktop/home/Documents/src/Ansible/'
 
+alias restartD='sudo systemctl daemon-reload'
+
+
 
 #Safty Nets
 
