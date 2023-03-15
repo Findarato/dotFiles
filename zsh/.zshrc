@@ -150,7 +150,6 @@ setopt print_eight_bit
 setopt prompt_subst
 setopt pushd_ignore_dups
 setopt rm_star_wait
-setopt share_history            # Share history between multiple shells
 
 
 # Zplugins
@@ -163,11 +162,9 @@ else
     zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme
 fi
 
-zplug "tamcore/autoupdate-oh-my-zsh-plugins", from:github
-zplug "zsh-users/zsh-syntax-highlighting", from:github, defer:3
-zplug "chrissicool/zsh-256color", from:github
-zplug "plugins/zsh_reload", from:oh-my-zsh
-zplug "plugins/gpg-agent", from:oh-my-zsh
+# zplug "tamcore/autoupdate-oh-my-zsh-plugins", from:github
+# zplug "zsh-users/zsh-syntax-highlighting", from:github, defer:3
+# zplug "chrissicool/zsh-256color", from:github
 zplug "plugins/zsh-autosuggestions", from:oh-my-zsh
 zplug "plugins/colorize", from:oh-my-zsh
 zplug "rummik/zsh-tailf"
@@ -247,10 +244,5 @@ unsetopt nomatch
 # For Enpass
 export QT_AUTO_SCREEN_SCALE_FACTOR=0
 export QT_SCREEN_SCALE_FACTORS=1
-
-# Multiple Screen
-# export "QT_SCREEN_SCALE_FACTORS=1;1"
-# zprof # bottom of .zshrc
-
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

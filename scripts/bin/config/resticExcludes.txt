@@ -20,6 +20,8 @@ ${HOME}/.config/google-chrome-unstable/Default/GPUCache/
 ${HOME}/.config/google-chrome/Default/Local Storage/
 ${HOME}/.config/google-chrome-unstable/Default/Local Storage/
 ${HOME}/.cache/
+${HOME}/.snapshots/
+${HOME}/.snapshots
 
 ${HOME}/.mozilla/firefox/Crash\ Reports
 ${HOME}/.mozilla/firefox/*.default-*/crashes
