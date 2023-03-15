@@ -150,7 +150,6 @@ setopt print_eight_bit
 setopt prompt_subst
 setopt pushd_ignore_dups
 setopt rm_star_wait
-setopt share_history            # Share history between multiple shells
 
 
 # Zplugins
@@ -166,11 +165,8 @@ fi
 zplug "tamcore/autoupdate-oh-my-zsh-plugins", from:github
 zplug "zsh-users/zsh-syntax-highlighting", from:github, defer:3
 zplug "chrissicool/zsh-256color", from:github
-zplug "plugins/zsh_reload", from:oh-my-zsh
-zplug "plugins/gpg-agent", from:oh-my-zsh
 zplug "plugins/zsh-autosuggestions", from:oh-my-zsh
 zplug "plugins/colorize", from:oh-my-zsh
-zplug "rummik/zsh-tailf"
 zplug "zsh-users/zsh-history-substring-search"
 zplug "lib/completion", from:oh-my-zsh
 zplug "birdhackor/zsh-exa-ls-plugin"
