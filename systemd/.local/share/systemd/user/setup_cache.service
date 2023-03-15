@@ -1,0 +1,14 @@
+[Unit]
+Description=Setup Cache for browsers
+
+[Service]
+Type=simple
+ExecStart=%h/bin/setupCache.sh
+
+# Hardening
+SystemCallArchitectures=native
+MemoryDenyWriteExecute=true
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target
