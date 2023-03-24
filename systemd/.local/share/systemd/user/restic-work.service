@@ -11,4 +11,4 @@ MemoryDenyWriteExecute=true
 NoNewPrivileges=true
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
