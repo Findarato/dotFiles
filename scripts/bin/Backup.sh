@@ -19,9 +19,10 @@ eval ${RUNBEFORE}
 
 echo "$(tput sgr0)"
 
-if [ ! -d "${BACKUP_SRC}" ];then
-    "${RESTIC}" init --repo "${BACKUP_SRC}"
-fi
+#if [ "${2}" = "init" ];then
+#    "${RESTIC}" init --repo "${BACKUP_SRC}"
+#fi
+
 
 "${RESTIC}" -r "${BACKUP_SRC}" unlock  # Unlock repo
 
@@ -29,7 +30,7 @@ fi
 
 "${RESTIC}" -r "${BACKUP_SRC}" backup "${HOME}"  --tag 🌞 --tag Full --exclude-file="${EXCLUDE_FILE}"
 
-"${RESTIC}" -r "${BACKUP_SRC}" check --check-unused --read-data
+"${RESTIC}" -r "${BACKUP_SRC}" check --read-data
 
 # Whole Home folder
 "${RESTIC}" -r "${BACKUP_SRC}" forget --keep-hourly "${HOURS}" --keep-daily "${DAYS}" --keep-weekly "${WEEKS}" --keep-monthly "${MONTHS}"

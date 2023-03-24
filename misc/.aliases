@@ -120,6 +120,9 @@ fi
 #
 # DistroBox
 #
+alias db-ansible='distrobox-enter ansible'
+alias dbe='distrobox-enter'
+
 
 # New commands
 
