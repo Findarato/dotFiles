@@ -59,22 +59,22 @@ export EDITOR='nano'
 #    export PATH=~/.npm-global/bin:$PATH
 #fi
 
-DIRPATH="/mnt/cache"
-APPS="${DIRPATH}/${USER}/apps"
-BROWSERS="${DIRPATH}/${USER}/browsers"
+# DIRPATH="/mnt/cache"
+# APPS="${DIRPATH}/${USER}/apps"
+# BROWSERS="${DIRPATH}/${USER}/browsers"
 
-if [ -d "${DIRPATH}" ]; then
-    if [ ! -d "${APPS}" ]; then
-        rm -rf ${HOME}/.cache/{google-chrome,libgweather,mozilla,shotwell,thumbnails,vivaldi,google-chrome-beta,google-chrome-unstable,chromium}
-        rm -rf ${HOME}/.cache/{wal,shotwell,thumbnails,libgweather,thunderbird}
-        rm -rf ${HOME}/.config/mpv/watch_later
-        mkdir -p $BROWSERS/{google-chrome,mozilla,vivaldi,google-chrome-beta,google-chrome-unstable,chromium}
-        mkdir -p $APPS/{shotwell,thumbnails,libgweather,thunderbird,mpv/watch_later}
-        ln -s $BROWSERS/{google-chrome,mozilla,vivaldi,google-chrome-beta,google-chrome-unstable,chromium} ${HOME}/.cache/
-        ln -s $APPS/{shotwell,thumbnails,libgweather,thunderbird} ${HOME}/.cache/
-        ln -s $APPS/mpv/watch_later ${HOME}/.config/mpv/watch_later
-    fi
-fi
+# if [ -d "${DIRPATH}" ]; then
+#     if [ ! -d "${APPS}" ]; then
+#         rm -rf ${HOME}/.cache/{google-chrome,libgweather,mozilla,shotwell,thumbnails,vivaldi,google-chrome-beta,google-chrome-unstable,chromium}
+#         rm -rf ${HOME}/.cache/{wal,shotwell,thumbnails,libgweather,thunderbird}
+#         rm -rf ${HOME}/.config/mpv/watch_later
+#         mkdir -p $BROWSERS/{google-chrome,mozilla,vivaldi,google-chrome-beta,google-chrome-unstable,chromium}
+#         mkdir -p $APPS/{shotwell,thumbnails,libgweather,thunderbird,mpv/watch_later}
+#         ln -s $BROWSERS/{google-chrome,mozilla,vivaldi,google-chrome-beta,google-chrome-unstable,chromium} ${HOME}/.cache/
+#         ln -s $APPS/{shotwell,thumbnails,libgweather,thunderbird} ${HOME}/.cache/
+#         ln -s $APPS/mpv/watch_later ${HOME}/.config/mpv/watch_later
+#     fi
+# fi
 
 
 # Adjust paths if specific programs are installed
@@ -86,14 +86,11 @@ if [ -d "${HOME}/.cargo/bin" ]; then
     PATH="${PATH}:${HOME}/.cargo/bin"
 fi
 
-if [ -d "/opt/gitkraken" ]; then
-    PATH="${PATH}:/opt/gitkraken"
-fi
-
 # Add support for etcher
 if [ -d "/opt/etcher-cli" ]; then
     PATH="${PATH}:/opt/etcher-cli/"
 fi
+
 # Add support for composer
 if [ -d "${HOME}/.config/composer/vendor/bin" ]; then
     PATH="${PATH}:${HOME}/.config/composer/vendor/bin"
@@ -165,56 +162,53 @@ fi
 # zplug "tamcore/autoupdate-oh-my-zsh-plugins", from:github
 # zplug "zsh-users/zsh-syntax-highlighting", from:github, defer:3
 # zplug "chrissicool/zsh-256color", from:github
-zplug "plugins/zsh-autosuggestions", from:oh-my-zsh
+zplug "zsh-users/zsh-autosuggestions", from:github
 zplug "plugins/colorize", from:oh-my-zsh
 zplug "rummik/zsh-tailf"
 zplug "birdhackor/zsh-exa-ls-plugin"
 
 
-if zplug check "zsh-users/zsh-syntax-highlighting"; then
-    typeset -gA ZSH_HIGHLIGHT_STYLES ZSH_HIGHLIGHT_PATTERNS
-    
-    ZSH_HIGHLIGHT_STYLES[default]='none'
-    ZSH_HIGHLIGHT_STYLES[cursor]='fg=yellow'
-    ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=red'
-    ZSH_HIGHLIGHT_STYLES[reserved-word]='fg=yellow'
-    ZSH_HIGHLIGHT_STYLES[alias]='fg=cyan'
-    ZSH_HIGHLIGHT_STYLES[builtin]='fg=cyan'
-    ZSH_HIGHLIGHT_STYLES[function]='fg=cyan'
-    ZSH_HIGHLIGHT_STYLES[command]='fg=cyan'
-    ZSH_HIGHLIGHT_STYLES[precommand]='fg=green'
-    ZSH_HIGHLIGHT_STYLES[commandseparator]='fg=yellow'
-    ZSH_HIGHLIGHT_STYLES[hashed-command]='fg=green'
-    ZSH_HIGHLIGHT_STYLES[path]='fg=white,underline'
-    ZSH_HIGHLIGHT_STYLES[path_pathseparator]='fg=grey,underline'
-    ZSH_HIGHLIGHT_STYLES[path_prefix]='fg=white'
-    ZSH_HIGHLIGHT_STYLES[path_approx]='fg=white'
-    ZSH_HIGHLIGHT_STYLES[globbing]='none'
-    ZSH_HIGHLIGHT_STYLES[history-expansion]='fg=green'
-    ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='fg=blue'
-    ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=blue'
-    ZSH_HIGHLIGHT_STYLES[back-quoted-argument]='none'
-    ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=magenta'
-    ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=magenta'
-    ZSH_HIGHLIGHT_STYLES[dollar-double-quoted-argument]='fg=cyan'
-    ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]='fg=cyan'
-    ZSH_HIGHLIGHT_STYLES[redirection]='fg=magenta'
-    ZSH_HIGHLIGHT_STYLES[bracket-level-1]='fg=cyan,bold'
-    ZSH_HIGHLIGHT_STYLES[bracket-level-2]='fg=green,bold'
-    ZSH_HIGHLIGHT_STYLES[bracket-level-3]='fg=magenta,bold'
-    ZSH_HIGHLIGHT_STYLES[bracket-level-4]='fg=yellow,bold'
-    ZSH_HIGHLIGHT_STYLES[assign]='none'
-    
-    ZSH_HIGHLIGHT_PATTERNS=('rm -rf *' 'fg=white,bold,bg=red')
-    
-    ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor line)
-fi
+# if zplug check "zsh-users/zsh-syntax-highlighting"; then
+#     typeset -gA ZSH_HIGHLIGHT_STYLES ZSH_HIGHLIGHT_PATTERNS
 
+#     ZSH_HIGHLIGHT_STYLES[default]='none'
+#     ZSH_HIGHLIGHT_STYLES[cursor]='fg=yellow'
+#     ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=red'
+#     ZSH_HIGHLIGHT_STYLES[reserved-word]='fg=yellow'
+#     ZSH_HIGHLIGHT_STYLES[alias]='fg=cyan'
+#     ZSH_HIGHLIGHT_STYLES[builtin]='fg=cyan'
+#     ZSH_HIGHLIGHT_STYLES[function]='fg=cyan'
+#     ZSH_HIGHLIGHT_STYLES[command]='fg=cyan'
+#     ZSH_HIGHLIGHT_STYLES[precommand]='fg=green'
+#     ZSH_HIGHLIGHT_STYLES[commandseparator]='fg=yellow'
+#     ZSH_HIGHLIGHT_STYLES[hashed-command]='fg=green'
+#     ZSH_HIGHLIGHT_STYLES[path]='fg=white,underline'
+#     ZSH_HIGHLIGHT_STYLES[path_pathseparator]='fg=grey,underline'
+#     ZSH_HIGHLIGHT_STYLES[path_prefix]='fg=white'
+#     ZSH_HIGHLIGHT_STYLES[path_approx]='fg=white'
+#     ZSH_HIGHLIGHT_STYLES[globbing]='none'
+#     ZSH_HIGHLIGHT_STYLES[history-expansion]='fg=green'
+#     ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='fg=blue'
+#     ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=blue'
+#     ZSH_HIGHLIGHT_STYLES[back-quoted-argument]='none'
+#     ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=magenta'
+#     ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=magenta'
+#     ZSH_HIGHLIGHT_STYLES[dollar-double-quoted-argument]='fg=cyan'
+#     ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]='fg=cyan'
+#     ZSH_HIGHLIGHT_STYLES[redirection]='fg=magenta'
+#     ZSH_HIGHLIGHT_STYLES[bracket-level-1]='fg=cyan,bold'
+#     ZSH_HIGHLIGHT_STYLES[bracket-level-2]='fg=green,bold'
+#     ZSH_HIGHLIGHT_STYLES[bracket-level-3]='fg=magenta,bold'
+#     ZSH_HIGHLIGHT_STYLES[bracket-level-4]='fg=yellow,bold'
+#     ZSH_HIGHLIGHT_STYLES[assign]='none'
+    
+#     ZSH_HIGHLIGHT_PATTERNS=('rm -rf *' 'fg=white,bold,bg=red')
+    
+#     ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor line)
+# fi
 
 if zplug check "zsh-users/zsh-autosuggestions"; then
-    ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'
-    ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=075'
-    ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=162'
+    ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8,,bold,underline"
 fi
 
 if ! zplug check --verbose; then
