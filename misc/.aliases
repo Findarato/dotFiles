@@ -133,6 +133,7 @@ alias nowdate='date +"%Y-%m-%d"'
 alias nocomment='grep -Ev '\''^(#|$)'\'''
 alias fixFonts="fc-cache -f -v"
 alias fixSSHkey="ssh-copy-id -i ~/.ssh/ansible.pub"
+alias stream='flatpak run io.github.celluloid_player.Celluloid'
 alias listenTo='mpv --no-video'
 alias joetop='ssh joetop'
 alias jump='ssh jharry@10.200.6.42'
@@ -198,3 +199,8 @@ alias hollywood='podman run --rm -it bcbcarl/hollywood'
 function dl(){
     scp "$1" ${CLIENT_IP%% *}:/home/jharry/Downloads
 }
+
+## Docker
+
+alias dl='docker logs --tail=50'
+alias dlf='docker logs -f --tail=50'

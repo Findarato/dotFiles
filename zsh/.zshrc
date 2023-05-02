@@ -59,6 +59,8 @@ export EDITOR='nano'
 #    export PATH=~/.npm-global/bin:$PATH
 #fi
 
+# I moved this to a one time run script that gets executed though 
+
 # DIRPATH="/mnt/cache"
 # APPS="${DIRPATH}/${USER}/apps"
 # BROWSERS="${DIRPATH}/${USER}/browsers"
@@ -76,6 +78,8 @@ export EDITOR='nano'
 #     fi
 # fi
 
+
+# Add custom bins to my path if they are needed
 
 # Adjust paths if specific programs are installed
 if [ -d "${HOME}/.local/bin/" ]; then
@@ -161,7 +165,7 @@ fi
 
 # zplug "tamcore/autoupdate-oh-my-zsh-plugins", from:github
 # zplug "zsh-users/zsh-syntax-highlighting", from:github, defer:3
-# zplug "chrissicool/zsh-256color", from:github
+zplug "chrissicool/zsh-256color", from:github
 zplug "zsh-users/zsh-autosuggestions", from:github
 zplug "plugins/colorize", from:oh-my-zsh
 zplug "rummik/zsh-tailf"
