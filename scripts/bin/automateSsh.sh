@@ -32,6 +32,6 @@ then
   ssh-copy-id -i /home/$LOGNAME/.ssh/ansible.pub "$REMOTEUSER@$REMOTEHOST"
 else
   echo "need to make remote key for $REMOTEUSER@$REMOTEHOST"
-  ssh-keygen -t rsa -b 4096 -f /home/$LOGNAME/.ssh/ansible
+  ssh-keygen -t ed25519 -b 4096 -f /home/$LOGNAME/.ssh/ansible
   ssh-copy-id -i /home/$LOGNAME/.ssh/ansible.pub "$REMOTEUSER@$REMOTEHOST"
 fi
