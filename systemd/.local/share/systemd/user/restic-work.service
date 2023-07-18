@@ -3,7 +3,7 @@ Description=Backup with Restic
 
 [Service]
 Type=oneshot
-ExecStart=/home/jharry/bin/backup_hourly.sh work
+ExecStart=%h/bin/backup_hourly.sh work
 
 # Hardening
 SystemCallArchitectures=native

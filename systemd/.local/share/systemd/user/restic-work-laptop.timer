@@ -5,6 +5,7 @@ Description=Run Restic backup laptop
 OnBootSec=120s
 OnCalendar=00/1:00
 Unit=restic-work-laptop.service
+Persistent=true
 
 [Install]
 WantedBy=timers.target

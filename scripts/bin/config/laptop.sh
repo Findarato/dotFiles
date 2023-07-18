@@ -2,7 +2,7 @@
 USERNAME=jharry
 EXCLUDE_FILE="${HOME}/bin/config/resticExcludes.txt"
 
-BACKUP_LOCATION=s3:https://itc-tn-01.methnet.org:9000/joe.backup/worktop
+BACKUP_LOCATION=s3:https://itc-tn-01.methnet.org:9000/joe.backup
 BACKUP_SRC="${HOME}"
 TAGS="--tag 🕐 --tag laptop"
 
