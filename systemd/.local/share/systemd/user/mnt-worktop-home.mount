@@ -1,0 +1,14 @@
+[Unit]
+Description=mnt-worktop-home
+Wants=network-online.target
+After=network.target network-online.target
+
+[Mount]
+What=jharry@worktop.telaranrhiod.space:/home/jharry
+Where=/mnt/worktop/home
+Type=fuse.sshfs
+Options=allow_other,reconnect,default_permissions,IdentityFile=/home/joe/.ssh/id_ed25519
+TimeoutSec=20
+
+[Install]
+WantedBy=default.target

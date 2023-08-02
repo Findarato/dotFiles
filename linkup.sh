@@ -24,3 +24,4 @@ stow systemd
 # stow wal
 stow compton
 stow alacritty
+stow distrobox

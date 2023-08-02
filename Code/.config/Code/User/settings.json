@@ -46,7 +46,7 @@
     "terminal.integrated.rendererType": "dom",
     "workbench.statusBar.visible": true,
     "workbench.activityBar.visible": true,
-    "editor.fontFamily": "'Fira Code','Fira Mono','Droid Sans Mono', monospace,'monospace', 'Droid Sans Fallback', 'Noto Color Emoji'",
+    "editor.fontFamily": "'IntelOneMono','Fira Code','Fira Mono','Droid Sans Mono', monospace,'monospace', 'Droid Sans Fallback', 'Noto Color Emoji'",
     "markdown.extension.tableFormatter.normalizeIndentation": true,
     "intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": true,
     "workbench.iconTheme": "eq-material-theme-icons",
@@ -81,4 +81,6 @@
     "[markdown]": {
         "editor.defaultFormatter": "yzhang.markdown-all-in-one"
     },
+    "[ini]": {},
+    "git.openRepositoryInParentFolders": "always",
 }

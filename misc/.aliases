@@ -147,10 +147,6 @@ alias pvirt='python3 -m venv'
 
 alias jump='ssh 10.200.6.42'
 
-alias prd='ssh epicprd1.methnet.org'
-alias prd2='ssh epicprd2.methnet.org'
-alias trn='ssh epictrn-17.methnet.org'
-
 alias ccat="pygmentize -O style=monokai -f 256 -g"
 alias dig="dig +nocmd any +multiline +noall +answer"
 
@@ -160,7 +156,7 @@ if [[ "$SHELL" == "/bin/bash" ]]; then
 fi
 
 # progress bar on file copy. Useful evenlocal.
-alias cpProgress="rsync -aHAXxvu --numeric-ids --progress"
+alias cpProgress="rsync -aHAXxvuP --numeric-ids --progress"
 
 # I find it useful when emailing blurbs to people and want to illustrate long timeout in one pass.
 alias pbcopy='xclip -selection clipboard'
@@ -204,3 +200,6 @@ function dl(){
 
 alias dl='docker logs --tail=50'
 alias dlf='docker logs -f --tail=50'
+
+# Flatpak Steam
+alias steam='flatpak run com.valvesoftware.Steam'

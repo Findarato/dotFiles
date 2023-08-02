@@ -155,61 +155,20 @@ setopt rm_star_wait
 
 # Zplugins
 
-if [[ ${ZSH_VERSION} > 5.1.0 ]]; then
+#if [[ ${ZSH_VERSION} > 5.1.0 ]]; then
     # Newer Zsh version
-    zplug romkatv/powerlevel10k, as:theme, depth:1
-else
+#    zplug romkatv/powerlevel10k, as:theme, depth:1
+#else
     # Should only be needed on CentOS7 and Debian > 10
-    zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme
-fi
+#    zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme
+#fi
 
-# zplug "tamcore/autoupdate-oh-my-zsh-plugins", from:github
-# zplug "zsh-users/zsh-syntax-highlighting", from:github, defer:3
 zplug "chrissicool/zsh-256color", from:github
 zplug "zsh-users/zsh-autosuggestions", from:github
 zplug "plugins/colorize", from:oh-my-zsh
 zplug "rummik/zsh-tailf"
 zplug "birdhackor/zsh-exa-ls-plugin"
 
-
-# if zplug check "zsh-users/zsh-syntax-highlighting"; then
-#     typeset -gA ZSH_HIGHLIGHT_STYLES ZSH_HIGHLIGHT_PATTERNS
-
-#     ZSH_HIGHLIGHT_STYLES[default]='none'
-#     ZSH_HIGHLIGHT_STYLES[cursor]='fg=yellow'
-#     ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=red'
-#     ZSH_HIGHLIGHT_STYLES[reserved-word]='fg=yellow'
-#     ZSH_HIGHLIGHT_STYLES[alias]='fg=cyan'
-#     ZSH_HIGHLIGHT_STYLES[builtin]='fg=cyan'
-#     ZSH_HIGHLIGHT_STYLES[function]='fg=cyan'
-#     ZSH_HIGHLIGHT_STYLES[command]='fg=cyan'
-#     ZSH_HIGHLIGHT_STYLES[precommand]='fg=green'
-#     ZSH_HIGHLIGHT_STYLES[commandseparator]='fg=yellow'
-#     ZSH_HIGHLIGHT_STYLES[hashed-command]='fg=green'
-#     ZSH_HIGHLIGHT_STYLES[path]='fg=white,underline'
-#     ZSH_HIGHLIGHT_STYLES[path_pathseparator]='fg=grey,underline'
-#     ZSH_HIGHLIGHT_STYLES[path_prefix]='fg=white'
-#     ZSH_HIGHLIGHT_STYLES[path_approx]='fg=white'
-#     ZSH_HIGHLIGHT_STYLES[globbing]='none'
-#     ZSH_HIGHLIGHT_STYLES[history-expansion]='fg=green'
-#     ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='fg=blue'
-#     ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=blue'
-#     ZSH_HIGHLIGHT_STYLES[back-quoted-argument]='none'
-#     ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=magenta'
-#     ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=magenta'
-#     ZSH_HIGHLIGHT_STYLES[dollar-double-quoted-argument]='fg=cyan'
-#     ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]='fg=cyan'
-#     ZSH_HIGHLIGHT_STYLES[redirection]='fg=magenta'
-#     ZSH_HIGHLIGHT_STYLES[bracket-level-1]='fg=cyan,bold'
-#     ZSH_HIGHLIGHT_STYLES[bracket-level-2]='fg=green,bold'
-#     ZSH_HIGHLIGHT_STYLES[bracket-level-3]='fg=magenta,bold'
-#     ZSH_HIGHLIGHT_STYLES[bracket-level-4]='fg=yellow,bold'
-#     ZSH_HIGHLIGHT_STYLES[assign]='none'
-    
-#     ZSH_HIGHLIGHT_PATTERNS=('rm -rf *' 'fg=white,bold,bg=red')
-    
-#     ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor line)
-# fi
 
 if zplug check "zsh-users/zsh-autosuggestions"; then
     ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8,,bold,underline"
@@ -235,12 +194,12 @@ settitle() {
 DISABLE_AUTO_TITLE=true
 unset ZLE_RPROMPT_INDENT
 
-#eval "$(starship init zsh)"
-
 unsetopt nomatch
 
 # For Enpass
 export QT_AUTO_SCREEN_SCALE_FACTOR=0
 export QT_SCREEN_SCALE_FACTORS=1
 
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+#[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+eval "$(starship init zsh)"

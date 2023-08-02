@@ -1,0 +1,14 @@
+[Unit]
+Description=mnt-worktop-laraplex
+Wants=network-online.target
+After=network.target network-online.target
+
+[Mount]
+What=jharry@worktop.telaranrhiod.space:/var/www/laraplex8.test
+Where=/mnt/worktop/laraplex
+Type=fuse.sshfs
+Options=allow_other,reconnect,default_permissions,IdentityFile=/home/joe/.ssh/id_ed25519
+TimeoutSec=20
+
+[Install]
+WantedBy=multi-user.target
