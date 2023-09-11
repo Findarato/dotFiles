@@ -1,8 +1,8 @@
 [user]
 	name = Joseph Harry
-    email = findarato@gmail.com
-    excludesFile = ~/.gitignore
-    editor = nano
+  email = findarato@gmail.com
+  excludesFile = ~/.gitignore
+  editor = nano
 	signingKey = C663DAFF140BE59FCBC3B1BF672E70D2EB06270B
 [fetch]
     prune = true
