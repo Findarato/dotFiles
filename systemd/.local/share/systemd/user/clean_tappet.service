@@ -1,0 +1,14 @@
+[Unit]
+Description=Clear out tappet older than 30 days
+
+[Service]
+Type=simple
+ExecStart=%h/bin/clean_up_tappet.sh
+
+# Hardening
+SystemCallArchitectures=native
+MemoryDenyWriteExecute=true
+NoNewPrivileges=true
+
+[Install]
+WantedBy=default.target
