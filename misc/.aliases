@@ -2,7 +2,7 @@
 alias gs="git status"
 alias ga="git add --all"
 alias gc="git commit -s -S"
-alias gca="git commit -s -S --amend"
+alias gca="git commit -s -S --amend --no-edit"
 alias gp="git pull; git submodule update --remote"
 alias gpp="git pull; git submodule update --remote; git push; git push --tags"
 alias gl="git log --pretty=full --graph --decorate=full"
