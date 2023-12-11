@@ -58,7 +58,7 @@ alias lsdf='ls -a .*(.)'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias watch='watch --color'
+alias watch='watch -t --color'
 
 alias wttr='curl http://wttr.in/'
 

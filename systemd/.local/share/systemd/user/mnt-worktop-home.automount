@@ -1,8 +1,0 @@
-[Unit]
-Description=mnt-worktop-home
-
-[Automount]
-Where=/mnt/worktop/home
-
-[Install]
-WantedBy=default.target

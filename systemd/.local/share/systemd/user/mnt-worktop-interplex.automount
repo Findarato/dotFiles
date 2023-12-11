@@ -1,8 +1,0 @@
-[Unit]
-Description=mnt-worktop-interplex
-
-[Automount]
-Where=/mnt/worktop/interplex
-
-[Install]
-WantedBy=multi-user.target

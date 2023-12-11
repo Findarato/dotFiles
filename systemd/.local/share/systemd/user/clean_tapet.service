@@ -1,9 +1,9 @@
 [Unit]
-Description=Clear out tappet older than 30 days
+Description=Clear out tapet older than 30 days
 
 [Service]
 Type=simple
-ExecStart=%h/bin/clean_up_tappet.sh
+ExecStart=%h/bin/clean_up_tapet.sh
 
 # Hardening
 SystemCallArchitectures=native

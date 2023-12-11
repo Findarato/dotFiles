@@ -44,12 +44,14 @@ Cache*/*
 .local/share/Trash
 .cache
 
-Steam/*
-${HOME}/.local/share/Steam
+#Steam/*
+${HOME}/.local/share/Steam/compatibilitytools.d
+${HOME}/.local/share/Steam/
 *.vdi
 
 # Do not backup audible things
 ${HOME}/OpenAudible
+
 
 # Do not backup log files
 ${HOME}/.config/Code/logs/*
@@ -68,6 +70,7 @@ ${HOME}/.phoronix-test-suite
 
 ${HOME}/.wine
 ${HOME}/Videos/WIP/*
+${HOME}/.var/app/com.valvesoftware.Steam
 .wine
 .config/Mailspring/files/
 .phoronix-test-suite

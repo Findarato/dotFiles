@@ -53,6 +53,32 @@ export PATH="${PATH}:/usr/local/bin/"
 export SSH_KEY_PATH="~/.ssh/id_rsa"
 export EDITOR='nano'
 
+#if [ hash npm 2>/dev/null  ]; then
+#    mkdir -p ~/.npm-global
+#    npm config set prefix '~/.npm-global'
+#    export PATH=~/.npm-global/bin:$PATH
+#fi
+
+# I moved this to a one time run script that gets executed though 
+
+# DIRPATH="/mnt/cache"
+# APPS="${DIRPATH}/${USER}/apps"
+# BROWSERS="${DIRPATH}/${USER}/browsers"
+
+# if [ -d "${DIRPATH}" ]; then
+#     if [ ! -d "${APPS}" ]; then
+#         rm -rf ${HOME}/.cache/{google-chrome,libgweather,mozilla,shotwell,thumbnails,vivaldi,google-chrome-beta,google-chrome-unstable,chromium}
+#         rm -rf ${HOME}/.cache/{wal,shotwell,thumbnails,libgweather,thunderbird}
+#         rm -rf ${HOME}/.config/mpv/watch_later
+#         mkdir -p $BROWSERS/{google-chrome,mozilla,vivaldi,google-chrome-beta,google-chrome-unstable,chromium}
+#         mkdir -p $APPS/{shotwell,thumbnails,libgweather,thunderbird,mpv/watch_later}
+#         ln -s $BROWSERS/{google-chrome,mozilla,vivaldi,google-chrome-beta,google-chrome-unstable,chromium} ${HOME}/.cache/
+#         ln -s $APPS/{shotwell,thumbnails,libgweather,thunderbird} ${HOME}/.cache/
+#         ln -s $APPS/mpv/watch_later ${HOME}/.config/mpv/watch_later
+#     fi
+# fi
+
+
 # Add custom bins to my path if they are needed
 
 # Adjust paths if specific programs are installed
@@ -88,8 +114,8 @@ export GPG_TTY=$(tty)
 # =============================================================================
 # Check if zplug is installed
 
-#[ ! -d ~/.zplug ] && git clone https://github.com/zplug/zplug ~/.zplug
-#source ~/.zplug/init.zsh
+[ ! -d ~/.zplug ] && git clone https://github.com/zplug/zplug ~/.zplug
+source ~/.zplug/init.zsh
 
 # =============================================================================
 #                                   Options
@@ -127,6 +153,39 @@ setopt pushd_ignore_dups
 setopt rm_star_wait
 
 
+# Zplugins
+
+#if [[ ${ZSH_VERSION} > 5.1.0 ]]; then
+    # Newer Zsh version
+#    zplug romkatv/powerlevel10k, as:theme, depth:1
+#else
+    # Should only be needed on CentOS7 and Debian > 10
+#    zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme
+#fi
+
+zplug "chrissicool/zsh-256color", from:github
+zplug "zsh-users/zsh-autosuggestions", from:github
+zplug "plugins/colorize", from:oh-my-zsh
+zplug "rummik/zsh-tailf"
+zplug "birdhackor/zsh-exa-ls-plugin"
+
+
+if zplug check "zsh-users/zsh-autosuggestions"; then
+    ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8,,bold,underline"
+fi
+
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+
+zplug load
+
+export ZSH_PLUGINS_ALIAS_TIPS_TEXT='💡 '
+
+#source ${ZSH}/oh-my-zsh.sh
 
 settitle() {
     printf "\033k$1\033\\"
@@ -136,5 +195,11 @@ DISABLE_AUTO_TITLE=true
 unset ZLE_RPROMPT_INDENT
 
 unsetopt nomatch
+
+# For Enpass
+export QT_AUTO_SCREEN_SCALE_FACTOR=0
+export QT_SCREEN_SCALE_FACTORS=1
+
+#[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 eval "$(starship init zsh)"
