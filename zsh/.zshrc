@@ -44,7 +44,7 @@ HIST_STAMPS="yyyy-mm-dd"
 
 # User configuration
 
-export PATH="${HOME}/.local/bin:${HOME}/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin:/sbin/"
+# export PATH="${HOME}/.local/bin:${HOME}/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin:/sbin/"
 export PATH="${PATH}:${HOME}/bin/"
 export PATH="${PATH}:${HOME}.cargo/bin/"
 export PATH="${PATH}:/usr/local/bin/"
@@ -56,6 +56,10 @@ export EDITOR='nano'
 # Add custom bins to my path if they are needed
 
 # Adjust paths if specific programs are installed
+if [ -d "${HOME}/.local/bin/" ]; then
+    PATH="${HOME}/.local/bin/:${PATH}"
+fi
+
 if [ -d "${HOME}/.local/bin/" ]; then
     PATH="${HOME}/.local/bin/:${PATH}"
 fi

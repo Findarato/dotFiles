@@ -48,6 +48,19 @@ export VAGRANT_DEFAULT_PROVIDER=virtualbox
 #        source /etc/profile.d/vte.sh
 #fi
 export PATH=${PATH}:/opt/GitKraken
+
+if [ -d "${HOME}/.local/bin/" ]; then
+    PATH="${HOME}/.local/bin/:${PATH}"
+fi
+
+if [ -d "${HOME}/.local/bin/" ]; then
+    PATH="${HOME}/.local/bin/:${PATH}"
+fi
+
+if [ -d "${HOME}/.cargo/bin" ]; then
+    PATH="${PATH}:${HOME}/.cargo/bin"
+
+
 export GPG_TTY=$(tty)
 
-#eval "$(starship init bash)"
+eval "$(starship init bash)"
