@@ -48,6 +48,7 @@ HIST_STAMPS="yyyy-mm-dd"
 export PATH="${PATH}:${HOME}/bin/"
 export PATH="${PATH}:${HOME}.cargo/bin/"
 export PATH="${PATH}:/usr/local/bin/"
+export PATH="${PATH}:${HOME}/.local/bin/"
 
 # ssh
 export SSH_KEY_PATH="~/.ssh/id_rsa"
