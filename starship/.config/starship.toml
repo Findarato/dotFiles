@@ -1,5 +1,5 @@
 format = """
-$container\
+$custom\
 $os\
 $battery\
 $username\
@@ -134,3 +134,12 @@ format = "$symbol[$output]($style) "
 shell = ["bash", "--noprofile", "--norc"]
 symbol = "🔑"
 style = "bold fg:green"
+
+[custom.toolbox]
+description = "The activated toolbox container"
+command = "echo $(. /var/run/.containerenv; echo ${name}: ${DISTTAG%container})"
+when = """ [[ -f /run/.containerenv && -f /run/.toolboxenv ]] """
+style = "bold red"
+format = "[$symbol \\[$output\\]]($style) "
+disabled = false
+symbol = "📦"
