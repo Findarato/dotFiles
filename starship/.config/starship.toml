@@ -1,4 +1,5 @@
 format = """
+$container\
 $os\
 $battery\
 $username\
@@ -27,6 +28,10 @@ style = "blue"
 success_symbol = "[❯](purple)"
 error_symbol = "[❯](red)"
 vimcmd_symbol = "[❮](green)"
+
+[container]
+symbol = "📦"
+format = '[$symbol \[$name\]]($style) '
 
 [git_branch]
 format = "[$branch]($style)"
