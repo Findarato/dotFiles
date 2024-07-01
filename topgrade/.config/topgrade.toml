@@ -160,7 +160,7 @@ max_concurrency = 5
 repos = [
     "~/Documents/src/*/",
     "~/Documents/git/*/",
-    "~/dotfiles/"
+    "~/dotfiles/*/"
 ]
 
 # Don't pull the predefined git repos
