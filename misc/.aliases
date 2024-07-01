@@ -90,6 +90,7 @@ alias ports='netstat -tulanp'
 
 # Working with work laptop
 alias workansible='cd /mnt/worktop/home/Documents/src/Ansible/'
+alias odbadocs='cd /mnt/worktop/home/Documents/src/odba-docs'
 
 alias restartD='sudo systemctl daemon-reload'
 

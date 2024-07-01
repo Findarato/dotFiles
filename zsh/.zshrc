@@ -93,8 +93,8 @@ export GPG_TTY=$(tty)
 # =============================================================================
 # Check if zplug is installed
 
-#[ ! -d ~/.zplug ] && git clone https://github.com/zplug/zplug ~/.zplug
-#source ~/.zplug/init.zsh
+[ ! -d ~/.zplug ] && git clone https://github.com/zplug/zplug ~/.zplug
+source ~/.zplug/init.zsh
 
 # =============================================================================
 #                                   Options
@@ -130,8 +130,6 @@ setopt print_eight_bit
 setopt prompt_subst
 setopt pushd_ignore_dups
 setopt rm_star_wait
-
-
 
 settitle() {
     printf "\033k$1\033\\"
