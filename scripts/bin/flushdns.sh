@@ -1,1 +1,3 @@
-systemctl restart systemd-resolved 
+#systemctl restart systemd-resolved 
+
+resolvectl flush-caches
