@@ -41,6 +41,7 @@ alias mkImage="sudo dd status=progress bs=8M oflag=direct"
 alias df='df -H'
 alias du='du -ch'
 alias du1='du -ch -d 1'
+alias ytop='ytop -c monokai'
 
 alias s="sudo"
 alias sudo='sudo -H'
