@@ -198,6 +198,9 @@ function dl(){
     scp "$1" ${CLIENT_IP%% *}:/home/jharry/Downloads
 }
 
+# Remount
+function remount() { umount "$1" && mount "$1"; }
+
 ## Docker
 
 alias dl='docker logs --tail=50'
