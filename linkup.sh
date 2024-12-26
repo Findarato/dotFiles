@@ -17,11 +17,7 @@ stow rofi
 stow irssi
 stow nano
 stow starship
-# stow dunst
 stow Code
 stow systemd
-# stow wal
-stow compton
-# stow alacritty
 stow distrobox
 stow topgrade
