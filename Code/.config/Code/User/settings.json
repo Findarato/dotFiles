@@ -83,4 +83,5 @@
     "[ini]": {},
     "git.openRepositoryInParentFolders": "always",
     "vscode-note.notespath": "/mnt/worktop/home/Documents/notes/",
+    "vsicons.dontShowNewVersionMessage": true,
 }

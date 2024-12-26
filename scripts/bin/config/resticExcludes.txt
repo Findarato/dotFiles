@@ -13,6 +13,9 @@ org.signal.Signal/*
 containers/storage/*
 ${HOME}/Downloads/*
 
+# Skip monero stuff
+${HOME}/.bitmonero
+
 # Browser specific skips
 ${HOME}/.config/google-chrome/Default/GPUCache/
 ${HOME}/.config/google-chrome-unstable/Default/GPUCache/
