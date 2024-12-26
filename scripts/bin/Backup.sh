@@ -19,22 +19,22 @@ eval ${RUNBEFORE}
 
 echo "$(tput sgr0)"
 
-#if [ "${2}" = "init" ];then
-#    "${RESTIC}" init --repo "${BACKUP_SRC}"
-#fi
+if [ "${2}" = "init" ];then
+    "${RESTIC}" init --repo "${BACKUP_LOCATION}"
+fi
 
 
-"${RESTIC}" -r "${BACKUP_SRC}" unlock  # Unlock repo
+"${RESTIC}" --repo "${BACKUP_LOCATION}" unlock  # Unlock repo
 
-"${RESTIC}" -r "${BACKUP_SRC}" rebuild-index # Cleanup
+"${RESTIC}" --repo "${BACKUP_LOCATION}" repair index # Cleanup
 
-"${RESTIC}" -r "${BACKUP_SRC}" backup "${HOME}"  --tag 🌞 --tag Full --exclude-file="${EXCLUDE_FILE}"
+"${RESTIC}" --repo "${BACKUP_LOCATION}" backup "${HOME}"  --tag 🌞 --tag Full --exclude-file="${EXCLUDE_FILE}"
 
-"${RESTIC}" -r "${BACKUP_SRC}" check --read-data
+"${RESTIC}" --repo "${BACKUP_LOCATION}" check --read-data
 
 # Whole Home folder
-"${RESTIC}" -r "${BACKUP_SRC}" forget --keep-hourly "${HOURS}" --keep-daily "${DAYS}" --keep-weekly "${WEEKS}" --keep-monthly "${MONTHS}"
+"${RESTIC}" --repo "${BACKUP_LOCATION}" forget --keep-hourly "${HOURS}" --keep-daily "${DAYS}" --keep-weekly "${WEEKS}" --keep-monthly "${MONTHS}"
 
-"${RESTIC}" -r "${BACKUP_SRC}" prune # Cleanup
+"${RESTIC}" --repo "${BACKUP_LOCATION}" prune # Cleanup
 
 eval ${RUNAFTER}
