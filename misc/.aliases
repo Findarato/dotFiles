@@ -7,6 +7,9 @@ alias gp="git pull; git submodule update --remote"
 alias gpp="git pull; git submodule update --remote; git push; git push --tags"
 alias gl="git log --pretty=full --graph --decorate=full"
 
+alias quickCommit="git add --all . && git commit -s -S -m"
+
+
 alias pushall="git remote | xargs -L1 git push --all"
 alias na='git reset --hard;git clean -df;'
 alias updateAll="git submodule update --recursive --remote"
