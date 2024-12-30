@@ -94,6 +94,7 @@ alias ports='netstat -tulanp'
 
 # Working with work laptop
 alias workansible='cd /mnt/worktop/home/Documents/src/Ansible/'
+alias interplex='cd /mnt/worktop/home/Documents/src/web/interplex.methnet.org/'
 alias odbadocs='cd /mnt/worktop/home/Documents/src/odba-docs'
 
 alias restartD='sudo systemctl daemon-reload'
@@ -212,3 +213,9 @@ alias dlf='docker logs -f --tail=50'
 
 # Flatpak Steam
 alias steam='flatpak run com.valvesoftware.Steam'
+
+
+## RAM commands
+
+alias real_used="free -m | awk 'NR==3{print $3}'"
+alias realf_free="free -m | awk 'NR==3{print $4}'"
