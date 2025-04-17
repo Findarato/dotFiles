@@ -48,7 +48,6 @@
     "editor.fontFamily": "'IntelOneMono','Fira Code','Fira Mono','Droid Sans Mono', monospace,'monospace', 'Droid Sans Fallback', 'Noto Color Emoji'",
     "markdown.extension.tableFormatter.normalizeIndentation": true,
     "intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": true,
-    "workbench.iconTheme": "eq-material-theme-icons",
     "workbench.colorTheme": "Dracula",
     "extensions.ignoreRecommendations": false,
     "git.enableSmartCommit": true,
@@ -84,4 +83,6 @@
     "git.openRepositoryInParentFolders": "always",
     "vscode-note.notespath": "/mnt/worktop/home/Documents/notes/",
     "vsicons.dontShowNewVersionMessage": true,
+    "git.ignoreRebaseWarning": true,
+    "ansible.lightspeed.suggestions.enabled": false,
 }

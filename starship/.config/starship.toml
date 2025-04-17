@@ -6,15 +6,16 @@ $username\
 $hostname\
 $docker_context\
 $directory\
-$git_branch\
+$git_branch \
 $git_state\
-$git_status\
 $cmd_duration\
 $line_break\
-$python\
+$python \
 $character"""
 
-command_timeout = 1000
+# $git_status\
+
+command_timeout = 10000
 
 [hostname]
 ssh_only = true
@@ -108,6 +109,7 @@ SUSE = "🦎 "
 Ubuntu = "🎯 "
 Unknown = "❓ "
 Windows = "🪟 "
+
 [battery]
 full_symbol = '🔋 '
 charging_symbol = '⚡️ '
