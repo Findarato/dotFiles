@@ -31,6 +31,8 @@ alias bbTest='sudo badblocks -b 4096 -wsv'
 # SSH 
 alias ssh-copy-id="ssh-copy-id -o PreferredAuthentications=password"
 alias sshp="ssh -o PreferredAuthentications=password"
+alias sshy='ssh -o CheckHostIP=no'
+alias ssh0='ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR'
 
 #gedit bad
 alias gedit='gnome-text-editor'
@@ -84,6 +86,8 @@ alias ap='ansible-playbook'
 alias agi='ansible-galaxy install -r'
 alias vault='ansible-vault'
 alias cdansible='cd ${HOME}/Documents/src/Ansible'
+
+#alias powershell='pwsh'
 
 
 # Network
