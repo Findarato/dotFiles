@@ -6,11 +6,11 @@ $username\
 $hostname\
 $docker_context\
 $directory\
-$git_branch \
+$git_branch\
 $git_state\
-$cmd_duration\
 $line_break\
 $python \
+$cmd_duration \
 $character"""
 
 # $git_status\
@@ -36,7 +36,7 @@ format = '[$symbol \[$name\]]($style) '
 
 [git_branch]
 format = "[$branch]($style)"
-style = "bright-black"
+style = "bright-purple"
 
 [git_status]
 format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
