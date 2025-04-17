@@ -20,6 +20,7 @@ fi
 
 ${RESTIC} -r ${BACKUP_LOCATION} unlock  # Unlock repo
 
-#${RESTIC} -r ${BACKUP_LOCATION} restore latest --overwrite if-changed --target ${HOME}   # Unlock repo
-
 ${RESTIC} -r ${BACKUP_LOCATION} restore latest --overwrite if-changed --target ${HOME} --dry-run -vv
+
+${RESTIC} -r ${BACKUP_LOCATION} restore latest --overwrite if-changed --target ${HOME}   # Unlock repo
+

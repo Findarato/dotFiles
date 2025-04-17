@@ -29,7 +29,7 @@ ${RESTIC} cache --cleanup
 
 ${RESTIC} -r ${BACKUP_LOCATION} unlock  # Unlock repo
 
-"${RESTIC}" -r "${BACKUP_LOCATION}" rebuild index # Cleanup
+"${RESTIC}" -r "${BACKUP_LOCATION}" check # Cleanup
 #notify-send "Backing Up" "Restic backup running"
 
 ${RESTIC} -r ${BACKUP_LOCATION} backup ${BACKUP_SRC} --tag 🕐 --exclude-file=${EXCLUDE_FILE}
