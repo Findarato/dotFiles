@@ -5,4 +5,4 @@
 ## example run restore_all.sh work
 
 
-/usr/bin/distrobox-enter --name fedora -e '/var/home/joe/bin/restore_all.sh desktop'
+/usr/bin/distrobox-enter --name fedora -e '/home/joe/bin/restore_all.sh desktop'
