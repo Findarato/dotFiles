@@ -1,6 +1,5 @@
 format = """
 $custom\
-$os\
 $battery\
 $username\
 $hostname\
@@ -14,7 +13,7 @@ $python\
 $character\
 $cmd_duration \
 """
-
+#$os\
 # $git_status\
 
 command_timeout = 10000
@@ -82,6 +81,7 @@ DragonFly = "🐉"
 Emscripten = "🔗"
 EndeavourOS = "🚀"
 Fedora = "🎩 "
+#Bluefin = "🦖 "
 FreeBSD = "😈"
 Garuda = "🦅 "
 Gentoo = "🗜️ "
