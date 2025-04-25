@@ -12,7 +12,7 @@ stow scripts
 stow sway
 # stow Tilix
 stow tmux
-stow zsh
+# stow zsh
 stow rofi
 stow irssi
 stow nano
