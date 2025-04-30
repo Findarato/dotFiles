@@ -7,7 +7,7 @@ stow git
 # stow kitty
 stow misc --ignore=readme.md
 stow pass
-stow tuir
+#stow tuir
 stow scripts
 stow sway
 # stow Tilix
@@ -21,3 +21,4 @@ stow Code
 stow systemd
 stow distrobox
 stow topgrade
+stow ghostty
