@@ -14,4 +14,13 @@ keybind = control+shift+n=text:\x01"
 keybind = ctrl+enter=text:\r
 keybind = shift+enter=text:\r
 keybind = ctrl+shift+enter=text:\r
-gtk-gsk-renderer = opengl
+
+# Shaders
+#custom-shader = shaders/cineShader-Lava.glsl
+#custom-shader = ./shaders/galaxy.glsl
+#custom-shader = ./shaders/water.glsl
+#custom-shader = ./shaders/bloom.glsl
+#custom-shader = ./shaders/fireworks-rockets.glsl
+custom-shader = ./shaders/inside-the-matrix.glsl
+
+custom-shader-animation = always
