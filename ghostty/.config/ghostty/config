@@ -21,6 +21,9 @@ keybind = ctrl+shift+enter=text:\r
 #custom-shader = ./shaders/water.glsl
 #custom-shader = ./shaders/bloom.glsl
 #custom-shader = ./shaders/fireworks-rockets.glsl
-custom-shader = ./shaders/inside-the-matrix.glsl
+#custom-shader = ./shaders/inside-the-matrix.glsl
+custom-shader = ./shaders/smoke-and-ghost.glsl
+#custom-shader = ./shaders/starfield-colors.glsl
+custom-shader = ./shaders/matrix-hallway.glsl
 
 custom-shader-animation = always
