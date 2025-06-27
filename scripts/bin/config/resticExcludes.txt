@@ -3,7 +3,9 @@
 *.jpg
 *.iso
 *.ISO
-
+${HOME}/ISO/*
+*.log
+*.LOG
 #Directories to skip
 org.signal.Signal/*
 .config/variety/*

@@ -85,4 +85,5 @@
     "vsicons.dontShowNewVersionMessage": true,
     "git.ignoreRebaseWarning": true,
     "ansible.lightspeed.suggestions.enabled": false,
+    "github.copilot.nextEditSuggestions.enabled": true,
 }

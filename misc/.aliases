@@ -97,6 +97,7 @@ alias pp='prettyping --nolegend'
 alias ports='netstat -tulanp'
 
 # Working with work laptop
+alias workvmware='/usr/bin/code /mnt/worktop/home/Documents/src/Ansible/vmware'
 alias workansible='cd /mnt/worktop/home/Documents/src/Ansible/'
 alias interplex='cd /mnt/worktop/home/Documents/src/web/interplex.methnet.org/'
 alias odbadocs='cd /mnt/worktop/home/Documents/src/odba-docs'
