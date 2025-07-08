@@ -1,5 +1,6 @@
 # https://ghostty.zerebos.com/
-shell-integration = bash
+#shell-integration = bash
+cursor-style = block
 window-save-state = always
 window-theme = system
 background-opacity = 0.95
@@ -15,15 +16,27 @@ keybind = ctrl+enter=text:\r
 keybind = shift+enter=text:\r
 keybind = ctrl+shift+enter=text:\r
 
+link-url = true
+# Adding to fix SSH issues. Fine locally broken externally
+# https://github.com/ghostty-org/ghostty/discussions/3161#discussioncomment-11671706
+command = TERM=xterm-256color /usr/bin/bash
+
 # Shaders
-#custom-shader = shaders/cineShader-Lava.glsl
-#custom-shader = ./shaders/galaxy.glsl
+
+# Let there be animation
+custom-shader-animation = always 
+
+# Uncomment for a shader
+#custom-shader = ./shaders/cineShader-Lava.glsl
+#custom-shader = ./shaders/glitchy.glsl # SO HARD TO LOOK AT
 #custom-shader = ./shaders/water.glsl
 #custom-shader = ./shaders/bloom.glsl
-#custom-shader = ./shaders/fireworks-rockets.glsl
 #custom-shader = ./shaders/inside-the-matrix.glsl
-custom-shader = ./shaders/smoke-and-ghost.glsl
 #custom-shader = ./shaders/starfield-colors.glsl
-custom-shader = ./shaders/matrix-hallway.glsl
+#custom-shader = ./shaders/matrix-hallway.glsl
 
-custom-shader-animation = always
+# It is hot or cold maybe?
+#custom-shader = ./shaders/sparks-from-fire.glsl
+#custom-shader = ./shaders/just-snow.glsl
+
+
