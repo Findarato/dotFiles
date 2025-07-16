@@ -8,19 +8,19 @@ $directory\
 $git_branch\
 $git_status\
 $git_state\
-$line_break\
 $python\
-$character\
 $cmd_duration \
+$character\
 """
-#$os\
+# $add_newline \
+# $os\
 # $git_status\
 
 command_timeout = 10000
 
 [hostname]
 ssh_only = true
-format = '[$ssh_symbol](bold blue) on [$hostname](bold red) '
+format = '[$ssh_symbol](bold blue) on [$hostname](bold red)'
 disabled = false
 
 [directory]
@@ -40,7 +40,8 @@ format = "[$branch](style)"
 style = "purple"
 
 [git_status]
-format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
+format = " [[($conflicted$untracked$modified$staged$renamed$deleted)](218)]($style)"
+#format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218)]($style)"
 style = "cyan"
 conflicted = "🏳"
 ahead = "🏎💨"
@@ -49,20 +50,21 @@ diverged = "😵"
 untracked = "🤷‍"
 stashed = "📦"
 modified = "📝"
+#modified = "📦"
 staged = "➕"
 renamed = "👅"
 deleted = "🔥"
 
 [git_state]
-format = '\([$state( $progress_current/$progress_total)]($style)\) '
+format = '\([$state( $progress_current/$progress_total)]($style)\)'
 style = "bright-purple"
 
 [cmd_duration]
-format = "[$duration]($style) "
+format = "[$duration]($style)"
 style = "yellow"
 
 [python]
-format = "[$virtualenv]($style) "
+format = "[$virtualenv]($style)"
 style = "bright-green"
 
 [os]

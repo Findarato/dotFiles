@@ -1,5 +1,5 @@
 # https://ghostty.zerebos.com/
-#shell-integration = bash
+# shell-integration = bash
 cursor-style = block
 window-save-state = always
 window-theme = system
@@ -10,7 +10,7 @@ theme = dark:Dracula+,light:GruvboxLightHard
 font-size = 16
 font-thicken-strength = 0
 font-feature = true
-font-family = "Hack"
+font-family = "FiraCodeNerdFontMono-Retina"
 keybind = control+shift+n=text:\x01"
 keybind = ctrl+enter=text:\r
 keybind = shift+enter=text:\r
@@ -31,12 +31,12 @@ custom-shader-animation = always
 #custom-shader = ./shaders/glitchy.glsl # SO HARD TO LOOK AT
 #custom-shader = ./shaders/water.glsl
 #custom-shader = ./shaders/bloom.glsl
-#custom-shader = ./shaders/inside-the-matrix.glsl
-custom-shader = ./shaders/matrix-hallway.glsl
+custom-shader = ./shaders/inside-the-matrix.glsl
+#custom-shader = ./shaders/starfield-colors.glsl
+#custom-shader = ./shaders/matrix-hallway.glsl
 
 # It is hot or cold maybe?
 #custom-shader = ./shaders/sparks-from-fire.glsl
 #custom-shader = ./shaders/just-snow.glsl
 
-#custom-shader = ./shaders/retro-terminal.glsl
 
