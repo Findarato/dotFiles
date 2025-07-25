@@ -30,8 +30,3 @@ if [ -d "${CACHEDIR}" ]; then
 
     fi
 fi
-
-      flatpak override org.mozilla.firefox --user --filesystem=${FLATPAK}/org.mozilla.firefox/cache
-      rm -rf ${HOME}/.var/app/org.mozilla.firefox/cache
-      mkdir -p ${FLATPAK}/org.mozilla.firefox/cache
-      ln -s ${FLATPAK}/org.mozilla.firefox/cache ${HOME}/.var/app/org.mozilla.firefox/cache
