@@ -1,0 +1,1 @@
+dconf dump /org/gnome/Ptyxis/Profiles/ > /home/joe/Documents/src/dconf/ptyxis.dconf.dump
