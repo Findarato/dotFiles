@@ -31,9 +31,11 @@ custom-shader-animation = always
 #custom-shader = ./shaders/glitchy.glsl # SO HARD TO LOOK AT
 #custom-shader = ./shaders/water.glsl
 #custom-shader = ./shaders/bloom.glsl
-#custom-shader = ./shaders/inside-the-matrix.glsl
+custom-shader = ./shaders/inside-the-matrix.glsl
 #custom-shader = ./shaders/starfield-colors.glsl
-custom-shader = ./shaders/matrix-hallway.glsl
+#custom-shader = ./shaders/matrix-hallway.glsl
+#custom-shader = ./shaders/in-game-crt.glsl
+
 
 # It is hot or cold maybe?
 #custom-shader = ./shaders/sparks-from-fire.glsl

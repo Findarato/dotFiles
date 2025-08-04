@@ -15,6 +15,9 @@ if [ -d "${CACHEDIR}" ]; then
 
       # Flatpak Versions
 
+      # Should turn this into a simple loop for all FF based browsers or something
+      
+
       # Firefox
       flatpak override org.mozilla.firefox --user --filesystem=${FLATPAK}/org.mozilla.firefox/cache
       rm -rf ${HOME}/.var/app/org.mozilla.firefox/cache
@@ -24,9 +27,14 @@ if [ -d "${CACHEDIR}" ]; then
       # app.zen_browser.zen
       flatpak override app.zen_browser.zen --user --filesystem=${FLATPAK}/app.zen_browser.zen/cache
       rm -rf ${HOME}/.var/app/app.zen_browser.zen/cache
-      echo "${FLATPAK}/app.zen_browser.zen/cache"
       mkdir -p ${FLATPAK}/app.zen_browser.zen/cache
       ln -s ${FLATPAK}/app.zen_browser.zen/cache ${HOME}/.var/app/app.zen_browser.zen/cache
+
+      # one.ablaze.floorp
+      flatpak override one.ablaze.floorp --user --filesystem=${FLATPAK}/one.ablaze.floorp/cache
+      rm -rf ${HOME}/.var/app/one.ablaze.floorp/cache
+      mkdir -p ${FLATPAK}/one.ablaze.floorp/cache
+      ln -s ${FLATPAK}/one.ablaze.floorp/cache ${HOME}/.var/app/one.ablaze.floorp/cache
 
     fi
 fi
