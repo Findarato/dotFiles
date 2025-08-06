@@ -38,7 +38,7 @@ custom-shader-animation = always
 
 
 # It is hot or cold maybe?
-custom-shader = ./shaders/sparks-from-fire.glsl
+#custom-shader = ./shaders/sparks-from-fire.glsl
 
 #custom-shader = ./shaders/just-snow.glsl
 
