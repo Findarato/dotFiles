@@ -39,6 +39,11 @@
         "**/CVS": true,
         "**/node_modules": true,
         "**/tmp": true,
+        "**/.trunk/*actions/": true,
+        "**/.trunk/*logs/": true,
+        "**/.trunk/*notifications/": true,
+        "**/.trunk/*out/": true,
+        "**/.trunk/*plugins/": true
     },
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
@@ -86,4 +91,12 @@
     "git.ignoreRebaseWarning": true,
     "ansible.lightspeed.suggestions.enabled": false,
     "github.copilot.nextEditSuggestions.enabled": true,
+    "files.watcherExclude": {
+        "**/.trunk/*actions/": true,
+        "**/.trunk/*logs/": true,
+        "**/.trunk/*notifications/": true,
+        "**/.trunk/*out/": true,
+        "**/.trunk/*plugins/": true
+    },
+    "editor.defaultFormatter": "trunk.io",
 }

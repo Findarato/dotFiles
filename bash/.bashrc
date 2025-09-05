@@ -26,8 +26,8 @@ function run() {
 
 #export TERM='xterm-256color'
 
-if [ -f ~/.aliases ]; then
-    . ~/.aliases
+if [ -f ${HOME}/.aliases ]; then
+    . ${HOME}/.aliases
 fi
 
 GDK_CORE_DEVICE_EVENTS=1
@@ -41,17 +41,10 @@ KERN_DIR=/usr/src/kernels/`uname -r`
 export KERN_DIR
 
 export EDITOR=/usr/bin/nano
-#export DISPLAY=:0.0
-export VAGRANT_DEFAULT_PROVIDER=virtualbox
 
 #if [[ $TERMINIX_ID ]]; then
 #        source /etc/profile.d/vte.sh
 #fi
-export PATH=${PATH}:/opt/GitKraken
-
-if [ -d "${HOME}/.local/bin/" ]; then
-    PATH="${HOME}/.local/bin/:${PATH}"
-fi
 
 if [ -d "${HOME}/.local/bin/" ]; then
     PATH="${HOME}/.local/bin/:${PATH}"
@@ -64,3 +57,7 @@ fi
 export GPG_TTY=$(tty)
 
 eval "$(starship init bash)"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
