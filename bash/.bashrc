@@ -5,27 +5,6 @@ if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
 
-# Uncomment the following line if you don't like systemctl's auto-paging feature:
-# export SYSTEMD_PAGER=
-
-# User specific aliases and functions
-#alias cinnamon-restart=’cinnamon –replace -d :0.0 > /dev/null 2>&1 &’
-
-
-function run() {
-    number=$1
-    shift
-    for n in $(seq $number); do
-        $@
-        printf "\n"
-    done
-}
-
-#if [[ -n "$STY" ]] && [[ -n "$TMUX" ]]; #we are in a screen or tmux session
-#then
-
-#export TERM='xterm-256color'
-
 if [ -f ${HOME}/.aliases ]; then
     . ${HOME}/.aliases
 fi
@@ -56,8 +35,9 @@ fi
 
 export GPG_TTY=$(tty)
 
-eval "$(starship init bash)"
 
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+if (env | grep -Fq 'DISTROBOX'); then
+echo "cool"
+fi
+
+eval "$(starship init bash)"
