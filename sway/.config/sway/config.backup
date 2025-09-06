@@ -267,7 +267,6 @@ include ~/.config/sway/$(hostname)/*
 
 
 
-
 # Output configurations (updated by SwayBG+)
-output DP-2 res 2560x1440 pos 3400 -555 scale 1.0 transform 90
+output DP-2 res 2560x1440 pos 3400 -550 scale 1.0 transform 90
 output DP-1 res 2560x1440 pos 840 0 scale 1.0
