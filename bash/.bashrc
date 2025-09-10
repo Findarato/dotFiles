@@ -43,7 +43,7 @@ if [ -f '/var/home/jharry/Downloads/2025/google-cloud-sdk/path.bash.inc' ]; then
 if [ -f '/var/home/jharry/Downloads/2025/google-cloud-sdk/completion.bash.inc' ]; then . '/var/home/jharry/Downloads/2025/google-cloud-sdk/completion.bash.inc'; fi
 
 if (env | grep -Fq 'DISTROBOX'); then
-# echo "cool"
+ true
 fi
 
 eval "$(starship init bash)"

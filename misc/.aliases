@@ -241,3 +241,6 @@ alias steam='flatpak run com.valvesoftware.Steam'
 
 alias real_used="free -m | awk 'NR==3{print $3}'"
 alias realf_free="free -m | awk 'NR==3{print $4}'"
+
+## Wezterm
+alias wezterm='flatpak run org.wezfurlong.wezterm'
