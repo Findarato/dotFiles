@@ -1,4 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+## Title: backupCheck.sh
+## Description: Check the status of backups
+## Author: Joseph Harry <findarato@gmail.com>
+## Date: 2025-09-11 08:45:26
 
 if [ -f "${1}" ];then
     source "${1}"

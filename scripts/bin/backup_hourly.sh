@@ -1,4 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+## Title: backup_hourly.sh
+## Description: Backup script for hourly backups
+## Author: Joseph Harry <findarato@gmail.com>
+## Date: 2025-09-11 08:44:12
 
 if [ -f "${1}" ];then
     source "${1}"

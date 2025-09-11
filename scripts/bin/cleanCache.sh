@@ -1,4 +1,12 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+
+## Title: cleanCache.sh
+## Description: Clean the cache files for random applications
+## Author: Joseph Harry <findarato@gmail.com>
+## Date: 2025-09-11 09:25:36
+
+
 
 CACHE_PATH="${HOME}/.cache"
 rm -rf "${CACHE_PATH}/.thumbs/*"

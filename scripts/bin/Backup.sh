@@ -1,4 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+## Title: Backup.sh
+## Description: Run Full backups
+## Author: Joseph Harry <findarato@gmail.com>
+## Date: 2025-09-11 08:45:10
 
 # notify-send "Restic backup started."
 
