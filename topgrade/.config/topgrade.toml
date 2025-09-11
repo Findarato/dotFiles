@@ -1,7 +1,7 @@
 # Include any additional configuration file(s)
 # [include] sections are processed in the order you write them
 # Files in $CONFIG_DIR/topgrade.d/ are automatically included before this file
-# [include]
+[include]
 # paths = ["/etc/topgrade.toml"]
 
 
@@ -142,7 +142,7 @@ dnf_arguments = "--refresh"
 
 # suse_dup = false
 
-# rpm_ostree = false
+rpm_ostree = true
 
 # nix_arguments = "--flake"
 
@@ -170,7 +170,7 @@ repos = [
 # arguments = "--rebase --autostash"
 
 
-[windows]
+# [windows]
 # Manually select Windows updates
 # accept_all_updates = false
 
@@ -231,3 +231,9 @@ upgrade = true
 # containers = ["archlinux-latest"]
 [containers]
 # ignored_containers = ["ghcr.io/rancher-sandbox/rancher-desktop/rdx-proxy:latest"]
+
+[vscode]
+# If this is set and is a non-empty string, it specifies the profile the
+# extensions should be updated for.
+# (default: this won't be set by default)
+profile = "Default"

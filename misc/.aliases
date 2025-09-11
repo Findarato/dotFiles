@@ -184,8 +184,8 @@ if [[ "$SHELL" == "/bin/bash" ]]; then
 fi
 
 # progress bar on file copy. Useful evenlocal.
-#alias cpProgress="rsync --inplace -aHAXxvuP --numeric-ids --progress"
 alias cpProgress="rsync --inplace -avz --no-perms --no-group --numeric-ids --progress"
+alias cpP="rsync --inplace -avz --no-perms --no-group --numeric-ids --progress"
 
 # I find it useful when emailing blurbs to people and want to illustrate long timeout in one pass.
 alias pbcopy='xclip -selection clipboard'
