@@ -1,11 +1,15 @@
 -- Pull in the wezterm API
-local wezterm = require 'wezterm'
+local wezterm = require( 'wezterm' )
+local constants = require( 'constants' )
 
 -- This will hold the configuration.
 local config = {}
 
 
 -- General
+
+config.max_fps = 144 -- Limit to 144fps which is what my Monitors are at
+-- config.prefer_
 
 config.window_background_opacity = .90
 
@@ -25,7 +29,7 @@ config.initial_cols = 80
 config.initial_rows = 12
 
 -- config.color_scheme = 'AdventureTime'
-config.color_scheme = 'Dracula (Official)'
+-- config.color_scheme = 'Dracula (Official)'
 config.color_scheme = 'Dracula+'
 
 config.colors = {
@@ -36,8 +40,12 @@ config.colors = {
 -- No titlebar or windows
 config.window_decorations = 'RESIZE'
 config.enable_tab_bar = true
+config.hide_tab_bar_if_only_one_tab = true
 
 -- key bindings
+-- Leader key is used for triggering key combinations lets set it for the same as TMUX
+-- Do not use this with tmux. This kinda breaks TMUX
+config.leader = { key = 'b', mods = 'CTRL', timeout_milliseconds = 1000 }
 
 config.keys = {
   {
@@ -55,7 +63,11 @@ config.keys = {
     mods = 'CTRL|SHIFT',
     action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain'},
   },
-  
+  {
+    key = '"',
+    mods = 'CTRL|SHIFT',
+    action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain'},
+  },
 
 
 

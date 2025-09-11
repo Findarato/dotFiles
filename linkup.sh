@@ -13,8 +13,6 @@ stow sway
 # stow Tilix
 stow tmux
 # stow zsh
-stow rofi
-stow irssi
 stow nano
 stow starship
 stow Code
@@ -22,3 +20,4 @@ stow systemd
 stow distrobox
 stow topgrade
 stow ghostty
+stow wezterm

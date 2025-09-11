@@ -19,7 +19,6 @@
         "prefix": "startansible",
         "body": [
             "---",
-            "",
             "$BLOCK_COMMENT_START",
             "## Title: $TM_FILENAME",
             "## Description: $1",
