@@ -53,7 +53,7 @@
     "editor.fontFamily": "'IntelOneMono','Fira Code','Fira Mono','Droid Sans Mono', monospace,'monospace', 'Droid Sans Fallback', 'Noto Color Emoji'",
     "markdown.extension.tableFormatter.normalizeIndentation": true,
     "intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": true,
-    "workbench.colorTheme": "Dracula",
+    "workbench.colorTheme": "Dracula Theme Soft",
     "extensions.ignoreRecommendations": false,
     "git.enableSmartCommit": true,
     "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
@@ -99,4 +99,7 @@
         "**/.trunk/*plugins/": true
     },
     "editor.defaultFormatter": "trunk.io",
+    "files.associations": {
+        "*.toml": "ini"
+    },
 }
