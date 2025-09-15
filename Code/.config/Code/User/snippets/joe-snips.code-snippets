@@ -15,7 +15,7 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	    "Start Ansible Script": {
+	"Start Ansible Script": {
         "prefix": "startansible",
         "body": [
             "---",
@@ -43,7 +43,7 @@
         ],
         "description": "Start Ansible Script with a tiny bit of header info"
     },
-	    "Start Bash Script": {
+	"Start Bash Script": {
         "prefix": "startbash",
         "body": [
             "#!/usr/bin/env bash",
@@ -77,7 +77,7 @@
 		"body": [
 			"#!/usr/bin/env python3",
 			"",
-			"   $BLOCK_COMMENT_START",
+			"$BLOCK_COMMENT_START",
 			"   Title: $TM_FILENAME",
 			"   Description: $1",
 			"   Author: Joseph Harry",
