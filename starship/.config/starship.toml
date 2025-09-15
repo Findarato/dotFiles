@@ -1,5 +1,4 @@
 format = """
-$custom\
 $container\
 $battery\
 $username\
@@ -12,6 +11,7 @@ $git_state\
 $python\
 $character\
 """
+# $custom\
 # $add_newline \
 # $os\
 # $git_status\
@@ -83,7 +83,7 @@ DragonFly        = "🐉"
 Emscripten       = "🔗"
 EndeavourOS      = "🚀"
 Fedora           = "🎩 "
-#Bluefin         = "🦖 "
+Bluefin         = "🦖 "
 FreeBSD          = "😈"
 Garuda           = "🦅 "
 Gentoo           = "🗜️ "
