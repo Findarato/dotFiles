@@ -1,4 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+## Title: backup_hourly.sh
+## Description: Backup script for hourly backups
+## Author: Joseph Harry <findarato@gmail.com>
+## Date: 2025-09-11 08:44:12
 
 if [ -f "${1}" ];then
     source "${1}"
@@ -29,7 +34,7 @@ ${RESTIC} cache --cleanup
 
 ${RESTIC} -r ${BACKUP_LOCATION} unlock  # Unlock repo
 
-"${RESTIC}" -r "${BACKUP_LOCATION}" rebuild index # Cleanup
+"${RESTIC}" -r "${BACKUP_LOCATION}" check # Cleanup
 #notify-send "Backing Up" "Restic backup running"
 
 ${RESTIC} -r ${BACKUP_LOCATION} backup ${BACKUP_SRC} --tag 🕐 --exclude-file=${EXCLUDE_FILE}

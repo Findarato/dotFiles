@@ -7,21 +7,17 @@ stow git
 # stow kitty
 stow misc --ignore=readme.md
 stow pass
-stow tuir
+#stow tuir
 stow scripts
 stow sway
 # stow Tilix
 stow tmux
-stow zsh
-stow rofi
-stow irssi
+# stow zsh
 stow nano
 stow starship
-# stow dunst
 stow Code
 stow systemd
-# stow wal
-stow compton
-# stow alacritty
 stow distrobox
 stow topgrade
+stow ghostty
+stow wezterm

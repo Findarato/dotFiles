@@ -7,6 +7,9 @@ alias gp="git pull; git submodule update --remote"
 alias gpp="git pull; git submodule update --remote; git push; git push --tags"
 alias gl="git log --pretty=full --graph --decorate=full"
 
+alias quickCommit="git add --all . && git commit -s -S -m"
+
+
 alias pushall="git remote | xargs -L1 git push --all"
 alias na='git reset --hard;git clean -df;'
 alias updateAll="git submodule update --recursive --remote"
@@ -28,6 +31,8 @@ alias bbTest='sudo badblocks -b 4096 -wsv'
 # SSH 
 alias ssh-copy-id="ssh-copy-id -o PreferredAuthentications=password"
 alias sshp="ssh -o PreferredAuthentications=password"
+alias sshy='ssh -o CheckHostIP=no'
+alias ssh0='ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR'
 
 #gedit bad
 alias gedit='gnome-text-editor'
@@ -82,6 +87,8 @@ alias agi='ansible-galaxy install -r'
 alias vault='ansible-vault'
 alias cdansible='cd ${HOME}/Documents/src/Ansible'
 
+#alias powershell='pwsh'
+
 
 # Network
 # alias ping='ping -c 5'
@@ -90,11 +97,27 @@ alias pp='prettyping --nolegend'
 alias ports='netstat -tulanp'
 
 # Working with work laptop
+alias workvmware='/usr/bin/code /mnt/worktop/home/Documents/src/Ansible/vmware'
 alias workansible='cd /mnt/worktop/home/Documents/src/Ansible/'
+alias interplex='cd /mnt/worktop/home/Documents/src/web/interplex.methnet.org/'
 alias odbadocs='cd /mnt/worktop/home/Documents/src/odba-docs'
 
 alias restartD='sudo systemctl daemon-reload'
 
+# Bitwarden Vault Unlock alias
+bw-unlock() {
+    export BW_SESSION=$(bw unlock | grep -oP 'BW_SESSION="\K[^"]+' | head -n 1)
+}
+
+# Ansible Vault with Bitwarden alias
+ansible-vault-bw() {
+    ansible-vault "$@" --vault-password-file="$HOME/.local/bin/ansible-vault-bw.sh"
+}
+
+# Ansible Playbook with Bitwarden alias
+ansible-playbook-bw() {
+    ansible-playbook "$@" --vault-password-file="$HOME/.local/bin/ansible-vault-bw.sh"
+}
 
 
 #Safty Nets
@@ -141,8 +164,11 @@ alias joetop='ssh joetop'
 alias jump='ssh jharry@10.200.6.42'
 alias laraplex='cd /mnt/laraplex'
 
+alias new_passphrase='bw generate --passphrase --words 4 --separator - | xclip -selection clipboard | echo "=> new passphrase on clipboard."'
 
 #alias mpv='mpv --hwdec=cuda'
+
+alias ansiblepubkey="more ~/.ssh/ansible.pub | xclip -selection clipboard | echo '=> Ansible Public key copied to pasteboard.'"
 
 
 alias pvirt='python3 -m venv'
@@ -158,7 +184,8 @@ if [[ "$SHELL" == "/bin/bash" ]]; then
 fi
 
 # progress bar on file copy. Useful evenlocal.
-alias cpProgress="rsync --inplace -aHAXxvuP --numeric-ids --progress"
+alias cpProgress="rsync --inplace -avz --no-perms --no-group --numeric-ids --progress"
+alias cpP="rsync --inplace -avz --no-perms --no-group --numeric-ids --progress"
 
 # I find it useful when emailing blurbs to people and want to illustrate long timeout in one pass.
 alias pbcopy='xclip -selection clipboard'
@@ -198,6 +225,9 @@ function dl(){
     scp "$1" ${CLIENT_IP%% *}:/home/jharry/Downloads
 }
 
+# Remount
+function remount() { umount "$1" && mount "$1"; }
+
 ## Docker
 
 alias dl='docker logs --tail=50'
@@ -205,3 +235,12 @@ alias dlf='docker logs -f --tail=50'
 
 # Flatpak Steam
 alias steam='flatpak run com.valvesoftware.Steam'
+
+
+## RAM commands
+
+alias real_used="free -m | awk 'NR==3{print $3}'"
+alias realf_free="free -m | awk 'NR==3{print $4}'"
+
+## Wezterm
+alias wezterm='flatpak run org.wezfurlong.wezterm'

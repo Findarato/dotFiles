@@ -39,6 +39,11 @@
         "**/CVS": true,
         "**/node_modules": true,
         "**/tmp": true,
+        "**/.trunk/*actions/": true,
+        "**/.trunk/*logs/": true,
+        "**/.trunk/*notifications/": true,
+        "**/.trunk/*out/": true,
+        "**/.trunk/*plugins/": true
     },
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
@@ -48,8 +53,7 @@
     "editor.fontFamily": "'IntelOneMono','Fira Code','Fira Mono','Droid Sans Mono', monospace,'monospace', 'Droid Sans Fallback', 'Noto Color Emoji'",
     "markdown.extension.tableFormatter.normalizeIndentation": true,
     "intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": true,
-    "workbench.iconTheme": "eq-material-theme-icons",
-    "workbench.colorTheme": "Dracula",
+    "workbench.colorTheme": "Dracula Theme Soft",
     "extensions.ignoreRecommendations": false,
     "git.enableSmartCommit": true,
     "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
@@ -83,4 +87,34 @@
     "[ini]": {},
     "git.openRepositoryInParentFolders": "always",
     "vscode-note.notespath": "/mnt/worktop/home/Documents/notes/",
+    "vsicons.dontShowNewVersionMessage": true,
+    "git.ignoreRebaseWarning": true,
+    "ansible.lightspeed.suggestions.enabled": false,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "files.watcherExclude": {
+        "**/.trunk/*actions/": true,
+        "**/.trunk/*logs/": true,
+        "**/.trunk/*notifications/": true,
+        "**/.trunk/*out/": true,
+        "**/.trunk/*plugins/": true
+    },
+    "editor.defaultFormatter": "trunk.io",
+    "files.associations": {
+        "*.toml": "ini"
+    },
+    "betterAlign.surroundSpace": {
+        "colon": [
+            0,
+            1
+        ],
+        "assignment": [
+            1,
+            1
+        ],
+        "arrow": [
+            1,
+            1
+        ],
+        "comment": 4
+    },
 }

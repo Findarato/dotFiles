@@ -1,4 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+## Title: backup_status.sh
+## Description: Check the status of backups
+## Author: Joseph Harry <findarato@gmail.com>
+## Date: 2025-09-11 08:45:02
 
 if [ -f "${1}" ];then
     source "${1}"

@@ -1,1 +1,0 @@
-podman run --rm -it bcbcarl/hollywood

@@ -1,24 +1,26 @@
 format = """
-$custom\
-$os\
+$container\
 $battery\
 $username\
 $hostname\
 $docker_context\
 $directory\
 $git_branch\
-$git_state\
 $git_status\
-$cmd_duration\
-$line_break\
+$git_state\
 $python\
-$character"""
+$character\
+"""
+# $custom\
+# $add_newline \
+# $os\
+# $git_status\
 
-command_timeout = 1000
+command_timeout = 10000
 
 [hostname]
 ssh_only = true
-format = '[$ssh_symbol](bold blue) on [$hostname](bold red) '
+format   = '[$ssh_symbol](bold blue) on [$hostname](bold red) '
 disabled = false
 
 [directory]
@@ -26,120 +28,124 @@ style = "blue"
 
 [character]
 success_symbol = "[❯](purple)"
-error_symbol = "[❯](red)"
-vimcmd_symbol = "[❮](green)"
+error_symbol   = "[❯](red)"
+vimcmd_symbol  = "[❮](green)"
 
 [container]
 symbol = "📦"
 format = '[$symbol \[$name\]]($style) '
 
 [git_branch]
-format = "[$branch]($style)"
-style = "bright-black"
+format = "[$branch](style)"
+style  = "purple"
 
 [git_status]
-format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
-style = "cyan"
+format     = " [[($conflicted$untracked$modified$staged$renamed$deleted)](218)]($style)"
+#format    = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218)]($style)"
+style      = "cyan"
 conflicted = "🏳"
-ahead = "🏎💨"
-behind = "😰"
-diverged = "😵"
-untracked = "🤷‍"
-stashed = "📦"
-modified = "📝"
-staged = "➕"
-renamed = "👅"
-deleted = "🗑"
+ahead      = "💨"
+behind     = "😰"
+diverged   = "😵"
+untracked  = "🤷‍"
+stashed    = "📦"
+modified   = "🍍"
+#modified  = "📦"
+staged     = "➕"
+renamed    = "👅"
+deleted    = "🔥"
 
 [git_state]
-format = '\([$state( $progress_current/$progress_total)]($style)\) '
-style = "bright-black"
+format = '\([$state( $progress_current/$progress_total)]($style)\)'
+style  = "bright-purple"
 
 [cmd_duration]
-format = "[$duration]($style) "
-style = "yellow"
+format = "[$duration]($style)"
+style  = "yellow"
 
 [python]
-format = "[$virtualenv]($style) "
-style = "bright-black"
+format = " [$virtualenv]($style)"
+style  = "bright-green"
 
 [os]
 disabled = false
 
 [os.symbols]
-Alpaquita = "🔔 "
-Alpine = "🏔️ "
-Amazon = "🙂 "
-Android = "🤖 "
-Arch = "🎗️ "
-Artix = "🎗️ "
-CentOS = "💠 "
-Debian = "🌀 "
-DragonFly = "🐉 "
-Emscripten = "🔗 "
-EndeavourOS = "🚀 "
-Fedora = "🎩 "
-FreeBSD = "😈 "
-Garuda = "🦅 "
-Gentoo = "🗜️ "
-HardenedBSD = "🛡️ "
-Illumos = "🐦 "
-Linux = "🐧 "
-Mabox = "📦 "
-Macos = "🍎 "
-Manjaro = "🥭 "
-Mariner = "🌊 "
-MidnightBSD = "🌘 "
-Mint = "🌿 "
-NetBSD = "🚩 "
-NixOS = "❄️ "
-OpenBSD = "🐡 "
-OpenCloudOS = "☁️ "
-openEuler = "🦉 "
-openSUSE = "🦎 "
-OracleLinux = "🦴 "
-Pop = "🍭 "
-Raspbian = "🍓 "
-Redhat = "🎩 "
+Alpaquita        = "🔔"
+Alpine           = "🏔️ "
+Amazon           = "🙂"
+Android          = "🤖"
+Arch             = "🎗️ "
+Artix            = "🎗️ "
+CentOS           = "💠"
+Debian           = "🌀 "
+DragonFly        = "🐉"
+Emscripten       = "🔗"
+EndeavourOS      = "🚀"
+Fedora           = "🎩 "
+Bluefin         = "🦖 "
+FreeBSD          = "😈"
+Garuda           = "🦅 "
+Gentoo           = "🗜️ "
+HardenedBSD      = "🛡️ "
+Illumos          = "🐦 "
+Linux            = "🐧"
+Mabox            = "📦"
+Macos            = "🍎"
+Manjaro          = "🥭"
+Mariner          = "🌊"
+MidnightBSD      = "🌘"
+Mint             = "🌿"
+NetBSD           = "🚩"
+NixOS            = "❄️ "
+OpenBSD          = "🐡"
+OpenCloudOS      = "☁️ "
+openEuler        = "🦉"
+openSUSE         = "🦎"
+OracleLinux      = "🦴"
+Pop              = "🍭"
+Raspbian         = "🍓"
+Redhat           = "🎩 "
 RedHatEnterprise = "🎩 "
-Redox = "🧪 "
-Solus = "⛵ "
-SUSE = "🦎 "
-Ubuntu = "🎯 "
-Unknown = "❓ "
-Windows = "🪟 "
+Redox            = "🧪"
+Solus            = "⛵"
+SUSE             = "🦎 "
+Ubuntu           = "🎯 "
+Unknown          = "❓ "
+Windows          = "🪟 "
+
 [battery]
-full_symbol = '🔋 '
-charging_symbol = '⚡️ '
+full_symbol        = '🔋 '
+charging_symbol    = '⚡️ '
 discharging_symbol = '💀 '
-disabled = false
+disabled           = false
 
 [line_break]
 disabled = true
 
 [custom.ssh_no_keys]
 description = "SSH missing keys"
-when = "ssh-add -l | grep -q 'no identities'"
-command = "echo 🚫"
-format = "$symbol[$output]($style) "
-shell = ["bash", "--noprofile", "--norc"]
-symbol = "🔑"
-style = "bold fg:red"
+when        = "ssh-add -l | grep -q 'no identities'"
+command     = "echo 🚫"
+format      = "$symbol[$output]($style) "
+shell       = ["bash", "--noprofile", "--norc"]
+symbol      = "🔑"
+style       = "bold fg:red"
 
-[custom.ssh_keys]
-description = "SSH key count"
-when = "ssh-add -l | grep -v -q 'no identities'"
-command = "ssh-add -l | grep -v 'no identities' | wc -l"
-format = "$symbol[$output]($style) "
-shell = ["bash", "--noprofile", "--norc"]
-symbol = "🔑"
-style = "bold fg:green"
+# [custom.ssh_keys]
+# description = "SSH key count"
+# when        = "ssh-add -l | grep -v -q 'no identities'"
+# command     = "ssh-add -l | grep -v 'no identities' | wc -l"
+# format      = "$symbol[$output]($style) "
+# shell       = ["bash", "--noprofile", "--norc"]
+# symbol      = "🔑"
+# style       = "bold fg:green"
 
-[custom.toolbox]
-description = "The activated toolbox container"
-command = "echo $(. /var/run/.containerenv; echo ${name}: ${DISTTAG%container})"
-when = """ [[ -f /run/.containerenv && -f /run/.toolboxenv ]] """
-style = "bold red"
-format = "[$symbol \\[$output\\]]($style) "
-disabled = false
-symbol = "📦"
+# [custom.toolbox]
+# description = "The activated toolbox container"
+# command     = "echo $(. /var/run/.containerenv; echo ${name}: ${DISTTAG%container})"
+# when        = """ [[ -f /run/.containerenv && -f /run/.toolboxenv ]] """
+# style       = "bold red"
+# format      = "[$symbol \\[$output\\]]($style) "
+# disabled    = false
+# symbol      = "📦"

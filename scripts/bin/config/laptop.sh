@@ -23,7 +23,7 @@ export AWS_SECRET_ACCESS_KEY=$($PASS computer/itc-tn-01/s3AccessSecret)
 HOURS=12
 DAYS=30
 WEEKS=1
-MONTHS=12
+MONTHS=6
 
 RUNBEFORE=""
 RUNAFTER=""

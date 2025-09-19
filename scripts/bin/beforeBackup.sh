@@ -1,4 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+## Title: beforeBackup.sh
+## Description: Script to prepare the system before backup
+## Author: Joseph Harry <findarato@gmail.com>
+## Date: 2025-09-11 08:45:35
 
 # Kill all of the running files that need to be backed up
 pkill --signal 9 firefox

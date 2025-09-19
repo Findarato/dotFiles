@@ -3,7 +3,8 @@ Description=Backup with Restic
 
 [Service]
 Type=oneshot
-ExecStart=/home/joe/bin/backup_hourly.sh desktop
+#ExecStart=/home/joe/bin/backup_hourly.sh desktop
+ExecStart=/usr/bin/distrobox-enter --name backup -e /var/home/joe/bin/backup_hourly.sh desktop
 
 # Hardening
 SystemCallArchitectures=native

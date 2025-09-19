@@ -8,13 +8,18 @@ EXCLUDE_FILE="${HOME}/bin/config/resticExcludes.txt"
 BACKUP_LOCATION=s3:https://blacktower.mcharryville.space:9000/desktop-backup
 TAGS="--tag 🕐 --tag desktop"
 
-
-export RESTIC_PASSWORD=$(pass computer/restic)
-export AWS_ACCESS_KEY_ID=$(pass computer/blacktower/s3Access)
-export AWS_SECRET_ACCESS_KEY=$(pass computer/blacktower/s3AccessSecret)
-
 # Location of restic
-RESTIC=/usr/bin/restic
+RESTIC=/usr/bin/restic # Not flatpak based
+#RESTIC=`/usr/bin/distrobox-enter --name backup -e 'restic'`
+
+# Mostly needed for distrobx version
+#PASS=`/usr/bin/distrobox-enter --name backup -e 'pass'`
+PASS=/usr/sbin/pass
+
+export RESTIC_PASSWORD=$(${PASS} computer/restic)
+export AWS_ACCESS_KEY_ID=$(${PASS} computer/blacktower/s3Access)
+export AWS_SECRET_ACCESS_KEY=$(${PASS} computer/blacktower/s3AccessSecret)
+
 
 #Retention settings
 HOURS=24

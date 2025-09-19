@@ -3,7 +3,9 @@
 *.jpg
 *.iso
 *.ISO
-
+${HOME}/ISO/*
+*.log
+*.LOG
 #Directories to skip
 org.signal.Signal/*
 .config/variety/*
@@ -12,6 +14,10 @@ org.signal.Signal/*
 # Skip containers
 containers/storage/*
 ${HOME}/Downloads/*
+${HOME}/Downloads
+
+# Skip monero stuff
+${HOME}/.bitmonero
 
 # Browser specific skips
 ${HOME}/.config/google-chrome/Default/GPUCache/
@@ -48,6 +54,9 @@ Cache*/*
 ${HOME}/.local/share/Steam/compatibilitytools.d
 ${HOME}/.local/share/Steam/
 *.vdi
+${HOME}/.var/app/com.valvesoftware.Steam
+
+
 
 # Do not backup audible things
 ${HOME}/OpenAudible
@@ -70,7 +79,6 @@ ${HOME}/.phoronix-test-suite
 
 ${HOME}/.wine
 ${HOME}/Videos/WIP/*
-${HOME}/.var/app/com.valvesoftware.Steam
 .wine
 .config/Mailspring/files/
 .phoronix-test-suite

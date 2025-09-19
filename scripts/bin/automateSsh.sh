@@ -1,4 +1,10 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+## Title: automateSsh.sh
+## Description: Automate SSH key generation and distribution
+## Author: Joseph Harry <findarato@gmail.com>
+## Date: 2025-09-11 08:44:21
+
 # Automate the generation and distribution of keys
 # https://www.ibm.com/developerworks/community/blogs/kevgrig/entry/automating_server_administration_with_ssh_keys?lang=en
 #
