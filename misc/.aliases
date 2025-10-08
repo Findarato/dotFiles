@@ -9,6 +9,9 @@ alias gl="git log --pretty=full --graph --decorate=full"
 
 alias quickCommit="git add --all . && git commit -s -S -m"
 
+# HTTP-Ping
+
+alias http-ping="httping"
 
 alias pushall="git remote | xargs -L1 git push --all"
 alias na='git reset --hard;git clean -df;'
@@ -33,6 +36,7 @@ alias ssh-copy-id="ssh-copy-id -o PreferredAuthentications=password"
 alias sshp="ssh -o PreferredAuthentications=password"
 alias sshy='ssh -o CheckHostIP=no'
 alias ssh0='ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -o LogLevel=ERROR'
+
 
 #gedit bad
 alias gedit='gnome-text-editor'
@@ -161,7 +165,6 @@ alias fixSSHkey="ssh-copy-id -i ~/.ssh/ansible.pub"
 alias stream='flatpak run io.github.celluloid_player.Celluloid'
 alias listenTo='mpv --no-video'
 alias joetop='ssh joetop'
-alias jump='ssh jharry@10.200.6.42'
 alias laraplex='cd /mnt/laraplex'
 
 alias new_passphrase='bw generate --passphrase --words 4 --separator - | xclip -selection clipboard | echo "=> new passphrase on clipboard."'
@@ -174,6 +177,7 @@ alias ansiblepubkey="more ~/.ssh/ansible.pub | xclip -selection clipboard | echo
 alias pvirt='python3 -m venv'
 
 alias jump='ssh 10.200.6.42'
+alias jumpBox='ssh jumpBox'
 
 alias ccat="pygmentize -O style=monokai -f 256 -g"
 alias dig="dig +nocmd any +multiline +noall +answer"

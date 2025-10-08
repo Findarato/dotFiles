@@ -5,6 +5,5 @@ curl -s https://ifconfig.me/ip -6
 
 printf "\n"
 
-printf "icanhazip.com\n"
-curl -s https://icanhazip.com -4
-curl -s https://icanhazip.com -6
+printf "ip.wtf\n"
+curl ip.wtf
