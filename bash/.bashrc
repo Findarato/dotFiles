@@ -47,3 +47,4 @@ if (env | grep -Fq 'DISTROBOX'); then
 fi
 
 eval "$(starship init bash)"
+
