@@ -15,8 +15,8 @@ keybind = control+shift+n=text:\x01"
 keybind = ctrl+enter=text:\r
 keybind = shift+enter=text:\r
 keybind = ctrl+shift+enter=text:\r
-
 link-url = true
+
 # Adding to fix SSH issues. Fine locally broken externally
 # https://github.com/ghostty-org/ghostty/discussions/3161#discussioncomment-11671706
 command = TERM=xterm-256color /usr/bin/bash

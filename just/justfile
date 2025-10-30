@@ -1,0 +1,57 @@
+_default:
+    just --list --unsorted
+# ssh into my work laptop
+worktop:
+    ssh worktop
+
+# Start working on VMware Ansible stuff
+vmware:
+    /usr/bin/code /mnt/worktop/home/Documents/src/Ansible/vmware
+    ssh -t jharry@worktop.mcharryville.space 'cd Documents/src/Ansible/vmware && distrobox enter ansible '
+
+# Some random scripts converted into just
+
+# Display Public IP Address
+public_ip:
+    @curl -s https://ifconfig.me/ip -4
+    @echo ""
+    @curl -s https://ip.wtf
+
+# Flush DNS Cache (Linux)
+flush_dns:
+    resolvectl flush-caches
+    sudo systemd-resolve --flush-caches
+    echo "Flushed DNS cache."
+
+# Generate a new ed25519 SSH Key
+make_key:
+    ssh-keygen -t ed25519 -C "Generated KEY $(date +%Y-%m-%d)"
+
+# Clean up cache files {WIP}
+clean_caches:
+    # sudo dnf clean all
+
+    # CACHE_PATH="${HOME}/.cache"
+    # rm -rf "${CACHE_PATH}/.thumbs/*"
+    # rm -rf "${CACHE_PATH}/flatpak/*"
+
+    # #Clean up browsers
+    # rm -rf "${CACHE_PATH}/vivaldi/*"
+    # rm -rf "${CACHE_PATH}/google-chrome/*"
+    # rm -rf "${CACHE_PATH}/google-chrome-beta/*"
+    # rm -rf "${CACHE_PATH}/mozilla/*"
+    # rm -rf "${CACHE_PATH}/chromium/*"
+
+    # #Clean Up apps
+    # rm -rf "${CACHE_PATH}/libgweather/*"
+    # rm -rf "${CACHE_PATH}/gnome-software/*"
+    # rm -rf "${CACHE_PATH}/evolution/mail/*"
+
+
+# this is kinda dumb but check if color emoji work
+check_emoji:
+    @echo "If you see emojis below, color emoji work in your terminal!"
+    @echo "If you see boxes or blank spaces, color emoji do NOT work in your terminal!"
+    @echo ""
+
+    @echo "♥👍😍🙊🥱🥺✨✅🎊🏄"
