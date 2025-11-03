@@ -3,14 +3,23 @@
 cursor-style = block
 window-save-state = always
 window-theme = system
+# new GTK Tabs
+#gtk-titlebar-style=tabs
+
+
+#background
 background-opacity = 0.95
 background-blur = 12
 unfocused-split-opacity = 0.75
+
 theme = dark:Dracula,light:GruvboxLightHard
-font-size = 16
+# Fonts
+font-size = 14
 font-thicken-strength = 0
 font-feature = true
 font-family = "FiraCodeNerdFontMono-Retina"
+
+#keybinds
 keybind = control+shift+n=text:\x01"
 keybind = ctrl+enter=text:\r
 keybind = shift+enter=text:\r
