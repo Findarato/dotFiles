@@ -4,10 +4,28 @@ _default:
 worktop:
     ssh worktop
 
-# Start working on VMware Ansible stuff
-vmware:
+# Work: Start working on VMware Ansible stuff
+work_vmware:
     /usr/bin/code /mnt/worktop/home/Documents/src/Ansible/vmware
-    ssh -t jharry@worktop.mcharryville.space 'cd Documents/src/Ansible/vmware && distrobox enter ansible '
+    ssh -t jharry@worktop.mcharryville.space 'cd Documents/src/Ansible/vmware && distrobox enter ansible'
+
+work_linux:
+    /usr/bin/code /mnt/worktop/home/Documents/src/Ansible/linux_template
+    ssh -t jharry@worktop.mcharryville.space 'cd Documents/src/Ansible/linux_template && distrobox enter ansible'
+
+work_docker:
+    /usr/bin/code /mnt/worktop/home/Documents/src/Ansible/docker-deploy
+    ssh -t jharry@worktop.mcharryville.space 'cd Documents/src/Ansible/docker-deploy && distrobox enter ansible'
+# Work: Work on interplex
+work_interplex:
+    /usr/bin/code /mnt/worktop/home/Documents/src/web/interplex.methnet.org
+    ssh -t jharry@worktop.mcharryville.space 'cd Documents/src/web/interplex.methnet.org && distrobox enter fedora'
+
+# Start working on the RK1 cluster
+rk1_ansible:
+    /usr/bin/code ~/Documents/src/Ansible/ansible-rk1-cluster/
+    cd ~/Documents/src/Ansible/ansible-rk1-cluster/ && distrobox enter ansible
+
 
 # Some random scripts converted into just
 
@@ -29,7 +47,9 @@ make_key:
 
 # Clean up cache files {WIP}
 clean_caches:
-    # sudo dnf clean all
+    @echo "Cleaning up cache files..."
+    @sudo dnf autoremove -y
+    @sudo dnf clean all
 
     # CACHE_PATH="${HOME}/.cache"
     # rm -rf "${CACHE_PATH}/.thumbs/*"
@@ -48,10 +68,17 @@ clean_caches:
     # rm -rf "${CACHE_PATH}/evolution/mail/*"
 
 
-# this is kinda dumb but check if color emoji work
+# Check emoji
 check_emoji:
     @echo "If you see emojis below, color emoji work in your terminal!"
     @echo "If you see boxes or blank spaces, color emoji do NOT work in your terminal!"
     @echo ""
 
     @echo "♥👍😍🙊🥱🥺✨✅🎊🏄"
+# Setup Papirus Icon Theme 
+setup_papirus_icons:
+   wget -qO- https://git.io/papirus-icon-theme-install | env DESTDIR="$HOME/.local/share/icons/" sh
+
+# Start Monero Ocean Miner
+mine:
+    @sudo ~/moneroocean/tmux_miner.sh
