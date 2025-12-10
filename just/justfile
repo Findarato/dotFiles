@@ -4,11 +4,24 @@ _default:
 worktop:
     ssh worktop
 
-# Start working on VMware Ansible stuff
-vmware:
+# Work: Start working on VMware Ansible stuff
+work_vmware:
     /usr/bin/code /mnt/worktop/home/Documents/src/Ansible/vmware
-    ssh -t jharry@worktop.mcharryville.space 'cd Documents/src/Ansible/vmware && distrobox enter ansible '
+    ssh -t jharry@worktop.mcharryville.space 'cd Documents/src/Ansible/vmware && distrobox enter ansible'
 
+work_linux:
+    /usr/bin/code /mnt/worktop/home/Documents/src/Ansible/linux_template
+    ssh -t jharry@worktop.mcharryville.space 'cd Documents/src/Ansible/linux_template && distrobox enter ansible'
+
+work_docker:
+    /usr/bin/code /mnt/worktop/home/Documents/src/Ansible/docker-deploy
+    ssh -t jharry@worktop.mcharryville.space 'cd Documents/src/Ansible/docker-deploy && distrobox enter ansible'
+# Work: Work on interplex
+work_interplex:
+    /usr/bin/code /mnt/worktop/home/Documents/src/web/interplex.methnet.org
+    ssh -t jharry@worktop.mcharryville.space 'cd Documents/src/web/interplex.methnet.org && distrobox enter fedora'
+
+# Start working on the RK1 cluster
 rk1_ansible:
     /usr/bin/code ~/Documents/src/Ansible/ansible-rk1-cluster/
     cd ~/Documents/src/Ansible/ansible-rk1-cluster/ && distrobox enter ansible
@@ -65,3 +78,7 @@ check_emoji:
 # Setup Papirus Icon Theme 
 setup_papirus_icons:
    wget -qO- https://git.io/papirus-icon-theme-install | env DESTDIR="$HOME/.local/share/icons/" sh
+
+# Start Monero Ocean Miner
+mine:
+    @sudo ~/moneroocean/tmux_miner.sh

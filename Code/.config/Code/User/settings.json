@@ -137,4 +137,27 @@
     "[github-actions-workflow]": {
         "editor.defaultFormatter": "redhat.vscode-yaml"
     },
+    "yaml.schemas": {
+        "https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/ansible.json#/$defs/playbook": [
+            "file:///var/home/joe/Documents/src/Ansible/ansible-rk1-cluster/tasks/traefik3.yml",
+            "file:///var/home/joe/Documents/src/Ansible/ansible-rk1-cluster/deploy.yml",
+            "file:///var/home/joe/Documents/src/Ansible/ansible-rk1-cluster/tasks/arr/deluge.yml"
+        ]
+        
+    },
+    "workbench.settings.applyToAllProfiles": [
+        "yaml.schemaStore.url"
+    ],
+    "[yaml]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "keep",
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.defaultColorDecorators": "never",
+        "editor.quickSuggestions": {
+            "strings": true,
+            "other": true,
+            "comments": false
+        }
+    },
 }

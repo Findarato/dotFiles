@@ -12,12 +12,12 @@ background-opacity = 0.95
 background-blur = 12
 unfocused-split-opacity = 0.75
 
-theme = dark:Dracula,light:GruvboxLightHard
+# theme = dark:Dracula
 # Fonts
-font-size = 14
-font-thicken-strength = 0
-font-feature = true
-font-family = "FiraCodeNerdFontMono-Retina"
+font-size = 16
+# font-feature = true
+# font-family = "FiraCodeNerdFontMono-Retina"
+font-family = "HackNerdFontPropo-Regular"
 
 #keybinds
 keybind = control+shift+n=text:\x01"
@@ -31,3 +31,6 @@ link-url = true
 command = TERM=xterm-256color /usr/bin/bash
 
 config-file = shaders.config
+
+
+grapheme-width-method = legacy
