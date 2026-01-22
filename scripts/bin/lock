@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 IMAGE=/tmp/screen.png
 TEXT=/tmp/locktext.png
 

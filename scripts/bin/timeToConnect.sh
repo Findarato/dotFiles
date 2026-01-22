@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 #
 # Taken from https://coderwall.com/p/i2hqda/investigate-http-response-times

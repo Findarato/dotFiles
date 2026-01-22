@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # DWM Web App Manager - Similar to Omarchy's web2app
 
 APPS_DIR="$HOME/.local/share/applications"

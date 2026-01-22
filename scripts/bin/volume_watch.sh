@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Source: https://askubuntu.com/questions/1405632/set-or-limit-maximum-volume-output
 
