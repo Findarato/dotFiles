@@ -1,5 +1,5 @@
 _default:
-    just --list --unsorted
+    just --list
 # ssh into my work laptop
 worktop:
     ssh worktop
@@ -25,6 +25,10 @@ work_interplex:
 rk1_ansible:
     /usr/bin/code ~/Documents/src/Ansible/ansible-rk1-cluster/
     cd ~/Documents/src/Ansible/ansible-rk1-cluster/ && distrobox enter ansible
+
+docker_ansible:
+    /usr/bin/code ~/Documents/src/Ansible/ansible-network
+    cd ~/Documents/src/Ansible/ansible-network && distrobox enter ansible
 
 
 # Some random scripts converted into just
