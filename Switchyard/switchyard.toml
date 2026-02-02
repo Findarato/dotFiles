@@ -1,0 +1,20 @@
+prompt_on_click = true
+favorite_browser = 'org.mozilla.firefox.desktop'
+hidden_browsers = []
+check_default_browser = false
+show_app_names = true
+force_dark_mode = true
+
+[[rules]]
+name = 'Zoom'
+logic = 'all'
+browser = 'org.chromium.Chromium.desktop'
+always_ask = false
+
+[[rules.conditions]]
+type = 'keyword'
+pattern = 'https://methodisthospitals.zoom.us'
+
+[[rules.conditions]]
+type = 'glob'
+pattern = '*.zoom.us'
