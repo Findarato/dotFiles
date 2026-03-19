@@ -19,7 +19,20 @@ work_docker:
 # Work: Work on interplex
 work_interplex:
     /usr/bin/code /mnt/worktop/home/Documents/src/web/interplex.methnet.org
-    ssh -t jharry@worktop.mcharryville.space 'cd Documents/src/web/interplex.methnet.org && distrobox enter fedora'
+    ssh -t jharry@worktop.mcharryville.space 'cd Documents/src/web/interplex.methnet.org && distrobox enter interplex'
+
+work_mkdocs:
+    /usr/bin/code /mnt/worktop/home/Documents/src/mkdocs-builder
+    ssh -t jharry@worktop.mcharryville.space 'cd Documents/src/mkdocs-builder && distrobox enter fedora'
+
+work_odba:
+    /usr/bin/code /mnt/worktop/home/Documents/src/odba-docs/
+    ssh -t jharry@worktop.mcharryville.space 'cd Documents/src/odba-docs/ && distrobox enter fedora'
+
+# Just start mining on worktop
+work_mine:
+    ssh -t jharry@worktop.mcharryville.space 'cd ~/moneroocean/ && sudo ~/moneroocean/miner.sh'
+
 
 # Start working on the RK1 cluster
 rk1_ansible:
@@ -86,3 +99,6 @@ setup_papirus_icons:
 # Start Monero Ocean Miner
 mine:
     @sudo ~/moneroocean/tmux_miner.sh
+
+rebuild_distrobox:
+    distrobox assemble create --file ${HOME}/.config/distrobox/distrobox.ini
