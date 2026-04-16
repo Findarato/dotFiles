@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 clear
 
 #watch -n 1 'cat /proc/cpuinfo |grep MHz'

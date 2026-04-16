@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #find ./ -type f -name "*.m4v" | wc -l
 
 

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 pkill dunst
 #dunst -config ~/dotfiles/dunst/.config/dunst/dunstrc &
 dunst -config ~/.config/dunst/dunstrc &

@@ -21,3 +21,4 @@ stow distrobox
 stow topgrade
 stow ghostty
 stow wezterm
+stow just

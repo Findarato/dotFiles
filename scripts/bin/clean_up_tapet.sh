@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 clear
 
 TAPPET_PATH="${HOME}/Pictures/tapet/"

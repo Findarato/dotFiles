@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Started December 6, 2019
 # Requires badblocks
 
