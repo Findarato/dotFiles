@@ -29,17 +29,21 @@ work_odba:
     /usr/bin/code /mnt/worktop/home/Documents/src/odba-docs/
     ssh -t jharry@worktop.mcharryville.space 'cd Documents/src/odba-docs/ && distrobox enter fedora'
 
+work_nagios:
+    /mnt/worktop/home/Documents/src/python/nagios-gen
+    ssh -t jharry@worktop.mcharryville.space 'cd Documents/src/python/nagios-gen/ && distrobox enter fedora'
+
 # Just start mining on worktop
 work_mine:
     ssh -t jharry@worktop.mcharryville.space 'cd ~/moneroocean/ && sudo ~/moneroocean/miner.sh'
 
 
 # Start working on the RK1 cluster
-rk1_ansible:
+ansible_rk1:
     /usr/bin/code ~/Documents/src/Ansible/ansible-rk1-cluster/
     cd ~/Documents/src/Ansible/ansible-rk1-cluster/ && distrobox enter ansible
 
-docker_ansible:
+ansible_docker:
     /usr/bin/code ~/Documents/src/Ansible/ansible-network
     cd ~/Documents/src/Ansible/ansible-network && distrobox enter ansible
 

@@ -22,7 +22,7 @@ docker run -d --device /dev/kfd \
 
 docker exec -it ollama ollama pull llama3.1:8b
 
-docker exec -it ollama ollama pull qwen2.5-coder:1.5b-base
+docker exec -it ollama ollama pull qwen3.5:9b
 
 docker exec -it ollama ollama pull nomic-embed-text:latest
 

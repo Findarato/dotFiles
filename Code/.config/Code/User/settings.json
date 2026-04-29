@@ -82,7 +82,7 @@
     },
     "security.workspace.trust.untrustedFiles": "open",
     "[markdown]": {
-        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+        "editor.defaultFormatter": "darkriszty.markdown-table-prettify"
     },
     "[ini]": {},
     "git.openRepositoryInParentFolders": "always",
@@ -139,19 +139,16 @@
     },
     "yaml.schemas": {
         "https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/ansible.json#/$defs/playbook": [
-            "file:///var/home/joe/Documents/src/Ansible/ansible-rk1-cluster/tasks/traefik3.yml",
+            "file:///var/home/joe/Documents/src/Ansible/ansible-rk1-cluster/tasks/traefik.yml",
             "file:///var/home/joe/Documents/src/Ansible/ansible-rk1-cluster/deploy.yml",
-            "file:///var/home/joe/Documents/src/Ansible/ansible-rk1-cluster/tasks/arr/deluge.yml"
+            "file:///var/home/joe/Documents/src/Ansible/ansible-rk1-cluster/tasks/arr/deluge.yml",
+            "file:///var/home/joe/Documents/src/Ansible/ansible-rk1-cluster/tasks/arr/arr.yml",
+            "file:///var/home/joe/Documents/src/Ansible/ansible-rk1-cluster/tasks/prometheus.yml"
         ],
         "file:///var/home/joe/.vscode/extensions/continue.continue-1.2.16-linux-x64/config-yaml-schema.json": [
             ".continue/**/*.yaml"
         ],
-        "https://www.schemastore.org/traefik-v3.json": [
-            "file:///mnt/worktop/home/Documents/src/Ansible/docker-deploy/files/traefik3/traefik.yml",
-            "file:///mnt/worktop/home/Documents/src/Ansible/docker-deploy/files/traefik3/dynamic_config/tls_config.yml",
-            "file:///mnt/worktop/home/Documents/src/Ansible/docker-deploy/files/traefik3/dynamic_config/external.yml",
-            "file:///mnt/worktop/home/Documents/src/Ansible/docker-deploy/files/traefik/traefik.yml"
-        ],
+        "https://www.schemastore.org/traefik-v3.json": "file:///var/home/joe/Documents/src/Ansible/ansible-rk1-cluster/files/traefik3/traefik.yml",
         "https://json.schemastore.org/yamllint.json": "file:///home/joe/Documents/src/ansible/ansible-network/roles/docker-dashy/files/conf.yml",
         "https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/ansible.json": "file:///mnt/worktop/home/Documents/src/Ansible/docker-deploy/tasks/traefik.yml",
         "https://www.schemastore.org/traefik-v2.json": [
@@ -175,7 +172,8 @@
             "strings": true,
             "other": true,
             "comments": false
-        }
+        },
+        "editor.defaultFormatter": "redhat.vscode-yaml"
     },
     "chat.customAgentInSubagent.enabled": true,
     "inlineChat.defaultModel": "Auto (copilot)",
@@ -195,5 +193,6 @@
     "git.addAICoAuthor": "chatAndAgent",
     "workbench.editor.useModal": "some",
     "github.copilot.chat.anthropic.tools.websearch.enabled": true,
-    "chat.edits2.enabled": true
+    "chat.edits2.enabled": true,
+    "claudeCode.preferredLocation": "panel"
 }

@@ -138,7 +138,7 @@ dnf_arguments = "--refresh"
 
 # emerge_update_flags = "-uDNa --with-bdeps=y world"
 
-# redhat_distro_sync = false
+redhat_distro_sync = true
 
 # suse_dup = false
 
@@ -222,7 +222,7 @@ upgrade = true
 
 [flatpak]
 # Use sudo for updating the system-wide installation
-# use_sudo = true
+use_sudo = true
 
 
 [distrobox]
@@ -237,3 +237,22 @@ upgrade = true
 # extensions should be updated for.
 # (default: this won't be set by default)
 #profile = "Default"
+
+[vscode]
+
+[cargo]
+# If this is set to true, `cargo install-update` also updates git-originating packages.
+# (default: true)
+# git = false
+
+# If this is set to true, `cargo install-update` is run quietly.
+# (default: false)
+# quiet = true
+
+# Other options like `--locked` or `--jobs` can be passed to `cargo install`
+# using the `CARGO_INSTALL_OPTS` environment variable.
+
+[rustup]
+# If set, updates only these channels.
+# (default: [] (all channels))
+# channels = ["stable"]
