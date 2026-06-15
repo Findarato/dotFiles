@@ -5,6 +5,8 @@ window-save-state = always
 window-theme = system
 # new GTK Tabs
 #gtk-titlebar-style=tabs
+gtk-toolbar-style = raised
+gtk-titlebar-style = native
 
 
 #background
@@ -12,12 +14,13 @@ background-opacity = 0.95
 background-blur = 12
 unfocused-split-opacity = 0.75
 
-# theme = dark:Dracula
+theme = dracula
 # Fonts
 font-size = 16
 # font-feature = true
 # font-family = "FiraCodeNerdFontMono-Retina"
-font-family = "HackNerdFontPropo-Regular"
+# font-family = "Hack Nerd Font Mono"
+font-family = "FiraMono Nerd Font Mono"
 
 #keybinds
 keybind = control+shift+n=text:\x01"
@@ -31,6 +34,4 @@ link-url = true
 command = TERM=xterm-256color /usr/bin/bash
 
 config-file = shaders.config
-
-
-grapheme-width-method = legacy
+alpha-blending = linear-corrected

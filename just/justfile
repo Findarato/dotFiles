@@ -37,6 +37,10 @@ work_nagios:
     /usr/bin/code /mnt/worktop/home/Documents/src/nagios-config
     ssh -t jharry@worktop.mcharryville.space 'cd Documents/src/nagios-config/ && distrobox enter fedora'
 
+work_nagios-test:
+    /usr/bin/code /mnt/worktop/home//Documents/src/nagios-test-deploy
+    ssh -t jharry@worktop.mcharryville.space 'cd Documents/src/nagios-test-deploy/ && distrobox enter fedora'
+
 # Just start mining on worktop
 work_mine:
     ssh -t jharry@worktop.mcharryville.space 'cd ~/moneroocean/ && sudo ~/moneroocean/miner.sh'
@@ -50,6 +54,11 @@ ansible_rk1:
 ansible_docker:
     /usr/bin/code ~/Documents/src/Ansible/ansible-network
     cd ~/Documents/src/Ansible/ansible-network && distrobox enter ansible
+
+# Ansible ARR
+ansible_arr:
+    /usr/bin/code ~/Documents/src/Ansible/ansible-arr
+    cd ~/Documents/src/Ansible/ansible-arr && distrobox enter ansible
 
 
 # Some random scripts converted into just

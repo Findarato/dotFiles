@@ -34,12 +34,12 @@ tmux split-window -v
 
 tmux select-pane -t 1
 tmux send-keys 'sleep 5' Enter 'C-m'
-tmux send-keys 'iperf3 -p 5201 --parallel 1 --no-delay -c 10.1.1.69 -tinf' 'C-m'
+tmux send-keys 'iperf3 -p 5201 --parallel 1 --no-delay -c 10.1.1.69 -tinf --bidir' 'C-m'
 tmux resize-pane -U 5
 
 tmux select-pane -t 2
 tmux send-keys 'sleep 5' Enter 'C-m'
-tmux send-keys 'iperf3 -p 5202 --parallel 1 --no-delay -c 10.1.1.98 -tinf' 'C-m'
+tmux send-keys 'iperf3 -p 5202 --parallel 1 --no-delay -c 10.1.1.98 -tinf --bidir' 'C-m'
 tmux resize-pane -L 20
 
 
