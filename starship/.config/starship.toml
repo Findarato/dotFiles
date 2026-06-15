@@ -1,3 +1,9 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
 format = """
 ${custom.distrobox}\
 $battery\
@@ -8,8 +14,9 @@ $directory\
 $git_branch\
 $git_status\
 $git_state\
+$git_metrics\
 $python\
-$character\
+$character
 """
 # $container\
 # $custom\
@@ -49,7 +56,7 @@ behind     = "😰"
 diverged   = "😵"
 untracked  = "🤷‍"
 stashed    = "📦"
-# modified  = "📦"
+modified   = "📦"
 staged     = "➕"
 renamed    = "👅"
 deleted    = "🔥"
@@ -82,7 +89,7 @@ DragonFly        = "🐉"
 Emscripten       = "🔗"
 EndeavourOS      = "🚀"
 Fedora           = "🎩 "
-Bluefin         = "🦖 "
+Bluefin          = "🦖 "
 FreeBSD          = "😈"
 Garuda           = "🦅 "
 Gentoo           = "🗜️ "
