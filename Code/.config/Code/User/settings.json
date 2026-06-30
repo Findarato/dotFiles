@@ -2,18 +2,28 @@
     "[php]": {
         "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
     },
+    "evenBetterToml.schema.associations": {
+    "starship\\.toml$": "https://starship.rs/config-schema.json"
+    },
     "editor.cursorBlinking": "solid",
     "editor.cursorWidth": 5,
     "editor.fontLigatures": true,
     "editor.fontSize": 13,
     "editor.minimap.enabled": false,
     "editor.mouseWheelZoom": true,
-    "editor.renderWhitespace": "trailing",
     "editor.rulers": [],
     "explorer.autoReveal": false,
     "git.autofetch": true,
     "shellcheck.disableVersionCheck": true,
-    "telemetry.enableTelemetry": false,
+    "editor.stickyScroll.enabled": true,
+    "editor.linkedEditing": true,
+    "editor.inlineSuggest.enabled": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.renderWhitespace": "boundary",
+    "editor.semanticHighlighting.enabled": true,
+    "workbench.list.smoothScrolling": true,
+    "workbench.editor.highlightModifiedTabs": true,
+    "breadcrumbs.enabled": true,
     "terminal.external.linuxExec": "/usr/bin/tilix",
     "terminal.integrated.fontFamily": "'Hack Nerd Font'",
     "terminal.integrated.fontSize": 15,
@@ -137,6 +147,25 @@
     "[github-actions-workflow]": {
         "editor.defaultFormatter": "redhat.vscode-yaml"
     },
+    "[toml]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "keep",
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.defaultColorDecorators": "never",
+        "editor.quickSuggestions": {
+            "strings": true,
+            "other": true,
+            "comments": false
+        },
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "toml.schemas":{
+        "url": "https://starship.rs/config-schema.json",
+        "fileMatch":[
+            "/starrship.toml"
+        ]
+    },
     "yaml.schemas": {
         "https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/ansible.json#/$defs/playbook": [
             "file:///var/home/joe/Documents/src/Ansible/ansible-rk1-cluster/tasks/traefik.yml",
@@ -194,5 +223,20 @@
     "workbench.editor.useModal": "some",
     "github.copilot.chat.anthropic.tools.websearch.enabled": true,
     "chat.edits2.enabled": true,
-    "claudeCode.preferredLocation": "panel"
+    "claudeCode.preferredLocation": "panel",
+    "workbench.preferredDarkColorTheme": "Dracula Theme",
+    "evenBetterToml.formatter.arrayAutoCollapse": true,
+    "evenBetterToml.rules": [
+
+    ],
+    "workbench.editor.customLabels.patterns": {
+        "starship.toml": "https://starship.rs/config-schema.json"
+    },
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "toml": true
+    }
 }

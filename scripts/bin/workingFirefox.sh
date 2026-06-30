@@ -1,0 +1,1 @@
+sudo flatpak update --commit=b4ea8efda7015da5ba0c0fca4f9f8a74ce36a53336f26c6f94f467080be98bd5 org.mozilla.firefox

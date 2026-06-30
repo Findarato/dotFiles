@@ -4,25 +4,24 @@
 # Inserts a blank line between shell prompts
 add_newline = true
 
-format = """
-${custom.distrobox}\
-$battery\
-$username\
-$hostname\
-$docker_context\
-$directory\
-$git_branch\
-$git_status\
-$git_state\
-$git_metrics\
-$python\
-$character
-"""
-# $container\
-# $custom\
-# $add_newline \
-# $os\
+format = "${custom.distrobox}$directory$git_branch$git_status$cmd_duration$line_break$character"
+right_format = "$time"
+
+# format = """
+
+# $battery\
+# $username\
+# $hostname\
+# $docker_context\
+# $directory\
+# $git_branch\
 # $git_status\
+# $git_state\
+# $git_metrics\
+# $python\
+# $character
+# """
+
 
 command_timeout = 10000
 
@@ -35,31 +34,52 @@ disabled = false
 style = "blue"
 
 [character]
-success_symbol = "[❯](purple)"
-error_symbol   = "[❯](red)"
-vimcmd_symbol  = "[❮](green)"
+success_symbol = "[❯](bold purple)"
+error_symbol   = "[❯](bold red)"
+
 
 [container]
-symbol = "📦"
+symbol = "🫙"
 format = '[$symbol \[$name\]]($style) '
 
+
+# [git_status]
+# style = "bold yellow"
+# format = "[$all_status$ahead_behind]($style) "
+# conflicted = "="
+# ahead = " up:${count}"
+# behind = " down:${count}"
+# diverged = " up:${ahead_count} down:${behind_count}"
+# untracked = " ?${count}"
+# stashed = ""
+# modified = " !${count}"
+# staged = " +${count}"
+# renamed = " r${count}"
+# deleted = " x${count}"
+
+
 [git_branch]
-format = "[$branch](style)"
-style  = "purple"
+symbol = ""
+style = "bold purple"
+format = "[$branch]($style) "
 
 [git_status]
 format     = " [[($conflicted$untracked$modified$staged$renamed$deleted)](218)]($style)"
-style      = "cyan"
-conflicted = "🏳"
-ahead      = "💨"
-behind     = "😰"
-diverged   = "😵"
-untracked  = "🤷‍"
-stashed    = "📦"
-modified   = "📦"
-staged     = "➕"
-renamed    = "👅"
-deleted    = "🔥"
+style = "bold yellow"
+# conflicted = "🏳"
+# ahead      = "💨"
+# behind     = "😰"
+# diverged   = "😵"
+# untracked  = "🤷‍"
+# stashed    = "📦"
+# modified   = "📦"
+# staged     = "➕"
+# renamed    = "👅"
+# deleted    = "🔥"
+modified = " !${count}"
+staged = " +${count}"
+renamed = " r${count}"
+deleted = " x${count}"
 
 [git_state]
 format = '\([$state( $progress_current/$progress_total)]($style)\)'
@@ -138,6 +158,12 @@ shell       = ["bash", "--noprofile", "--norc"]
 symbol      = "🔑"
 style       = "bold fg:red"
 
+[time]
+disabled = false
+format = "[$time]($style)"
+time_format = "%H:%M"
+style = "dimmed white"
+
 # [custom.ssh_keys]
 # description = "SSH key count"
 # when        = "ssh-add -l | grep -v -q 'no identities'"
@@ -159,7 +185,7 @@ style       = "bold fg:red"
 [custom.distrobox]
 description = "Displays name of the activated distrobox container"
 # box symbol from NerdFonts
-symbol = " "
+symbol = "🫙"
 # activates when the command in "when" returns 0 (succeed / true)
 # we check for the $CONTAINER_ID variable as described in https://github.com/89luca89/distrobox/blob/main/docs/useful_tips.md#detect-if-youre-in-a-distrobox
 when = "[[ ! -z \"${CONTAINER_ID}\" ]]"

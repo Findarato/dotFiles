@@ -1,0 +1,5 @@
+{
+  "evenBetterToml.schema.associations": {
+    "starship\\.toml$": "https://starship.rs/config-schema.json"
+  }
+}
