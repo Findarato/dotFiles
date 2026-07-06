@@ -238,5 +238,6 @@
         "markdown": false,
         "scminput": false,
         "toml": true
-    }
+    },
+    "explorer.confirmPasteNative": false
 }

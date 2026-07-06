@@ -4,7 +4,15 @@
 # Inserts a blank line between shell prompts
 add_newline = true
 
-format = "${custom.distrobox}$directory$git_branch$git_status$cmd_duration$line_break$character"
+format = """${custom.distrobox}\
+$battery\
+$python\
+$directory\
+$git_branch\
+$git_status\
+$line_break\
+$character
+"""
 right_format = "$time"
 
 # format = """
@@ -64,7 +72,7 @@ style = "bold purple"
 format = "[$branch]($style) "
 
 [git_status]
-format     = " [[($conflicted$untracked$modified$staged$renamed$deleted)](218)]($style)"
+format     = "[[($conflicted$untracked$modified$staged$renamed$deleted)](218)]($style)"
 style = "bold yellow"
 # conflicted = "🏳"
 # ahead      = "💨"
@@ -90,7 +98,7 @@ format = "[$duration]($style)"
 style  = "yellow"
 
 [python]
-format = " [$virtualenv]($style)"
+format = "[$virtualenv]($style) "
 style  = "bright-green"
 
 [os]

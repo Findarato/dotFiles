@@ -26,4 +26,6 @@ docker exec -it ollama ollama pull qwen3.5:9b
 
 docker exec -it ollama ollama pull nomic-embed-text:latest
 
+docker exec -it ollama ollama pull nomic-embed-text:latest
+
 docker logs -f ollama && docker stop ollama && docker rm ollama
