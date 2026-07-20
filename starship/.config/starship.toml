@@ -5,6 +5,8 @@
 add_newline = true
 
 format = """${custom.distrobox}\
+$hostname\
+$username\
 $battery\
 $python\
 $directory\
@@ -19,7 +21,6 @@ right_format = "$time"
 
 # $battery\
 # $username\
-# $hostname\
 # $docker_context\
 # $directory\
 # $git_branch\
@@ -35,8 +36,16 @@ command_timeout = 10000
 
 [hostname]
 ssh_only = true
-format   = '[$ssh_symbol](bold blue) on [$hostname](bold red) '
+ssh_symbol= '🌐'
+format   = '[$ssh_symbol](bold blue)[$hostname](bold red) '
+detect_env_vars = ['!TMUX', 'SSH_CONNECTION']
 disabled = false
+
+[username]
+style_root = 'bold red'
+style_user = 'bold yellow'
+format = '[$user]($style) '
+show_always = false
 
 [directory]
 style = "blue"
