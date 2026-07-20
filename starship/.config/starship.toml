@@ -5,8 +5,8 @@
 add_newline = true
 
 format = """${custom.distrobox}\
-$hostname\
 $username\
+$hostname\
 $battery\
 $python\
 $directory\
@@ -36,7 +36,7 @@ command_timeout = 10000
 
 [hostname]
 ssh_only = true
-ssh_symbol= '🌐'
+ssh_symbol= '@'
 format   = '[$ssh_symbol](bold blue)[$hostname](bold red) '
 detect_env_vars = ['!TMUX', 'SSH_CONNECTION']
 disabled = false
@@ -44,7 +44,7 @@ disabled = false
 [username]
 style_root = 'bold red'
 style_user = 'bold yellow'
-format = '[$user]($style) '
+format = '[$user]($style)'
 show_always = false
 
 [directory]
@@ -210,7 +210,7 @@ when = "[[ ! -z \"${CONTAINER_ID}\" ]]"
 # here we get the name of the distrobox
 command = "echo ${CONTAINER_ID}"
 # format in the shell
-format = "[ $symbol $output ]($style)"
+format = "[$symbol $output ]($style)"
 disabled = false
 # apply your favorite style here...
 style = "bold green"
