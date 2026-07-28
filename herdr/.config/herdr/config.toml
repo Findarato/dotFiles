@@ -1,0 +1,80 @@
+onboarding = false
+[theme]
+name = "dracula"
+auto_switch = true
+
+[terminal]
+# New panes/tabs/workspaces follow the current working directory (tmux behavior).
+new_cwd = "follow"
+
+[remote]
+manage_ssh_config = true
+
+[keys]
+prefix = "ctrl+b"
+
+# Detach
+detach = ["prefix+d", "prefix+q"]
+
+# Tabs (tmux windows)
+new_tab = "prefix+c"
+rename_tab = "prefix+,"
+previous_tab = "prefix+p"
+next_tab = "prefix+n"
+close_tab = "prefix+shift+x"
+
+# Workspaces (tmux sessions)
+new_workspace = "prefix+shift+n"
+previous_workspace = "prefix+o"
+next_workspace = "prefix+i"
+
+# Panes: splits
+split_vertical = ["prefix+v", "prefix+percent"]
+split_horizontal = ["prefix+minus", "prefix+double_quote"]
+
+# Panes: navigation (vim + arrow keys)
+focus_pane_left  = ["prefix+h", "prefix+left"]
+focus_pane_down  = ["prefix+j", "prefix+down"]
+focus_pane_up    = ["prefix+k", "prefix+up"]
+focus_pane_right = ["prefix+l", "prefix+right"]
+
+# Panes: swap
+swap_pane_left  = "prefix+H"
+swap_pane_down  = "prefix+J"
+swap_pane_up    = "prefix+K"
+swap_pane_right = "prefix+L"
+
+# Panes: other
+close_pane = "prefix+x"
+zoom       = "prefix+z"
+last_pane  = "prefix+;"
+
+# Misc
+help       = "prefix+?"
+copy_mode  = "prefix+["
+reload_config = "prefix+R"
+toggle_sidebar = "prefix+b"
+cycle_pane_next     = "prefix+tab"
+cycle_pane_previous = "prefix+shift+tab"
+
+# Custom command: clock popup (prefix+t)
+[[keys.command]]
+key = "prefix+t"
+type = "popup"
+description = "Show clock"
+command = "sh -lc 'date \"+%Y-%m-%d %H:%M:%S\"; printf \"\\nPress Enter to close...\"; read _'"
+width = 44
+height = 7
+
+[ui.sidebar.agents]
+rows = [
+  ["state_icon", { token = "workspace", bold = false }, "tab"],
+  [{ token = "$summary", fg = "#89b4fa", bold = true, dim = false }],
+]
+
+[ui]
+agent_panel_sort = "priority"
+
+show_agent_labels_on_pane_borders = true
+[ui.toast]
+delivery = "system"
