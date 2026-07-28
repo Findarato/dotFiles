@@ -22,10 +22,8 @@ docker run -d --device /dev/kfd \
 
 docker exec -it ollama ollama pull llama3.1:8b
 
-docker exec -it ollama ollama pull qwen3.5:9b
+docker exec -it ollama ollama pull gemma4:12b
 
-docker exec -it ollama ollama pull nomic-embed-text:latest
-
-docker exec -it ollama ollama pull nomic-embed-text:latest
+docker exec -it ollama ollama pull gemma4:e4b
 
 docker logs -f ollama && docker stop ollama && docker rm ollama

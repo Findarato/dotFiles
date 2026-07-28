@@ -33,5 +33,8 @@ link-url = true
 # https://github.com/ghostty-org/ghostty/discussions/3161#discussioncomment-11671706
 command = TERM=xterm-256color /usr/bin/bash
 
-config-file = shaders.config
+config-file = shaders.ghostty
 alpha-blending = linear-corrected
+
+
+config-file = ?auto/shader.ghostty

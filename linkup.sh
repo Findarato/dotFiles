@@ -20,5 +20,5 @@ stow systemd
 stow distrobox
 stow topgrade
 stow ghostty
-stow wezterm
 stow just
+stow herdr

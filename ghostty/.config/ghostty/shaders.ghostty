@@ -23,3 +23,4 @@ custom-shader-animation = always
 #custom-shader = ./shaders/cursor_smear.glsl
 #custom-shader = ./shaders/cursor_frozen.glsl
 custom-shader = ./shaders/smear_cursor_blocks.glsl
+#custom-shader = "/var/home/joe/.cache/ghostty-shader-picker/shader.glsl"

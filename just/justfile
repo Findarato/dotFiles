@@ -38,8 +38,12 @@ work_nagios:
     ssh -t jharry@worktop.mcharryville.space 'cd Documents/src/nagios-config/ && distrobox enter fedora'
 
 work_nagios-test:
-    /usr/bin/code /mnt/worktop/home//Documents/src/nagios-test-deploy
+    /usr/bin/code /mnt/worktop/home/Documents/src/nagios-test-deploy
     ssh -t jharry@worktop.mcharryville.space 'cd Documents/src/nagios-test-deploy/ && distrobox enter fedora'
+
+work_ansible_idrac:
+    /usr/bin/code /mnt/worktop/home/Documents/src/Ansible/idrac
+    ssh -t jharry@worktop.mcharryville.space 'cd Documents/src/Ansible/idrac && distrobox enter ansible'
 
 # Just start mining on worktop
 work_mine:
