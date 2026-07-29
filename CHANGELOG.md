@@ -6,6 +6,7 @@ The entries below were populated from the repository commit history and grouped 
 
 ## Week 2026-W31
 
+- [5aa3d78] chore(changelog): group changelog by week — Joseph Harry
 - [3418828] chore(changelog): update changelog — Joseph Harry
 - [41c0560] style: Lots of formatting - fix: Shellcheck passes - :robot: Added some AI stuff, Sucks but still just basic stuff Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
 - [0b8becb] feat: Adding the herdr config back in Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
