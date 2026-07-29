@@ -19,6 +19,7 @@ Managed with [GNU Stow](https://www.gnu.org/software/stow/). Each subdirectory i
 | `kitty` | Kitty terminal (Dracula, Hack font) |
 | `misc` | `.aliases`, `.functions`, `.dircolors`, `.ansible.cfg` |
 | `nano` | `.nanorc` + syntax highlighting (submodule) |
+| `opencode` | opencode plugins (rtk command rewriter) |
 | `pass` | Password store (submodule) |
 | `scripts` | `~/bin/` — utility scripts |
 | `ssh` | SSH config |

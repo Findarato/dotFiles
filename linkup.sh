@@ -4,18 +4,21 @@
 
 stow alacritty --ignore=readme.md
 stow bash --ignore=readme.md
+stow Code
+stow distrobox
+stow ghostty
 stow git
+stow herdr
+stow just
+stow kitty
 stow misc --ignore=readme.md
+stow nano
+stow opencode
 stow pass
 stow scripts
-stow tmux
-stow nano
 stow starship
-stow Code
+stow sway
 stow systemd
-stow distrobox
 stow topgrade
-stow ghostty
-stow just
-stow herdr
-stow opencode
+stow tmux
+stow zsh
