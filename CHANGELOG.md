@@ -6,7 +6,8 @@ The entries below were populated from the repository commit history and grouped 
 
 ## Week 2026-W31
 
-- [4e3d27d] feat: CHANGELOG should be auto generated Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
+- [bc4c626] feat: Added some agents based on CTT Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
+- [7f7dfd0] feat: CHANGELOG should be auto generated Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
 - [a6c6ea6] :robot: feat: More robot stuff Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
 - [809e467] chore(changelog): update changelog — Joseph Harry
 - [5aa3d78] chore(changelog): group changelog by week — Joseph Harry
