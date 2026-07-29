@@ -5,13 +5,10 @@
 stow alacritty --ignore=readme.md
 stow bash --ignore=readme.md
 stow git
-stow kitty
 stow misc --ignore=readme.md
 stow pass
 stow scripts
-stow sway
 stow tmux
-stow zsh
 stow nano
 stow starship
 stow Code
@@ -21,3 +18,4 @@ stow topgrade
 stow ghostty
 stow just
 stow herdr
+stow opencode

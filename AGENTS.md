@@ -34,14 +34,7 @@ All shell scripts must use `#!/usr/bin/env bash` — no exceptions. Not `#!/bin/
   ```
 ## Changelog
 
-After every commit, the changelog must be updated. Run the post-commit hook manually if it doesn't trigger:
-
-```bash
-cd /var/mnt/worktop/home/Documents/src/nagios-config
-./.git/hooks/post-commit
-```
-
-If the hook fails, regenerate manually:
+After every commit, the changelog must be updated. Regenerate manually:
 
 ```bash
 REPO_ROOT="$(git rev-parse --show-toplevel)"
@@ -57,8 +50,8 @@ The entries below were populated from the repository commit history and grouped 
 
 EOF
 
-git -C "$REPO_ROOT" log --date=short --pretty=format:'%ad%x1f%h%x1f%an%x1f%s' | \
-  awk -F"\x1f" '{date=$1; hash=$2; author=$3; subject=$4; if (date!=prev){ if (prev!="") print ""; printf("## %s\n\n", date); prev=date } printf("- [%s] %s — %s\n", hash, subject, author)}' >> "$tmpfile"
+git -C "$REPO_ROOT" log --date=format:'%Y-%m-%d|%Y-W%V' --pretty=format:'%ad%x1f%h%x1f%an%x1f%s' | \
+  awk -F"\x1f" '{split($1, d, "|"); date=d[1]; week=d[2]; hash=$2; author=$3; subject=$4; if (week!=prev){ if (prev!="") print ""; printf("## Week %s\n\n", week); prev=week } printf("- [%s] %s — %s\n", hash, subject, author)}' >> "$tmpfile"
 
 mv "$tmpfile" "$CHANGELOG"
 git add "$CHANGELOG"

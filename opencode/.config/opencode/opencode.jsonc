@@ -1,0 +1,25 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+
+  // Instructions loaded for every project
+  "instructions": [
+    "~/.config/opencode/AGENTS.md",
+    "~/dotfiles/AGENTS.md"
+  ],
+
+  // Shared agents, commands, and skills
+  "agent": {},
+  "command": {},
+  "skills": {
+    "paths": [
+      "~/.config/opencode/skills",
+      "~/.claude/skills"
+    ]
+  },
+
+  // MCP servers shared across projects
+  "mcp": {},
+
+  // Permission defaults
+  "permission": {}
+}
