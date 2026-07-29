@@ -1,1 +1,0 @@
-sudo memhog -H -r10 25g

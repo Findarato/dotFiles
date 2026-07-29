@@ -1,56 +1,30 @@
-# My dotFiles
+# dotfiles
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/84d747ca9d8e4421afe9bef2055c40f2)](https://www.codacy.com/app/Findarato/dotFiles?utm_source=github.com&utm_medium=referral&utm_content=Findarato/dotFiles&utm_campaign=badger)
-[![Build Status](https://travis-ci.org/Findarato/dotFiles.svg?branch=master)](https://travis-ci.org/Findarato/dotFiles)
+Managed with [GNU Stow](https://www.gnu.org/software/stow/). Each subdirectory is a Stow package — run `./linkup.sh` to deploy.
 
-Configuration and setup files for my computer. Zsh plugins are done using zplug
+## Packages
 
-
-This repository currently contains the following dotFiles
-
-Items Included
-
-- .aliases
-- .bashrc
-- .dircolors
-- .gitconfig
-- .gitignore
-- .gitmessage
-- .gitmodules
-- .powerlevel9k
-- .zprofile
-- .zshrc # Most change happens here
-- .ansible.cfg
-
-## To automatically create symlinks you can use the script linkup.sh. The file contents are displayed below
-
-I normally deploy these as part of an Ansible Playbook
-
-```bash
-for FILE in .*; do
-    if [ $FILE != .git ] && [ $FILE != . ] && [ $FILE != .. ]; then
-        # echo "$FILE"
-        echo "Linking Files"
-        rm -f $HOME/$FILE
-        ln -s $PWD/$FILE $HOME/$FILE
-    fi
-done
-```
-
-Current Screenshot of what the terminal will look like
-
-![Screen Shot in terminix](screenshot.png)
-
-## External References and projects being used.
-
-These are projects that are being used that you need to self pull. I am not currently adding them as submodules because lets face it submodules are hard.
-
-:octocat: [robbyrussell/oh-my-zsh][ad5c686c]
-
-:octocat: [gabrielelana/awesome-terminal-fonts][e5317611]
-
-:octocat: [bhilburn/powerlevel9k][9a267dc7]
-
-[9a267dc7]: https://github.com/bhilburn/powerlevel9k "Github"
-[ad5c686c]: https://github.com/robbyrussell/oh-my-zsh "Github"
-[e5317611]: https://github.com/gabrielelana/awesome-terminal-fonts "Github"
+| Package | Configures |
+|---------|------------|
+| `alacritty` | Alacritty terminal (Dracula, MesloLGS NF) |
+| `bash` | `.bashrc`, `.bash_profile` |
+| `Code` | VS Code settings, keybindings, snippets |
+| `distrobox` | Distrobox container definitions |
+| `dunst` | Notification daemon |
+| `ghostty` | Ghostty terminal (Dracula, FiraMono NF, GLSL shaders) |
+| `git` | `.gitconfig`, `.gitignore`, commit template |
+| `herdr` | Hermes tmux-like terminal multiplexer |
+| `htop` | Process viewer config |
+| `just` | `justfile` with work/ansible/system recipes |
+| `kitty` | Kitty terminal (Dracula, Hack font) |
+| `misc` | `.aliases`, `.functions`, `.dircolors`, `.ansible.cfg` |
+| `nano` | `.nanorc` + syntax highlighting (submodule) |
+| `pass` | Password store (submodule) |
+| `scripts` | `~/bin/` — utility scripts |
+| `ssh` | SSH config |
+| `starship` | Starship prompt (Dracula-style) |
+| `sway` | Sway WM config + scripts |
+| `systemd` | User services (restic backups, syncthing, etc.) |
+| `tmux` | tmux config (gpakosz) |
+| `topgrade` | System upgrade tool config |
+| `zsh` | `.zshrc` — zplug plugins, starship |

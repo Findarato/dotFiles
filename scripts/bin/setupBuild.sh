@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 
 sudo dnf check-update
 sudo dnf upgrade

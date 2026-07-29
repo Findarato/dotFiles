@@ -1,1 +1,0 @@
-stress-ng --vm 8 --vm-bytes 80% --vm-method all --verify -t 1h -v

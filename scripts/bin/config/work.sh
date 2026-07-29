@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 ## Config for work
-USERNAME=jharry
+USERNAME=joe
 EXCLUDE_FILE="${HOME}/bin/config/resticExcludes.txt"
 # BACKUP_LOCATION=/mnt/home/backup/desktop
 #BACKUP_LOCATION=/mnt/box/

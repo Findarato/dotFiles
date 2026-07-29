@@ -8,7 +8,7 @@ BindsTo=graphical-session.target
 [Service]
 # Default 
 # ExecStart=/usr/bin/lan-mouse daemon
-ExecStart=/var/home/jharry/Documents/git/lan-mouse/target/debug/lan-mouse daemon
+ExecStart=/var/home/joe/Documents/git/lan-mouse/target/debug/lan-mouse daemon
 Restart=on-failure
 
 [Install]

@@ -226,7 +226,7 @@ alias rtv='tuir'
 
 alias hollywood='podman run --rm -it bcbcarl/hollywood'
 function dl(){
-    scp "$1" ${CLIENT_IP%% *}:/home/jharry/Downloads
+    scp "$1" ${CLIENT_IP%% *}:/home/joe/Downloads
 }
 
 # Remount

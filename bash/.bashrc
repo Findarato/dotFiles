@@ -21,6 +21,9 @@ export KERN_DIR
 
 export EDITOR=/usr/bin/nano
 
+export GBT_CARS='Status, Os, Time, Hostname, Dir, Sign'
+export GBT_CAR_GIT_FORMAT=' {{ Icon }} {{ Head }} {{ Status }}{{ Ahead }}{{ Behind }} '
+
 #if [[ $TERMINIX_ID ]]; then
 #        source /etc/profile.d/vte.sh
 #fi
@@ -37,10 +40,10 @@ fi
 
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/var/home/jharry/Downloads/2025/google-cloud-sdk/path.bash.inc' ]; then . '/var/home/jharry/Downloads/2025/google-cloud-sdk/path.bash.inc'; fi
+if [ -f '/var/home/joe/Downloads/2025/google-cloud-sdk/path.bash.inc' ]; then . '/var/home/joe/Downloads/2025/google-cloud-sdk/path.bash.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/var/home/jharry/Downloads/2025/google-cloud-sdk/completion.bash.inc' ]; then . '/var/home/jharry/Downloads/2025/google-cloud-sdk/completion.bash.inc'; fi
+if [ -f '/var/home/joe/Downloads/2025/google-cloud-sdk/completion.bash.inc' ]; then . '/var/home/joe/Downloads/2025/google-cloud-sdk/completion.bash.inc'; fi
 
 if (env | grep -Fq 'DISTROBOX'); then
  true

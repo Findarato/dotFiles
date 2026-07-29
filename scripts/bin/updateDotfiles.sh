@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd "${HOME}/dotFiles/" || exit
+cd "${HOME}/dotfiles/" || exit
 
 git pull -ff -q
 

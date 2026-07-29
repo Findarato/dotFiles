@@ -7,47 +7,47 @@ worktop:
 # Work: Start working on VMware Ansible stuff
 work_vmware:
     /usr/bin/code /mnt/worktop/home/Documents/src/Ansible/vmware
-    ssh -t jharry@worktop.mcharryville.space 'cd Documents/src/Ansible/vmware && distrobox enter ansible'
+    ssh -t worktop.mcharryville.space 'cd Documents/src/Ansible/vmware && distrobox enter ansible'
 
 work_linux:
     /usr/bin/code /mnt/worktop/home/Documents/src/Ansible/linux_template
-    ssh -t jharry@worktop.mcharryville.space 'cd Documents/src/Ansible/linux_template && distrobox enter ansible'
+    ssh -t worktop.mcharryville.space 'cd Documents/src/Ansible/linux_template && distrobox enter ansible'
 
 work_docker:
     /usr/bin/code /mnt/worktop/home/Documents/src/Ansible/docker-deploy
-    ssh -t jharry@worktop.mcharryville.space 'cd Documents/src/Ansible/docker-deploy && distrobox enter ansible'
+    ssh -t worktop.mcharryville.space 'cd Documents/src/Ansible/docker-deploy && distrobox enter ansible'
 # Work: Work on interplex
 work_interplex:
     /usr/bin/code /mnt/worktop/home/Documents/src/web/interplex.methnet.org
-    ssh -t jharry@worktop.mcharryville.space 'cd Documents/src/web/interplex.methnet.org && distrobox enter interplex'
+    ssh -t worktop.mcharryville.space 'cd Documents/src/web/interplex.methnet.org && distrobox enter interplex'
 
 work_mkdocs:
     /usr/bin/code /mnt/worktop/home/Documents/src/mkdocs-builder
-    ssh -t jharry@worktop.mcharryville.space 'cd Documents/src/mkdocs-builder && distrobox enter fedora'
+    ssh -t worktop.mcharryville.space 'cd Documents/src/mkdocs-builder && distrobox enter fedora'
 
 work_odba:
     /usr/bin/code /mnt/worktop/home/Documents/src/odba-docs/
-    ssh -t jharry@worktop.mcharryville.space 'cd Documents/src/odba-docs/ && distrobox enter fedora'
+    ssh -t worktop.mcharryville.space 'cd Documents/src/odba-docs/ && distrobox enter fedora'
 
 work_nagios-gen:
     /usr/bin/code /mnt/worktop/home/Documents/src/python/nagios-gen
-    ssh -t jharry@worktop.mcharryville.space 'cd Documents/src/python/nagios-gen/ && distrobox enter fedora'
+    ssh -t worktop.mcharryville.space 'cd Documents/src/python/nagios-gen/ && distrobox enter fedora'
 
 work_nagios:
     /usr/bin/code /mnt/worktop/home/Documents/src/nagios-config
-    ssh -t jharry@worktop.mcharryville.space 'cd Documents/src/nagios-config/ && distrobox enter fedora'
+    ssh -t worktop.mcharryville.space 'cd Documents/src/nagios-config/ && distrobox enter fedora'
 
 work_nagios-test:
     /usr/bin/code /mnt/worktop/home/Documents/src/nagios-test-deploy
-    ssh -t jharry@worktop.mcharryville.space 'cd Documents/src/nagios-test-deploy/ && distrobox enter fedora'
+    ssh -t worktop.mcharryville.space 'cd Documents/src/nagios-test-deploy/ && distrobox enter fedora'
 
 work_ansible_idrac:
     /usr/bin/code /mnt/worktop/home/Documents/src/Ansible/idrac
-    ssh -t jharry@worktop.mcharryville.space 'cd Documents/src/Ansible/idrac && distrobox enter ansible'
+    ssh -t worktop.mcharryville.space 'cd Documents/src/Ansible/idrac && distrobox enter ansible'
 
 # Just start mining on worktop
 work_mine:
-    ssh -t jharry@worktop.mcharryville.space 'cd ~/moneroocean/ && sudo ~/moneroocean/miner.sh'
+    ssh -t worktop.mcharryville.space 'cd ~/moneroocean/ && sudo ~/moneroocean/miner.sh'
 
 
 # Start working on the RK1 cluster

@@ -1,1 +1,0 @@
-nmcli dev wifi list

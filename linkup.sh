@@ -2,17 +2,16 @@
 
 # This is the restore script for stow. It must be ran from the directory it is located
 
+stow alacritty --ignore=readme.md
 stow bash --ignore=readme.md
 stow git
-# stow kitty
+stow kitty
 stow misc --ignore=readme.md
 stow pass
-#stow tuir
 stow scripts
 stow sway
-# stow Tilix
 stow tmux
-# stow zsh
+stow zsh
 stow nano
 stow starship
 stow Code

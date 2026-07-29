@@ -1,5 +1,7 @@
+#!/usr/bin/env bash
+
 ## Config for work
-USERNAME=jharry
+USERNAME=joe
 EXCLUDE_FILE="${HOME}/bin/config/resticExcludes.txt"
 
 BACKUP_LOCATION=s3:https://itc-tn-01.methnet.org:9000/joe.backup

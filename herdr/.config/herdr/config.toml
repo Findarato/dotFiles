@@ -27,6 +27,7 @@ close_tab = "prefix+shift+x"
 new_workspace = "prefix+shift+n"
 previous_workspace = "prefix+o"
 next_workspace = "prefix+i"
+rename_workspace = "prefix+$"
 
 # Panes: splits
 split_vertical = ["prefix+v", "prefix+percent"]
