@@ -4,9 +4,13 @@
 
 The entries below were populated from the repository commit history and grouped by commit date.
 
+## Week 2026-W32
+
+- [f02e52d] fix: Ansible Vault path Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
+
 ## Week 2026-W31
 
-- [1c52ff6] feat: add opencode stow package, tmux-like herdr keybindings, sort linkup.sh — Joseph Harry
+- [7771d89] feat: add opencode stow package, tmux-like herdr keybindings, sort linkup.sh — Joseph Harry
 - [e38ced3] feat: Added some agents based on CTT Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
 - [7f7dfd0] feat: CHANGELOG should be auto generated Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
 - [a6c6ea6] :robot: feat: More robot stuff Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry

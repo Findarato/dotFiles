@@ -15,7 +15,6 @@
     "explorer.autoReveal": false,
     "git.autofetch": true,
     "shellcheck.disableVersionCheck": true,
-    "editor.stickyScroll.enabled": true,
     "editor.linkedEditing": true,
     "editor.inlineSuggest.enabled": true,
     "editor.cursorSmoothCaretAnimation": "on",
