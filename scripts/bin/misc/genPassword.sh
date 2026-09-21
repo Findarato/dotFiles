@@ -1,3 +1,11 @@
 #!/usr/bin/env bash
-date | sha512sum |sha256sum | head -c $(( (RANDOM %63) + 16 )) | base64 ; echo
 
+max=$(( $(od -An -N1 -tu2 /dev/urandom) % 63 + 16 ))
+
+special='!@#$%^&*()-_=+{}<>,.?/:;|~'
+alphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789${special}"
+
+pw=$(LC_ALL=C tr -dc "$alphabet" < /dev/urandom | head -c "$((max - 1))")
+pw+=$(LC_ALL=C tr -dc "$special" < /dev/urandom | head -c 1)
+
+printf '%s\n' "$pw"
