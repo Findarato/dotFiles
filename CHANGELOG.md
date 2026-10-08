@@ -4,9 +4,13 @@
 
 The entries below were populated from the repository commit history and grouped by commit date.
 
+## Week 2026-W41
+
+- [aca8f95] feat: Added linux brew mounts Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
+
 ## Week 2026-W39
 
-- [ffaf399] fix: More randomness in the password generation Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
+- [81a4cc3] fix: More randomness in the password generation Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
 
 ## Week 2026-W32
 
