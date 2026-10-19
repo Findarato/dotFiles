@@ -4,9 +4,13 @@
 
 The entries below were populated from the repository commit history and grouped by commit date.
 
+## Week 2026-W43
+
+- [0464332] docs(agents): only regenerate changelog on main/master — Joseph Harry
+
 ## Week 2026-W41
 
-- [aca8f95] feat: Added linux brew mounts Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
+- [e2f8ed0] feat: Added linux brew mounts Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
 
 ## Week 2026-W39
 

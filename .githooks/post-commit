@@ -11,6 +11,13 @@ if [ -n "$OPENCODE_SKIP_CHANGELOG" ]; then
     exit 0
 fi
 
+# Only regenerate the changelog on main/master. Feature/separate branches
+# must never change CHANGELOG.md; it gets regenerated after merging to main.
+branch="$(git symbolic-ref --short HEAD 2>/dev/null || echo detached)"
+if [ "$branch" != "main" ] && [ "$branch" != "master" ]; then
+    exit 0
+fi
+
 REPO_ROOT="$(git rev-parse --show-toplevel)"
 CHANGELOG="$REPO_ROOT/CHANGELOG.md"
 

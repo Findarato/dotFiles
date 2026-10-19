@@ -13,7 +13,18 @@ These instructions apply to all projects unless overridden.
 - Use 4-space indentation in config files
 - No tabs anywhere
 
+## Secrets
+
+- Never open, read, cat, grep, or print the contents of `.env` files or any
+  `.env.*` / secrets file. Do not list their contents either.
+- If a task appears to need a value from one, ask the user instead.
+
 ## Changelog
+
+**Only generate changelog updates on the `main` (or `master`) branch.
+Feature/separate branches must never modify `CHANGELOG.md` or commit changelog
+entries** — regenerate after the work is merged to main. The post-commit hook
+enforces this by skipping on any other branch.
 
 When setting up a new repo that needs a changelog, copy the post-commit hook
 from `~/dotfiles/.githooks/post-commit`. It auto-regenerates `CHANGELOG.md`
@@ -23,7 +34,25 @@ Key behaviours:
 - Groups commits by ISO week (`## Week 2026-W30`)
 - Format: `- [commit_hash] subject — author`
 - Skips if the last commit already touched CHANGELOG.md
+- Skips entirely unless on `main`/`master` (feature branches never change the changelog)
 - Uses `OPENCODE_SKIP_CHANGELOG` env var to prevent recursion
+
+## Commits and pull requests
+
+All commit messages and PR titles must be semantic — Conventional Commits,
+as enforced by the [semantic-prs](https://github.com/Ezard/semantic-prs) app
+(spec: https://www.conventionalcommits.org/en/v1.0.0/).
+
+- Format: `type(scope): subject` — the scope is optional.
+- Allowed types (semantic-prs defaults): `feat`, `fix`, `docs`, `style`,
+  `refactor`, `perf`, `test`, `build`, `ci`, `chore`, `revert`.
+- Write the subject in the imperative mood, lowercase, no trailing period.
+- Breaking changes: use `type(scope)!: subject` and a `BREAKING CHANGE:`
+  footer in the body.
+- Put details, rationale, and file lists in the body — not in the subject.
+- Emoji are fine in the body or at the end of the subject, but never before
+  the `type:` prefix (that breaks validation).
+- Example: `feat(cli): add --json output mode 🐳`
 
 ## Operating principles
 
@@ -36,8 +65,9 @@ Key behaviours:
   interpretations and the choice materially affects the result.
 - Touch only what the task requires. Avoid drive-by refactors, formatting, or
   cleanup.
-- Keep communication direct and concise. Skip flattery, filler, ceremonial
-  openings, and emoji.
+- Keep communication direct and concise. Skip flattery, filler, and ceremonial
+  openings. Emoji are welcome where they add tone or clarity (e.g. commit
+  messages, summaries) — don't avoid them by default.
 
 ## Before editing
 
