@@ -6,7 +6,8 @@ The entries below were populated from the repository commit history and grouped 
 
 ## Week 2026-W43
 
-- [0464332] docs(agents): only regenerate changelog on main/master — Joseph Harry
+- [a82f367] feat: Updated opencode stuff Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
+- [a09b50e] docs(agents): only regenerate changelog on main/master — Joseph Harry
 
 ## Week 2026-W41
 
