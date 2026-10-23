@@ -1,0 +1,1 @@
+bw get password ccf9ff3e-4d4b-46d3-b5b9-b6c56a85437e

@@ -55,3 +55,5 @@ eval "$(starship init bash)"
 export PATH="$PATH:/var/home/joe/.lmstudio/bin"
 # End of LM Studio CLI section
 
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv bash)"
