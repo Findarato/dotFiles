@@ -54,6 +54,22 @@ as enforced by the [semantic-prs](https://github.com/Ezard/semantic-prs) app
   the `type:` prefix (that breaks validation).
 - Example: `feat(cli): add --json output mode 🐳`
 
+## Work-item time tracking
+
+Always update how much time has been used on **each** GitLab work item you
+touch. Creating it, starting work, adding a note, advancing it, verifying it or
+closing it all count — log the time on that item in the same turn.
+
+- Use the GraphQL mutation `timelogCreate` with the work item GID
+  (`gid://gitlab/WorkItem/<id>`); the REST `time_entries` endpoint 404s on
+  some GitLab versions.
+- Say whether the duration is measured or estimated. Estimates come from
+  session activity and commit timestamps; never present one as a stopwatch
+  reading.
+- Log investigation and verification time too, not just code changes, and name
+  what was verified in the summary.
+- Log as the work happens, not in a batch at the end of the session.
+
 ## Operating principles
 
 - Working code only. Plausibility is not correctness; verify before reporting
