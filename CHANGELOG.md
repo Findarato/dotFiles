@@ -6,10 +6,15 @@ The entries below were populated from the repository commit history and grouped 
 
 ## Week 2026-W44
 
-- [36af73c] Updated distrobox Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
+- [dcaa2cf] Merge branch 'main' of github.com:Findarato/dotFiles — Joseph Harry
+- [fe07d4b] Updated distrobox Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
 
 ## Week 2026-W43
 
+- [42b21b4] docs(agents): require a time entry whenever a work item is touched — Joseph Harry
+- [d180638] Updating from laptop Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
+- [cd716a8] feat: Fixed linux brew Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
+- [a596750] feat: Updated my opencode configs Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
 - [cf0f15b] feat: Updated opencode stuff Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
 - [a09b50e] docs(agents): only regenerate changelog on main/master — Joseph Harry
 
