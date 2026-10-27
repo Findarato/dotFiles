@@ -103,6 +103,7 @@ enable_pipupgrade = true                         ###disabled by default
 
 
 [brew]
+# distrobox-enter fedora /home/linuxbrew.linuxbrew/bin/brew upgrade --formula
 # greedy_cask = true
 # autoremove = true
 

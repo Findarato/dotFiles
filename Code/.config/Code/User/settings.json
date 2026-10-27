@@ -181,7 +181,8 @@
         "https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/ansible.json": "file:///mnt/worktop/home/Documents/src/Ansible/docker-deploy/tasks/traefik.yml",
         "https://www.schemastore.org/traefik-v2.json": [
             "file:///var/home/joe/Documents/src/Ansible/ansible-network/roles/docker-traefik/files/traefik.yml",
-            "file:///var/home/joe/Documents/src/Ansible/ansible-network/roles/arr/docker-traefik/files/traefik.yml"
+            "file:///var/home/joe/Documents/src/Ansible/ansible-network/roles/arr/docker-traefik/files/traefik.yml",
+            "!file:///mnt/worktop/home/Documents/src/Ansible/docker-deploy/files/traefik3/traefik.yml"
         ],
         "file:///var/home/joe/.vscode/extensions/continue.continue-1.2.17-linux-x64/config-yaml-schema.json": [
             ".continue/**/*.yaml"

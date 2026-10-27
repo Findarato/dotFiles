@@ -9,6 +9,10 @@ gtk-toolbar-style = raised
 gtk-titlebar-style = native
 
 
+# Set default dimensions in character columns/rows
+window-width = 82
+window-height = 25
+
 #background
 background-opacity = 0.95
 background-blur = 12

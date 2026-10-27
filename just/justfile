@@ -123,3 +123,12 @@ mine:
 
 rebuild_distrobox:
     distrobox assemble create --file ${HOME}/.config/distrobox/distrobox.ini
+
+brew_list:
+    brew list
+
+brew_backup:
+    brew bundle dump --force
+
+restart_lanmouse:
+    @systemctl --user restart lan-mouse.service
