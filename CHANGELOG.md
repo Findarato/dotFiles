@@ -6,7 +6,8 @@ The entries below were populated from the repository commit history and grouped 
 
 ## Week 2026-W44
 
-- [dcaa2cf] Merge branch 'main' of github.com:Findarato/dotFiles — Joseph Harry
+- [00637d6] fix: Corrected some broken plugins Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
+- [a92cd0a] Merge branch 'main' of github.com:Findarato/dotFiles — Joseph Harry
 - [fe07d4b] Updated distrobox Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
 
 ## Week 2026-W43

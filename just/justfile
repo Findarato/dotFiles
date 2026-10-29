@@ -2,7 +2,10 @@ _default:
     just --list
 # ssh into my work laptop
 worktop:
-    ssh worktop
+    @herdr --remote worktop
+
+jumpBox:
+    @herdr --remote jumpBox
 
 # Work: Start working on VMware Ansible stuff
 work_vmware:
