@@ -6,7 +6,8 @@ The entries below were populated from the repository commit history and grouped 
 
 ## Week 2026-W45
 
-- [7e0880c] Moved ollama Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
+- [bfc3561] refactor: :fire: Removed some older scripts Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
+- [6456e3d] Moved ollama Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
 
 ## Week 2026-W44
 
