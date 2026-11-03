@@ -4,9 +4,13 @@
 
 The entries below were populated from the repository commit history and grouped by commit date.
 
+## Week 2026-W45
+
+- [7e0880c] Moved ollama Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
+
 ## Week 2026-W44
 
-- [00637d6] fix: Corrected some broken plugins Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
+- [02f8532] fix: Corrected some broken plugins Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
 - [a92cd0a] Merge branch 'main' of github.com:Findarato/dotFiles — Joseph Harry
 - [fe07d4b] Updated distrobox Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
 
