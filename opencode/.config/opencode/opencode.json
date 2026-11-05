@@ -5,7 +5,9 @@
   },
   "plugins": [
     "opencode-mem",
-    "psinetron-opencode-visualizer"
+    "psinetron-opencode-visualizer",
+    "opencode-pr-signature",
+    "opencode-snip@latest"
   ],
   "formatter": true,
   "provider": {
