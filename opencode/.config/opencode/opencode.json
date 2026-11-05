@@ -4,7 +4,8 @@
     "background_compaction": true
   },
   "plugins": [
-    "opencode-mem@latest"
+    "opencode-mem",
+    "psinetron-opencode-visualizer"
   ],
   "formatter": true,
   "provider": {
@@ -25,3 +26,4 @@
     }
   }
 }
+

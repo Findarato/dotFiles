@@ -50,9 +50,26 @@ as enforced by the [semantic-prs](https://github.com/Ezard/semantic-prs) app
 - Breaking changes: use `type(scope)!: subject` and a `BREAKING CHANGE:`
   footer in the body.
 - Put details, rationale, and file lists in the body — not in the subject.
-- Emoji are fine in the body or at the end of the subject, but never before
-  the `type:` prefix (that breaks validation).
-- Example: `feat(cli): add --json output mode 🐳`
+- Emoji go directly after the type prefix, on every commit:
+  `fix: :bug: correct the pid guard`, `docs: :memo: record the pipeline
+  failures`. The emoji never goes before the `type:` prefix (that breaks
+  validation), and it is not optional.
+- Example: `feat(cli): :sparkles: add --json output mode`
+
+## Work items for every fix
+
+Every fix, and every checklist item in a project's `TODO.md`, gets its own
+GitLab work item, and that work item is linked to the merge request carrying
+the change.
+
+- Title the work item exactly like the commit subject: `type: :emoji: subject`.
+- Link it to the merge request. Prefer the API; where the instance refuses the
+  MR↔work-item mutations, list the work item `#<iid>` under a `## Work items`
+  heading in the MR description and add a note on the MR that references it.
+- Reference the work item from the project's progress log and close it only
+  once the work is in the tree and verified.
+- Log the time on it in the same turn (below), and say whether it is measured
+  or estimated.
 
 ## Work-item time tracking
 
@@ -62,7 +79,10 @@ closing it all count — log the time on that item in the same turn.
 
 - Use the GraphQL mutation `timelogCreate` with the work item GID
   (`gid://gitlab/WorkItem/<id>`); the REST `time_entries` endpoint 404s on
-  some GitLab versions.
+  some GitLab versions. If `timelogCreate` is refused, fall back to
+  `POST /projects/:id/issues/<iid>/add_spent_time?duration=30m`, which accepts
+  `Task` work items on GitLab 19.5, and put the measured/estimated note on the
+  item.
 - Say whether the duration is measured or estimated. Estimates come from
   session activity and commit timestamps; never present one as a stopwatch
   reading.

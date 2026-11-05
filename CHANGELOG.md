@@ -6,7 +6,9 @@ The entries below were populated from the repository commit history and grouped 
 
 ## Week 2026-W45
 
-- [df15da5] Updating opencode locally Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
+- [43f7c33] Merge branch 'main' of github.com:Findarato/dotFiles — Joseph Harry
+- [fe9d207] Updating opencode locally Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
+- [9ffb8de] Updated opencode config Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
 - [89333a5] refactor: :fire: Removed some older scripts Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
 - [6456e3d] Moved ollama Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
 

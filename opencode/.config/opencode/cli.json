@@ -3,5 +3,16 @@
   "plugins": [
     "./plugins/token-tracker.tsx",
     "./herdr-opencode"
-  ]
+  ],
+  "session": {
+    "sidebar": "auto",
+    "thinking": "show"
+  },
+  "theme": {
+    "name": "dracula"
+  },
+  "animations": true,
+  "attention": {
+    "notifications": true
+  }
 }
