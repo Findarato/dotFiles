@@ -6,7 +6,8 @@ The entries below were populated from the repository commit history and grouped 
 
 ## Week 2026-W45
 
-- [bfc3561] refactor: :fire: Removed some older scripts Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
+- [df15da5] Updating opencode locally Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
+- [89333a5] refactor: :fire: Removed some older scripts Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
 - [6456e3d] Moved ollama Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
 
 ## Week 2026-W44
