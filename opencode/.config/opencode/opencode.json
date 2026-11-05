@@ -3,5 +3,9 @@
   "experimental": {
     "background_compaction": true
   },
-  "formatter": true
+  "formatter": true,
+  "plugins": [
+    "opencode-mem",
+    "psinetron-opencode-visualizer"
+  ]
 }
