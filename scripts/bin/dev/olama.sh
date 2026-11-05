@@ -22,7 +22,9 @@ docker run -d --device /dev/kfd \
 docker exec -it ollama 'ollama list | awk 'NR>2 {print $1}' | xargs -I {} ollama rm {}'
 
 
-docker exec -it ollama ollama ollama run qwen3:14b
+#docker exec -it ollama ollama run qwen3.8:27
+
+docker exec -it ollama ollama run smtek/Qwen3.8-27B
 
 #docker exec -it ollama ollama run starcoder2:15b
 
