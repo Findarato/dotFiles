@@ -6,7 +6,9 @@ The entries below were populated from the repository commit history and grouped 
 
 ## Week 2026-W45
 
-- [e309003] catching up scripts Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
+- [672f57e] feat: Added some opencode plugins Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
+- [06b0c6f] feat: Added a few plugins Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
+- [7973d72] catching up scripts Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
 - [17d93ee] Merge branch 'main' of github.com:Findarato/dotFiles — Joseph Harry
 - [fe9d207] Updating opencode locally Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
 - [9ffb8de] Updated opencode config Signed-off-by: Joseph Harry <findarato@gmail.com> — Joseph Harry
